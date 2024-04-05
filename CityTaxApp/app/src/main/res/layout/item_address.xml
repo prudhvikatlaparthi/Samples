@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.sgs.citytax.ui.custom.swipeUtils.CustomSwipeView
+        android:id="@+id/swipeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        app:dragEdge="right"
+        app:swipeMode="same_level">
+
+        <LinearLayout
+            android:id="@+id/belowLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableTop="@drawable/ic_edit"
+                android:drawablePadding="@dimen/three_dp"
+                android:gravity="center"
+                android:longClickable="false"
+                android:minWidth="65dp"
+                android:padding="@dimen/vertical_spacing"
+                android:singleLine="true"
+                android:text="@string/edit"
+                android:textColor="@color/colorPrimaryDark"
+                android:textIsSelectable="false"
+                android:textSize="@dimen/sixteen_sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableTop="@drawable/ic_delete"
+                android:drawablePadding="@dimen/three_dp"
+                android:gravity="center"
+                android:longClickable="false"
+                android:minWidth="65dp"
+                android:padding="@dimen/vertical_spacing"
+                android:singleLine="true"
+                android:text="@string/delete"
+                android:textColor="@color/colorPrimaryDark"
+                android:textIsSelectable="false"
+                android:textSize="@dimen/sixteen_sp" />
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/vertical_spacing">
+
+            <TextView
+                android:id="@+id/txtZoneLabel"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:text="@string/zone"
+                app:layout_constraintBottom_toBottomOf="@id/txtZone"
+                app:layout_constraintEnd_toEndOf="@id/txtCountryLabel"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtZone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/txtZoneLabel"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtCityLabel"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:text="@string/city"
+                app:layout_constraintBottom_toBottomOf="@id/txtCity"
+                app:layout_constraintEnd_toEndOf="@id/txtCountryLabel"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtZoneLabel" />
+
+            <TextView
+                android:id="@+id/txtCity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/txtCityLabel"
+                app:layout_constraintTop_toBottomOf="@id/txtZone" />
+
+            <TextView
+                android:id="@+id/txtStateLabel"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:text="@string/state"
+                app:layout_constraintBottom_toBottomOf="@id/txtState"
+                app:layout_constraintEnd_toEndOf="@id/txtCountryLabel"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtCityLabel" />
+
+            <TextView
+                android:id="@+id/txtState"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/txtStateLabel"
+                app:layout_constraintTop_toBottomOf="@id/txtCity" />
+
+            <TextView
+                android:id="@+id/txtCountryLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:paddingStart="0dp"
+                android:paddingEnd="16dp"
+                android:text="@string/country"
+                app:layout_constraintBottom_toBottomOf="@id/txtCountry"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtStateLabel" />
+
+            <TextView
+                android:id="@+id/txtCountry"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/txtZoneLabel"
+                app:layout_constraintTop_toBottomOf="@id/txtState" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.sgs.citytax.ui.custom.swipeUtils.CustomSwipeView>
+
+</layout>

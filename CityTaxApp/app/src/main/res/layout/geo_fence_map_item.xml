@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="mGeoFenceVM"
+            type="com.sgs.citytax.model.GeoFenceLatLong" />
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp">
+
+        <TextView
+            android:id="@+id/slNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="1)"
+            android:textColor="@color/black" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/remove"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/slNo">
+
+            <TextView
+                android:id="@+id/lati"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{mGeoFenceVM.mLatitude}"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/longi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lati"
+                android:layout_marginTop="5dp"
+                android:text="@{mGeoFenceVM.mLongitude()}"
+                android:textColor="@color/black" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/remove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_clear" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/black" />
+
+    </RelativeLayout>
+</layout>

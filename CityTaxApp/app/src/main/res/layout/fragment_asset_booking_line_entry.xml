@@ -1,0 +1,1075 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorLayoutBackground">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/vertical_spacing"
+                    app:cardBackgroundColor="@color/white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/vertical_spacing"
+                        android:layout_marginBottom="@dimen/vertical_spacing"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginEnd="12dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/TextMandatoryTextView"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/asset_category"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                                <androidx.appcompat.widget.AppCompatSpinner
+                                    android:id="@+id/spnAssetCategory"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:minHeight="@dimen/min_spinner_height"
+                                    android:padding="@dimen/vertical_spacing"
+                                    android:spinnerMode="dialog" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginEnd="12dp"
+                                android:background="@color/colorGray" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/llAsset"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginEnd="12dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/TextMandatoryTextView"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/asset"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                                <androidx.appcompat.widget.AppCompatSpinner
+                                    android:id="@+id/spnAsset"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:minHeight="@dimen/min_spinner_height"
+                                    android:padding="@dimen/vertical_spacing"
+                                    android:spinnerMode="dialog" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginEnd="12dp"
+                                android:background="@color/colorGray" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/llAssetRentType"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginEnd="12dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/asset_rent_type"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                                <androidx.appcompat.widget.AppCompatSpinner
+                                    android:id="@+id/spnAssetRentType"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:minHeight="@dimen/min_spinner_height"
+                                    android:padding="@dimen/vertical_spacing" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginEnd="12dp"
+                                android:background="@color/colorGray" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/llTenurePeriod"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginEnd="12dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/tenure_period"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                                <androidx.appcompat.widget.AppCompatSpinner
+                                    android:id="@+id/spnTenurePeriod"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:minHeight="@dimen/min_spinner_height"
+                                    android:padding="@dimen/vertical_spacing" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginEnd="12dp"
+                                android:background="@color/colorGray" />
+
+                        </LinearLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/tilLength"
+                            style="@style/TextMandatoryInputLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/vertical_spacing"
+                            android:layout_marginRight="@dimen/vertical_spacing"
+                            android:hint="@string/length_"
+                            android:visibility="gone">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtLength"
+                                style="@style/TextInputEntryStyle"
+                                android:inputType="number"
+                                android:maxLength="6" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/tilWidth"
+                            style="@style/TextMandatoryInputLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/vertical_spacing"
+                            android:layout_marginRight="@dimen/vertical_spacing"
+                            android:hint="@string/width"
+                            android:visibility="gone">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtWidth"
+                                style="@style/TextInputEntryStyle"
+                                android:inputType="number"
+                                android:maxLength="6" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/tilArea"
+                            style="@style/TextMandatoryInputLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/vertical_spacing"
+                            android:layout_marginRight="@dimen/vertical_spacing"
+                            android:hint="@string/area"
+                            android:visibility="gone">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtArea"
+                                style="@style/TextInputEntryStyle"
+                                android:enabled="false" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/vertical_spacing"
+                            android:layout_marginRight="@dimen/vertical_spacing"
+                            android:hint="@string/payment_cycle">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtPaymentCycle"
+                                style="@style/TextInputEntryStyle"
+                                android:enabled="false" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/vertical_spacing"
+                            android:layout_marginRight="@dimen/vertical_spacing"
+                            android:hint="@string/duration_rate">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtDurationPrice"
+                                style="@style/TextInputEntryStyle"
+                                android:enabled="false" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/vertical_spacing"
+                            android:layout_marginRight="@dimen/vertical_spacing"
+                            android:hint="@string/distance_rate">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtDistancePrice"
+                                style="@style/TextInputEntryStyle"
+                                android:enabled="false" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/TextMandatoryInputLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/vertical_spacing"
+                            android:layout_marginTop="@dimen/vertical_spacing"
+                            android:layout_marginRight="@dimen/vertical_spacing"
+                            android:hint="@string/booking_quantity">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtQuantity"
+                                style="@style/TextInputEntryStyle"
+                                android:inputType="number"
+                                android:maxLength="9" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/tilDistance"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/vertical_spacing"
+                            android:layout_marginRight="@dimen/vertical_spacing"
+                            android:hint="@string/distance">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtDistance"
+                                style="@style/TextInputEntryStyle"
+                                android:inputType="number"
+                                android:maxLength="9" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/vertical_spacing"
+                            android:layout_marginRight="@dimen/vertical_spacing"
+                            android:hint="@string/booking_advance">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtBookingAdvance"
+                                style="@style/TextInputEntryStyle"
+                                android:enabled="false"
+                                android:inputType="number" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/vertical_spacing"
+                            android:layout_marginRight="@dimen/vertical_spacing"
+                            android:hint="@string/booking_security_deposit">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtBookingSecurityDeposit"
+                                style="@style/TextInputEntryStyle"
+                                android:enabled="false"
+                                android:inputType="number" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <FrameLayout
+                            android:id="@+id/estimatedAmount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/vertical_spacing"
+                            android:layout_marginRight="@dimen/vertical_spacing"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:visibility="gone">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:enabled="false"
+                                android:hint="@string/estimated_amount">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/edtEstimatedAmount"
+                                    style="@style/TextInputEntryStyle" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical|end">
+
+                                <Button
+                                    android:id="@+id/btnGet"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@android:color/transparent"
+                                    android:text="@string/calculate"
+                                    android:textColor="@color/colorAccent" />
+
+                            </LinearLayout>
+
+                        </FrameLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/tilEstimatedRentAmount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/vertical_spacing"
+                            android:layout_marginRight="@dimen/vertical_spacing"
+                            android:hint="@string/estimated_rent_amount">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtEstimatedRentAmount"
+                                style="@style/TextInputEntryStyle"
+                                android:enabled="false"
+                                android:inputType="number" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/TextMandatoryInputLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/vertical_spacing"
+                            android:layout_marginRight="@dimen/vertical_spacing"
+                            android:hint="@string/booking_start_date">
+
+                            <com.sgs.citytax.ui.custom.DatePickerEditText
+                                android:id="@+id/edtBusinessStartDate"
+                                style="@style/TextInputEntryStyle"
+                                app:needIcons="show" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/TextMandatoryInputLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/vertical_spacing"
+                            android:layout_marginRight="@dimen/vertical_spacing"
+                            android:hint="@string/booking_end_date">
+
+                            <com.sgs.citytax.ui.custom.DatePickerEditText
+                                android:id="@+id/edtBusinessEndDate"
+                                style="@style/TextInputEntryStyle"
+                                app:needIcons="show" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/TextMandatoryInputLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/vertical_spacing"
+                            android:layout_marginRight="@dimen/vertical_spacing"
+                            android:hint="@string/start_date">
+
+                            <com.sgs.citytax.ui.custom.DatePickerEditText
+                                android:id="@+id/edtStartDate"
+                                style="@style/TextInputEntryStyle"
+                                app:needIcons="show" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/crdPickUpAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/vertical_spacing"
+                    android:visibility="gone"
+                    app:cardBackgroundColor="@color/white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/vertical_spacing"
+                            android:text="@string/pickup_address"
+                            android:textColor="@color/colorAccent"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:orientation="horizontal"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/existing_address"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                            <androidx.appcompat.widget.AppCompatSpinner
+                                android:id="@+id/spnPickUpExistingAddress"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:padding="0dp"
+                                android:spinnerMode="dialog" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:background="@color/colorGray"
+                            android:visibility="gone" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:orientation="horizontal"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp">
+
+                            <TextView
+                                style="@style/TextMandatoryTextView"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/country"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                            <androidx.appcompat.widget.AppCompatSpinner
+                                android:id="@+id/spnPickUpCountry"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:padding="0dp"
+                                android:spinnerMode="dialog" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:background="@color/colorGray" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:orientation="horizontal"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp">
+
+                            <TextView
+                                style="@style/TextMandatoryTextView"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/state"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                            <androidx.appcompat.widget.AppCompatSpinner
+                                android:id="@+id/spnPickUpState"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:padding="0dp"
+                                android:spinnerMode="dialog" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:background="@color/colorGray" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:orientation="horizontal"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp">
+
+                            <TextView
+                                style="@style/TextMandatoryTextView"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/city"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                            <androidx.appcompat.widget.AppCompatSpinner
+                                android:id="@+id/spnPickUpCity"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:padding="0dp"
+                                android:spinnerMode="dialog" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:background="@color/colorGray" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:orientation="horizontal"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp">
+
+                            <TextView
+                                style="@style/TextMandatoryTextView"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/zone"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                            <androidx.appcompat.widget.AppCompatSpinner
+                                android:id="@+id/spnPickUpZone"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:padding="0dp"
+                                android:spinnerMode="dialog" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:background="@color/colorGray" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:orientation="horizontal"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp">
+
+                            <TextView
+                                style="@style/TextMandatoryTextView"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/sector"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                            <androidx.appcompat.widget.AppCompatSpinner
+                                android:id="@+id/spnPickUpSector"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:padding="0dp"
+                                android:spinnerMode="dialog" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:background="@color/colorGray" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/vertical_spacing"
+                            android:layout_marginRight="@dimen/vertical_spacing"
+                            android:hint="@string/street">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtPickUpStreet"
+                                style="@style/TextInputEntryStyle"
+                                android:inputType="textCapWords" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/vertical_spacing"
+                            android:layout_marginRight="@dimen/vertical_spacing"
+                            android:hint="@string/zipcode">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtPickUpZipCode"
+                                style="@style/TextInputEntryStyle"
+                                android:inputType="textCapWords" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/vertical_spacing"
+                            android:layout_marginRight="@dimen/vertical_spacing"
+                            android:hint="@string/plot">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtPickUpSection"
+                                style="@style/TextInputEntryStyle"
+                                android:inputType="textCapWords" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/vertical_spacing"
+                            android:layout_marginRight="@dimen/vertical_spacing"
+                            android:hint="@string/block">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtPickUpLot"
+                                style="@style/TextInputEntryStyle"
+                                android:inputType="textCapWords" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/vertical_spacing"
+                            android:layout_marginRight="@dimen/vertical_spacing"
+                            android:hint="@string/door_no">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtPickUpParcel"
+                                style="@style/TextInputEntryStyle"
+                                android:inputType="textCapWords" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/crdDestinationAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/vertical_spacing"
+                    android:visibility="gone"
+                    app:cardBackgroundColor="@color/white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/vertical_spacing"
+                            android:text="@string/destination_address"
+                            android:textColor="@color/colorAccent"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:orientation="horizontal"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/existing_address"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                            <androidx.appcompat.widget.AppCompatSpinner
+                                android:id="@+id/spnDestinationExistingAddress"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:padding="0dp"
+                                android:spinnerMode="dialog" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:background="@color/colorGray"
+                            android:visibility="gone" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:orientation="horizontal"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp">
+
+                            <TextView
+                                style="@style/TextMandatoryTextView"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/country"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                            <androidx.appcompat.widget.AppCompatSpinner
+                                android:id="@+id/spnDestinationCountry"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:padding="0dp"
+                                android:spinnerMode="dialog" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:background="@color/colorGray" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:orientation="horizontal"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp">
+
+                            <TextView
+                                style="@style/TextMandatoryTextView"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/state"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                            <androidx.appcompat.widget.AppCompatSpinner
+                                android:id="@+id/spnDestinationState"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:padding="0dp"
+                                android:spinnerMode="dialog" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:background="@color/colorGray" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:orientation="horizontal"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp">
+
+                            <TextView
+                                style="@style/TextMandatoryTextView"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/city"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                            <androidx.appcompat.widget.AppCompatSpinner
+                                android:id="@+id/spnDestinationCity"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:padding="0dp"
+                                android:spinnerMode="dialog" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:background="@color/colorGray" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:orientation="horizontal"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp">
+
+                            <TextView
+                                style="@style/TextMandatoryTextView"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/zone"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                            <androidx.appcompat.widget.AppCompatSpinner
+                                android:id="@+id/spnDestinationZone"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:padding="0dp"
+                                android:spinnerMode="dialog" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:background="@color/colorGray" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:orientation="horizontal"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp">
+
+                            <TextView
+                                style="@style/TextMandatoryTextView"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/sector"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                            <androidx.appcompat.widget.AppCompatSpinner
+                                android:id="@+id/spnDestinationSector"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:padding="0dp"
+                                android:spinnerMode="dialog" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:background="@color/colorGray" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/vertical_spacing"
+                            android:layout_marginRight="@dimen/vertical_spacing"
+                            android:hint="@string/street">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtDestinationStreet"
+                                style="@style/TextInputEntryStyle"
+                                android:inputType="textCapWords" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/vertical_spacing"
+                            android:layout_marginRight="@dimen/vertical_spacing"
+                            android:hint="@string/zipcode">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtDestinationZipCode"
+                                style="@style/TextInputEntryStyle"
+                                android:inputType="textCapWords" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/vertical_spacing"
+                            android:layout_marginRight="@dimen/vertical_spacing"
+                            android:hint="@string/plot">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtDestinationSection"
+                                style="@style/TextInputEntryStyle"
+                                android:inputType="textCapWords" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/vertical_spacing"
+                            android:layout_marginRight="@dimen/vertical_spacing"
+                            android:hint="@string/block">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtDestinationLot"
+                                style="@style/TextInputEntryStyle"
+                                android:inputType="textCapWords" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/vertical_spacing"
+                            android:layout_marginRight="@dimen/vertical_spacing"
+                            android:hint="@string/door_no">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtDestinationParcel"
+                                style="@style/TextInputEntryStyle"
+                                android:inputType="textCapWords" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="@string/save" />
+
+    </RelativeLayout>
+
+</layout>

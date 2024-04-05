@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llChequeBankName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvChequeBankNameLabel"
+            style="@style/TextHeader"
+            android:text="@string/cheque_bank_name" />
+
+        <TextView
+            android:id="@+id/tvChequeBankName"
+            style="@style/TextBody" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llChequeNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/TextHeader"
+            android:text="@string/cheque_number" />
+
+        <TextView
+            android:id="@+id/tvChequeNo"
+            style="@style/TextBody" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llChequeDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/TextHeader"
+            android:text="@string/cheque_date" />
+
+        <TextView
+            android:id="@+id/tvChequeDate"
+            style="@style/TextBody" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llChequeAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/TextHeader"
+            android:text="@string/cheque_amount" />
+
+        <TextView
+            android:id="@+id/tvChequeAmount"
+            style="@style/TextBody" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llChequeStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/TextHeader"
+            android:text="@string/cheque_status" />
+
+        <TextView
+            android:id="@+id/tvChequeStatus"
+            style="@style/TextBody" />
+    </LinearLayout>
+
+</LinearLayout>

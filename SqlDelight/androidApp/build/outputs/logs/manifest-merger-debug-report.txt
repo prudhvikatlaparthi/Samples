@@ -1,0 +1,165 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/effiasoft/prudhvi/Samples/SqlDelight/androidApp/src/main/AndroidManifest.xml:2:1-14:12
+INJECTED from /home/effiasoft/prudhvi/Samples/SqlDelight/androidApp/src/main/AndroidManifest.xml:2:1-14:12
+INJECTED from /home/effiasoft/prudhvi/Samples/SqlDelight/androidApp/src/main/AndroidManifest.xml:2:1-14:12
+INJECTED from /home/effiasoft/prudhvi/Samples/SqlDelight/androidApp/src/main/AndroidManifest.xml:2:1-14:12
+MERGED from [:shared] /home/effiasoft/prudhvi/Samples/SqlDelight/shared/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [com.squareup.sqldelight:android-driver:1.4.3] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/d9d1aaa52dba538a1b3dac8228b94846/android-driver-1.4.3/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.material:material:1.2.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/0db1d57b411f8f2306b9ffd32f5677b2/material-1.2.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.2] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/5bec4a950d7c4515485f325752fa5ee3/constraintlayout-2.0.2/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat:1.2.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/e18e4e3cd4e2b9c2e7bc090f968acb54/appcompat-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.cardview:cardview:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/ecf1f9fb996304b534237350fd78467f/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/2c2eea77df0347c3333f716b93aa684a/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.transition:transition:1.2.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/e39808125690d21f5eacfd616fa51ae9/transition-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/a6c00c0ac8b2c96af920f6bd831dbbb3/appcompat-resources-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/945ef345024ca6a55453e3bdb4edb304/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/aa9d04f9f43c9733c1f1609d2b40e56f/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/9ec9bdc1490dd7c760d7582f118c4942/viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment:1.1.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/04ede6916c9da8aa7430764675277704/fragment-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/87b1edea314970a813b1bf959e0d63f5/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/ada68a696f0a227ba211bcf64c6409a0/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/537d8ca76ccdb8af07dcfd0a7545f3a0/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/de8883b166f711b91f1e032a4d311b44/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/1f30fb45f79709eb0edbd494c4235db5/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/77f42f5bbd56373e9645904b252e3635/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/228699f0eacdcf2ee35bd3d9bfd39549/activity-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.3.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/67313ce5a64361ea7b498a6ce25ee463/core-1.3.1/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.sqlite:sqlite-framework:2.1.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/d8388f379f6f791e36a8539b4778b450/sqlite-framework-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.sqlite:sqlite:2.1.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/4bfb2b99faa066cba4368728c83dcc72/sqlite-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/37b84ec295664323ee6d36045c1c3b0f/versionedparcelable-1.1.0/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/56c9c12920c53f2dc483ab4eac28c878/lifecycle-runtime-2.1.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/2d22d29474a9c21304099fb87b21b5e1/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/9f5d67d0c0ad7cddd591bd5a911bc59b/savedstate-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/f915912a76ee79a61802150082cb1bc9/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/c46f5233549ae80e1eed6fc0591e7265/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/c5ddddba72a86f208f294d7c52caf6d6/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/bf7bf200bdb0b4bf7f5606ead7a6f34d/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/366e4ccf157f459fb1151f962e655f6b/annotation-experimental-1.0.0/AndroidManifest.xml:17:1-24:12
+INJECTED from /home/effiasoft/prudhvi/Samples/SqlDelight/androidApp/src/main/AndroidManifest.xml:2:1-14:12
+INJECTED from /home/effiasoft/prudhvi/Samples/SqlDelight/androidApp/src/main/AndroidManifest.xml:2:1-14:12
+INJECTED from /home/effiasoft/prudhvi/Samples/SqlDelight/androidApp/src/main/AndroidManifest.xml:2:1-14:12
+	package
+		ADDED from /home/effiasoft/prudhvi/Samples/SqlDelight/androidApp/src/main/AndroidManifest.xml:2:70-109
+		INJECTED from /home/effiasoft/prudhvi/Samples/SqlDelight/androidApp/src/main/AndroidManifest.xml
+		INJECTED from /home/effiasoft/prudhvi/Samples/SqlDelight/androidApp/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/effiasoft/prudhvi/Samples/SqlDelight/androidApp/src/main/AndroidManifest.xml
+		ADDED from /home/effiasoft/prudhvi/Samples/SqlDelight/androidApp/src/main/AndroidManifest.xml:2:1-14:12
+		INJECTED from /home/effiasoft/prudhvi/Samples/SqlDelight/androidApp/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /home/effiasoft/prudhvi/Samples/SqlDelight/androidApp/src/main/AndroidManifest.xml
+		ADDED from /home/effiasoft/prudhvi/Samples/SqlDelight/androidApp/src/main/AndroidManifest.xml:2:1-14:12
+		INJECTED from /home/effiasoft/prudhvi/Samples/SqlDelight/androidApp/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/effiasoft/prudhvi/Samples/SqlDelight/androidApp/src/main/AndroidManifest.xml:2:11-69
+application
+ADDED from /home/effiasoft/prudhvi/Samples/SqlDelight/androidApp/src/main/AndroidManifest.xml:3:5-13:19
+MERGED from [com.google.android.material:material:1.2.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/0db1d57b411f8f2306b9ffd32f5677b2/material-1.2.1/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.2.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/0db1d57b411f8f2306b9ffd32f5677b2/material-1.2.1/AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.2] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/5bec4a950d7c4515485f325752fa5ee3/constraintlayout-2.0.2/AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.2] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/5bec4a950d7c4515485f325752fa5ee3/constraintlayout-2.0.2/AndroidManifest.xml:9:5-20
+MERGED from [androidx.core:core:1.3.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/67313ce5a64361ea7b498a6ce25ee463/core-1.3.1/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.3.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/67313ce5a64361ea7b498a6ce25ee463/core-1.3.1/AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/37b84ec295664323ee6d36045c1c3b0f/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/37b84ec295664323ee6d36045c1c3b0f/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.3.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/67313ce5a64361ea7b498a6ce25ee463/core-1.3.1/AndroidManifest.xml:24:18-86
+	android:supportsRtl
+		ADDED from /home/effiasoft/prudhvi/Samples/SqlDelight/androidApp/src/main/AndroidManifest.xml:5:13-39
+	android:allowBackup
+		ADDED from /home/effiasoft/prudhvi/Samples/SqlDelight/androidApp/src/main/AndroidManifest.xml:4:13-40
+	android:theme
+		ADDED from /home/effiasoft/prudhvi/Samples/SqlDelight/androidApp/src/main/AndroidManifest.xml:6:13-44
+activity#com.pru.sqldelight.androidApp.MainActivity
+ADDED from /home/effiasoft/prudhvi/Samples/SqlDelight/androidApp/src/main/AndroidManifest.xml:7:9-12:20
+	android:name
+		ADDED from /home/effiasoft/prudhvi/Samples/SqlDelight/androidApp/src/main/AndroidManifest.xml:7:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /home/effiasoft/prudhvi/Samples/SqlDelight/androidApp/src/main/AndroidManifest.xml:8:13-11:29
+action#android.intent.action.MAIN
+ADDED from /home/effiasoft/prudhvi/Samples/SqlDelight/androidApp/src/main/AndroidManifest.xml:9:17-68
+	android:name
+		ADDED from /home/effiasoft/prudhvi/Samples/SqlDelight/androidApp/src/main/AndroidManifest.xml:9:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/effiasoft/prudhvi/Samples/SqlDelight/androidApp/src/main/AndroidManifest.xml:10:17-76
+	android:name
+		ADDED from /home/effiasoft/prudhvi/Samples/SqlDelight/androidApp/src/main/AndroidManifest.xml:10:27-74
+uses-sdk
+INJECTED from /home/effiasoft/prudhvi/Samples/SqlDelight/androidApp/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/effiasoft/prudhvi/Samples/SqlDelight/androidApp/src/main/AndroidManifest.xml
+INJECTED from /home/effiasoft/prudhvi/Samples/SqlDelight/androidApp/src/main/AndroidManifest.xml
+MERGED from [:shared] /home/effiasoft/prudhvi/Samples/SqlDelight/shared/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:shared] /home/effiasoft/prudhvi/Samples/SqlDelight/shared/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [com.squareup.sqldelight:android-driver:1.4.3] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/d9d1aaa52dba538a1b3dac8228b94846/android-driver-1.4.3/AndroidManifest.xml:5:5-44
+MERGED from [com.squareup.sqldelight:android-driver:1.4.3] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/d9d1aaa52dba538a1b3dac8228b94846/android-driver-1.4.3/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.material:material:1.2.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/0db1d57b411f8f2306b9ffd32f5677b2/material-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.2.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/0db1d57b411f8f2306b9ffd32f5677b2/material-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.2] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/5bec4a950d7c4515485f325752fa5ee3/constraintlayout-2.0.2/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.2] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/5bec4a950d7c4515485f325752fa5ee3/constraintlayout-2.0.2/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.appcompat:appcompat:1.2.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/e18e4e3cd4e2b9c2e7bc090f968acb54/appcompat-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.2.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/e18e4e3cd4e2b9c2e7bc090f968acb54/appcompat-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cardview:cardview:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/ecf1f9fb996304b534237350fd78467f/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/ecf1f9fb996304b534237350fd78467f/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/2c2eea77df0347c3333f716b93aa684a/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/2c2eea77df0347c3333f716b93aa684a/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/e39808125690d21f5eacfd616fa51ae9/transition-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/e39808125690d21f5eacfd616fa51ae9/transition-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/a6c00c0ac8b2c96af920f6bd831dbbb3/appcompat-resources-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/a6c00c0ac8b2c96af920f6bd831dbbb3/appcompat-resources-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/945ef345024ca6a55453e3bdb4edb304/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/945ef345024ca6a55453e3bdb4edb304/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/aa9d04f9f43c9733c1f1609d2b40e56f/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/aa9d04f9f43c9733c1f1609d2b40e56f/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/9ec9bdc1490dd7c760d7582f118c4942/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/9ec9bdc1490dd7c760d7582f118c4942/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/04ede6916c9da8aa7430764675277704/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/04ede6916c9da8aa7430764675277704/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/87b1edea314970a813b1bf959e0d63f5/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/87b1edea314970a813b1bf959e0d63f5/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/ada68a696f0a227ba211bcf64c6409a0/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/ada68a696f0a227ba211bcf64c6409a0/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/537d8ca76ccdb8af07dcfd0a7545f3a0/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/537d8ca76ccdb8af07dcfd0a7545f3a0/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/de8883b166f711b91f1e032a4d311b44/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/de8883b166f711b91f1e032a4d311b44/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/1f30fb45f79709eb0edbd494c4235db5/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/1f30fb45f79709eb0edbd494c4235db5/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/77f42f5bbd56373e9645904b252e3635/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/77f42f5bbd56373e9645904b252e3635/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/228699f0eacdcf2ee35bd3d9bfd39549/activity-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/228699f0eacdcf2ee35bd3d9bfd39549/activity-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.3.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/67313ce5a64361ea7b498a6ce25ee463/core-1.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.3.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/67313ce5a64361ea7b498a6ce25ee463/core-1.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.sqlite:sqlite-framework:2.1.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/d8388f379f6f791e36a8539b4778b450/sqlite-framework-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.sqlite:sqlite-framework:2.1.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/d8388f379f6f791e36a8539b4778b450/sqlite-framework-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.sqlite:sqlite:2.1.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/4bfb2b99faa066cba4368728c83dcc72/sqlite-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.sqlite:sqlite:2.1.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/4bfb2b99faa066cba4368728c83dcc72/sqlite-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/37b84ec295664323ee6d36045c1c3b0f/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/37b84ec295664323ee6d36045c1c3b0f/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/56c9c12920c53f2dc483ab4eac28c878/lifecycle-runtime-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/56c9c12920c53f2dc483ab4eac28c878/lifecycle-runtime-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/2d22d29474a9c21304099fb87b21b5e1/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/2d22d29474a9c21304099fb87b21b5e1/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/9f5d67d0c0ad7cddd591bd5a911bc59b/savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/9f5d67d0c0ad7cddd591bd5a911bc59b/savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/f915912a76ee79a61802150082cb1bc9/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/f915912a76ee79a61802150082cb1bc9/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/c46f5233549ae80e1eed6fc0591e7265/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/c46f5233549ae80e1eed6fc0591e7265/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/c5ddddba72a86f208f294d7c52caf6d6/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/c5ddddba72a86f208f294d7c52caf6d6/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/bf7bf200bdb0b4bf7f5606ead7a6f34d/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/bf7bf200bdb0b4bf7f5606ead7a6f34d/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/366e4ccf157f459fb1151f962e655f6b/annotation-experimental-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/366e4ccf157f459fb1151f962e655f6b/annotation-experimental-1.0.0/AndroidManifest.xml:20:5-22:41
+INJECTED from /home/effiasoft/prudhvi/Samples/SqlDelight/androidApp/src/main/AndroidManifest.xml
+INJECTED from /home/effiasoft/prudhvi/Samples/SqlDelight/androidApp/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /home/effiasoft/prudhvi/Samples/SqlDelight/androidApp/src/main/AndroidManifest.xml
+		ADDED from /home/effiasoft/prudhvi/Samples/SqlDelight/androidApp/src/main/AndroidManifest.xml
+		INJECTED from /home/effiasoft/prudhvi/Samples/SqlDelight/androidApp/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/effiasoft/prudhvi/Samples/SqlDelight/androidApp/src/main/AndroidManifest.xml
+		ADDED from /home/effiasoft/prudhvi/Samples/SqlDelight/androidApp/src/main/AndroidManifest.xml
+		INJECTED from /home/effiasoft/prudhvi/Samples/SqlDelight/androidApp/src/main/AndroidManifest.xml

@@ -1,0 +1,147 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        app:iconSpaceReserved="false"
+        app:key="@string/pref_general"
+        app:title="@string/general_header">
+
+        <ListPreference
+            app:entries="@array/lang_entries"
+            app:entryValues="@array/lang_values"
+            app:iconSpaceReserved="false"
+            app:key="@string/pref_language"
+            app:title="@string/language_title"
+            app:negativeButtonText="@string/cancel"
+            app:useSimpleSummaryProvider="true" />
+
+        <Preference
+            app:iconSpaceReserved="false"
+            app:key="@string/pref_currency"
+            app:title="@string/currency" />
+
+        <SwitchPreference
+            app:defaultValue="true"
+            app:iconSpaceReserved="false"
+            app:key="@string/pref_search_mode"
+            app:summaryOff="@string/search_not_allowed"
+            app:summaryOn="@string/search_allowed"
+            app:title="@string/header_search" />
+
+        <SwitchPreference
+            app:defaultValue="true"
+            app:iconSpaceReserved="false"
+            app:key="@string/pref_scan_mode"
+            app:summaryOff="@string/barcode_or_qr_code_scan_not_allowed"
+            app:summaryOn="@string/barcode_qr_code_scan_allowed"
+            app:title="@string/scan" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:iconSpaceReserved="false"
+        app:key="@string/pref_payment"
+        app:title="@string/payment_header">
+
+        <SwitchPreferenceCompat
+            app:defaultValue="true"
+            app:iconSpaceReserved="false"
+            app:key="@string/pref_payment_cash"
+            app:title="@string/cash" />
+
+        <SwitchPreferenceCompat
+            app:defaultValue="true"
+            app:iconSpaceReserved="false"
+            app:key="@string/pref_payment_orange_wallet"
+            app:title="@string/orange_wallet" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:iconSpaceReserved="false"
+        app:key="@string/pref_tax_notice"
+        app:title="@string/tax_notice_header">
+
+        <SwitchPreferenceCompat
+            app:iconSpaceReserved="false"
+            app:key="@string/pref_allow_print"
+            app:summaryOff="@string/print_will_not_come_after_payment"
+            app:summaryOn="@string/print_after_every_successful_payment"
+            app:title="@string/header_allow_print" />
+
+        <SwitchPreferenceCompat
+            app:dependency="@string/pref_allow_print"
+            app:iconSpaceReserved="false"
+            app:key="@string/pref_allow_qr_code"
+            app:summaryOff="@string/qr_code_will_not_be_printed_in_tax_notice"
+            app:summaryOn="@string/qr_code_will_be_printed_in_tax_notice"
+            app:title="@string/print_qr_code" />
+
+        <SwitchPreference
+            app:defaultValue="true"
+            app:iconSpaceReserved="false"
+            app:key="@string/pref_show_tax_notice"
+            app:summaryOff="@string/tax_notice_will_not_be_shown"
+            app:summaryOn="@string/after_payment_tax_notice_will_be_shown_on_screen"
+            app:title="@string/show_tax_notice_on_screen" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:iconSpaceReserved="false"
+        app:key="@string/pref_application"
+        app:title="@string/application">
+
+        <Preference
+            app:iconSpaceReserved="false"
+            app:key="@string/pref_version_name"
+            app:title="@string/header_version_name" />
+
+        <Preference
+            app:iconSpaceReserved="false"
+            app:key="@string/pref_version_code"
+            app:title="@string/header_version_code" />
+
+        <Preference
+            app:iconSpaceReserved="false"
+            app:summary="In memory data"
+            app:key="@string/preferences"
+            app:title="@string/preferences"
+            app:isPreferenceVisible="false"
+            app:widgetLayout="@layout/share_button" />
+
+        <Preference
+            app:iconSpaceReserved="false"
+            app:key="@string/share_logs"
+            app:title="@string/share_logs"
+            app:isPreferenceVisible="true"
+            app:selectable="true"
+            app:widgetLayout="@layout/share_button" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:iconSpaceReserved="false"
+        app:key="@string/pref_system"
+        app:title="@string/system">
+
+        <Preference
+            app:iconSpaceReserved="false"
+            app:key="@string/pref_model"
+            app:title="@string/header_model" />
+
+        <Preference
+            app:iconSpaceReserved="false"
+            app:key="@string/pref_os_Version"
+            app:title="@string/header_os_Version" />
+
+        <Preference
+            app:iconSpaceReserved="false"
+            app:key="@string/device_info"
+            app:summary="@string/model_os_ram_version"
+            app:title="@string/device_info"
+            app:isPreferenceVisible="false"
+            app:widgetLayout="@layout/share_button" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

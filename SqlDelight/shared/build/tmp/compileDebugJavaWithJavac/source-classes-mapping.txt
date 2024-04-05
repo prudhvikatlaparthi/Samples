@@ -1,0 +1,2 @@
+com/pru/sqldelight/shared/BuildConfig.java
+ com.pru.sqldelight.shared.BuildConfig

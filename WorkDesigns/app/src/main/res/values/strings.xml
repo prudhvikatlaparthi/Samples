@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Work Designs</string>
+    <string name="_2_days">2 Days</string>
+    <string name="_4_2">4.2</string>
+    <string name="china_city">China City</string>
+    <string name="lorem_ipsum_dolor_sit_amet_consectetur_adipiscing_elit_sed_do_eiusmod_tempor_incididunt_ut_labore_et_dolore_magna_aliqua">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</string>
+    <string name="near_by_places">Near By Places</string>
+    <string name="_0_99">$0.99</string>
+    <string name="_1_22"><strike>$1.22</strike></string>
+    <string name="book_a_trip">Book a Trip</string>
+    <string name="sea_beach">Sea Beach</string>
+</resources>

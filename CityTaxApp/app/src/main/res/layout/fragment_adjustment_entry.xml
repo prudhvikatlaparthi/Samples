@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        tools:context=".ui.fragments.AdjustmentsEntryFragment">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/btnSave"
+            android:layout_alignParentStart="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/vertical_spacing"
+                android:layout_marginRight="@dimen/vertical_spacing"
+                android:layout_marginTop="@dimen/vertical_spacing"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/TextMandatoryInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/adjustment_date">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edAdjustmentDate"
+                        style="@style/TextInputEntryStyle"
+                        android:inputType="textNoSuggestions"
+                        android:focusable="false" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/TextMandatoryInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:hint="@string/admin_office">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edAdministrativeOffice"
+                        style="@style/TextInputEntryStyle"
+                        android:inputType="textNoSuggestions"
+                        android:focusable="false" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="@dimen/vertical_spacing"
+                    android:text="@string/line_details"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/lineItemsWrapper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/three_dp"
+                    android:layout_marginEnd="@dimen/three_dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/TextMandatoryTextView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/itemCode"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                        <androidx.appcompat.widget.AppCompatSpinner
+                            android:id="@+id/spnLineItemCode"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:minHeight="@dimen/min_spinner_height"
+                            android:padding="@dimen/vertical_spacing"
+                            android:spinnerMode="dialog" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorGray" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:hint="@string/item">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edtLineItem"
+                            style="@style/TextInputEntryStyle"
+                            android:inputType="textNoSuggestions"
+                            android:focusable="false" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:hint="@string/unit">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edtLineUnit"
+                            style="@style/TextInputEntryStyle"
+                            android:inputType="textNoSuggestions"
+                            android:focusable="false" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/TextMandatoryTextView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/adjustment_type"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                        <androidx.appcompat.widget.AppCompatSpinner
+                            android:id="@+id/spnLineAdjustmentType"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:minHeight="@dimen/min_spinner_height"
+                            android:padding="@dimen/vertical_spacing"
+                            android:spinnerMode="dialog" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorGray" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/TextMandatoryInputLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:hint="@string/quantity">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edtLineQty"
+                            android:maxLines="1"
+                            android:inputType="numberDecimal"
+                            style="@style/TextInputEntryStyle" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:hint="@string/remarks">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edtLineRemarks"
+                            style="@style/TextInputEntryStyle" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+                <Button
+                    android:visibility="gone"
+                    android:id="@+id/viewDoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/view_docs"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    />
+
+                <include
+                    android:id="@+id/multipleDoc"
+                    layout="@layout/document_wrapper"/>
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="@string/save"
+            android:clickable="false"
+            android:enabled="false"/>
+    </RelativeLayout>
+</layout>

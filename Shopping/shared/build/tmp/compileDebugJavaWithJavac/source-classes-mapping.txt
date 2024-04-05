@@ -1,0 +1,2 @@
+com/pru/shopping/shared/BuildConfig.java
+ com.pru.shopping.shared.BuildConfig

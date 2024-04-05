@@ -1,0 +1,59 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <LinearLayout
+        android:id="@+id/headerReportItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="4dp"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_expand_less"
+                app:tint="@color/black" />
+
+            <TextView
+                android:id="@+id/tvHeaderValue"
+                style="@style/TextReportHeader"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                tools:text="06-Apr" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvQty"
+            style="@style/TextReportValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:layout_gravity="center"
+            tools:text="1" />
+
+        <TextView
+            android:id="@+id/tvSalesPrice"
+            style="@style/TextReportValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:gravity="end"
+            android:layout_gravity="center"
+            tools:text="15000 FCFA" />
+    </LinearLayout>
+
+</layout>

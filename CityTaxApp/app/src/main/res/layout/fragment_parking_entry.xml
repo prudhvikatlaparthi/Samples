@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorLayoutBackground"
+        android:focusableInTouchMode="true">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/vertical_spacing"
+                    app:cardBackgroundColor="@color/white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/vertical_spacing"
+                        android:layout_marginTop="@dimen/vertical_spacing"
+                        android:layout_marginRight="@dimen/vertical_spacing"
+                        android:layout_marginBottom="@dimen/vertical_spacing"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/three_dp"
+                            android:layout_marginEnd="@dimen/three_dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/TextMandatoryTextView"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/parking_place"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                            <androidx.appcompat.widget.AppCompatSpinner
+                                android:id="@+id/spnParkingPlace"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:clickable="false"
+                                android:minHeight="@dimen/min_spinner_height"
+                                android:padding="@dimen/vertical_spacing"
+                                android:spinnerMode="dialog" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/colorGray" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/three_dp"
+                            android:layout_marginEnd="@dimen/three_dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/TextMandatoryTextView"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/parking_type"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                            <androidx.appcompat.widget.AppCompatSpinner
+                                android:id="@+id/spnParkingType"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:minHeight="@dimen/min_spinner_height"
+                                android:padding="@dimen/vertical_spacing"
+                                android:spinnerMode="dialog" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/colorGray" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/three_dp"
+                            android:layout_marginEnd="@dimen/three_dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/rate_cycle"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                            <androidx.appcompat.widget.AppCompatSpinner
+                                android:id="@+id/spnRateCycle"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:clickable="false"
+                                android:minHeight="@dimen/min_spinner_height"
+                                android:padding="@dimen/vertical_spacing"
+                                android:spinnerMode="dialog" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/colorGray" />
+
+                        <CheckBox
+                            android:id="@+id/chkPass"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:checked="true"
+                            android:enabled="false"
+                            android:text="@string/pass" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/vertical_spacing"
+                            android:enabled="false"
+                            android:hint="@string/parking_ticket_date">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtTicketDate"
+                                style="@style/TextInputEntryStyle" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/TextMandatoryInputLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/vertical_spacing"
+                            android:enabled="false"
+                            android:hint="@string/vehicle_no">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtVehicleNo"
+                                style="@style/TextInputEntryStyle"
+                                android:focusable="false" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/TextMandatoryInputLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:enabled="false"
+                            android:hint="@string/owner">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtOwner"
+                                style="@style/TextInputEntryStyle"
+                                android:focusable="false" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/TextMandatoryInputLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/parking_start_date">
+
+                            <com.sgs.citytax.ui.custom.DatePickerEditText
+                                android:id="@+id/edtStartDate"
+                                style="@style/TextInputEntryStyle"
+                                android:enabled="false"
+                                app:needIcons="show" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:enabled="false"
+                            android:hint="@string/parking_end_date">
+
+                            <com.sgs.citytax.ui.custom.DatePickerEditText
+                                android:id="@+id/edtEndDate"
+                                style="@style/TextInputEntryStyle"
+                                app:needIcons="show" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:enabled="false"
+                            android:hint="@string/amount">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtAmount"
+                                style="@style/TextInputEntryStyle" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/pay" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>

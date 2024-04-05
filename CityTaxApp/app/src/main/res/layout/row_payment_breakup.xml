@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/tvPaymentMode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        tools:text="Payment accepted by Cash" />
+
+    <TextView
+        android:id="@+id/tvAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        tools:text="$13.00" />
+
+</LinearLayout>

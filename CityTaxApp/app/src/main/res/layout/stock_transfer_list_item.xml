@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ll_root_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="8dp">
+
+
+        <LinearLayout
+            android:id="@+id/llReturn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/tvDateLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextHeader"
+                    android:text="@string/date" />
+
+                <TextView
+                    android:id="@+id/tvDate"
+                    style="@style/TextBody" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tvFromAccountLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextHeader"
+                    android:text="@string/from_account_name" />
+
+                <TextView
+                    android:id="@+id/tvFromAccount"
+                    style="@style/TextBody" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tvToAccountLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextHeader"
+                    android:text="@string/to_account_name" />
+
+                <TextView
+                    android:id="@+id/tvToAccount"
+                    style="@style/TextBody" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tvItemCodeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextHeader"
+                    android:text="@string/itemCode" />
+
+                <TextView
+                    android:id="@+id/tvItemCode"
+                    style="@style/TextBody" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tvProductLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextHeader"
+                    android:text="@string/product" />
+
+                <TextView
+                    android:id="@+id/tvProduct"
+                    style="@style/TextBody" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tvUnitLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextHeader"
+                    android:text="@string/unit" />
+
+                <TextView
+                    android:id="@+id/tvUnit"
+                    style="@style/TextBody" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tvquantityLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextHeader"
+                    android:text="@string/quantity" />
+
+                <TextView
+                    android:id="@+id/tvquantity"
+                    style="@style/TextBody" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tvRemarksLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextHeader"
+                    android:text="@string/remarks" />
+
+                <TextView
+                    android:id="@+id/tvRemarks"
+                    style="@style/TextBody" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

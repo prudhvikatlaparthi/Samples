@@ -1,0 +1,226 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rootConstraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/llTopLayout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/bottomConstraintLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="100dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/vertical_spacing"
+                        android:text="@string/product"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold" />
+
+                    <include
+                        android:id="@+id/layoutProduct"
+                        layout="@layout/item_sellable_product" />
+
+                    <LinearLayout
+                        android:id="@+id/llProductAddControls"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/vertical_spacing"
+                        android:layout_marginEnd="@dimen/vertical_spacing"
+                        android:gravity="center_vertical|center">
+
+                        <Button
+                            android:id="@+id/btnAddProduct"
+                            style="@style/ButtonSecondary"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginBottom="4dp"
+                            android:text="@string/add_product"
+                            android:textStyle="bold"
+                            android:layout_weight="1"/>
+
+                        <View
+                            android:layout_width="@dimen/horizontal_spacing"
+                            android:layout_height="0dp" />
+
+                        <Button
+                            android:id="@+id/btnScanProduct"
+                            style="@style/ButtonSecondary"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginBottom="4dp"
+                            android:text="@string/scan_product"
+                            android:textStyle="bold"
+                            android:layout_weight="1"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="4dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/vertical_spacing"
+                        android:text="@string/citizen"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/vertical_spacing"
+                        android:layout_marginRight="@dimen/vertical_spacing"
+                        android:hint="@string/citizen_name">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edtCustomerName"
+                            style="@style/TextInputEntryStyle"
+                            android:focusable="false" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/vertical_spacing"
+                        android:layout_marginRight="@dimen/vertical_spacing"
+                        android:hint="@string/phone_number">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edtPhoneNumber"
+                            style="@style/TextInputEntryStyle"
+                            android:focusable="false"
+                            android:inputType="phone" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/vertical_spacing"
+                        android:gravity="end"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/new_citizen"
+                            android:textStyle="italic" />
+
+                        <TextView
+                            android:id="@+id/tvCreateCustomer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/create"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="16sp"
+                            android:textStyle="italic|bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/bottomConstraintLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorAccent"
+            android:padding="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/llTopLayout">
+
+            <TextView
+                android:id="@+id/tvTotalLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/total"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvTotal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:textColor="@android:color/white"
+                app:layout_constraintBaseline_toBaselineOf="@+id/tvTotalLabel"
+                app:layout_constraintEnd_toStartOf="@+id/btnProceed"
+                app:layout_constraintStart_toEndOf="@+id/tvTotalLabel" />
+
+            <Button
+                android:id="@+id/btnProceed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/proceed"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvRoundingLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/rounding"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/tvTotalLabel"
+                app:layout_constraintTop_toBottomOf="@+id/tvTotalLabel" />
+
+            <TextView
+                android:id="@+id/tvRounding"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:textColor="@android:color/white"
+                app:layout_constraintBaseline_toBaselineOf="@+id/tvRoundingLabel"
+                app:layout_constraintEnd_toStartOf="@+id/btnProceed"
+                app:layout_constraintStart_toEndOf="@+id/tvRoundingLabel" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

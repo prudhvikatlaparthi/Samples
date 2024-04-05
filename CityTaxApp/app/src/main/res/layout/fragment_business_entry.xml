@@ -1,0 +1,1591 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorLayoutBackground">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/bottomLayout">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:text="@string/syco_tax_id"
+                        style="@style/TextMandatoryTextView"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvSycoTaxID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/vertical_spacing"
+                    app:cardBackgroundColor="@color/white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/vertical_spacing"
+                        android:layout_marginBottom="@dimen/vertical_spacing"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/TextMandatoryInputLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/vertical_spacing"
+                            android:layout_marginRight="@dimen/vertical_spacing"
+                            android:hint="@string/tax_business_name">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtOrganization"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="textCapWords"
+                                android:maxLength="75"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <LinearLayout
+                            android:id="@+id/llMobile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/vertical_spacing"
+                            android:orientation="horizontal">
+
+                            <androidx.appcompat.widget.AppCompatSpinner
+                                android:id="@+id/spnTelephoneCode"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginStart="@dimen/five_dp"
+                                android:layout_marginTop="@dimen/five_dp"
+                                android:padding="0dp" />
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/tilPhoneNumber"
+
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/five_dp"
+                                android:layout_marginEnd="@dimen/vertical_spacing"
+                                android:layout_weight="1"
+                                android:hint="@string/mobile">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/edtPhoneNumber"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="number"
+                                    android:maxLength="12"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </LinearLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/tilEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/vertical_spacing"
+                            android:layout_marginRight="@dimen/vertical_spacing"
+                            android:layout_marginBottom="@dimen/vertical_spacing"
+                            android:hint="@string/email">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtEmail"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="textEmailAddress"
+                                android:maxLength="508"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/tilEstimatedTaxAmount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/vertical_spacing"
+                            android:layout_marginRight="@dimen/vertical_spacing"
+                            android:hint="@string/estimated_tax_amount">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtEstimatedTaxAmount"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:enabled="false"
+                                android:inputType="textPhonetic"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/vertical_spacing"
+                            android:layout_marginRight="@dimen/vertical_spacing"
+                            android:hint="@string/ifu_no">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtIFU"
+                                android:maxLength="30"
+                                style="@style/TextInputEntryStyle" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/vertical_spacing"
+                            android:layout_marginRight="@dimen/vertical_spacing"
+                            android:hint="@string/trade_no">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtTradeNo"
+                                style="@style/TextInputEntryStyle"
+                                android:maxLength="20"
+                                android:digits="@string/digits_doc_no" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/vertical_spacing"
+                            android:layout_marginRight="@dimen/vertical_spacing"
+                            android:hint="@string/website">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtWebsite"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:maxLength="100"
+                                android:inputType="textWebEditText"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/vertical_spacing"
+                            android:layout_marginRight="@dimen/vertical_spacing"
+                            android:hint="@string/remarks">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtRemarks"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="textCapSentences"
+                               android:maxLength="1000"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <!--region Address-->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/vertical_spacing"
+                    app:cardBackgroundColor="@color/white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:orientation="horizontal"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                style="@style/TextMandatoryTextView"
+                                android:text="@string/country"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                            <androidx.appcompat.widget.AppCompatSpinner
+                                android:id="@+id/spnCountry"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:minHeight="48dp"
+                                android:paddingStart="0dp"
+                                android:paddingEnd="@dimen/eighteen_sp"
+                                android:spinnerMode="dialog" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:background="@color/colorGray" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:orientation="horizontal"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                style="@style/TextMandatoryTextView"
+                                android:text="@string/state"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                            <androidx.appcompat.widget.AppCompatSpinner
+                                android:id="@+id/spnState"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:minHeight="48dp"
+                                android:paddingStart="0dp"
+                                android:paddingEnd="@dimen/eighteen_sp"
+                                android:spinnerMode="dialog" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:background="@color/colorGray" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:orientation="horizontal"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                style="@style/TextMandatoryTextView"
+                                android:text="@string/city"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                            <androidx.appcompat.widget.AppCompatSpinner
+                                android:id="@+id/spnCity"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:minHeight="48dp"
+                                android:paddingStart="0dp"
+                                android:paddingEnd="@dimen/eighteen_sp"
+                                android:spinnerMode="dialog" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:background="@color/colorGray" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:orientation="horizontal"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                style="@style/TextMandatoryTextView"
+                                android:text="@string/zone"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                            <androidx.appcompat.widget.AppCompatSpinner
+                                android:id="@+id/spnZone"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:minHeight="48dp"
+                                android:paddingStart="0dp"
+                                android:paddingEnd="@dimen/eighteen_sp"
+                                android:spinnerMode="dialog" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:background="@color/colorGray" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:orientation="horizontal"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                style="@style/TextMandatoryTextView"
+                                android:text="@string/sector"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                            <androidx.appcompat.widget.AppCompatSpinner
+                                android:id="@+id/spnSector"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:minHeight="48dp"
+                                android:paddingStart="0dp"
+                                android:paddingEnd="@dimen/eighteen_sp"
+                                android:spinnerMode="dialog" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:background="@color/colorGray" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/TextMandatoryInputLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/vertical_spacing"
+                            android:layout_marginRight="@dimen/vertical_spacing"
+                            android:hint="@string/street">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtStreet"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="textCapWords"
+                                android:maxLength="100"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/vertical_spacing"
+                            android:layout_marginRight="@dimen/vertical_spacing"
+                            android:hint="@string/plot">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtPlot"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="textCapWords"
+                                android:maxLength="30"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/vertical_spacing"
+                            android:layout_marginRight="@dimen/vertical_spacing"
+                            android:hint="@string/block">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtBlock"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="textCapWords"
+                                android:maxLength="30"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/vertical_spacing"
+                            android:layout_marginRight="@dimen/vertical_spacing"
+                            android:hint="@string/door_no">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtDoorNo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="textCapWords"
+                                android:maxLength="30"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/vertical_spacing"
+                            android:layout_marginTop="@dimen/vertical_spacing"
+                            android:layout_marginRight="@dimen/vertical_spacing"
+                            android:hint="@string/zipcode">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtZipCode"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="textCapWords"
+                                android:maxLength="14"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/vertical_spacing"
+                            android:layout_marginRight="@dimen/vertical_spacing"
+                            android:hint="@string/description">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtDescription"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="textCapWords"
+                                android:maxLength="500"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/vertical_spacing"
+                                    android:layout_marginRight="@dimen/vertical_spacing"
+                                    android:hint="@string/lbl_latitude">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/edtLatitude"
+                                        style="@style/TextInputEntryStyle"
+                                        android:enabled="false"
+                                        android:inputType="numberDecimal" />
+
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/vertical_spacing"
+                                    android:layout_marginRight="@dimen/vertical_spacing"
+                                    android:hint="@string/lbl_longitude">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/edtLongitude"
+                                        style="@style/TextInputEntryStyle"
+                                        android:enabled="false"
+                                        android:inputType="numberDecimal" />
+
+                                </com.google.android.material.textfield.TextInputLayout>
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/ivAddLocation"
+                                android:layout_width="72dp"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_add_location" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <!--endregion-->
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/vertical_spacing"
+                    app:cardBackgroundColor="@color/white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/vertical_spacing"
+                        android:layout_marginBottom="@dimen/vertical_spacing"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/llStatus"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".4"
+                                android:text="@string/status"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                            <androidx.appcompat.widget.AppCompatSpinner
+                                android:id="@+id/spnStatus"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".6"
+                                android:minHeight="48dp"
+                                android:padding="0dp" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:background="@color/colorGray" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                           <!-- <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight=".4"
+                                android:text="@string/business_type"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                            <androidx.appcompat.widget.AppCompatSpinner
+                                android:id="@+id/spnBusinessType"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".6"
+                                android:minHeight="48dp"
+                                android:padding="0dp"
+                                android:spinnerMode="dialog" />-->
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/business_type"
+                                android:paddingTop="@dimen/three_dp"
+                                android:paddingBottom="@dimen/three_dp">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/spnBusinessTypeSpin"
+                                    style="@style/TextInputEntryStyle"
+                                    android:drawableEnd="@drawable/ic_arrow_down"
+                                    android:focusable="false"
+                                    android:inputType="text" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".4"
+                                android:text="@string/activity_domain"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                            <androidx.appcompat.widget.AppCompatSpinner
+                                android:id="@+id/spnActivityDomain"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".6"
+                                android:minHeight="48dp"
+                                android:padding="0dp"
+                                android:spinnerMode="dialog" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:background="@color/colorGray" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                           <!-- <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".4"
+                                android:text="@string/activity_class"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                            <androidx.appcompat.widget.AppCompatSpinner
+                                android:id="@+id/spnActivityClass"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".6"
+                                android:minHeight="48dp"
+                                android:padding="0dp"
+                                android:spinnerMode="dialog" />-->
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/activity_class"
+                                android:paddingTop="@dimen/three_dp"
+                                android:paddingBottom="@dimen/three_dp">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/edtActivityClassSpin"
+                                    style="@style/TextInputEntryStyle"
+                                    android:drawableEnd="@drawable/ic_arrow_down"
+                                    android:focusable="false"
+                                    android:inputType="text" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </LinearLayout>
+
+                        <!--<LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".4"
+                                android:text="@string/parent_business"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                            <androidx.appcompat.widget.AppCompatSpinner
+                                android:id="@+id/spnParentBusiness"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".6"
+                                android:minHeight="48dp"
+                                android:padding="0dp"
+                                android:spinnerMode="dialog" />
+
+                        </LinearLayout>-->
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".4"
+                                android:text="@string/hotel_de_finance"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                            <androidx.appcompat.widget.AppCompatSpinner
+                                android:id="@+id/spnHotelDesFinance"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".6"
+                                android:minHeight="48dp"
+                                android:padding="0dp"
+                                android:spinnerMode="dialog" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:background="@color/colorGray" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".4"
+                                android:text="@string/parent_business"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                            <TextView
+                                android:id="@+id/spnParentBusiness"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/twenty_sp"
+                                android:layout_weight=".6"
+                                android:gravity="center_vertical"
+                                android:minHeight="48dp"
+                                android:text="@string/select"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:background="@color/colorGrayLight" />
+
+
+                        <!--region Business Owner-->
+
+                        <LinearLayout
+                            android:id="@+id/llBusinessOwner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:orientation="horizontal"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text="@string/title_business_owner"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                            <TextView
+                                android:id="@+id/txtNumberOfBusinessOwners"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:drawableEnd="@drawable/ic_arrow"
+                                android:gravity="center_vertical"
+                                android:textAllCaps="true"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:background="@color/colorGrayLight" />
+
+                        <!--endregion-->
+
+                        <!--region Documents-->
+
+                        <LinearLayout
+                            android:id="@+id/llDocuments"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:orientation="horizontal"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text="@string/documents"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                            <TextView
+                                android:id="@+id/txtNumberOfDocuments"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:drawableEnd="@drawable/ic_arrow"
+                                android:gravity="center_vertical"
+                                android:textAllCaps="true"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:background="@color/colorGrayLight" />
+
+                        <!--endregion-->
+
+                        <!--region Notes-->
+
+                        <LinearLayout
+                            android:id="@+id/llNotes"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:orientation="horizontal"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text="@string/notes"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                            <TextView
+                                android:id="@+id/txtNumberOfNotes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:drawableEnd="@drawable/ic_arrow"
+                                android:gravity="center_vertical"
+                                android:textAllCaps="true"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:background="@color/colorGrayLight" />
+
+                        <!--endregion-->
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/vertical_spacing"
+                    android:layout_marginBottom="@dimen/vertical_spacing"
+                    app:cardBackgroundColor="@color/white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/llWeaponTax"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:orientation="horizontal"
+                            android:paddingTop="16dp"
+                            android:paddingBottom="16dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text="@string/title_weapon_tax"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                            <TextView
+                                android:id="@+id/txtNumberOfWeaponTax"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:drawableEnd="@drawable/ic_arrow"
+                                android:gravity="center_vertical"
+                                android:textAllCaps="true"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:background="@color/colorGrayLight" />
+
+                        <LinearLayout
+                            android:id="@+id/llGameMachineTax"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:orientation="horizontal"
+                            android:paddingTop="16dp"
+                            android:paddingBottom="16dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text="@string/title_gaming_machine"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                            <TextView
+                                android:id="@+id/txtNumberOfGameMachineTax"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:drawableEnd="@drawable/ic_arrow"
+                                android:gravity="center_vertical"
+                                android:textAllCaps="true"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:background="@color/colorGrayLight" />
+
+                        <LinearLayout
+                            android:id="@+id/llCartTax"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:orientation="horizontal"
+                            android:paddingTop="16dp"
+                            android:paddingBottom="16dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text="@string/title_cart_tax"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                            <TextView
+                                android:id="@+id/txtNumberOfCartTax"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:drawableEnd="@drawable/ic_arrow"
+                                android:gravity="center_vertical"
+                                android:textAllCaps="true"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:background="@color/colorGrayLight" />
+
+                        <LinearLayout
+                            android:id="@+id/llPropertyTax"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:orientation="horizontal"
+                            android:paddingTop="16dp"
+                            android:paddingBottom="16dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text="@string/title_property_txt"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                            <TextView
+                                android:id="@+id/txtNumberOfPropertyTax"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:drawableEnd="@drawable/ic_arrow"
+                                android:gravity="center_vertical"
+                                android:textAllCaps="true"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:background="@color/colorGrayLight" />
+
+                        <LinearLayout
+                            android:id="@+id/llLandTax"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:orientation="horizontal"
+                            android:paddingTop="16dp"
+                            android:paddingBottom="16dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text="@string/title_land_txt"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                            <TextView
+                                android:id="@+id/txtNumberOfLandTax"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:drawableEnd="@drawable/ic_arrow"
+                                android:gravity="center_vertical"
+                                android:textAllCaps="true"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/llDueNotice"
+                    android:visibility="visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/vertical_spacing"
+                    android:layout_marginBottom="@dimen/vertical_spacing"
+                    app:cardBackgroundColor="@color/white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/llListDueNotice"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:orientation="horizontal"
+                            android:paddingTop="16dp"
+                            android:paddingBottom="16dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text="@string/title_list_of_due_notice"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                            <TextView
+                                android:id="@+id/txtNumberOfDuenotices"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:drawableEnd="@drawable/ic_arrow"
+                                android:gravity="center_vertical"
+                                android:textAllCaps="true"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:background="@color/colorGrayLight" />
+
+                        <LinearLayout
+                            android:id="@+id/llAgreementList"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:orientation="horizontal"
+                            android:paddingTop="16dp"
+                            android:paddingBottom="16dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text="@string/title_agreement_list"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                            <TextView
+                                android:id="@+id/txtNumberOfAgreements"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:drawableEnd="@drawable/ic_arrow"
+                                android:gravity="center_vertical"
+                                android:textAllCaps="true"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/vertical_spacing"
+                    android:layout_marginBottom="@dimen/vertical_spacing"
+                    app:cardBackgroundColor="@color/white">
+
+                    <LinearLayout
+                        android:id="@+id/llTaxes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginEnd="12dp"
+                        android:orientation="horizontal"
+                        android:paddingTop="16dp"
+                        android:paddingBottom="16dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="@string/title_taxes"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                        <TextView
+                            android:id="@+id/txtNumberOfTaxes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:drawableEnd="@drawable/ic_arrow"
+                            android:gravity="center_vertical"
+                            android:textAllCaps="true"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/CardViewOutstandings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/vertical_spacing"
+                    android:layout_marginBottom="@dimen/vertical_spacing"
+                    app:cardBackgroundColor="@color/white">
+
+                    <LinearLayout
+                        android:id="@+id/llOutstandings"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginEnd="12dp"
+                        android:orientation="horizontal"
+                        android:paddingTop="16dp"
+                        android:paddingBottom="16dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="@string/title_initial_outstandings"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                        <TextView
+                            android:id="@+id/txtNumberOfOutstandings"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:drawableEnd="@drawable/ic_arrow"
+                            android:gravity="center_vertical"
+                            android:textAllCaps="true"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/vertical_spacing"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    app:cardBackgroundColor="@color/white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorWhite"
+                        android:orientation="vertical"
+                        android:paddingStart="@dimen/horizontal_spacing"
+                        android:paddingEnd="@dimen/horizontal_spacing"
+                        android:paddingBottom="@dimen/vertical_spacing">
+
+                        <TextView
+                            android:id="@+id/tvFixedExpenses"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/horizontal_spacing"
+                            android:layout_marginBottom="@dimen/five_dp"
+                            android:drawableEnd="@drawable/ic_arrow_down"
+                            android:text="@string/title_outstandings" />
+
+                        <LinearLayout
+                            android:id="@+id/llFixedExpenses"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingBottom="4dp"
+                            android:visibility="gone">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/colorGray" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:layout_marginBottom="8dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/TextHeader"
+                                    android:paddingStart="0dp"
+                                    android:paddingEnd="@dimen/horizontal_spacing"
+                                    android:text="@string/initial_outstanding_current_year_due" />
+
+                                <TextView
+                                    android:id="@+id/txtInitialOutstandingCurrentYearDue"
+                                    style="@style/TextBody"
+                                    android:layout_gravity="center_vertical"
+                                    android:paddingStart="@dimen/horizontal_spacing"
+                                    android:paddingEnd="0dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/TextHeader"
+                                    android:paddingStart="0dp"
+                                    android:paddingEnd="@dimen/horizontal_spacing"
+                                    android:text="@string/current_year_due" />
+
+                                <TextView
+                                    android:id="@+id/txtCurrentYearDue"
+                                    style="@style/TextBody"
+                                    android:paddingStart="@dimen/horizontal_spacing"
+                                    android:paddingEnd="0dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/TextHeader"
+                                    android:paddingStart="0dp"
+                                    android:paddingEnd="@dimen/horizontal_spacing"
+                                    android:text="@string/current_year_penalty_due" />
+
+                                <TextView
+                                    android:id="@+id/txtCurrentYearPenaltyDue"
+                                    style="@style/TextBody"
+                                    android:paddingStart="@dimen/horizontal_spacing"
+                                    android:paddingEnd="0dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/TextHeader"
+                                    android:paddingStart="0dp"
+                                    android:paddingEnd="@dimen/horizontal_spacing"
+                                    android:text="@string/previous_year_due" />
+
+                                <TextView
+                                    android:id="@+id/txtPreviousYearDue"
+                                    style="@style/TextBody"
+                                    android:paddingStart="@dimen/horizontal_spacing"
+                                    android:paddingEnd="0dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/TextHeader"
+                                    android:paddingStart="0dp"
+                                    android:paddingEnd="@dimen/horizontal_spacing"
+                                    android:text="@string/previous_year_penalty_due" />
+
+                                <TextView
+                                    android:id="@+id/txtPreviousYearPenaltyDue"
+                                    style="@style/TextBody"
+                                    android:paddingStart="@dimen/horizontal_spacing"
+                                    android:paddingEnd="0dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/TextHeader"
+                                    android:paddingStart="0dp"
+                                    android:paddingEnd="@dimen/horizontal_spacing"
+                                    android:text="@string/anterior_year_due" />
+
+                                <TextView
+                                    android:id="@+id/txtAnteriorYearDue"
+                                    style="@style/TextBody"
+                                    android:paddingStart="@dimen/horizontal_spacing"
+                                    android:paddingEnd="0dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/TextHeader"
+                                    android:paddingStart="0dp"
+                                    android:paddingEnd="@dimen/horizontal_spacing"
+                                    android:text="@string/anterior_year_penalty_due" />
+
+                                <TextView
+                                    android:id="@+id/txtAnteriorYearPenaltyDue"
+                                    style="@style/TextBody"
+                                    android:paddingStart="@dimen/horizontal_spacing"
+                                    android:paddingEnd="0dp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/bottomLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/llEditSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/edit"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/btnSave"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/save" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llVerifyReject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/btnReject"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/reject" />
+
+                <Button
+                    android:id="@+id/btnActivate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/activate" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</layout>

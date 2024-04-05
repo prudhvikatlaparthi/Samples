@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_one_fragment"
+        android:icon="@drawable/ic_edit"
+        android:title="Tasks" />
+
+    <item
+        android:id="@+id/nav_two_fragment"
+        android:icon="@drawable/ic_event"
+        android:title="Events" />
+
+    <item
+        android:id="@+id/nav_three_fragment"
+        android:icon="@drawable/ic_message"
+        android:title="Messages" />
+
+    <item
+        android:id="@+id/nav_about_fragment"
+        android:icon="@drawable/ic_about"
+        android:title="About" />
+
+    <item
+        android:id="@+id/nav_logout"
+        android:icon="@drawable/ic_logout"
+        android:title="Log Out" />
+</menu>

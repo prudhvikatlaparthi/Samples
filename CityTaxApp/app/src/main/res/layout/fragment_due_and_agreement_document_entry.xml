@@ -1,0 +1,67 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/vertical_spacing"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+
+                <Button
+                    android:id="@+id/btnChoose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/capture_photo" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:id="@+id/imgDocument"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name" />
+
+                    <ImageButton
+                        android:id="@+id/btnClearImage"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignEnd="@id/imgDocument"
+                        android:layout_alignParentTop="true"
+                        android:background="@color/white"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/close"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="@string/save" />
+
+    </RelativeLayout>
+
+</layout>

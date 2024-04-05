@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite">
+
+    <TextView
+        android:id="@+id/noticetype"
+        style="@style/TextHeader"
+        android:layout_marginStart="@dimen/seven_dp"
+        android:layout_marginTop="@dimen/five_dp"
+        android:text="@string/title_due_notice_type"
+        app:layout_constraintBottom_toTopOf="@+id/referenceNoDN"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/referenceNoDN"
+        style="@style/TextHeader"
+        android:layout_marginStart="@dimen/seven_dp"
+        android:layout_marginTop="@dimen/five_dp"
+        android:text="@string/due_notice_reference_no"
+        app:layout_constraintBottom_toTopOf="@+id/dateTextDN"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/noticetype"  />
+
+    <TextView
+        android:id="@+id/dateTextDN"
+        style="@style/TextHeader"
+        android:layout_marginStart="@dimen/seven_dp"
+        android:layout_marginTop="@dimen/five_dp"
+        android:text="@string/title_due_notice_date"
+        app:layout_constraintBottom_toTopOf="@+id/dueNoticeStatusTextDN"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/referenceNoDN" />
+
+    <TextView
+        android:id="@+id/dueNoticeStatusTextDN"
+        style="@style/TextHeader"
+        android:layout_marginStart="@dimen/seven_dp"
+        android:layout_marginTop="@dimen/five_dp"
+        android:text="@string/dueNoticeStatusText"
+        app:layout_constraintBottom_toTopOf="@+id/dueNoticevoucherTextDN"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateTextDN" />
+
+    <TextView
+        android:id="@+id/dueNoticevoucherTextDN"
+        style="@style/TextHeader"
+        android:layout_marginStart="@dimen/seven_dp"
+        android:layout_marginTop="@dimen/five_dp"
+        android:text="@string/agreement_no"
+        app:layout_constraintBottom_toTopOf="@+id/agreementRefNo"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dueNoticeStatusTextDN" />
+
+
+    <TextView
+        android:id="@+id/agreementRefNo"
+        style="@style/TextHeader"
+        android:layout_marginStart="@dimen/seven_dp"
+        android:layout_marginTop="@dimen/five_dp"
+        android:text="@string/aggreement_ref_no"
+        app:layout_constraintBottom_toTopOf="@+id/reportingDateTime"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dueNoticevoucherTextDN" />
+
+    <TextView
+        android:id="@+id/reportingDateTime"
+        style="@style/TextHeader"
+        android:layout_marginStart="@dimen/seven_dp"
+        android:layout_marginTop="@dimen/five_dp"
+        android:text="@string/reporting_date"
+        app:layout_constraintBottom_toTopOf="@+id/recipientName"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/agreementRefNo" />
+
+    <TextView
+        android:id="@+id/recipientName"
+        style="@style/TextHeader"
+        android:layout_marginStart="@dimen/seven_dp"
+        android:layout_marginTop="@dimen/five_dp"
+        android:text="@string/recipient_name"
+        app:layout_constraintBottom_toTopOf="@+id/mobileNo"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reportingDateTime" />
+
+    <TextView
+        android:id="@+id/mobileNo"
+        style="@style/TextHeader"
+        android:layout_marginStart="@dimen/seven_dp"
+        android:layout_marginTop="@dimen/five_dp"
+        android:text="@string/mobile_no"
+        app:layout_constraintBottom_toTopOf="@+id/btnSignature"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recipientName" />
+
+
+    <Button
+        android:id="@+id/btnSignature"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/seven_dp"
+        android:layout_marginTop="@dimen/five_dp"
+        android:text="@string/view_signature"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mobileNo"
+        android:visibility="visible"/>
+
+    <TextView
+        android:id="@+id/dueNoticeType"
+        style="@style/TextBody"
+        android:layout_marginStart="@dimen/seven_dp"
+        app:layout_constraintBottom_toBottomOf="@+id/noticetype"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/noticetype"
+        tools:text="" />
+
+    <TextView
+        android:id="@+id/dueNoticeReferenceNoId"
+        style="@style/TextBody"
+        android:layout_marginStart="@dimen/seven_dp"
+        app:layout_constraintBottom_toBottomOf="@+id/referenceNoDN"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/referenceNoDN"
+        tools:text="" />
+
+    <TextView
+        android:id="@+id/dueNoticeDateId"
+        style="@style/TextBody"
+        android:layout_marginStart="@dimen/seven_dp"
+        app:layout_constraintBottom_toBottomOf="@+id/dateTextDN"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/dateTextDN"
+        tools:text="" />
+
+    <TextView
+        android:id="@+id/dueNoticeStatusId"
+        style="@style/TextBody"
+        android:layout_marginStart="@dimen/seven_dp"
+        app:layout_constraintBottom_toBottomOf="@+id/dueNoticeStatusTextDN"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/dueNoticeStatusTextDN"
+        tools:text="" />
+
+    <TextView
+        android:id="@+id/dueNoticeVoucherId"
+        style="@style/TextBody"
+        android:layout_marginStart="@dimen/seven_dp"
+        app:layout_constraintBottom_toBottomOf="@+id/dueNoticevoucherTextDN"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/dueNoticevoucherTextDN"
+        tools:text="" />
+
+    <TextView
+        android:id="@+id/agreement_ref_no"
+        style="@style/TextBody"
+        android:layout_marginStart="@dimen/seven_dp"
+        app:layout_constraintBottom_toBottomOf="@+id/agreementRefNo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/agreementRefNo"
+        tools:text="" />
+
+    <TextView
+        android:id="@+id/tvReportingDate"
+        style="@style/TextBody"
+        android:layout_marginStart="@dimen/seven_dp"
+        app:layout_constraintBottom_toBottomOf="@+id/reportingDateTime"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text=""
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/reportingDateTime"
+        />
+
+    <TextView
+        android:id="@+id/tvRecipientName"
+        style="@style/TextBody"
+        android:layout_marginStart="@dimen/seven_dp"
+        app:layout_constraintBottom_toBottomOf="@+id/recipientName"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text=""
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/recipientName"
+        />
+
+    <TextView
+        android:id="@+id/tvMobileNo"
+        style="@style/TextBody"
+        android:layout_marginStart="@dimen/seven_dp"
+        app:layout_constraintBottom_toBottomOf="@+id/mobileNo"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text=""
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/mobileNo"
+        />
+
+    <Button
+        android:id="@+id/btnImages"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/seven_dp"
+        android:text="@string/view_images"
+        app:layout_constraintBottom_toBottomOf="@+id/btnSignature"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/btnSignature" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

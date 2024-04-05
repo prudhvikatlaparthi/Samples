@@ -1,0 +1,143 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorLayoutBackground">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:cardCornerRadius="3dp"
+            app:cardElevation="1dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <LinearLayout
+                    android:id="@+id/leftLLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvSalesProductName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_toStartOf="@+id/llPrdctQtyMain"
+                        android:ellipsize="end"
+                        android:textSize="14sp"
+                        android:maxLines="1"
+                        android:textStyle="bold"
+                        tools:text="Product Name" />
+
+                    <LinearLayout
+                        android:id="@+id/stockInHandLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:layout_marginTop="4dp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/tvPrdctStockInHand"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.1"
+                            android:textSize="14sp"
+                            tools:text="@string/stock_in_hand" />
+
+                        <TextView
+                            android:id="@+id/tvPrdctStockInHandValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1.9"
+                            android:gravity="left"
+                            android:textSize="14sp"
+                            android:maxLines="1"
+                            android:text="0.0"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvPrdctValidity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvPrdctStockInHand"
+                        android:layout_alignStart="@+id/tvPrdctStockInHand"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="4dp"
+                        android:layout_toStartOf="@+id/llPrdctQtyMain"
+                        android:maxLines="2"
+                        android:textSize="13sp"
+                        android:textStyle="italic"
+                        android:visibility="gone"
+                        tools:text="@string/txt_subscription_end_date" />
+
+                    <TextView
+                        android:id="@+id/tvPrdctUnitPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvPrdctValidity"
+                        android:layout_alignStart="@+id/tvPrdctValidity"
+                        android:layout_marginTop="4dp"
+                        android:layout_toStartOf="@+id/llPrdctQtyMain"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        tools:text="0.00 FCFA" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llPrdctQtyMain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center">
+
+                    <ImageButton
+                        android:id="@+id/imbPrdctMinusQty"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:src="@drawable/ic_minus" />
+
+                    <EditText
+                        android:id="@+id/edtPrdctQuantity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:maxLines="1"
+                        android:paddingHorizontal="15dp"
+                        android:maxWidth="150dp"
+                        tools:text="0" />
+
+                    <ImageButton
+                        android:id="@+id/imbPrdctPlusQty"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:src="@drawable/ic_add" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</layout>

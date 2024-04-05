@@ -1,0 +1,128 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.sgs.citytax.ui.custom.swipeUtils.CustomSwipeView
+        android:id="@+id/swipeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        app:dragEdge="right"
+        app:swipeMode="same_level">
+
+        <LinearLayout
+            android:id="@+id/belowLayout"
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtPropEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableTop="@drawable/ic_edit"
+                android:drawablePadding="@dimen/three_dp"
+                android:gravity="center"
+                android:longClickable="false"
+                android:minWidth="65dp"
+                android:padding="@dimen/vertical_spacing"
+                android:singleLine="true"
+                android:text="@string/edit"
+                android:textColor="@color/colorPrimaryDark"
+                android:textIsSelectable="false"
+                android:textSize="@dimen/sixteen_sp" />
+
+<!--            <androidx.appcompat.widget.AppCompatTextView-->
+<!--                android:id="@+id/txtDelete"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:drawableTop="@drawable/ic_delete"-->
+<!--                android:drawablePadding="@dimen/three_dp"-->
+<!--                android:gravity="center"-->
+<!--                android:longClickable="false"-->
+<!--                android:minWidth="65dp"-->
+<!--                android:padding="@dimen/vertical_spacing"-->
+<!--                android:singleLine="true"-->
+<!--                android:text="@string/delete"-->
+<!--                android:textColor="@color/colorPrimaryDark"-->
+<!--                android:textIsSelectable="false"-->
+<!--                android:visibility="gone"-->
+<!--                android:textSize="@dimen/sixteen_sp" />-->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:id="@+id/llFromDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        style="@style/TextHeader"
+                        android:text="@string/from_date" />
+
+                    <TextView
+                        android:id="@+id/txtFromDate"
+                        style="@style/TextBody" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llToDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="@+id/llFromDate">
+
+                    <TextView
+                        style="@style/TextHeader"
+                        android:text="@string/to_date" />
+
+                    <TextView
+                        android:id="@+id/txtToDate"
+                        style="@style/TextBody" />
+
+                </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llRegistraionNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="@+id/llFromDate">
+
+                <TextView
+                    style="@style/TextHeader"
+                    android:text="@string/registration_no" />
+
+                <TextView
+                    android:id="@+id/txtRegistrationNo"
+                    style="@style/TextBody" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.sgs.citytax.ui.custom.swipeUtils.CustomSwipeView>
+
+</layout>

@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/vertical_spacing">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:id="@+id/llReceiptBody"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/llDuplicatePrints"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/ReceiptTextHeader"
+                        android:text="@string/duplicate_print"
+                        android:textAllCaps="true"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtPrintCounts"
+                        style="@style/ReceiptTextBody"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/asset_booking_advance_receipt"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imgQRCode"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:src="@color/black" />
+                <include
+                    android:id="@+id/qrCodeWrapper"
+                    layout="@layout/layout_qr_code_label"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:gravity="center"
+                    android:text="@string/txt_municipality_of_ougadougu"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/eighteen_sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/ReceiptTextHeader"
+                        android:text="@string/txt_date_of_print"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtDateOfPrint"
+                        style="@style/ReceiptTextBody"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/ReceiptTextHeader"
+                        android:text="@string/booking_payment_receipt_no"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtQuittanceNo"
+                        style="@style/ReceiptTextBody"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/ReceiptTextHeader"
+                        android:paddingEnd="5dp"
+                        android:text="@string/receipt_booking_request_date"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtDateOfBooking"
+                        style="@style/ReceiptTextBody"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/ReceiptTextHeader"
+                        android:text="@string/booking_request_number"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtBookingRequestNumber"
+                        style="@style/ReceiptTextBody"
+                        android:textStyle="bold"
+                        android:layout_marginStart="@dimen/five_dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/ReceiptTextHeader"
+                        android:text="@string/receipt_taxation_year"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtTaxationYear"
+                        style="@style/ReceiptTextBody"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llBusinessSycoTax"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/ReceiptTextHeader"
+                        android:text="@string/receipt_id_sycotax"
+                        android:textAllCaps="true"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtSycoTaxID"
+                        style="@style/ReceiptTextBody"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtCompanyLabel"
+                        style="@style/ReceiptTextHeader"
+                        android:text="@string/company_name"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtCompanyName"
+                        style="@style/ReceiptTextBody"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llCitizenSycoTax"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/ReceiptTextHeader"
+                        android:text="@string/citizen_syco_tax_id"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtCitizenSycoTaxID"
+                        style="@style/ReceiptTextBody"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llCardNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/ReceiptTextHeader"
+                        android:text="@string/citizen_id_number"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/txtIDCardNumber"
+                        style="@style/ReceiptTextBody"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/ReceiptTextHeader"
+                        android:text="@string/receipt_phone_number"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtContact"
+                        style="@style/ReceiptTextBody"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtEmailIDLabel"
+                        style="@style/ReceiptTextHeader"
+                        android:text="@string/email"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtEmail"
+                        style="@style/ReceiptTextBody"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/title_address_label"
+                        style="@style/ReceiptTextHeader"
+                        android:text="@string/title_address"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtAddress"
+                        style="@style/ReceiptTextBody"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/title_state_label"
+                        style="@style/ReceiptTextHeader"
+                        android:text="@string/state"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtState"
+                        style="@style/ReceiptTextBody"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/title_city_label"
+                        style="@style/ReceiptTextHeader"
+                        android:text="@string/city"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtCity"
+                        style="@style/ReceiptTextBody"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/ReceiptTextHeader"
+                        android:text="@string/district"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtDistrict"
+                        style="@style/ReceiptTextBody"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/ReceiptTextHeader"
+                        android:text="@string/txt_ardt"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtArdt"
+                        style="@style/ReceiptTextBody"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtSectorLabel"
+                        style="@style/ReceiptTextHeader"
+                        android:text="@string/sector"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtSector"
+                        style="@style/ReceiptTextBody"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/ReceiptTextHeader"
+                        android:text="@string/txt_section"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtSection"
+                        style="@style/ReceiptTextBody"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/ReceiptTextHeader"
+                        android:text="@string/txt_lot"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtLot"
+                        style="@style/ReceiptTextBody"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/ReceiptTextHeader"
+                        android:text="@string/txt_parcel"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtParcel"
+                        style="@style/ReceiptTextBody"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/twelve_dp"
+                    android:gravity="center"
+                    android:text="@string/payment"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sixteen_sp"
+                    android:textStyle="bold" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/ReceiptTextHeader"
+                        android:text="@string/receipt_payment_mode"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtPaymentMode"
+                        style="@style/ReceiptTextBody"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llWalletTransactionNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/ReceiptTextHeader"
+                        android:text="@string/receipt_reference_transaction_number"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/txtReferanceTransactionNumber"
+                        style="@style/ReceiptTextBody"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llBankName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/ReceiptTextHeader"
+                        android:text="@string/cheque_bank_name"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/txtChequeBankName"
+                        style="@style/ReceiptTextBody"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llChequeNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/ReceiptTextHeader"
+                        android:text="@string/cheque_number"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/txtChequeNumber"
+                        style="@style/ReceiptTextBody"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llChequeDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/ReceiptTextHeader"
+                        android:text="@string/receipt_cheque_date"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/txtChequeDate"
+                        style="@style/ReceiptTextBody"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/ReceiptTextHeader"
+                        android:text="@string/booking_deposit"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/txtBookingDeposit"
+                        style="@style/ReceiptTextBody"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/ReceiptTextHeader"
+                        android:text="@string/receipt_security_deposit"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/txtSecurityDeposit"
+                        style="@style/ReceiptTextBody"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/ReceiptTextHeader"
+                        android:text="@string/amount_of_deposit_for_this_booking"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtAmountOfThisBooking"
+                        style="@style/ReceiptTextBody"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/ReceiptTextHeader"
+                        android:text="@string/total_deposit_balance_for_this_booking"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtDepositBalance"
+                        style="@style/ReceiptTextBody"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/ReceiptTextHeader"
+                        android:text="@string/stop_this_booking_notice_to_the_sum_of"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/txtAmountInWords"
+                        style="@style/ReceiptTextBody"
+                        android:textStyle="bold"
+                        android:layout_marginStart="@dimen/five_dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtCollectedByLabel"
+                        style="@style/ReceiptTextHeader"
+                        android:text="@string/collected_by"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtBookingBy"
+                        style="@style/ReceiptTextBody"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txtPoweredBy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:gravity="center"
+                    android:textSize="@dimen/sixteen_sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnPrint"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/print" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

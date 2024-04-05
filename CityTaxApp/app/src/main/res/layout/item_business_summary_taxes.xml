@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:orientation="vertical"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="8dp">
+
+        <LinearLayout
+            android:id="@+id/llTax"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/llTaxType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextHeader"
+                    android:text="@string/tax_type" />
+
+                <TextView
+                    android:id="@+id/txtTaxType"
+                    style="@style/TextBody" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llTaxSubType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tvTaxSubTypeHeader"
+                    style="@style/TextHeader"
+                   />
+
+                <TextView
+                    android:id="@+id/txtTaxSubType"
+                    style="@style/TextBody" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llOccupancyType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtOccupancyTypeLabel"
+                    style="@style/TextHeader"
+                    android:text="@string/occupancy_type" />
+
+                <TextView
+                    android:id="@+id/txtOccupancyType"
+                    style="@style/TextBody" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llTaxFinancialYear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextHeader"
+                    android:text="@string/tax_financial_year" />
+
+                <TextView
+                    android:id="@+id/txtFinancialYear"
+                    style="@style/TextBody" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llStartDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextHeader"
+                    android:text="@string/tax_start_date" />
+
+                <TextView
+                    android:id="@+id/txtStartDate"
+                    style="@style/TextBody" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llTaxableElement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextHeader"
+                    android:text="@string/taxable_element" />
+
+                <TextView
+                    android:id="@+id/txtTaxableElement"
+                    style="@style/TextBody" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llTurnOver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextHeader"
+                    android:text="@string/turn_over_amount" />
+
+                <TextView
+                    android:id="@+id/txtTurnOver"
+                    style="@style/TextBody" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llBillingCycle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextHeader"
+                    android:text="@string/billing_cycle" />
+
+                <TextView
+                    android:id="@+id/txtBillingCycle"
+                    style="@style/TextBody" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llTaxableMatter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextHeader"
+                    android:text="@string/taxable_matter" />
+
+                <TextView
+                    android:id="@+id/txtTaxableMatter"
+                    style="@style/TextBody" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llEstimateTax"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextHeader"
+                    android:text="@string/estimated_tax" />
+
+                <TextView
+                    android:id="@+id/txtEstimatedTax"
+                    style="@style/TextBody" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llPendingTaxAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextHeader"
+                    android:text="@string/pending_tax_amount" />
+
+                <TextView
+                    android:id="@+id/txtPendingTaxAmount"
+                    style="@style/TextBody" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llMarket"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/txtMarketNameLabel"
+                    style="@style/TextHeader"
+                    android:text="@string/title_market" />
+
+                <TextView
+                    android:id="@+id/txtMarketName"
+                    style="@style/TextBody" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llFixedExpenses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/dueSummaryHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/five_dp"
+                android:text="@string/title_outstandings"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/llOne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/txtKeyOne"
+                    style="@style/TextHeader" />
+
+                <TextView
+                    android:id="@+id/txtValueOne"
+                    style="@style/TextBody" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llTwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/txtKeyTwo"
+                    style="@style/TextHeader" />
+
+                <TextView
+                    android:id="@+id/txtValueTwo"
+                    style="@style/TextBody" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llThree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/txtKeyThree"
+                    style="@style/TextHeader"
+                    android:layout_marginEnd="@dimen/eight_dp"/>
+
+                <TextView
+                    android:id="@+id/txtValueThree"
+                    style="@style/TextBody" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llFour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/txtKeyFour"
+                    style="@style/TextHeader" />
+
+                <TextView
+                    android:id="@+id/txtValueFour"
+                    style="@style/TextBody" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llFive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/txtKeyFive"
+                    style="@style/TextHeader" />
+
+                <TextView
+                    android:id="@+id/txtValueFive"
+                    style="@style/TextBody" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llSix"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/txtKeySix"
+                    style="@style/TextHeader" />
+
+                <TextView
+                    android:id="@+id/txtValueSix"
+                    style="@style/TextBody" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llSeven"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/txtKeySeven"
+                    style="@style/TextHeader" />
+
+                <TextView
+                    android:id="@+id/txtValueSeven"
+                    style="@style/TextBody" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imgQRCode"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <include
+            android:id="@+id/qrCodeWrapper"
+            layout="@layout/layout_qr_code_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp" />
+
+    </LinearLayout>
+
+</layout>

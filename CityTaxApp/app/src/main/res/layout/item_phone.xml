@@ -1,0 +1,86 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.sgs.citytax.ui.custom.swipeUtils.CustomSwipeView
+        android:id="@+id/swipeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        app:dragEdge="right"
+        app:swipeMode="same_level">
+
+        <LinearLayout
+            android:id="@+id/belowLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableTop="@drawable/ic_edit"
+                android:drawablePadding="@dimen/three_dp"
+                android:gravity="center"
+                android:longClickable="false"
+                android:minWidth="65dp"
+                android:padding="@dimen/vertical_spacing"
+                android:singleLine="true"
+                android:text="@string/edit"
+                android:textColor="@color/colorPrimaryDark"
+                android:textIsSelectable="false"
+                android:textSize="@dimen/sixteen_sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableTop="@drawable/ic_delete"
+                android:drawablePadding="@dimen/three_dp"
+                android:gravity="center"
+                android:longClickable="false"
+                android:minWidth="65dp"
+                android:padding="@dimen/vertical_spacing"
+                android:singleLine="true"
+                android:text="@string/delete"
+                android:textColor="@color/colorPrimaryDark"
+                android:textIsSelectable="false"
+                android:textSize="@dimen/sixteen_sp"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="@dimen/vertical_spacing">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtPhoneNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@+id/txtStatus"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:gravity="right" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtPhoneType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtPhoneNo"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </com.sgs.citytax.ui.custom.swipeUtils.CustomSwipeView>
+
+</layout>

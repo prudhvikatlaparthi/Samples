@@ -1,0 +1,174 @@
+[
+    {
+        "merged": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/build/intermediates/res/merged/debug/drawable_ic_white_circle.xml.flat",
+        "source": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/res/drawable/ic_white_circle.xml"
+    },
+    {
+        "merged": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/build/intermediates/res/merged/debug/layout_fragment_home.xml.flat",
+        "source": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/res/layout/fragment_home.xml"
+    },
+    {
+        "merged": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/build/intermediates/res/merged/debug/drawable_image_pager_gradient.xml.flat",
+        "source": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/res/drawable/image_pager_gradient.xml"
+    },
+    {
+        "merged": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/build/intermediates/res/merged/debug/drawable_green_color_border.xml.flat",
+        "source": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/res/drawable/green_color_border.xml"
+    },
+    {
+        "merged": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/build/intermediates/res/merged/debug/drawable_ic_default_profile.xml.flat",
+        "source": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/res/drawable/ic_default_profile.xml"
+    },
+    {
+        "merged": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/build/intermediates/res/merged/debug/layout_layout_image_pager_view.xml.flat",
+        "source": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/res/layout/layout_image_pager_view.xml"
+    },
+    {
+        "merged": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/build/intermediates/res/merged/debug/layout_fragment_account_details.xml.flat",
+        "source": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/res/layout/fragment_account_details.xml"
+    },
+    {
+        "merged": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/build/intermediates/res/merged/debug/drawable_tab_selector.xml.flat",
+        "source": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/res/drawable/tab_selector.xml"
+    },
+    {
+        "merged": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/build/intermediates/res/merged/debug/layout_fragment_welcome.xml.flat",
+        "source": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/res/layout/fragment_welcome.xml"
+    },
+    {
+        "merged": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/build/intermediates/res/merged/debug/layout_fragment_shop_by_category.xml.flat",
+        "source": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/res/layout/fragment_shop_by_category.xml"
+    },
+    {
+        "merged": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/build/intermediates/res/merged/debug/layout_fragment_todo_details.xml.flat",
+        "source": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/res/layout/fragment_todo_details.xml"
+    },
+    {
+        "merged": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/build/intermediates/res/merged/debug/drawable_image_pager_background.xml.flat",
+        "source": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/res/drawable/image_pager_background.xml"
+    },
+    {
+        "merged": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/build/intermediates/res/merged/debug/font_assistant_semibold.xml.flat",
+        "source": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/res/font/assistant_semibold.xml"
+    },
+    {
+        "merged": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/build/intermediates/res/merged/debug/menu_call_menu.xml.flat",
+        "source": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/res/menu/call_menu.xml"
+    },
+    {
+        "merged": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/build/intermediates/res/merged/debug/drawable_ic_menu.xml.flat",
+        "source": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/res/drawable/ic_menu.xml"
+    },
+    {
+        "merged": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/build/intermediates/res/merged/debug/drawable_selected_dot.xml.flat",
+        "source": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/res/drawable/selected_dot.xml"
+    },
+    {
+        "merged": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/build/intermediates/res/merged/debug/drawable_ic_green_circle.xml.flat",
+        "source": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/res/drawable/ic_green_circle.xml"
+    },
+    {
+        "merged": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/build/intermediates/res/merged/debug/drawable_default_dot.xml.flat",
+        "source": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/res/drawable/default_dot.xml"
+    },
+    {
+        "merged": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/build/intermediates/res/merged/debug/layout_dummy.xml.flat",
+        "source": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/res/layout/dummy.xml"
+    },
+    {
+        "merged": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/build/intermediates/res/merged/debug/anim_slide_out_bottom.xml.flat",
+        "source": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/res/anim/slide_out_bottom.xml"
+    },
+    {
+        "merged": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/build/intermediates/res/merged/debug/drawable_ic_default_profile_bg.xml.flat",
+        "source": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/res/drawable/ic_default_profile_bg.xml"
+    },
+    {
+        "merged": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/build/intermediates/res/merged/debug/anim_slide_out_top.xml.flat",
+        "source": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/res/anim/slide_out_top.xml"
+    },
+    {
+        "merged": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/build/intermediates/res/merged/debug/anim_slide_out_right.xml.flat",
+        "source": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/res/anim/slide_out_right.xml"
+    },
+    {
+        "merged": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/build/intermediates/res/merged/debug/layout_activity_main.xml.flat",
+        "source": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/build/intermediates/res/merged/debug/layout_fragment_image_view_pager.xml.flat",
+        "source": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/res/layout/fragment_image_view_pager.xml"
+    },
+    {
+        "merged": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/build/intermediates/res/merged/debug/drawable_ic_message.xml.flat",
+        "source": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/res/drawable/ic_message.xml"
+    },
+    {
+        "merged": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/build/intermediates/res/merged/debug/navigation_sidemenu_graph.xml.flat",
+        "source": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/res/navigation/sidemenu_graph.xml"
+    },
+    {
+        "merged": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/build/intermediates/res/merged/debug/drawable_ic_arrow.xml.flat",
+        "source": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/res/drawable/ic_arrow.xml"
+    },
+    {
+        "merged": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/build/intermediates/res/merged/debug/menu_navigation_side_menu.xml.flat",
+        "source": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/res/menu/navigation_side_menu.xml"
+    },
+    {
+        "merged": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/build/intermediates/res/merged/debug/layout_item_todo_layout.xml.flat",
+        "source": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/res/layout/item_todo_layout.xml"
+    },
+    {
+        "merged": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/build/intermediates/res/merged/debug/drawable_ic_cart.xml.flat",
+        "source": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/res/drawable/ic_cart.xml"
+    },
+    {
+        "merged": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/build/intermediates/res/merged/debug/anim_slide_in_left.xml.flat",
+        "source": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/res/anim/slide_in_left.xml"
+    },
+    {
+        "merged": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/build/intermediates/res/merged/debug/xml_scrollable_header_above_recycler_view_scene.xml.flat",
+        "source": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/res/xml/scrollable_header_above_recycler_view_scene.xml"
+    },
+    {
+        "merged": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/build/intermediates/res/merged/debug/layout_bottom_sheet_sample.xml.flat",
+        "source": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/res/layout/bottom_sheet_sample.xml"
+    },
+    {
+        "merged": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/build/intermediates/res/merged/debug/font_assistant_bold.ttf.flat",
+        "source": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/res/font/assistant_bold.ttf"
+    },
+    {
+        "merged": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/build/intermediates/res/merged/debug/font_assistant.xml.flat",
+        "source": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/res/font/assistant.xml"
+    },
+    {
+        "merged": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/build/intermediates/res/merged/debug/anim_slide_in_top.xml.flat",
+        "source": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/res/anim/slide_in_top.xml"
+    },
+    {
+        "merged": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/build/intermediates/res/merged/debug/anim_slide_in_right.xml.flat",
+        "source": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/res/anim/slide_in_right.xml"
+    },
+    {
+        "merged": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/build/intermediates/res/merged/debug/anim_slide_in_bottom.xml.flat",
+        "source": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/res/anim/slide_in_bottom.xml"
+    },
+    {
+        "merged": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/build/intermediates/res/merged/debug/drawable_ic_call.xml.flat",
+        "source": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/res/drawable/ic_call.xml"
+    },
+    {
+        "merged": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/build/intermediates/res/merged/debug/drawable_filled_green_color_border.xml.flat",
+        "source": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/res/drawable/filled_green_color_border.xml"
+    },
+    {
+        "merged": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/build/intermediates/res/merged/debug/layout_navigation_view_header.xml.flat",
+        "source": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/res/layout/navigation_view_header.xml"
+    },
+    {
+        "merged": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/build/intermediates/res/merged/debug/anim_slide_out_left.xml.flat",
+        "source": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/res/anim/slide_out_left.xml"
+    }
+]

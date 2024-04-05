@@ -1,0 +1,220 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/vertical_spacing"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/TextHeaderTextViewManditory"
+                        android:text="@string/fitness_type" />
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/spnFitnessType"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:minHeight="48dp"
+                        android:padding="0dp" />
+
+                </LinearLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/vertical_spacing"
+                    android:layout_marginRight="@dimen/vertical_spacing"
+                    android:hint="@string/fitness_no">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtFitnessNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:maxLength="9"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/vertical_spacing"
+                    android:layout_marginRight="@dimen/vertical_spacing"
+                    style="@style/TextMandatoryInputLayout"
+                    android:hint="@string/fitness_date">
+
+                    <com.sgs.citytax.ui.custom.DatePickerEditText
+                        android:id="@+id/edtFitnessDate"
+                        style="@style/TextInputEntryStyle"
+                        android:drawablePadding="@dimen/vertical_spacing"
+                        app:needIcons="show" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/vertical_spacing"
+                    android:layout_marginRight="@dimen/vertical_spacing"
+                    android:hint="@string/fitness_insured_by">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtFitnessInsured"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textCapSentences"
+                        android:maxLength="20"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/vertical_spacing"
+                    android:layout_marginRight="@dimen/vertical_spacing"
+                    style="@style/TextMandatoryInputLayout"
+                    android:hint="@string/start_date">
+
+                    <com.sgs.citytax.ui.custom.DatePickerEditText
+                        android:id="@+id/edtFromDate"
+                        style="@style/TextInputEntryStyle"
+                        android:drawablePadding="@dimen/vertical_spacing"
+                        app:needIcons="show" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/vertical_spacing"
+                    android:layout_marginRight="@dimen/vertical_spacing"
+                    style="@style/TextMandatoryInputLayout"
+                    android:hint="@string/expiry_date">
+
+                    <com.sgs.citytax.ui.custom.DatePickerEditText
+                        android:id="@+id/edtExpiryDate"
+                        style="@style/TextInputEntryStyle"
+                        android:drawablePadding="@dimen/vertical_spacing"
+                        app:needIcons="show" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/vertical_spacing"
+                    android:layout_marginRight="@dimen/vertical_spacing"
+                    android:hint="@string/fitness_cost">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtCost"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:maxLength="6"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/vertical_spacing"
+                    android:layout_marginRight="@dimen/vertical_spacing"
+                    android:hint="@string/fitness_reference_no">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtInvoiceReference"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:maxLength="20"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/vertical_spacing"
+                    android:layout_marginRight="@dimen/vertical_spacing"
+                    android:hint="@string/remarks">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtRemarks"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textCapSentences"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/btnChoose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/capture_photo" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:id="@+id/imgDocument"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name" />
+
+                    <ImageButton
+                        android:id="@+id/btnClearImage"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignEnd="@id/imgDocument"
+                        android:layout_alignParentTop="true"
+                        android:background="@color/white"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/close"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="@string/save" />
+
+    </RelativeLayout>
+
+</layout>

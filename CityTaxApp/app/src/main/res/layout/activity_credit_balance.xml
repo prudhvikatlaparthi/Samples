@@ -1,0 +1,69 @@
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/constraint_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvAgentName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingStart="8dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="4dp"
+            android:paddingBottom="8dp"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/recyclerView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvBalance"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:paddingStart="4dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="8dp"
+            android:text="@string/balance"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvAgentName"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvBalance" />
+
+       <!-- <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swp_refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvAmount"
+            app:layout_constraintVertical_weight="1">-->
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="40dp"
+                app:layout_constraintTop_toBottomOf="@id/tvAmount"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+        <!--</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

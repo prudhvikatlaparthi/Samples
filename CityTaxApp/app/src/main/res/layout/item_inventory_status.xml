@@ -1,0 +1,78 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:orientation="vertical"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextHeader"
+                android:text="@string/tax_name" />
+
+            <TextView
+                android:id="@+id/txtProductName"
+                style="@style/TextBody" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextHeader"
+                android:text="@string/item" />
+
+            <TextView
+                android:id="@+id/txtItem"
+                style="@style/TextBody" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llItemCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextHeader"
+                android:text="@string/itemCode" />
+
+            <TextView
+                android:id="@+id/txtItemCode"
+                style="@style/TextBody" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextHeader"
+                android:text="@string/stock_in_hand" />
+
+            <TextView
+                android:id="@+id/txtStockInHand"
+                style="@style/TextBody" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</layout>

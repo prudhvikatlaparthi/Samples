@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/BluetoothSPPLibrary-master.iml" filepath="$PROJECT_DIR$/.idea/modules/BluetoothSPPLibrary-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/BluetoothSPPLibrary-master.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/BluetoothSPPLibrary-master.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/BluetoothSPPLibrary-master.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/BluetoothSPPLibrary-master.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/BluetoothSPPLibrary-master.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/BluetoothSPPLibrary-master.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/BluetoothSPPLibrary-master.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/BluetoothSPPLibrary-master.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/library/BluetoothSPPLibrary-master.library.iml" filepath="$PROJECT_DIR$/.idea/modules/library/BluetoothSPPLibrary-master.library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/library/BluetoothSPPLibrary-master.library.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/library/BluetoothSPPLibrary-master.library.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/library/BluetoothSPPLibrary-master.library.main.iml" filepath="$PROJECT_DIR$/.idea/modules/library/BluetoothSPPLibrary-master.library.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/library/BluetoothSPPLibrary-master.library.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/library/BluetoothSPPLibrary-master.library.unitTest.iml" />
+    </modules>
+  </component>
+</project>

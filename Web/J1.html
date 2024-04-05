@@ -1,0 +1,72 @@
+<html>
+<head>
+<title>J</title>
+<style>
+p {
+text-align: center;
+font-size: 32px;
+font-family: Candara, Oswald;
+}
+img {
+display: block;
+margin: 0 auto;
+width: 25%;
+}
+.yes-button {
+  background-color: rgb(160, 106, 180);
+  border-style: none;
+  width: 50px;
+  height: 30px;
+  color: white;
+  border-radius: 8px;
+}
+.no-button {
+  background-color: rgb(255, 148, 148);
+  border-style: none;
+  width: 50px;
+  height: 30px;
+  color: white;
+  border-radius: 8px;
+}
+</style>
+</head>
+<body>
+<p>Can you buy me a Biryani?</p>
+<img src="https://media.tenor.com/4IckGuTqWeYAAAAC/spongebob-squarepants-begging.gif">
+</body>
+<style>
+#botao1 {
+position: fixed;
+top: 60%;
+left: 55%;
+transform: translate(-50%, -50%);
+}
+#botao2 {
+position: absolute;
+ left: 40%;
+  top: 58%;
+}
+</style>
+</head>
+<body>
+<button id="botao1" class="yes-button">YES</button>
+<button id="botao2" class="no-button">NO</button>
+<script>
+const button2 = document.getElementById('botao2');
+let left = 40;
+button2.addEventListener('mouseover', function() {
+  if(left == 40){
+    left = 44;
+  }else{
+    left = 40;
+  }
+  this.style.left = left + '%';
+});
+
+</script>
+<script>document.getElementById('botao1').addEventListener('click', function() {
+alert('Yeah hoo 😍');
+});
+</script>
+</body>
+</html>

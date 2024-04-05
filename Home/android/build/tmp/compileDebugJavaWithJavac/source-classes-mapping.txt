@@ -1,0 +1,2 @@
+com/pru/home/android/BuildConfig.java
+ com.pru.home.android.BuildConfig

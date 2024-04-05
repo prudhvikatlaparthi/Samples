@@ -1,0 +1,78 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    namespace 'com.pru.geo'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.pru.geo"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    packagingOptions {
+        resources.excludes.add("plugin.xml")
+        resources.excludes.add("about.ini")
+        resources.excludes.add("about.mappings")
+        resources.excludes.add("modeling32.png")
+        resources.excludes.add("about.properties")
+        resources.excludes.add("plugin.properties")
+        resources.excludes.add("META-INF/*")
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.core:core-ktx:1.9.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.10.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+
+    implementation('org.geotools:gt-shapefile:28.2') {
+        exclude group: "javax.media", module: "jai_core"
+    }
+
+    implementation 'org.locationtech.jts:jts-core:1.19.0'
+
+    implementation ('org.geotools:gt-opengis:28.2'){
+        exclude group: "javax.media", module: "jai_core"
+    }
+
+    implementation ('org.geotools:gt-metadata:28.2'){
+        exclude group: "javax.media", module: "jai_core"
+    }
+
+    implementation ('org.geotools:gt-main:28.2'){
+        exclude group: "javax.media", module: "jai_core"
+    }
+
+    implementation ('org.geotools:gt-wfs-ng:28.2'){
+        exclude group: "javax.media", module: "jai_core"
+    }
+
+    implementation 'com.google.code.gson:gson:2.10.1'
+
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+}

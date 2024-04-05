@@ -1,0 +1,62 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.sgs.citytax.ui.custom.swipeUtils.CustomSwipeView
+        android:id="@+id/swipeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        app:dragEdge="right"
+        android:layout_marginTop="10dp"
+        app:swipeMode="same_level">
+
+        <LinearLayout
+            android:id="@+id/belowLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/imgDocument"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:contentDescription="@string/product" />
+
+                <ImageButton
+                    android:id="@+id/btnClearImage"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignEnd="@id/imgDocument"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/white"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/close"
+                    android:visibility="gone"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </com.sgs.citytax.ui.custom.swipeUtils.CustomSwipeView>
+
+</layout>

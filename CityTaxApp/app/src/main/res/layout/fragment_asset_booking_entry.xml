@@ -1,0 +1,275 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorLayoutBackground">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/svForm"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:fillViewport="true"
+            app:layout_constraintBottom_toTopOf="@id/llButtons"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/vertical_spacing"
+                    app:cardBackgroundColor="@color/white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/vertical_spacing"
+                        android:layout_marginBottom="@dimen/vertical_spacing"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/vertical_spacing"
+                            android:layout_marginRight="@dimen/vertical_spacing"
+                            style="@style/TextMandatoryInputLayout"
+                            android:hint="@string/citizen_name">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtCustomerName"
+                                style="@style/TextInputEntryStyle"
+                                android:focusable="false" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/vertical_spacing"
+                            android:layout_marginRight="@dimen/vertical_spacing"
+                            android:hint="@string/phone_number">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtPhoneNumber"
+                                style="@style/TextInputEntryStyle"
+                                android:focusable="false"
+                                android:inputType="phone" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/vertical_spacing"
+                            android:layout_marginRight="@dimen/vertical_spacing"
+                            android:hint="@string/email">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtEmail"
+                                style="@style/TextInputEntryStyle"
+                                android:focusable="false"
+                                android:inputType="textEmailAddress" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <LinearLayout
+                            android:id="@+id/llCreateCustomer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/vertical_spacing"
+                            android:gravity="end"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/new_citizen"
+                                android:textStyle="italic" />
+
+                            <TextView
+                                android:id="@+id/tvCreateCustomer"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/create"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="16sp"
+                                android:textStyle="italic|bold" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewAmounts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/vertical_spacing"
+                    app:cardBackgroundColor="@color/white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/vertical_spacing"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginEnd="12dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    style="@style/TextMandatoryTextView"
+                                    android:text="@string/admin_office"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                                <androidx.appcompat.widget.AppCompatSpinner
+                                    android:id="@+id/spnAdministrationOffice"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:clickable="false"
+                                    android:minHeight="@dimen/min_spinner_height"
+                                    android:padding="@dimen/vertical_spacing"
+                                    android:spinnerMode="dialog" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginEnd="12dp"
+                                android:background="@color/colorGray" />
+
+                        </LinearLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/vertical_spacing"
+                            android:layout_marginTop="@dimen/vertical_spacing"
+                            android:layout_marginRight="@dimen/vertical_spacing"
+                            android:hint="@string/net_receivable">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtNetReceivable"
+                                style="@style/TextInputEntryStyle"
+                                android:enabled="false"
+                                android:inputType="number" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/vertical_spacing"
+                            android:layout_marginRight="@dimen/vertical_spacing"
+                            android:hint="@string/estimated_amount">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtEstimatedAmount"
+                                style="@style/TextInputEntryStyle"
+                                android:enabled="false"
+                                android:inputType="number" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/vertical_spacing"
+                        android:layout_marginBottom="@dimen/vertical_spacing"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/vertical_spacing"
+                            android:gravity="end"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tvNewAsset"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/add_asset"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="16sp"
+                                android:textStyle="italic|bold" />
+
+                        </LinearLayout>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recyclerView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:nestedScrollingEnabled="true"
+                            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <LinearLayout
+            android:id="@+id/llButtons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/svForm">
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/save"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/btnCollectDeposit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/collect_deposit"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

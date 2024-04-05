@@ -1,0 +1,264 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/vertical_spacing">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="@dimen/five_dp"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/voucher_no" />
+
+            <TextView
+                android:id="@+id/txtVoucherNo"
+                android:layout_width="0dp"
+                android:layout_marginEnd="@dimen/five_dp"
+                android:layout_marginStart="@dimen/five_dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="@dimen/five_dp"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/request_date" />
+
+            <TextView
+                android:id="@+id/txt_request_date"
+                android:layout_width="0dp"
+                android:layout_marginEnd="@dimen/five_dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="@dimen/five_dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="@dimen/five_dp"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/requested_by"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/txtRequestedBy"
+                android:layout_width="0dp"
+                android:layout_marginEnd="@dimen/five_dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="@dimen/five_dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llApprovedDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="@dimen/five_dp"
+            android:background="@color/white"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/approved_date"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/txtApprovedDate"
+                android:layout_width="0dp"
+                android:layout_marginEnd="@dimen/five_dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="@dimen/five_dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llApprovedBy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="@dimen/five_dp"
+            android:background="@color/white"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/approved_by"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/txtApprovedBy"
+                android:layout_width="0dp"
+                android:layout_marginEnd="@dimen/five_dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="@dimen/five_dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="@dimen/five_dp"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/commission_amount"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/txt_commission_amount"
+                android:layout_width="0dp"
+                android:layout_marginEnd="@dimen/five_dp"
+                android:layout_marginStart="@dimen/five_dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llPaymentMode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/five_dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/payment_mode" />
+
+            <TextView
+                android:id="@+id/txt_payment_mode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/five_dp"
+                android:layout_weight="1"
+                android:layout_marginStart="@dimen/five_dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="@dimen/five_dp"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/status"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/txtStatus"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/five_dp"
+                android:layout_weight="1"
+                android:layout_marginStart="@dimen/five_dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llRemarks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/five_dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/remarks" />
+
+            <TextView
+                android:id="@+id/txtRemarks"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/five_dp"
+                android:layout_weight="1"
+                android:layout_marginStart="@dimen/five_dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rlApproveReject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/btnPayoutApprove"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/approve" />
+
+            <Button
+                android:id="@+id/btnPayoutReject"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/reject" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnPrint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/print_preview"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    </RelativeLayout>
+
+</layout>

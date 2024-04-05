@@ -1,0 +1,121 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="8dp">
+
+        <ImageView
+            android:id="@+id/img_product"
+            android:layout_width="@dimen/item_img_width_height"
+            android:layout_height="@dimen/item_img_width_height"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="@string/product" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextHeader"
+                    android:text="@string/allocation_date" />
+
+                <TextView
+                    android:id="@+id/txtAllocationDate"
+                    style="@style/TextBody" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextHeader"
+                    android:text="@string/product" />
+
+                <TextView
+                    android:id="@+id/txtProduct"
+                    style="@style/TextBody" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextHeader"
+                    android:text="@string/product_code" />
+
+                <TextView
+                    android:id="@+id/txtProductCode"
+                    style="@style/TextBody" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextHeader"
+                    android:text="@string/from_account_name" />
+
+                <TextView
+                    android:id="@+id/txtFromAccountName"
+                    style="@style/TextBody" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextHeader"
+                    android:text="@string/to_account_name" />
+
+                <TextView
+                    android:id="@+id/txtToAccountName"
+                    style="@style/TextBody" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextHeader"
+                    android:text="@string/quantity" />
+
+                <TextView
+                    android:id="@+id/txtQuantity"
+                    style="@style/TextBody" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

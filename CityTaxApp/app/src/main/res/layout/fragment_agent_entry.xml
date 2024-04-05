@@ -1,0 +1,420 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:clickable="true"
+        android:focusable="true">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_above="@+id/bottomLayout">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight=".4"
+                        android:text="@string/salutation"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                    <Spinner
+                        android:id="@+id/spnSalutation"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:minHeight="@dimen/min_spinner_height"
+                        android:layout_weight=".6"
+                        android:padding="@dimen/vertical_spacing"
+                        android:textAlignment="center" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:background="@color/colorGray" />
+                
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/vertical_spacing"
+                    android:layout_marginRight="@dimen/vertical_spacing"
+                    android:layout_marginTop="@dimen/vertical_spacing"
+                    style="@style/TextMandatoryInputLayout"
+                    android:hint="@string/first_name">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtFirstName"
+                        style="@style/TextInputEntryStyle"
+                        android:maxLength="20"
+                        android:inputType="textPersonName" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/vertical_spacing"
+                    android:layout_marginRight="@dimen/vertical_spacing"
+                    android:hint="@string/middle_name">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtMiddleName"
+                        style="@style/TextInputEntryStyle"
+                        android:maxLength="20"
+                        android:inputType="textPersonName" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/vertical_spacing"
+                    android:layout_marginRight="@dimen/vertical_spacing"
+                    android:hint="@string/last_name">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtLastName"
+                        style="@style/TextInputEntryStyle"
+                        android:maxLength="20"
+                        android:inputType="textPersonName" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/vertical_spacing"
+                    android:layout_marginRight="@dimen/vertical_spacing"
+                    android:maxLength="20"
+                    style="@style/TextMandatoryInputLayout"
+                    android:hint="@string/email">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtEmail"
+                        style="@style/TextInputEntryStyle"
+                        android:maxLength="30"
+                        android:inputType="textEmailAddress" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <LinearLayout
+                    android:id="@+id/llMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/spnTelephoneCode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/five_dp"
+                        android:layout_marginTop="@dimen/five_dp"
+                        android:padding="0dp" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/five_dp"
+                        android:layout_marginEnd="@dimen/vertical_spacing"
+                        android:layout_weight="1"
+                        style="@style/TextMandatoryInputLayout"
+                        android:hint="@string/mobile">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edtMobileNo"
+                            style="@style/TextInputEntryStyle"
+                            android:maxLength="10"
+                            android:inputType="number" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight=".4"
+                        android:text="@string/agent_type"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                    <Spinner
+                        android:id="@+id/spnAgentType"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".6"
+                        android:minHeight="48dp"
+                        android:padding="@dimen/vertical_spacing"
+                        android:textAlignment="center" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:background="@color/colorGray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight=".4"
+                        android:text="@string/admin_office"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+
+                    <Spinner
+                        android:id="@+id/spnAgentAdminstrativOffice"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".6"
+                        android:minHeight="48dp"
+                        android:padding="@dimen/vertical_spacing"
+                        android:textAlignment="center" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:background="@color/colorGray" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".4"
+                        android:text="@string/hotel_de_finance"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/spnHotelDesFinance"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".6"
+                        android:minHeight="48dp"
+                        android:padding="0dp"
+                        android:spinnerMode="dialog" />
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:background="@color/colorGray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:minHeight="@dimen/min_spinner_height"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight=".4"
+                        android:text="@string/reporting_manager"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                    <TextView
+                        android:id="@+id/tvParentAgent"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".6"
+                        android:gravity="center_vertical" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:background="@color/colorGray" />
+
+                <!--region Documents-->
+
+                <LinearLayout
+                    android:id="@+id/llDocuments"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:orientation="horizontal"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/documents"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                    <TextView
+                        android:id="@+id/txtNumberOfDocuments"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:drawableEnd="@drawable/ic_arrow"
+                        android:gravity="center_vertical"
+                        android:textAllCaps="true"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:background="@color/colorGrayLight" />
+
+                <!--endregion-->
+
+                <!--region Notes-->
+
+                <LinearLayout
+                    android:id="@+id/llNotes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:orientation="horizontal"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/notes"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                    <TextView
+                        android:id="@+id/txtNumberOfNotes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:drawableEnd="@drawable/ic_arrow"
+                        android:gravity="center_vertical"
+                        android:textAllCaps="true"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/viewNotes"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:background="@color/colorGrayLight" />
+
+                <!--endregion-->
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/bottomLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/save" />
+
+            <LinearLayout
+                android:id="@+id/llRejectVerify"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/btnReject"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/reject" />
+
+                <Button
+                    android:id="@+id/btnVerify"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/verify" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</layout>

@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/ReceiptTextHeader"
+                android:text="@string/impound_number_imp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txtImpoundNumber"
+                style="@style/ReceiptTextBody"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/ReceiptTextHeader"
+                android:text="@string/impound_date"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txtImpoundDate"
+                style="@style/ReceiptTextBody"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtViolationTypeLabel"
+                style="@style/ReceiptTextHeader"
+                android:text="@string/violation_type"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txtViolationType"
+                style="@style/ReceiptTextBody"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtViolationClassLabel"
+                style="@style/ReceiptTextHeader"
+                android:text="@string/violation_class"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txtViolationClass"
+                style="@style/ReceiptTextBody"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_violation_charge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtViolationChargeLabel"
+                style="@style/ReceiptTextHeader"
+                android:text="@string/violation_charge_small"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txtViolationCharge"
+                style="@style/ReceiptTextBody"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llViolationD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtViolationDetailsLabel"
+                style="@style/ReceiptTextHeader"
+                android:text="@string/violation_details"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txtViolationDetails"
+                style="@style/ReceiptTextBody"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/impoundTypeLabel"
+                style="@style/ReceiptTextHeader"
+                android:text="@string/impond_type"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txtImpoundType"
+                style="@style/ReceiptTextBody"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/ReceiptTextHeader"
+                android:text="@string/receipt_impound_sub_type"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txtImpoundmentSubType"
+                style="@style/ReceiptTextBody"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/ReceiptTextHeader"
+                android:text="@string/impound_charge_imp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txtImpoundCharge"
+                style="@style/ReceiptTextBody"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/towingCraneTypeLabel"
+                style="@style/ReceiptTextHeader"
+                android:text="@string/towing_crane_type"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txtTowingCraneType"
+                style="@style/ReceiptTextBody"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/towingTripCountLabel"
+                style="@style/ReceiptTextHeader"
+                android:text="@string/towing_trip_count"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txtTowingTripCount"
+                style="@style/ReceiptTextBody"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/towingChargeLabel"
+                style="@style/ReceiptTextHeader"
+                android:text="@string/towing_charge"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txtTowingCharge"
+                style="@style/ReceiptTextBody"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_vehicle_fine_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/ReceiptTextHeader"
+                android:text="@string/receipt_fine_amount"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txtFineAmount"
+                style="@style/ReceiptTextBody"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/extraChargesLabel"
+                style="@style/ReceiptTextHeader"
+                android:text="@string/extra_charges"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txtExtraCharges"
+                style="@style/ReceiptTextBody"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/ReceiptTextHeader"
+                android:text="@string/receipt_total_charges"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txtTotalFineAmount"
+                style="@style/ReceiptTextBody"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/ReceiptTextHeader"
+                android:text="@string/settled_amount"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txtSettledAmount"
+                style="@style/ReceiptTextBody"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:background="@color/colorPrimary" />
+
+    </LinearLayout>
+</layout>

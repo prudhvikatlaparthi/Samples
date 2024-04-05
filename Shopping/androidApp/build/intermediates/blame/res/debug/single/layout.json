@@ -1,0 +1,50 @@
+[
+    {
+        "merged": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/bottom_sheet_sample.xml",
+        "source": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/res/layout/bottom_sheet_sample.xml"
+    },
+    {
+        "merged": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_welcome.xml",
+        "source": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/res/layout/fragment_welcome.xml"
+    },
+    {
+        "merged": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_image_view_pager.xml",
+        "source": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/res/layout/fragment_image_view_pager.xml"
+    },
+    {
+        "merged": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dummy.xml",
+        "source": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/res/layout/dummy.xml"
+    },
+    {
+        "merged": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_account_details.xml",
+        "source": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/res/layout/fragment_account_details.xml"
+    },
+    {
+        "merged": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_todo_layout.xml",
+        "source": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/res/layout/item_todo_layout.xml"
+    },
+    {
+        "merged": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/layout_image_pager_view.xml",
+        "source": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/res/layout/layout_image_pager_view.xml"
+    },
+    {
+        "merged": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_shop_by_category.xml",
+        "source": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/res/layout/fragment_shop_by_category.xml"
+    },
+    {
+        "merged": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_main.xml",
+        "source": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/navigation_view_header.xml",
+        "source": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/res/layout/navigation_view_header.xml"
+    },
+    {
+        "merged": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_home.xml",
+        "source": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/res/layout/fragment_home.xml"
+    },
+    {
+        "merged": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_todo_details.xml",
+        "source": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/res/layout/fragment_todo_details.xml"
+    }
+]

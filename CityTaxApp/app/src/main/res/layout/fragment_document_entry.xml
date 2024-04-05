@@ -1,0 +1,191 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/vertical_spacing"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/TextMandatoryInputLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/document_proof_type"
+                        android:paddingTop="@dimen/three_dp"
+                        android:paddingBottom="@dimen/three_dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edtDocumentProofSpn"
+                            style="@style/TextInputEntryStyle"
+                            android:drawableEnd="@drawable/ic_arrow_down"
+                            android:focusable="false"
+                            android:inputType="text" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </LinearLayout>
+
+
+<!--                <View-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="1dp"-->
+<!--                    android:layout_marginStart="12dp"-->
+<!--                    android:layout_marginEnd="12dp"-->
+<!--                    android:background="@color/colorGrayLight" />-->
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/TextMandatoryInputLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/document_type"
+                        android:paddingTop="@dimen/three_dp"
+                        android:paddingBottom="@dimen/three_dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edtDocumentTypeSpn"
+                            style="@style/TextInputEntryStyle"
+                            android:drawableEnd="@drawable/ic_arrow_down"
+                            android:focusable="false"
+                            android:inputType="text" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+
+<!--                <View-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="1dp"-->
+<!--                    android:layout_marginStart="12dp"-->
+<!--                    android:layout_marginEnd="12dp"-->
+<!--                    android:layout_marginBottom="8dp"-->
+<!--                    android:background="@color/colorGrayLight" />-->
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txtInpLayDocNo"
+                    style="@style/TextMandatoryInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/vertical_spacing"
+                    android:layout_marginRight="@dimen/vertical_spacing"
+                    android:hint="@string/id_number">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtDocumentNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:digits="@string/digits_doc_no"
+                        android:inputType="text"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/TextMandatoryInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/vertical_spacing"
+                    android:layout_marginRight="@dimen/vertical_spacing"
+                    android:hint="@string/document_name">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtDocumentName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textCapSentences"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/vertical_spacing"
+                    android:layout_marginRight="@dimen/vertical_spacing"
+                    android:hint="@string/remarks">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtRemarks"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textCapSentences"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/btnChoose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/capture_photo" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:id="@+id/imgDocument"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name" />
+
+                    <ImageButton
+                        android:id="@+id/btnClearImage"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignEnd="@id/imgDocument"
+                        android:layout_alignParentTop="true"
+                        android:background="@color/white"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/close"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="@string/save" />
+
+    </RelativeLayout>
+
+</layout>

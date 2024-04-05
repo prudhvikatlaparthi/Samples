@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:orientation="vertical"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="8dp">
+
+        <LinearLayout
+            android:id="@+id/llOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtKeyOne"
+                android:layout_marginEnd="@dimen/eight_dp"
+                style="@style/TextHeader"
+                 />
+
+            <TextView
+                android:id="@+id/txtValueOne"
+                style="@style/TextBody"
+                 />
+
+        </LinearLayout>
+<!--License Category-->
+        <LinearLayout
+            android:id="@+id/llCategoryOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/txtLCategory"
+                style="@style/TextHeader"
+                android:text="@string/license_category"
+                />
+
+            <TextView
+                android:id="@+id/txtLicenceCValue"
+                style="@style/TextBody"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llTaxableMatter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/txtTaxablematter"
+                style="@style/TextHeader"
+                android:text="@string/taxable_matter"
+                />
+
+            <TextView
+                android:id="@+id/txtDataTaxableMatter"
+                style="@style/TextBody"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtKeyTwo"
+                style="@style/TextHeader"
+                 />
+
+            <TextView
+                android:id="@+id/txtValueTwo"
+                style="@style/TextBody"
+                 />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llThree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtKeyThree"
+                style="@style/TextHeader"
+                 />
+
+            <TextView
+                android:id="@+id/txtValueThree"
+                style="@style/TextBody"
+                 />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lltwelve"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/txtKeyTwelve"
+                style="@style/TextHeader"
+                />
+
+            <TextView
+                android:id="@+id/txtValueTwelve"
+                style="@style/TextBody"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llFour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtKeyFour"
+                style="@style/TextHeader"
+                 />
+
+            <TextView
+                android:id="@+id/txtValueFour"
+                style="@style/TextBody"
+                 />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llFive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtKeyFive"
+                android:layout_marginEnd="@dimen/eight_dp"
+                style="@style/TextHeader"
+                 />
+
+            <TextView
+                android:id="@+id/txtValueFive"
+                style="@style/TextBody"
+                 />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llSix"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtKeySix"
+                style="@style/TextHeader"
+                 />
+
+            <TextView
+                android:id="@+id/txtValueSix"
+                style="@style/TextBody"
+                 />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llSeven"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtKeySeven"
+                style="@style/TextHeader"
+                 />
+
+            <TextView
+                android:id="@+id/txtValueSeven"
+                style="@style/TextBody"
+                 />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llEight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtKeyEight"
+                style="@style/TextHeader"
+                 />
+
+            <TextView
+                android:id="@+id/txtValueEight"
+                style="@style/TextBody"
+                 />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llNine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtKeyNine"
+                style="@style/TextHeader"
+                 />
+
+            <TextView
+                android:id="@+id/txtValueNine"
+                style="@style/TextBody"
+                 />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llTen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtKeyTen"
+                style="@style/TextHeader"
+                 />
+
+            <TextView
+                android:id="@+id/txtValueTen"
+                style="@style/TextBody"
+                 />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/llEleven"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtKeyEleven"
+                style="@style/TextHeader"
+                 />
+
+            <TextView
+                android:id="@+id/txtValueEleven"
+                style="@style/TextBody"
+                 />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcvDocuments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+    </LinearLayout>
+
+</layout>

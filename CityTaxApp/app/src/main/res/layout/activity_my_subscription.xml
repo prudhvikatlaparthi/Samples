@@ -1,0 +1,228 @@
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/crdPaymentsLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="@color/colorWhite"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/ten_dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_license_code"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/twenty_sp" />
+
+                <TextView
+                    android:id="@+id/txtSubscriptionCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:text="--"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/thirty_sp" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="@color/colorWhite"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/ten_dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_subscription_start_date"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/twenty_sp" />
+
+                    <TextView
+                        android:id="@+id/txtSubscriptionStartDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/ten_dp"
+                        android:text="--"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/thirty_sp" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+        </LinearLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="@color/colorWhite"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/ten_dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_remaining_days"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/twenty_sp" />
+
+                <TextView
+                    android:id="@+id/txtSubscriptionDays"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/thirty_sp" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="@color/colorWhite"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/ten_dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_subscription_expiry_date"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/twenty_sp" />
+
+                <TextView
+                    android:id="@+id/txtSubscriptionExpiryDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:text="--"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/thirty_sp" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!--        <com.google.android.material.card.MaterialCardView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_margin="4dp"-->
+        <!--            app:cardBackgroundColor="@color/colorWhite"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toTopOf="parent"-->
+        <!--            android:layout_weight="1"-->
+        <!--            >-->
+
+
+        <!--            <LinearLayout-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="match_parent"-->
+        <!--                android:layout_margin="@dimen/ten_dp"-->
+        <!--                android:orientation="vertical"-->
+        <!--                android:gravity="center">-->
+
+        <!--                <TextView-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:text="@string/label_last_subscription_date"-->
+        <!--                    android:textAlignment="center"-->
+        <!--                    android:textColor="@color/colorEffiaSoftDark"-->
+        <!--                    android:textSize="@dimen/twenty_sp" />-->
+
+        <!--                <TextView-->
+        <!--                    android:id="@+id/txtLastSubscriptionDate"-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:layout_marginTop="@dimen/ten_dp"-->
+        <!--                    android:text="&#45;&#45;"-->
+        <!--                    android:textAlignment="center"-->
+        <!--                    android:textColor="@color/colorAccent"-->
+        <!--                    android:textSize="@dimen/thirty_sp" />-->
+
+        <!--            </LinearLayout>-->
+
+        <!--        </com.google.android.material.card.MaterialCardView>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

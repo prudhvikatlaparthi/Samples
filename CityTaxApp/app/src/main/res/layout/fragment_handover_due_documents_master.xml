@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/rlReportingDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/TextMandatoryInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/vertical_spacing"
+                android:layout_marginRight="@dimen/vertical_spacing"
+                android:hint="@string/reporting_date">
+
+                <com.sgs.citytax.ui.custom.DatePickerEditText
+                    android:id="@+id/edtReportingDate"
+                    style="@style/TextInputEntryStyle"
+                    app:needIcons="show"
+                    app:needTimePicker="show" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtRecipientName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/recipient_name"
+                style="@style/TextMandatoryInputLayout"
+                android:layout_marginLeft="@dimen/vertical_spacing"
+                android:layout_marginRight="@dimen/vertical_spacing"
+                android:maxLength="100"/>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtMobileNum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/mobile_no"
+                android:inputType="number"
+                style="@style/TextMandatoryInputLayout"
+                android:layout_marginLeft="@dimen/vertical_spacing"
+                android:layout_marginRight="@dimen/vertical_spacing"
+                android:maxLength="16"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:clickable="true"
+                android:focusable="true">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtNoDataFound"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/txt_message_capture_image"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/twenty_sp"
+                    android:visibility="gone" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fabSearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/horizontal_spacing"
+                    android:layout_marginTop="@dimen/horizontal_spacing"
+                    android:layout_marginRight="@dimen/horizontal_spacing"
+                    android:layout_marginBottom="80dp"
+                    android:src="@drawable/ic_search"
+                    android:tint="@color/white"
+                    android:visibility="gone"
+                    app:fabSize="auto" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fabAdd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="@dimen/horizontal_spacing"
+                    android:layout_marginTop="@dimen/horizontal_spacing"
+                    android:layout_marginEnd="@dimen/horizontal_spacing"
+                    android:layout_marginBottom="@dimen/horizontal_spacing"
+                    android:onClick="doAdd"
+                    android:src="@drawable/ic_baseline_camera"
+                    android:tint="@color/white"
+                    app:fabSize="auto" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorGray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:clickable="true"
+                android:focusable="true">
+
+                <LinearLayout
+                    android:id="@+id/llSignature"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/vertical_spacing"
+                    android:orientation="vertical"
+                    android:padding="@dimen/vertical_spacing"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/vertical_spacing"
+                        android:text="@string/add_signature"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <com.github.gcacace.signaturepad.views.SignaturePad
+                        android:id="@+id/signatureView"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:background="@drawable/edit_bg_square"
+                        android:padding="@dimen/vertical_spacing"
+                        app:clearOnDoubleClick="true"
+                        app:penColor="@android:color/black"
+                        app:penMaxWidth="2dp"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/save" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor">
+
+
+    <include
+        android:id="@+id/appBarLayout"
+        layout="@layout/appbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+<LinearLayout
+    android:id="@+id/errorWrapper"
+    android:layout_width="match_parent"
+    android:layout_centerInParent="true"
+    android:layout_height="wrap_content"
+    android:visibility="gone"
+    android:gravity="center"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tv_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito_bold"
+        android:text="Error"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp" />
+    <Button
+        android:id="@+id/bt_retry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_text_borders"
+        android:fontFamily="@font/nunito_bold"
+        android:text="Retry"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        android:visibility="visible" />
+</LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvUsers"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingBottom="50dp"
+        android:visibility="gone"
+        android:layout_below="@+id/appBarLayout"
+        tools:listitem="@layout/item_user" />
+
+    <ProgressBar
+        android:id="@+id/paginationProgressBar"
+        style="?attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:visibility="invisible"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        app:srcCompat="@drawable/ic_add" />
+
+    <ProgressBar
+        android:id="@+id/userProgressBar"
+        style="?attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@android:color/transparent"
+        android:visibility="gone" />
+
+</RelativeLayout>

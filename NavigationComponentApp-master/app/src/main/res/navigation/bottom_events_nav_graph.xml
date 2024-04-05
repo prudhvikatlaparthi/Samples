@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_events_nav_graph"
+    app:startDestination="@id/bottom_item_this_week_events">
+
+    <fragment
+        android:id="@+id/bottom_item_this_week_events"
+        android:name="com.pru.navigationcomponentapp.EventsThisWeekFragment"
+        android:label="fragment_events_this_week"
+        tools:layout="@layout/fragment_events_this_week" />
+    <fragment
+        android:id="@+id/bottom_item_next_week_events"
+        android:name="com.pru.navigationcomponentapp.EventsNextWeekFragment"
+        android:label="EventsNextWeekFragment" />
+</navigation>

@@ -1,0 +1,748 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="@dimen/vertical_spacing">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/llReceiptBody"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/llDuplicatePrints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/ReceiptTextHeader"
+                    android:text="@string/duplicate_print"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/txtPrintCounts"
+                    style="@style/ReceiptTextBody"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:gravity="center"
+                android:text="@string/traffic_ticket"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgQRCode"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:src="@color/black" />
+            <include
+                android:id="@+id/qrCodeWrapper"
+                layout="@layout/layout_qr_code_label"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:gravity="center"
+                android:text="@string/txt_municipality_of_ougadougu"
+                android:textColor="@color/black"
+                android:textSize="@dimen/eighteen_sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/ReceiptTextHeader"
+                    android:text="@string/txt_date_of_print"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/txtDateOfPrint"
+                    style="@style/ReceiptTextBody"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/ReceiptTextHeader"
+                    android:text="@string/date_of_violation"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/txtDateOfViolation"
+                    style="@style/ReceiptTextBody"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/ReceiptTextHeader"
+                    android:text="@string/traffic_ticket_number_new"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/txtTicketNumber"
+                    style="@style/ReceiptTextBody"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/ReceiptTextHeader"
+                    android:text="@string/receipt_taxation_year"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/txtTaxationYear"
+                    style="@style/ReceiptTextBody"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llVehicleNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/ReceiptTextHeader"
+                    android:text="@string/receipt_vehicle_number_imp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/txtVehicleNo"
+                    style="@style/ReceiptTextBody"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llVehicleIDSycotax"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/ReceiptTextHeader"
+                    android:text="@string/receipt_vehicle_sycotax_id"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/txtVehicleSycoTaxID"
+                    style="@style/ReceiptTextBody"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llVehicleOwner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/txtVehicleOwnerLabel"
+                    style="@style/ReceiptTextHeader"
+                    android:text="@string/vehicle_owner"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/txtVehicleOwner"
+                    style="@style/ReceiptTextBody"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llBusinessSycoTax"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/ReceiptTextHeader"
+                    android:text="@string/receipt_id_sycotax"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/txtSycoTaxID"
+                    style="@style/ReceiptTextBody"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/llCitizenSycoTax"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/ReceiptTextHeader"
+                    android:text="@string/citizen_syco_tax_id"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/txtCitizenSycoTaxID"
+                    style="@style/ReceiptTextBody"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llCardNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/ReceiptTextHeader"
+                    android:text="@string/citizen_id_number"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/txtIDCardNumber"
+                    style="@style/ReceiptTextBody"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDriver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/txtDriverLabel"
+                    style="@style/ReceiptTextHeader"
+                    android:text="@string/driver_imp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/txtDriver"
+                    style="@style/ReceiptTextBody"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDrivingLicenseNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/txtDrivingLicenseNumberLabel"
+                    style="@style/ReceiptTextHeader"
+                    android:text="@string/driving_license_number"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/txtDrivingLicenseNumber"
+                    style="@style/ReceiptTextBody"
+                    android:layout_marginStart="@dimen/five_dp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llContrevenant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/txtViolatorLabel"
+                    style="@style/ReceiptTextHeader"
+                    android:text="@string/violator"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/txtViolator"
+                    style="@style/ReceiptTextBody"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/title_address_label"
+                    style="@style/ReceiptTextHeader"
+                    android:text="@string/title_address_new"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/txtAddress"
+                    style="@style/ReceiptTextBody"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/title_state_label"
+                    style="@style/ReceiptTextHeader"
+                    android:text="@string/state"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/txtState"
+                    style="@style/ReceiptTextBody"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/title_city_label"
+                    style="@style/ReceiptTextHeader"
+                    android:text="@string/city"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/txtCity"
+                    style="@style/ReceiptTextBody"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/ReceiptTextHeader"
+                    android:text="@string/txt_ardt"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/txtArdt"
+                    style="@style/ReceiptTextBody"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtSectorLabel"
+                    style="@style/ReceiptTextHeader"
+                    android:text="@string/sector"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/txtSector"
+                    style="@style/ReceiptTextBody"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/ReceiptTextHeader"
+                    android:text="@string/txt_section"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/txtSection"
+                    style="@style/ReceiptTextBody"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/ReceiptTextHeader"
+                    android:text="@string/txt_lot"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/txtLot"
+                    style="@style/ReceiptTextBody"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/ReceiptTextHeader"
+                    android:text="@string/txt_parcel"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/txtParcel"
+                    style="@style/ReceiptTextBody"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/ReceiptTextHeader"
+                    android:text="@string/receipt_lat"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/txtLatitude"
+                    style="@style/ReceiptTextBody"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/ReceiptTextHeader"
+                    android:text="@string/receipt_long"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/txtLongitude"
+                    style="@style/ReceiptTextBody"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:gravity="center"
+                android:text="@string/violation_details"
+                android:textColor="@color/black"
+                android:textSize="@dimen/eighteen_sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtViolationTypeLabel"
+                    style="@style/ReceiptTextHeader"
+                    android:text="@string/violation_type"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/txtViolationType"
+                    style="@style/ReceiptTextBody"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtViolationClassLabel"
+                    style="@style/ReceiptTextHeader"
+                    android:text="@string/violation_class"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/txtViolationClass"
+                    style="@style/ReceiptTextBody"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtViolationDetailsLabel"
+                    style="@style/ReceiptTextHeader"
+                    android:text="@string/violation_details"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/txtViolationDetails"
+                    style="@style/ReceiptTextBody"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtFineAmountLable"
+                    style="@style/ReceiptTextHeader"
+                    android:text="@string/receipt_fine_amount"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/txtFineAmount"
+                    style="@style/ReceiptTextBody"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtExtraChargesLabel"
+                    style="@style/ReceiptTextHeader"
+                    android:text="@string/extra_charges"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/txtExtraCharges"
+                    style="@style/ReceiptTextBody"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/ReceiptTextHeader"
+                    android:text="@string/ticket_amount_new"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/txtTicketAmount"
+                    style="@style/ReceiptTextBody"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/ReceiptTextHeader"
+                    android:text="@string/total_amount_of_ticket_imposed_new"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/txtTotalAmount"
+                    style="@style/ReceiptTextBody"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/ReceiptTextHeader"
+                    android:text="@string/stop_this_ticket_to_the_sum_of"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/txtAmountInWords"
+                    style="@style/ReceiptTextBody"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/ReceiptTextHeader"
+                    android:text="@string/txt_generated_by"
+                    android:textStyle="bold|italic"/>
+
+                <TextView
+                    android:id="@+id/txtGeneratedBy"
+                    style="@style/ReceiptTextBody"
+                    android:textStyle="bold|italic"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/ReceiptTextHeader"
+                    android:text="@string/badge_number_new"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/txtBadgeNumber"
+                    style="@style/ReceiptTextBody"
+                    android:textStyle="bold|italic"/>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imgSignature"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:text="@string/nb"
+                android:textSize="@dimen/sixteen_sp"
+                android:textColor="@color/colorDarkGray"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtTaxNoticeNote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/five_dp"
+                android:textSize="@dimen/sixteen_sp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/txtPoweredBy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:gravity="center"
+                android:textSize="@dimen/sixteen_sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnPrint"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/print" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+</layout>

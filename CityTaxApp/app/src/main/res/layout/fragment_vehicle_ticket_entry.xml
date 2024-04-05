@@ -1,0 +1,956 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorLayoutBackground"
+        android:focusableInTouchMode="true">
+
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            android:layout_marginBottom="40dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/vertical_spacing"
+            android:orientation="vertical">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/vertical_spacing"
+            app:cardBackgroundColor="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/vertical_spacing"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/TextMandatoryInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/vertical_spacing"
+                    android:layout_marginRight="@dimen/vertical_spacing"
+                    android:layout_marginTop="@dimen/vertical_spacing"
+                    android:hint="@string/ticket_date">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtTicketDate"
+                        style="@style/TextInputEntryStyle"
+                        android:enabled="false" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/violation_class"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/spnViolationClass"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:enabled="false"
+                        android:minHeight="@dimen/min_spinner_height"
+                        android:padding="@dimen/vertical_spacing" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:background="@color/colorGray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/TextMandatoryTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/violation_type"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/spnViolationType"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:minHeight="@dimen/min_spinner_height"
+                        android:padding="@dimen/vertical_spacing"
+                        android:spinnerMode="dialog" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:background="@color/colorGray" />
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/TextMandatoryInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/vertical_spacing"
+                    android:layout_marginRight="@dimen/vertical_spacing"
+                    android:hint="@string/violation_details">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtViolationDetails"
+                        style="@style/TextInputEntryStyle"
+                        android:inputType="text" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/vertical_spacing"
+                    android:layout_marginRight="@dimen/vertical_spacing"
+                    android:hint="@string/amount">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtAmount"
+                        style="@style/TextInputEntryStyle"
+                        android:enabled="false"
+                        android:inputType="number" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/TextMandatoryTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/police_station"
+
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/spnPoliceStation"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:minHeight="@dimen/min_spinner_height"
+                        android:padding="@dimen/vertical_spacing" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:background="@color/colorGray" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/crdVehicleAndOwnerSelection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/vertical_spacing"
+                    android:layout_marginBottom="@dimen/vertical_spacing"
+                    app:cardBackgroundColor="@color/white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/vertical_spacing"
+                        android:layout_marginBottom="@dimen/vertical_spacing"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/TextMandatoryInputLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/vertical_spacing"
+                            android:layout_marginRight="@dimen/vertical_spacing"
+                            android:hint="@string/vehicle_no">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtVehicleNo"
+                                style="@style/TextInputEntryStyle"
+                                android:focusable="false" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/vertical_spacing"
+                            android:layout_marginRight="@dimen/vertical_spacing"
+                            android:hint="@string/owner_name">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtOwnerName"
+                                style="@style/TextInputEntryStyle"
+                                android:enabled="false"
+                                android:focusable="false" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <LinearLayout
+                            android:id="@+id/llCreateVehicle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/vertical_spacing"
+                            android:gravity="end"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/new_vehicle"
+                                android:textStyle="italic" />
+
+                            <TextView
+                                android:id="@+id/tvCreateVehicle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/create"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="16sp"
+                                android:textStyle="italic|bold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/vertical_spacing"
+                            android:gravity="end"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/txtTicketHistory"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/ticket_history"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="@dimen/sixteen_sp"
+                                android:textStyle="italic|bold" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/crdDriverSelection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/vertical_spacing"
+                    android:layout_marginBottom="@dimen/vertical_spacing"
+                    app:cardBackgroundColor="@color/white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/vertical_spacing"
+                        android:layout_marginBottom="@dimen/vertical_spacing"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/vertical_spacing"
+                            android:layout_marginRight="@dimen/vertical_spacing"
+                            android:hint="@string/driver_name">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtDriverName"
+                                style="@style/TextInputEntryStyle"
+                                android:focusable="false" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/vertical_spacing"
+                            android:layout_marginRight="@dimen/vertical_spacing"
+                            android:hint="@string/phone_number">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtDriverNumber"
+                                style="@style/TextInputEntryStyle"
+                                android:focusable="false"
+                                android:inputType="phone" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/vertical_spacing"
+                            android:layout_marginRight="@dimen/vertical_spacing"
+                            android:hint="@string/driving_license_number">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtDrivingLicenseNumber"
+                                style="@style/TextInputEntryStyle"
+                                android:focusable="false"
+                                android:inputType="phone" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <LinearLayout
+                            android:id="@+id/llCreateDriver"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/vertical_spacing"
+                            android:gravity="end"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/new_driver"
+                                android:textStyle="italic" />
+
+                            <TextView
+                                android:id="@+id/tvCreateDriver"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/create"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="16sp"
+                                android:textStyle="italic|bold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/vertical_spacing"
+                            android:gravity="end"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tvSeeTicketHistoryDriver"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/see_ticket_history"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="16sp"
+                                android:textStyle="italic|bold" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/crdViolatorSelection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/vertical_spacing"
+                    android:layout_marginBottom="@dimen/vertical_spacing"
+                    app:cardBackgroundColor="@color/white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/vertical_spacing"
+                        android:layout_marginBottom="@dimen/vertical_spacing"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/TextMandatoryInputLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/vertical_spacing"
+                            android:layout_marginRight="@dimen/vertical_spacing"
+                            android:hint="@string/violator_name">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtViolatorName"
+                                style="@style/TextInputEntryStyle"
+                                android:focusable="false" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/vertical_spacing"
+                            android:layout_marginRight="@dimen/vertical_spacing"
+                            android:hint="@string/phone_number">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtViolatorNumber"
+                                style="@style/TextInputEntryStyle"
+                                android:focusable="false"
+                                android:inputType="phone" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/llCreateViolator"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/vertical_spacing"
+                            android:gravity="end"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/new_violator"
+                                android:textStyle="italic" />
+
+                            <TextView
+                                android:id="@+id/tvCreateViolator"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/create"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="16sp"
+                                android:textStyle="italic|bold" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <!--region Address-->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/vertical_spacing"
+                    app:cardBackgroundColor="@color/white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp"
+                            android:text="@string/contravention_address"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:orientation="horizontal"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp">
+
+                            <TextView
+                                style="@style/TextMandatoryTextView"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:text="@string/country"
+
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                            <androidx.appcompat.widget.AppCompatSpinner
+                                android:id="@+id/spnCountry"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:minHeight="48dp"
+                                android:paddingStart="0dp"
+                                android:paddingEnd="@dimen/eighteen_sp"
+                                android:spinnerMode="dialog" />
+
+                        </LinearLayout>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:background="@color/colorGray" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:orientation="horizontal"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp">
+
+                            <TextView
+                                style="@style/TextMandatoryTextView"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:text="@string/state"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                            <androidx.appcompat.widget.AppCompatSpinner
+                                android:id="@+id/spnState"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:minHeight="48dp"
+                                android:paddingStart="0dp"
+                                android:paddingEnd="@dimen/eighteen_sp"
+                                android:spinnerMode="dialog" />
+
+                        </LinearLayout>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:background="@color/colorGray" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:orientation="horizontal"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp">
+
+                            <TextView
+                                style="@style/TextMandatoryTextView"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:text="@string/city"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                            <androidx.appcompat.widget.AppCompatSpinner
+                                android:id="@+id/spnCity"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:minHeight="48dp"
+                                android:paddingStart="0dp"
+                                android:paddingEnd="@dimen/eighteen_sp"
+                                android:spinnerMode="dialog" />
+
+                        </LinearLayout>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:background="@color/colorGray" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:orientation="horizontal"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp">
+
+                            <TextView
+                                style="@style/TextMandatoryTextView"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:text="@string/zone"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                            <androidx.appcompat.widget.AppCompatSpinner
+                                android:id="@+id/spnZone"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:minHeight="48dp"
+                                android:paddingStart="0dp"
+                                android:paddingEnd="@dimen/eighteen_sp"
+                                android:spinnerMode="dialog" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:background="@color/colorGray" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:orientation="horizontal"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp">
+
+                            <TextView
+                                style="@style/TextMandatoryTextView"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:text="@string/sector"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                            <androidx.appcompat.widget.AppCompatSpinner
+                                android:id="@+id/spnSector"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:minHeight="48dp"
+                                android:paddingStart="0dp"
+                                android:paddingEnd="@dimen/eighteen_sp"
+                                android:spinnerMode="dialog" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:background="@color/colorGray" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/edtStreetLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/vertical_spacing"
+                            android:layout_marginRight="@dimen/vertical_spacing"
+                            android:hint="@string/street"
+                            android:visibility="gone">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtStreet"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="textCapWords"
+                                android:maxLength="80"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/edtSectionLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/vertical_spacing"
+                            android:layout_marginRight="@dimen/vertical_spacing"
+                            android:hint="@string/plot"
+                            android:visibility="gone">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtPlot"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="textCapWords"
+                                android:maxLength="20"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/edtLotLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/vertical_spacing"
+                            android:layout_marginRight="@dimen/vertical_spacing"
+                            android:hint="@string/block"
+                            android:visibility="gone">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtBlock"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="textCapWords"
+                                android:maxLength="20"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/edtParcelLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/vertical_spacing"
+                            android:layout_marginRight="@dimen/vertical_spacing"
+                            android:hint="@string/door_no"
+                            android:visibility="gone">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtDoorNo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="textCapWords"
+                                android:maxLength="20"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/edtZipLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/vertical_spacing"
+                            android:layout_marginTop="@dimen/vertical_spacing"
+                            android:layout_marginRight="@dimen/vertical_spacing"
+                            android:hint="@string/zipcode"
+                            android:visibility="gone">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtZipCode"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="textCapWords"
+                                android:maxLength="14"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+                        <TextView
+                            android:id="@+id/btnShowMoreOrLess"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end|center_vertical"
+                            android:layout_marginTop="@dimen/vertical_spacing"
+                            android:layout_marginEnd="@dimen/vertical_spacing"
+                            android:layout_marginBottom="@dimen/vertical_spacing"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="@string/show_more"
+                            android:textColor="@color/lite_blue" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/vertical_spacing"
+                                    android:layout_marginRight="@dimen/vertical_spacing"
+                                    android:hint="@string/lbl_latitude">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/edtLatitude"
+                                        style="@style/TextInputEntryStyle"
+                                        android:enabled="false"
+                                        android:inputType="numberDecimal" />
+
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/vertical_spacing"
+                                    android:layout_marginRight="@dimen/vertical_spacing"
+                                    android:hint="@string/lbl_longitude">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/edtLongitude"
+                                        style="@style/TextInputEntryStyle"
+                                        android:enabled="false"
+                                        android:inputType="numberDecimal" />
+
+                                </com.google.android.material.textfield.TextInputLayout>
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/ivAddLocation"
+                                android:layout_width="72dp"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_add_location" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <!--endregion-->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/vertical_spacing"
+            app:cardBackgroundColor="@color/white">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/vertical_spacing"
+            android:layout_marginTop="@dimen/vertical_spacing"
+            android:layout_marginRight="@dimen/vertical_spacing"
+            android:layout_marginBottom="@dimen/vertical_spacing"
+            android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/vertical_spacing"
+                    android:layout_marginRight="@dimen/vertical_spacing"
+                    android:hint="@string/Remarks">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtRemarks"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textCapWords"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!--region Documents-->
+
+                <LinearLayout
+                    android:id="@+id/llDocuments"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:orientation="horizontal"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp">
+                    <include
+                        android:id="@+id/multipleDoc"
+                        layout="@layout/document_wrapper"/>
+
+                    <!--<TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/documents"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                    <TextView
+                        android:id="@+id/txtNumberOfDocuments"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:drawableEnd="@drawable/ic_arrow"
+                        android:gravity="center_vertical"
+                        android:textAllCaps="true"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />-->
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:background="@color/colorGrayLight" />
+        </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+                <!--endregion-->
+
+                <LinearLayout
+                    android:id="@+id/llSignature"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/vertical_spacing"
+                    android:orientation="vertical"
+                    android:padding="@dimen/vertical_spacing">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/vertical_spacing"
+                        android:text="@string/add_signature"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <com.github.gcacace.signaturepad.views.SignaturePad
+                        android:id="@+id/signatureView"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:background="@color/white"
+                        android:padding="@dimen/vertical_spacing"
+                        app:clearOnDoubleClick="true"
+                        app:penColor="@android:color/black"
+                        app:penMaxWidth="2dp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/save" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</layout>

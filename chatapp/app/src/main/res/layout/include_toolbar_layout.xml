@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/dummyBackArrow"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="18dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_arrow_backward_dark"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvToolbarTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/dummyBackArrow"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="@string/app_name"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_20sp" />
+
+    <TextView
+        android:id="@+id/tvToolbarSubTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvToolbarTitle"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@+id/dummyBackArrow"
+        android:lineSpacingExtra="1sp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_11sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

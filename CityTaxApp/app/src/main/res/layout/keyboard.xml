@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:horizontalGap="0.25%p"
+    android:keyWidth="32%p"
+    android:keyHeight="9%p"
+    android:verticalGap="0.25%p">
+
+    <Row>
+
+        <Key
+            android:codes="49"
+            android:keyEdgeFlags="left"
+            android:keyLabel="@string/txt_1" />
+
+        <Key
+            android:codes="50"
+            android:horizontalGap="0.25%p"
+            android:keyLabel="@string/txt_2" />
+
+        <Key
+            android:codes="51"
+            android:keyEdgeFlags="right"
+            android:keyLabel="@string/txt_3" />
+    </Row>
+
+    <Row>
+
+        <Key
+            android:codes="52"
+            android:keyEdgeFlags="left"
+            android:keyLabel="@string/txt_4" />
+
+        <Key
+            android:codes="53"
+            android:keyLabel="@string/txt_5" />
+
+        <Key
+            android:codes="54"
+            android:keyEdgeFlags="right"
+            android:keyLabel="@string/txt_6" />
+    </Row>
+
+    <Row>
+
+        <Key
+            android:codes="55"
+            android:keyEdgeFlags="left"
+            android:keyLabel="@string/txt_7" />
+
+        <Key
+            android:codes="56"
+            android:keyLabel="@string/txt_8" />
+
+        <Key
+            android:codes="57"
+            android:keyEdgeFlags="right"
+            android:keyLabel="@string/txt_9" />
+    </Row>
+
+    <Row>
+
+        <Key
+            android:codes="-23"
+            android:isRepeatable="true"
+            android:keyEdgeFlags="left"
+            android:keyLabel="." />
+
+        <Key
+            android:codes="48"
+            android:keyLabel="@string/txt_0" />
+
+        <Key
+            android:codes="-5"
+            android:keyEdgeFlags="right"
+            android:keyLabel="@string/CLR" />
+    </Row>
+</Keyboard>

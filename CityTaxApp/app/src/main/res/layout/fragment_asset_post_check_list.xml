@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="false"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/vertical_spacing">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/vertical_spacing"
+                app:cardBackgroundColor="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/vertical_spacing">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/TextHeader"
+                            android:text="@string/asset_id" />
+
+                        <TextView
+                            android:id="@+id/txtAssetNo"
+                            style="@style/TextBody" />
+
+                    </LinearLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/edtOdometerStartLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/ten_dp"
+                        android:hint="@string/odometer_start"
+                        android:visibility="gone">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edtOdometerStart"
+                            style="@style/TextInputEntryStyle"
+                            android:inputType="numberDecimal"
+                            android:visibility="gone"
+                            android:enabled="false"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/edtOdometerEndLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/odometer_end"
+                        android:visibility="gone">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edtOdometerEnd"
+                            style="@style/TextInputEntryStyle"
+                            android:inputType="numberDecimal"
+                            android:visibility="gone" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/edtFineAmountLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/txt_fine_amount"
+                        android:visibility="visible">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edtFineAmount"
+                            style="@style/TextInputEntryStyle"
+                            android:maxLength="6"
+                            android:inputType="numberDecimal" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/edtRemarksLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/remarks"
+                        android:visibility="visible">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edtRemarks"
+                            style="@style/TextInputEntryStyle"
+                            android:inputType="text" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/crdPreCheckListdata"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/vertical_spacing"
+                android:padding="@dimen/vertical_spacing"
+                app:cardBackgroundColor="@color/white"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/vertical_spacing">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/vertical_spacing"
+                        android:text="@string/precheck_list_data"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:textColor="@color/black" />
+
+                    <LinearLayout
+                        android:id="@+id/llDynamicPreCheckListData"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/vertical_spacing"
+                android:padding="@dimen/vertical_spacing"
+                app:cardBackgroundColor="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/vertical_spacing">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/vertical_spacing"
+                        android:text="@string/post_checklist_data"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:textColor="@color/black" />
+
+                    <LinearLayout
+                        android:id="@+id/llDynamicPostCheckListData"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/vertical_spacing">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/vertical_spacing"
+                        android:text="@string/add_signature"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black" />
+
+                    <com.github.gcacace.signaturepad.views.SignaturePad
+                        android:id="@+id/signatureView"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:background="@color/white"
+                        android:padding="@dimen/vertical_spacing"
+                        app:clearOnDoubleClick="true"
+                        app:penColor="@android:color/black"
+                        app:penMaxWidth="2dp" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/save" />
+
+</LinearLayout>
+
+</layout>

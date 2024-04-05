@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        tools:context=".ui.SalesReportActivity">
+
+
+        <LinearLayout
+            android:id="@+id/tableHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#4273C5"
+            android:orientation="horizontal"
+            android:padding="4dp"
+            android:weightSum="2">
+
+            <TextView
+                style="@style/TextReportHeader"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/row_labels"
+                android:textColor="@color/white" />
+
+            <TextView
+                style="@style/TextReportHeader"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.2"
+                android:gravity="center"
+                android:text="@string/qty"
+                android:textColor="@color/white" />
+
+            <TextView
+                style="@style/TextReportHeader"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.8"
+                android:gravity="end"
+                android:text="@string/total_in_f_cfa"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <!--<androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_sales_report" />-->
+        <com.sgs.citytax.ui.custom.SalesReportView
+            android:id="@+id/salesReportView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+</layout>

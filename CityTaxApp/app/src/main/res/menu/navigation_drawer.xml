@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/group_reports"
+        android:checkableBehavior="single">
+        <item android:title="@string/title_reports">
+            <menu>
+                <item
+                    android:id="@+id/credit_balance_statement"
+                    android:title="@string/title_credit_balance_statement" />
+                <item
+                    android:id="@+id/agent_collection_histroy"
+                    android:title="@string/title_collection_history" />
+                <item
+                    android:id="@+id/agent_summary_details"
+                    android:title="@string/label_summary_details" />
+
+                <item
+                    android:id="@+id/agent_collection_summary"
+                    android:title="@string/title_agent_collection_summary" />
+
+                <item
+                    android:id="@+id/cash_deposit_approval"
+                    android:title="@string/cash_deposit_request" />
+
+                <item
+                    android:id="@+id/agent_commission_report"
+                    android:title="@string/agent_commission_report" />
+
+                <item
+                    android:id="@+id/tax_notice_history"
+                    android:title="@string/tax_notice_history" />
+
+                <item
+                    android:id="@+id/parking_ticket_history"
+                    android:title="@string/parking_ticket_history" />
+
+                <item
+                    android:id="@+id/business_transaction_history"
+                    android:title="@string/business_transaction_history" />
+
+                <item
+                    android:id="@+id/business_penalty_waive_off"
+                    android:title="@string/penalty_waive_off"
+                    android:visible="false" />
+
+                <item
+                    android:id="@+id/business_impoundment_list"
+                    android:title="@string/impoundment_list"
+                    android:visible="false" />
+                <item
+                    android:id="@+id/pending_violations"
+                    android:title="@string/title_pending_violations"
+                    android:visible="false" />
+                <item
+                    android:id="@+id/stock_in_report"
+                    android:title="@string/title_stock_in_report"
+                    android:visible="false" />
+
+                <item
+                    android:id="@+id/outstanding_waive_off"
+                    android:title="@string/outstanding_waive_off"
+                    android:visible="false" />
+                <item
+                    android:id="@+id/licenseRenewal"
+                    android:title="@string/license_renewal"
+                    android:visible="true" />
+                <item
+                    android:id="@+id/sales_history"
+                    android:title="@string/title_sales_history" />
+                <item
+                    android:id="@+id/security_history"
+                    android:title="@string/security_history" />
+                <item
+                    android:id="@+id/inventory_status"
+                    android:title="@string/title_stock_status"
+                    android:visible="false" />
+                <item
+                    android:id="@+id/salesReport"
+                    android:title="@string/title_sales_report"
+                    android:visible="false" />
+
+            </menu>
+        </item>
+    </group>
+
+    <group
+        android:id="@+id/group_master"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/master"
+            android:title="@string/title_master">
+            <menu>
+                <item
+                    android:id="@+id/products"
+                    android:title="@string/title_products" />
+                <item
+                    android:id="@+id/tax_payer_registration"
+                    android:title="@string/title_businesses" />
+                <item
+                    android:id="@+id/business_activation"
+                    android:title="@string/title_businesses_activation"
+                    android:visible="false"/>
+                <item
+                    android:id="@+id/business_summary"
+                    android:title="@string/title_business_summary" />
+                <item
+                    android:id="@+id/individual_tax_summary"
+                    android:title="@string/title_individual_tax_summary" />
+                <item
+                    android:id="@+id/property_tax_summary"
+                    android:title="@string/title_property_tax_summary" />
+
+                <item
+                    android:id="@+id/land_tax_summary"
+                    android:title="@string/title_land_tax_summary" />
+
+                <item
+                    android:id="@+id/incident_management"
+                    android:title="@string/menu_incident_management" />
+                <item
+                    android:id="@+id/tasks"
+                    android:title="@string/title_tasks" />
+                <item
+                    android:id="@+id/tax_payer_verification"
+                    android:title="@string/title_tax_payers_verification"
+                    android:visible="false" />
+                <item
+                    android:id="@+id/my_agents"
+                    android:title="@string/title_my_agents"
+                    android:visible="false" />
+
+                <item
+                    android:id="@+id/asset_onboarding"
+                    android:title="@string/title_asset_onboarding"
+                    android:visible="false" />
+
+                <item
+                    android:id="@+id/update_asset"
+                    android:title="@string/title_update_asset"
+                    android:visible="false" />
+
+                <item
+                    android:id="@+id/new_asset_booking"
+                    android:title="@string/new_asset_booking"
+                    android:visible="false" />
+
+                <item
+                    android:id="@+id/update_asset_booking"
+                    android:title="@string/update_asset_booking"
+                    android:visible="false" />
+
+                <item
+                    android:id="@+id/asset_assignment"
+                    android:title="@string/asset_assignment"
+                    android:visible="false" />
+
+                <item
+                    android:id="@+id/asset_return"
+                    android:title="@string/return_asset"
+                    android:visible="false" />
+
+                <item
+                    android:id="@+id/service_request_master"
+                    android:title="@string/service_request_master"
+                    android:visible="false" />
+
+                <item
+                    android:id="@+id/pending_services"
+                    android:title="@string/title_pending_services"
+                    android:visible="false" />
+                <item
+                    android:id="@+id/adjustments"
+                    android:title="@string/adjustments"
+                    android:visible="false"/>
+
+                <item
+                    android:id="@+id/stockTransfer"
+                    android:title="@string/stock_transfer"
+                    android:visible="false"/>
+
+                <item
+                    android:id="@+id/cheque_repayments"
+                    android:title="@string/title_cheque_repayments"
+                    android:visible="false"/>
+            </menu>
+        </item>
+    </group>
+
+    <group
+        android:id="@+id/group_geo_spatial_data"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/geoSpatialData"
+            android:title="@string/title_geo_spatial_data">
+            <menu>
+                <item
+                    android:id="@+id/location_tracker"
+                    android:title="@string/title_location_tracker" />
+
+                <item
+                    android:id="@+id/business_location"
+                    android:title="@string/title_business_location" />
+
+                <item
+                    android:id="@+id/location_complaints"
+                    android:title="@string/title_complaints_location" />
+
+                <item
+                    android:id="@+id/location_incidents"
+                    android:title="@string/title_incident_location" />
+
+                <item
+                    android:id="@+id/location_property"
+                    android:title="@string/title_property_location" />
+
+                <!-- <item
+         android:id="@+id/location_tasks"
+         android:title="@string/title_tasks_location" />-->
+            </menu>
+        </item>
+    </group>
+
+    <group
+        android:id="@+id/group_verification"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/verification"
+            android:title="@string/title_verification">
+            <menu>
+                <item
+                    android:id="@+id/business"
+                    android:title="@string/menu_business" />
+
+                <item
+                    android:id="@+id/agents"
+                    android:title="@string/title_agent"
+                    android:visible="false" />
+                <item
+                    android:id="@+id/property_verification"
+                    android:title="@string/title_property_txt"
+                    android:visible="true" />
+            </menu>
+        </item>
+    </group>
+
+    <item
+        android:id="@+id/my_subscriptions"
+        android:title="@string/title_license_details"
+        android:visible="false" />
+    <item
+        android:id="@+id/app_settings"
+        android:title="@string/title_settings"
+        android:visible="true" />
+
+    <item
+        android:id="@+id/my_profile"
+        android:title="@string/title_my_profile"
+        android:visible="true" />
+
+    <item
+        android:id="@+id/logout"
+        android:title="@string/logout" />
+
+</menu>

@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:clickable="false"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/vertical_spacing"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/vertical_spacing"
+                android:paddingEnd="@dimen/vertical_spacing">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/three_dp"
+                    android:layout_marginEnd="@dimen/three_dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/TextMandatoryTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/impoundment_type"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/spn_impoundment_type"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:minHeight="@dimen/min_spinner_height"
+                        android:padding="@dimen/vertical_spacing"
+                        android:spinnerMode="dialog" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorGray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/three_dp"
+                    android:layout_marginEnd="@dimen/three_dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/TextMandatoryTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/impoundment_sub_type"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/spn_impoundment_sub_type"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:minHeight="@dimen/min_spinner_height"
+                        android:padding="@dimen/vertical_spacing"
+                        android:spinnerMode="dialog" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorGray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/three_dp"
+                    android:layout_marginEnd="@dimen/three_dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/impoundment_reason_imp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/spn_impoundment_reason"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:minHeight="@dimen/min_spinner_height"
+                        android:padding="@dimen/vertical_spacing"
+                        android:spinnerMode="dialog" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorGray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/three_dp"
+                    android:layout_marginEnd="@dimen/three_dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/TextMandatoryTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/txt_yard"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/spn_yard"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:minHeight="@dimen/min_spinner_height"
+                        android:padding="@dimen/vertical_spacing"
+                        android:spinnerMode="dialog" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorGray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/three_dp"
+                    android:layout_marginEnd="@dimen/three_dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/TextMandatoryTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/txt_crane_types"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/spn_crane_types"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:minHeight="@dimen/min_spinner_height"
+                        android:padding="@dimen/vertical_spacing"
+                        android:spinnerMode="dialog" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorGray" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/TextMandatoryInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/vertical_spacing"
+                    android:hint="@string/quantity">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtQuantity"
+                        style="@style/TextInputEntryStyle"
+                        android:maxLength="9"
+                        android:inputType="number" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/TextMandatoryInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/vertical_spacing"
+                    android:hint="@string/towing_trip_count">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtTowingTripCount"
+                        style="@style/TextInputEntryStyle"
+                        android:maxLength="9"
+                        android:inputType="number" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/TextMandatoryInputLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:hint="@string/impoundment_charge">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edtEstimatedImpoundCharge"
+                            style="@style/TextInputEntryStyle" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical|end">
+
+                        <Button
+                            android:id="@+id/btnGet"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:text="@string/calculate"
+                            android:textColor="@color/colorAccent" />
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/three_dp"
+                    android:layout_marginEnd="@dimen/three_dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/violation_class"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/spnViolationClass"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:minHeight="@dimen/min_spinner_height"
+                        android:padding="@dimen/vertical_spacing"
+                        android:spinnerMode="dialog" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorGray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/three_dp"
+                    android:layout_marginEnd="@dimen/three_dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/TextMandatoryTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/violation_type"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/spnViolationType"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:minHeight="@dimen/min_spinner_height"
+                        android:padding="@dimen/vertical_spacing"
+                        android:spinnerMode="dialog" />
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorGray" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/vertical_spacing"
+                    android:hint="@string/violation_details">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtViolationDetails"
+                        style="@style/TextInputEntryStyle"
+                        android:focusable="false"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/remarks">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtRemarks"
+                        style="@style/TextInputEntryStyle" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/violation_charge">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtViolationCharge"
+                        style="@style/TextInputEntryStyle"
+                        android:enabled="false" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/towing_charge">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtTowingCharge"
+                        style="@style/TextInputEntryStyle"
+                        android:enabled="false" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/extra_charges">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtExtraCharges"
+                        style="@style/TextInputEntryStyle"
+                        android:inputType="numberDecimal"
+                        android:maxLength="8"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/fine_amount">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtFineAmount"
+                        style="@style/TextInputEntryStyle"
+                        android:inputType="numberDecimal"
+                        android:maxLength="8"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/save" />
+
+    </LinearLayout>
+
+</layout>

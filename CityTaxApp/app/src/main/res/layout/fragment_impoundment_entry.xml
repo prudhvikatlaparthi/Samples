@@ -1,0 +1,1723 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:cust="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorLayoutBackground"
+        android:focusableInTouchMode="true">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/vertical_spacing"
+                    app:cardBackgroundColor="@color/white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/vertical_spacing"
+                        android:layout_marginTop="@dimen/vertical_spacing"
+                        android:layout_marginRight="@dimen/vertical_spacing"
+                        android:layout_marginBottom="@dimen/vertical_spacing"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/TextMandatoryInputLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/impoundment_date">
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edt_impoundment_date"
+                                style="@style/TextInputEntryStyle"
+                                android:enabled="false" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/three_dp"
+                            android:layout_marginEnd="@dimen/three_dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/TextMandatoryTextView"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/violator_type"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                            <androidx.appcompat.widget.AppCompatSpinner
+                                android:id="@+id/spnViolator"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:minHeight="@dimen/min_spinner_height"
+                                android:padding="@dimen/vertical_spacing" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/colorGray" />
+
+                        <LinearLayout
+                            android:id="@+id/vehGoodImpound"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/three_dp"
+                            android:layout_marginEnd="@dimen/three_dp"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/three_dp"
+                                android:layout_marginEnd="@dimen/three_dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/TextMandatoryTextView"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/impoundment_type"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                                <androidx.appcompat.widget.AppCompatSpinner
+                                    android:id="@+id/spn_impoundment_type"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:minHeight="@dimen/min_spinner_height"
+                                    android:padding="@dimen/vertical_spacing"
+                                    android:spinnerMode="dialog" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/colorGray" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/three_dp"
+                                android:layout_marginEnd="@dimen/three_dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/TextMandatoryTextView"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/impoundment_sub_type"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                                <androidx.appcompat.widget.AppCompatSpinner
+                                    android:id="@+id/spn_impoundment_sub_type"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:minHeight="@dimen/min_spinner_height"
+                                    android:padding="@dimen/vertical_spacing"
+                                    android:spinnerMode="dialog" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/colorGray" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/three_dp"
+                                android:layout_marginEnd="@dimen/three_dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/impoundment_reason_imp"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                                <androidx.appcompat.widget.AppCompatSpinner
+                                    android:id="@+id/spn_impoundment_reason"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:minHeight="@dimen/min_spinner_height"
+                                    android:padding="@dimen/vertical_spacing"
+                                    android:spinnerMode="dialog" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/colorGray" />
+
+                        </LinearLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/edtGoodsValuationTIL"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="@dimen/three_dp"
+                            android:layout_marginEnd="@dimen/three_dp"
+                            android:hint="@string/goods_evaluation">
+
+                            <com.sgs.citytax.util.TextInputAmountEditText
+                                xmlns:cust="http://schemas.android.com/apk/res-auto"
+                                cust:customDecimals="3"
+                                cust:showPrecision="true"
+                                android:id="@+id/edtGoodsValuation"
+                                style="@style/TextInputEntryStyle"
+                                android:inputType="numberDecimal" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/three_dp"
+                            android:layout_marginEnd="@dimen/three_dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/TextMandatoryTextView"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/police_station"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                            <androidx.appcompat.widget.AppCompatSpinner
+                                android:id="@+id/spnPoliceStation"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:minHeight="@dimen/min_spinner_height"
+                                android:padding="@dimen/vertical_spacing"
+                                android:spinnerMode="dialog" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/colorGray" />
+
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/animalImpoundQuantityCard"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/vertical_spacing"
+                            android:visibility="gone"
+                            app:cardBackgroundColor="@color/white">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/vertical_spacing"
+                                android:orientation="vertical">
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="8dp"
+                                    android:background="@color/colorLayoutBackground" />
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/vertical_spacing"
+                                    android:layout_marginBottom="@dimen/vertical_spacing"
+                                    android:orientation="horizontal">
+
+                                    <com.google.android.material.textfield.TextInputLayout
+                                        android:id="@+id/animalViolatorLayout"
+                                        style="@style/TextMandatoryInputLayout"
+                                        android:layout_width="0dp"
+                                        android:layout_weight="1"
+                                        android:layout_height="wrap_content"
+                                        android:hint="@string/animal_owner_number">
+
+                                        <com.google.android.material.textfield.TextInputEditText
+                                            android:id="@+id/edtAnimalViolatorOwner"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:imeOptions="actionSearch"
+                                            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                                    </com.google.android.material.textfield.TextInputLayout>
+
+                                    <ProgressBar
+                                        android:id="@+id/animalOwnerProgressView"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:layout_gravity="center_vertical"
+                                        android:visibility="gone" />
+
+
+                                </LinearLayout>
+
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
+                                    <LinearLayout
+                                        android:id="@+id/animalOwnerWrapperFName"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:visibility="gone">
+                                        <include
+                                            android:id="@+id/layoutAnimalOwnerFName"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            layout="@layout/first_name" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/animalOwnerWrapper"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:visibility="gone">
+
+                                        <include
+                                            android:id="@+id/layoutAnimalOwnerAddress"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            layout="@layout/zone_sector_street_layout" />
+                                    </LinearLayout>
+                                    </LinearLayout>
+
+                                    <androidx.recyclerview.widget.RecyclerView
+                                        android:id="@+id/rcAnimalOwner"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="200dp"
+                                        android:layout_marginLeft="@dimen/vertical_spacing"
+                                        android:layout_marginRight="@dimen/vertical_spacing"
+                                        android:background="#FAFAFA"
+                                        android:elevation="@dimen/margin_48dp"
+                                        android:orientation="vertical"
+                                        android:scrollbars="vertical"
+                                        android:visibility="gone"
+                                        cust:listitem="@layout/citizen_layout_item" />
+                                </FrameLayout>
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/animalImpoundFromCard"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/vertical_spacing"
+                            android:visibility="gone"
+                            app:cardBackgroundColor="@color/white">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="@dimen/vertical_spacing"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="8dp"
+                                    android:background="@color/colorLayoutBackground" />
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/vertical_spacing"
+                                    android:layout_marginBottom="@dimen/vertical_spacing"
+                                    android:orientation="horizontal">
+
+
+                                    <com.google.android.material.textfield.TextInputLayout
+                                        android:id="@+id/animalViolatorFromLayout"
+                                        style="@style/TextMandatoryInputLayout"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:hint="@string/impond_from">
+
+
+                                        <com.google.android.material.textfield.TextInputEditText
+                                            android:id="@+id/edtAnimalImpondFrom"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+
+                                    </com.google.android.material.textfield.TextInputLayout>
+
+                                    <ProgressBar
+                                        android:id="@+id/impoundFromProgressView"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:layout_gravity="center_vertical"
+                                        android:visibility="gone" />
+
+
+                                </LinearLayout>
+
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
+                                    <LinearLayout
+                                        android:id="@+id/impoundFromWrapperFName"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:visibility="gone">
+                                        <include
+                                            android:id="@+id/layoutImpoundFromWrapperFName"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            layout="@layout/first_name" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/impoundFromWrapper"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:visibility="gone">
+
+
+                                        <include
+                                            android:id="@+id/layoutImpoundFromAddress"
+                                            layout="@layout/zone_sector_street_layout" />
+                                    </LinearLayout>
+                                    </LinearLayout>
+
+                                    <androidx.recyclerview.widget.RecyclerView
+                                        android:id="@+id/rcImpoundFrom"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="200dp"
+                                        android:layout_marginLeft="@dimen/vertical_spacing"
+                                        android:layout_marginRight="@dimen/vertical_spacing"
+                                        android:background="#FAFAFA"
+                                        android:elevation="@dimen/margin_48dp"
+                                        android:orientation="vertical"
+                                        android:scrollbars="vertical"
+                                        android:visibility="gone"
+                                        cust:listitem="@layout/citizen_layout_item" />
+                                </FrameLayout>
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <LinearLayout
+                            android:id="@+id/vehGoodImpoundBottom"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/three_dp"
+                            android:layout_marginEnd="@dimen/three_dp"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/vertical_spacing"
+                                android:hint="@string/impoundment_charge">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/edtImpoundmentCharge"
+                                    style="@style/TextInputEntryStyle"
+                                    android:inputType="number" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/three_dp"
+                                android:layout_marginEnd="@dimen/three_dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/violation_class"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                                <androidx.appcompat.widget.AppCompatSpinner
+                                    android:id="@+id/spnViolationClass"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:minHeight="@dimen/min_spinner_height"
+                                    android:padding="@dimen/vertical_spacing"
+                                    android:spinnerMode="dialog" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/colorGray" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/three_dp"
+                                android:layout_marginEnd="@dimen/three_dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/TextMandatoryTextView"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/violation_type"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                                <androidx.appcompat.widget.AppCompatSpinner
+                                    android:id="@+id/spnViolationType"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:minHeight="@dimen/min_spinner_height"
+                                    android:padding="@dimen/vertical_spacing"
+                                    android:spinnerMode="dialog" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/colorGray" />
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/vertical_spacing"
+                                android:hint="@string/violation_details">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/edtViolationDetails"
+                                    style="@style/TextInputEntryStyle" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/remarks">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/edtRemarks"
+                                    style="@style/TextInputEntryStyle" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/fine_amount">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/edtFineAmount"
+                                    style="@style/TextInputEntryStyle"
+                                    android:enabled="false" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/crdVehicle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/vertical_spacing"
+                    android:visibility="gone"
+                    app:cardBackgroundColor="@color/white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/vertical_spacing"
+                        android:layout_marginBottom="@dimen/vertical_spacing"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_marginLeft="@dimen/vertical_spacing"
+                            android:layout_marginRight="@dimen/vertical_spacing"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                style="@style/TextMandatoryInputLayout"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:hint="@string/vehicle_no">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/edtVehicleNo"
+                                    style="@style/TextInputEntryStyle"
+                                    android:imeOptions="actionSearch" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <ProgressBar
+                                android:id="@+id/vehicleNoProgressView"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center_vertical"
+                                android:visibility="gone" />
+                        </LinearLayout>
+
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:id="@+id/vehDetailsWrapper"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:visibility="gone">
+
+                                <include
+                                    android:id="@+id/vehDocWrapper"
+                                    layout="@layout/document_wrapper" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/vertical_spacing"
+                                    android:layout_marginRight="@dimen/vertical_spacing"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        style="@style/TextMandatoryTextView"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="@string/transmission"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                                    <androidx.appcompat.widget.AppCompatSpinner
+                                        android:id="@+id/spnTransmissionType"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:minHeight="@dimen/min_spinner_height"
+                                        android:padding="@dimen/vertical_spacing" />
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginEnd="12dp"
+                                    android:background="@color/colorGray" />
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    style="@style/TextMandatoryInputLayout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/vertical_spacing"
+                                    android:layout_marginTop="@dimen/vertical_spacing"
+                                    android:layout_marginRight="@dimen/vertical_spacing"
+                                    android:hint="@string/registration_date">
+
+                                    <com.sgs.citytax.ui.custom.DatePickerEditText
+                                        android:id="@+id/edtVehRegistrationDate"
+                                        style="@style/TextInputEntryStyle"
+                                        app:needIcons="show" />
+
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="8dp"
+                                    android:layout_marginEnd="8dp"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        style="@style/TextMandatoryTextView"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="@string/fuel_type"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+
+                                    <androidx.appcompat.widget.AppCompatSpinner
+                                        android:id="@+id/spnFuelType"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:minHeight="@dimen/min_spinner_height"
+                                        android:padding="@dimen/vertical_spacing" />
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginEnd="12dp"
+                                    android:background="@color/colorGray" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="8dp"
+                                    android:layout_marginEnd="8dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        style="@style/TextMandatoryTextView"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="@string/vehicle_type"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                                    <androidx.appcompat.widget.AppCompatSpinner
+                                        android:id="@+id/spnVehicleType"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:minHeight="@dimen/min_spinner_height"
+                                        android:padding="@dimen/vertical_spacing" />
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginEnd="12dp"
+                                    android:background="@color/colorGray" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="8dp"
+                                    android:layout_marginEnd="8dp"
+                                    android:orientation="horizontal"
+                                    android:visibility="gone">
+
+                                    <TextView
+                                        style="@style/TextMandatoryTextView"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="@string/status"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                                    <androidx.appcompat.widget.AppCompatSpinner
+                                        android:id="@+id/spnVehicleStatus"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:minHeight="@dimen/min_spinner_height"
+                                        android:padding="@dimen/vertical_spacing" />
+
+                                </LinearLayout>
+
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    app:cardBackgroundColor="@color/colorLayoutBackground"
+                                    app:cardElevation="4dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/vertical_spacing"
+                                        android:background="@color/white"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:padding="@dimen/vertical_spacing"
+                                            android:text="@string/title_vehicle_ownership"
+                                            android:textColor="@color/colorAccent"
+                                            android:textStyle="bold" />
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/vertical_spacing"
+                                            android:layout_marginRight="@dimen/vertical_spacing"
+                                            android:orientation="horizontal">
+
+                                            <com.google.android.material.textfield.TextInputLayout
+                                                style="@style/TextMandatoryInputLayout"
+                                                android:layout_width="0dp"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:hint="@string/owner_number">
+
+                                                <com.google.android.material.textfield.TextInputEditText
+                                                    android:id="@+id/edtvehCtzOwnName"
+                                                    style="@style/TextInputEntryStyle"
+                                                    android:inputType="number"
+                                                    android:imeOptions="actionSearch" />
+
+                                            </com.google.android.material.textfield.TextInputLayout>
+
+                                            <ProgressBar
+                                                android:id="@+id/vehicleOwnerProgressView"
+                                                android:layout_width="30dp"
+                                                android:layout_height="30dp"
+                                                android:layout_gravity="center_vertical"
+                                                android:visibility="gone" />
+
+                                        </LinearLayout>
+
+                                        <FrameLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:orientation="vertical">
+
+                                                <com.google.android.material.textfield.TextInputLayout
+                                                    android:id="@+id/vehOwnerFromDate"
+                                                    style="@style/TextMandatoryInputLayout"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginHorizontal="@dimen/vertical_spacing"
+                                                    android:layout_marginTop="@dimen/vertical_spacing"
+                                                    android:hint="@string/from_date">
+
+                                                    <com.sgs.citytax.ui.custom.DatePickerEditText
+                                                        android:id="@+id/edtVehOwnerFromDate"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                                                </com.google.android.material.textfield.TextInputLayout>
+                                                <LinearLayout
+                                                    android:id="@+id/vehCtzOwnWrapperFName"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:visibility="gone">
+                                                    <include
+                                                        android:id="@+id/layoutvehCtzOwnWrapperFName"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_marginHorizontal="@dimen/vertical_spacing"
+                                                        layout="@layout/first_name" />
+
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:id="@+id/vehCtzOwnWrapper"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:orientation="vertical"
+                                                    android:visibility="gone">
+
+                                                    <include
+                                                        android:id="@+id/layoutVehOwnAddress"
+                                                        layout="@layout/zone_sector_street_layout"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_marginHorizontal="@dimen/vertical_spacing" />
+
+                                                </LinearLayout>
+                                            </LinearLayout>
+
+
+                                            <androidx.recyclerview.widget.RecyclerView
+                                                android:id="@+id/rcVehCtzOwn"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="200dp"
+                                                android:layout_marginLeft="@dimen/vertical_spacing"
+                                                android:layout_marginRight="@dimen/vertical_spacing"
+                                                android:background="#FAFAFA"
+                                                android:elevation="@dimen/margin_48dp"
+                                                android:orientation="vertical"
+                                                android:scrollbars="vertical"
+                                                android:visibility="gone"
+                                                cust:listitem="@layout/citizen_layout_item" />
+                                        </FrameLayout>
+
+                                    </LinearLayout>
+                                </androidx.cardview.widget.CardView>
+                            </LinearLayout>
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rcVehicleSearch"
+                                android:layout_width="match_parent"
+                                android:layout_height="200dp"
+                                android:layout_marginLeft="@dimen/vertical_spacing"
+                                android:layout_marginRight="@dimen/vertical_spacing"
+                                android:background="#FAFAFA"
+                                android:elevation="@dimen/margin_48dp"
+                                android:orientation="vertical"
+                                android:scrollbars="vertical"
+                                android:visibility="gone"
+                                cust:listitem="@layout/citizen_layout_item" />
+                        </FrameLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/vertical_spacing"
+                            android:gravity="end"
+                            android:visibility="gone"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/new_vehicle"
+                                android:textStyle="italic" />
+
+                            <TextView
+                                android:id="@+id/tvCreateOwner"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/create"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="16sp"
+                                android:textStyle="italic|bold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/vertical_spacing"
+                            android:gravity="end"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tvSeeTicketHistoryVehicle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/see_ticket_history"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="16sp"
+                                android:textStyle="italic|bold" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/crdDriver"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/vertical_spacing"
+                    android:visibility="visible"
+                    app:cardBackgroundColor="@color/white">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/vertical_spacing"
+                        android:layout_marginBottom="@dimen/vertical_spacing"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/edtDriverNameLayout"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/vertical_spacing"
+                                android:layout_marginRight="@dimen/vertical_spacing"
+                                android:layout_weight="1"
+                                android:hint="@string/driver_number">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/edtDriverName"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="number"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <ProgressBar
+                                android:id="@+id/driverProgressView"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center_vertical"
+                                android:visibility="gone" />
+                        </LinearLayout>
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <LinearLayout
+                                    android:id="@+id/driverFieldsWrapperFName"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:visibility="gone">
+                                    <include
+                                        android:id="@+id/layoutDriverFieldsWrapperFName"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginHorizontal="@dimen/vertical_spacing"
+                                        layout="@layout/first_name" />
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:id="@+id/driverFieldsLayout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:visibility="gone">
+                                    <com.google.android.material.textfield.TextInputLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="@dimen/vertical_spacing"
+                                        android:layout_marginRight="@dimen/vertical_spacing"
+                                        android:visibility="gone"
+                                        android:hint="@string/driving_license_number">
+                                        <com.google.android.material.textfield.TextInputEditText
+                                            android:id="@+id/edtDrivingLicenseNumber"
+                                            style="@style/TextInputEntryStyle" />
+                                    </com.google.android.material.textfield.TextInputLayout>
+
+                                    <include
+                                        android:id="@+id/layoutDriverAddress"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginHorizontal="@dimen/vertical_spacing"
+                                        layout="@layout/zone_sector_street_layout" />
+                                    <!--Below newdriver create not required any more-->
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="@dimen/vertical_spacing"
+                                        android:gravity="end"
+                                        android:orientation="horizontal"
+                                        android:visibility="gone">
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/new_driver"
+                                            android:textStyle="italic" />
+                                        <TextView
+                                            android:id="@+id/tvCreateDriver"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/create"
+                                            android:textColor="@color/colorAccent"
+                                            android:textSize="16sp"
+                                            android:textStyle="italic|bold" />
+                                    </LinearLayout>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/vertical_spacing"
+                                    android:gravity="end"
+                                    android:orientation="horizontal">
+                                    <TextView
+                                        android:id="@+id/tvSeeTicketHistoryDriver"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/see_ticket_history"
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="16sp"
+                                        android:textStyle="italic|bold" />
+                                </LinearLayout>
+                            </LinearLayout>
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rcvDriver"
+                                android:layout_width="match_parent"
+                                android:layout_height="200dp"
+                                android:layout_marginLeft="@dimen/vertical_spacing"
+                                android:layout_marginRight="@dimen/vertical_spacing"
+                                android:background="#FAFAFA"
+                                android:elevation="@dimen/margin_48dp"
+                                android:orientation="vertical"
+                                android:scrollbars="vertical"
+                                android:visibility="gone" />
+                        </FrameLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/crdGoodsOwner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/vertical_spacing"
+                    android:visibility="gone"
+                    app:cardBackgroundColor="@color/white">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="100dp"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/vertical_spacing"
+                            android:layout_marginBottom="@dimen/vertical_spacing"
+                            android:orientation="horizontal">
+                            <com.google.android.material.textfield.TextInputLayout
+                                style="@style/TextMandatoryInputLayout"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/vertical_spacing"
+                                android:layout_marginRight="@dimen/vertical_spacing"
+                                android:hint="@string/goods_owner"
+                                android:layout_weight="1">
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/edtGoodsOwner"
+                                    android:imeOptions="actionSearch"
+                                    style="@style/TextInputEntryStyle"
+                                    />
+                            </com.google.android.material.textfield.TextInputLayout>
+                            <ProgressBar
+                                android:id="@+id/goodsOwnerProgressView"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center_vertical"
+                                android:visibility="gone" />
+
+                        </LinearLayout>
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rcGoodsOwner"
+                                android:layout_width="match_parent"
+                                android:layout_height="200dp"
+                                android:layout_marginLeft="@dimen/vertical_spacing"
+                                android:layout_marginRight="@dimen/vertical_spacing"
+                                android:background="#FAFAFA"
+                                android:elevation="@dimen/margin_48dp"
+                                android:orientation="vertical"
+                                android:scrollbars="vertical"
+                                android:visibility="gone"
+                                />
+                        </FrameLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/vertical_spacing"
+                    app:cardBackgroundColor="@color/white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginEnd="12dp"
+                                android:orientation="horizontal"
+                                android:paddingTop="8dp"
+                                android:paddingBottom="8dp">
+
+                                <TextView
+                                    style="@style/TextMandatoryTextView"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_weight="1"
+                                    android:text="@string/country"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                                <androidx.appcompat.widget.AppCompatSpinner
+                                    android:id="@+id/spnCountry"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:minHeight="48dp"
+                                    android:paddingStart="0dp"
+                                    android:paddingEnd="@dimen/eighteen_sp"
+                                    android:spinnerMode="dialog" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginEnd="12dp"
+                                android:background="@color/colorGray" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginEnd="12dp"
+                                android:orientation="horizontal"
+                                android:paddingTop="8dp"
+                                android:paddingBottom="8dp">
+
+                                <TextView
+                                    style="@style/TextMandatoryTextView"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_weight="1"
+                                    android:text="@string/state"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                                <androidx.appcompat.widget.AppCompatSpinner
+                                    android:id="@+id/spnState"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:minHeight="48dp"
+                                    android:paddingStart="0dp"
+                                    android:paddingEnd="@dimen/eighteen_sp"
+                                    android:spinnerMode="dialog" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginEnd="12dp"
+                                android:background="@color/colorGray" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginEnd="12dp"
+                                android:orientation="horizontal"
+                                android:paddingTop="8dp"
+                                android:paddingBottom="8dp">
+
+                                <TextView
+                                    style="@style/TextMandatoryTextView"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_weight="1"
+                                    android:text="@string/city"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                                <androidx.appcompat.widget.AppCompatSpinner
+                                    android:id="@+id/spnCity"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:minHeight="48dp"
+                                    android:paddingStart="0dp"
+                                    android:paddingEnd="@dimen/eighteen_sp"
+                                    android:spinnerMode="dialog" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginEnd="12dp"
+                                android:background="@color/colorGray" />
+                        </LinearLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/impoundment_address"
+                            android:layout_marginStart="12dp"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp"/>
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/edtCountryLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/vertical_spacing"
+                            android:layout_marginRight="@dimen/vertical_spacing"
+                            android:hint="@string/country"
+                            android:visibility="gone">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtCountry"
+                                style="@style/TextInputEntryStyle"
+                                android:focusable="false" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/edtStateLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/vertical_spacing"
+                            android:layout_marginRight="@dimen/vertical_spacing"
+                            android:hint="@string/state"
+                            android:visibility="gone">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtState"
+                                style="@style/TextInputEntryStyle"
+                                android:focusable="false" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/edtCityLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/vertical_spacing"
+                            android:layout_marginRight="@dimen/vertical_spacing"
+                            android:hint="@string/city"
+                            android:visibility="gone">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtCity"
+                                style="@style/TextInputEntryStyle"
+                                android:focusable="false" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:orientation="horizontal"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp">
+
+                            <TextView
+                                style="@style/TextMandatoryTextView"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:text="@string/zone"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                            <androidx.appcompat.widget.AppCompatSpinner
+                                android:id="@+id/spnZone"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:minHeight="48dp"
+                                android:paddingStart="0dp"
+                                android:paddingEnd="@dimen/eighteen_sp"
+                                android:spinnerMode="dialog" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:background="@color/colorGray" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:orientation="horizontal"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp">
+
+                            <TextView
+                                style="@style/TextMandatoryTextView"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:text="@string/sector"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                            <androidx.appcompat.widget.AppCompatSpinner
+                                android:id="@+id/spnSector"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:minHeight="48dp"
+                                android:paddingStart="0dp"
+                                android:paddingEnd="@dimen/eighteen_sp"
+                                android:spinnerMode="dialog" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:background="@color/colorGray" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/edtStreetLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/vertical_spacing"
+                            android:layout_marginTop="@dimen/vertical_spacing"
+                            android:visibility="gone"
+                            android:layout_marginRight="@dimen/vertical_spacing"
+                            android:hint="@string/street">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtStreet"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="textCapWords"
+                                android:maxLength="80"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/edtSectionLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/vertical_spacing"
+                            android:visibility="gone"
+                            android:layout_marginRight="@dimen/vertical_spacing"
+                            android:hint="@string/plot">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtPlot"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="textCapWords"
+                                android:maxLength="20"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/edtLotLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/vertical_spacing"
+                            android:visibility="gone"
+                            android:layout_marginRight="@dimen/vertical_spacing"
+                            android:hint="@string/block">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtBlock"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="textCapWords"
+                                android:maxLength="20"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/edtParcelLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/vertical_spacing"
+                            android:visibility="gone"
+                            android:layout_marginRight="@dimen/vertical_spacing"
+                            android:hint="@string/door_no">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtDoorNo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="textCapWords"
+                                android:maxLength="20"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/edtZipLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/vertical_spacing"
+                            android:visibility="gone"
+                            android:layout_marginTop="@dimen/vertical_spacing"
+                            android:layout_marginRight="@dimen/vertical_spacing"
+                            android:hint="@string/zipcode">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtZipCode"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="textCapWords"
+                                android:maxLength="14"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <TextView
+                            android:id="@+id/btnShowMoreOrLess"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end|center_vertical"
+                            android:layout_marginTop="@dimen/vertical_spacing"
+                            android:layout_marginEnd="@dimen/vertical_spacing"
+                            android:layout_marginBottom="@dimen/vertical_spacing"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="@string/show_more"
+                            android:textColor="@color/lite_blue" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/vertical_spacing"
+                                    android:layout_marginRight="@dimen/vertical_spacing"
+                                    android:hint="@string/lbl_latitude">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/edtLatitude"
+                                        style="@style/TextInputEntryStyle"
+                                        android:enabled="false"
+                                        android:inputType="numberDecimal" />
+
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/vertical_spacing"
+                                    android:layout_marginRight="@dimen/vertical_spacing"
+                                    android:hint="@string/lbl_longitude">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/edtLongitude"
+                                        style="@style/TextInputEntryStyle"
+                                        android:enabled="false"
+                                        android:inputType="numberDecimal" />
+
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/ivAddLocation"
+                                android:layout_width="72dp"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_add_location" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/vertical_spacing"
+                    app:cardBackgroundColor="@color/white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/llViolationTypes"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:orientation="horizontal"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text="@string/impoundment_type"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                            <TextView
+                                android:id="@+id/txtNoOfViolations"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:drawableEnd="@drawable/ic_arrow"
+                                android:gravity="center_vertical"
+                                android:textAllCaps="true"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:background="@color/colorGrayLight" />
+
+                        <LinearLayout
+                            android:id="@+id/llDocuments"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="@dimen/vertical_spacing"
+                            android:layout_marginEnd="12dp"
+                            android:layout_marginBottom="@dimen/vertical_spacing"
+                            android:orientation="horizontal">
+                            <include
+                                android:id="@+id/multipleDoc"
+                                layout="@layout/document_wrapper"/>
+                            <!--                            <TextView-->
+                            <!--                                android:layout_width="0dp"-->
+                            <!--                                android:layout_height="wrap_content"-->
+                            <!--                                android:layout_gravity="center_vertical"-->
+                            <!--                                android:layout_weight="1"-->
+                            <!--                                android:gravity="center_vertical"-->
+                            <!--                                android:text="@string/documents"-->
+                            <!--                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />-->
+                            <!--                            <TextView-->
+                            <!--                                android:id="@+id/txtNumberOfDocuments"-->
+                            <!--                                android:layout_width="wrap_content"-->
+                            <!--                                android:layout_height="wrap_content"-->
+                            <!--                                android:layout_gravity="center_vertical"-->
+                            <!--                                android:drawableEnd="@drawable/ic_arrow"-->
+                            <!--                                android:gravity="center_vertical"-->
+                            <!--                                android:text="0"-->
+                            <!--                                android:textAllCaps="true"-->
+                            <!--                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />-->
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true" />
+
+                <LinearLayout
+                    android:id="@+id/llSignature"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/vertical_spacing"
+                    android:orientation="vertical"
+                    android:padding="@dimen/vertical_spacing">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/vertical_spacing"
+                        android:text="@string/add_signature"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <com.github.gcacace.signaturepad.views.SignaturePad
+                        android:id="@+id/signatureView"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:background="@color/white"
+                        android:padding="@dimen/vertical_spacing"
+                        app:clearOnDoubleClick="true"
+                        app:penColor="@android:color/black"
+                        app:penMaxWidth="2dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/save" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</layout>

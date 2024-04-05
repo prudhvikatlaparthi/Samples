@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item
+            android:id="@+id/homeFragment"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/shopByCategoryFragment"
+            android:title="Shop by Category" />
+    </group>
+    <group>
+        <item
+            android:id="@+id/fragment_saved_lists"
+            android:title="Saved Lists" />
+
+        <item
+            android:id="@+id/fragment_live_orders"
+            android:title="Live Orders" />
+
+        <item
+            android:id="@+id/fragment_past_orders"
+            android:title="Past Orders" />
+    </group>
+
+    <group>
+        <item android:title="Payment Details" />
+
+        <item android:title="Contracts" />
+
+        <item android:title="Negotiations" />
+    </group>
+
+    <group>
+        <item android:title="Feedback &amp; Grievances" />
+
+        <item android:title="Settings" />
+
+        <item
+            android:id="@+id/fragment_logout"
+            android:title="Logout" />
+    </group>
+</menu>

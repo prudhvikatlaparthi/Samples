@@ -1,0 +1,12 @@
+/*
+ * Copyright (c) Microsoft Corporation. All rights reserved.
+ * Licensed under the MIT License.
+ *
+ */
+include ':SurfaceDuoSamples'
+
+include ':ListDetail', ':ExtendCanvas', ':TwoPage', ':DualView',
+        ':IntentToSecondScreen', ':DragAndDrop', ':CompanionPane', ':MultipleInstances',
+        ':PenEvents', ':Qualifiers', ':HingeAngle', ':TestUtils'
+
+rootProject.name = 'DuoSDKSampleApps'

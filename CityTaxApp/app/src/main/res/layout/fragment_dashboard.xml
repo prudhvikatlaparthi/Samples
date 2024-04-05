@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/llParkingPlace"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginEnd="12dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/parking_place"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                        <androidx.appcompat.widget.AppCompatSpinner
+                            android:id="@+id/spnParkingPlace"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:minHeight="@dimen/min_spinner_height"
+                            android:padding="@dimen/vertical_spacing"
+                            android:spinnerMode="dialog" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginEnd="12dp"
+                        android:background="@color/colorGray" />
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <fragment
+                        android:id="@+id/quick_menu"
+                        android:name="com.sgs.citytax.ui.fragments.QuickMenuFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </FrameLayout>
+
+
+                <FrameLayout
+                    android:id="@+id/flMap"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="500dp">
+
+                    <androidx.fragment.app.FragmentContainerView
+                        android:id="@+id/map"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorGrayDark" />
+
+                    <ImageButton
+                        android:id="@+id/btnFullScreen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/vertical_spacing"
+                        android:background="@drawable/full_screen_curved"
+                        android:src="@drawable/ic_full_screen_selector" />
+
+                    <ImageButton
+                        android:id="@+id/btnReload"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="45dp"
+                        android:layout_marginTop="@dimen/vertical_spacing"
+                        android:background="@drawable/reload_bg"
+                        android:padding="1dp"
+                        android:src="@drawable/ic_baseline_refresh"
+                        android:visibility="gone" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+    </RelativeLayout>
+
+</layout>

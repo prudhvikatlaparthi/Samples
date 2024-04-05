@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/llSalesItemMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvProductCode"
+                    style="@style/ReceiptTextHeader"
+                    android:text="@string/itemCode"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtProductCode"
+                    style="@style/ReceiptTextBody"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvProductName"
+                    style="@style/ReceiptTextHeader"
+                    android:text="@string/item"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtProductName"
+                    style="@style/ReceiptTextBody"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llValidityPeriod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/ReceiptTextHeader"
+                    android:text="@string/validity_period"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/txtValidityPeriod"
+                    style="@style/ReceiptTextBody"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvQuantity"
+                    style="@style/ReceiptTextHeader"
+                    android:text="@string/quantity"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/txtQuantity"
+                    style="@style/ReceiptTextBody"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llSecurityItemMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvTypeOfCover"
+                    style="@style/ReceiptTextHeader"
+                    android:text="@string/type_of_cover"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtTypeOfCover"
+                    style="@style/ReceiptTextBody"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llTypeOfCoverCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvTypeOfCoverCode"
+                    style="@style/ReceiptTextHeader"
+                    android:text="@string/type_of_cover_code"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtTypeOfCoverCode"
+                    style="@style/ReceiptTextBody"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvNoOfPersons"
+                    style="@style/ReceiptTextHeader"
+                    android:text="@string/no_of_persons"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtNoOfPersons"
+                    style="@style/ReceiptTextBody"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvNoOfDays"
+                    style="@style/ReceiptTextHeader"
+                    android:text="@string/no_of_days"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtNoOfDays"
+                    style="@style/ReceiptTextBody"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/ReceiptTextHeader"
+                android:text="@string/unit_price"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txtUnitPrice"
+                style="@style/ReceiptTextBody"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvTotal"
+                style="@style/ReceiptTextHeader"
+                android:text="@string/total"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txtTotal"
+                style="@style/ReceiptTextBody"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:background="@color/colorPrimary" />
+
+    </LinearLayout>
+</layout>

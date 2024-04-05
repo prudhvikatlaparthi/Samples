@@ -1,0 +1,94 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:orientation="vertical"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextHeader"
+                android:text="@string/agent_name" />
+
+            <TextView
+                android:id="@+id/txtAgentName"
+                style="@style/TextBody" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextHeader"
+                android:text="@string/deposit_amount" />
+
+            <TextView
+                android:id="@+id/txtDepositedAmount"
+                style="@style/TextBody" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextHeader"
+                android:text="@string/status" />
+
+            <TextView
+                android:id="@+id/txtStatus"
+                style="@style/TextBody" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llRequestedDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextHeader"
+                android:text="@string/requested_date" />
+
+            <TextView
+                android:id="@+id/txtRequestedDate"
+                style="@style/TextBody" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llDepositDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextHeader"
+                android:paddingEnd="5dp"
+                android:text="@string/cash_deposited_date" />
+
+            <TextView
+                android:id="@+id/txtDepositDate"
+                style="@style/TextBody" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

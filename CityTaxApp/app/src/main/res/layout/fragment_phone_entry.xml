@@ -1,0 +1,90 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="16dp">
+
+        <LinearLayout
+            android:id="@+id/phone_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <TextView
+                android:id="@+id/tvPhoneType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TextMandatoryTextView"
+                android:text="@string/phone_type" />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spnPhoneType"
+                android:layout_marginStart="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minWidth="150dp"
+                android:spinnerMode="dialog"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llMobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="@id/phone_ll"
+            app:layout_constraintTop_toBottomOf="@id/phone_ll">
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spnTelephoneCode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/five_dp"
+                android:layout_marginTop="@dimen/five_dp"
+                android:layout_weight="2"
+                android:padding="0dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtInpLayNumber"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                style="@style/TextMandatoryInputLayout"
+                android:layout_weight="8">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etNumber"
+                    style="@style/TextInputEntryStyle"
+                    android:hint="@string/number"
+                    android:inputType="phone" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/chkDefault"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/lbl_default"
+            app:layout_constraintStart_toStartOf="@+id/llMobile"
+            app:layout_constraintTop_toBottomOf="@+id/llMobile" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/save"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/chkDefault" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

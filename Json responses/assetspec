@@ -1,0 +1,52 @@
+{
+    "ReturnValue": [
+        {
+            "spec": "Length(in)",
+            "datatyp": "Integer",
+            "mand": "Y",
+            "ListValues": null,
+            "specid": 10011
+        },
+        {
+            "spec": "Height(in)",
+            "datatyp": "Integer",
+            "mand": "Y",
+            "ListValues": null,
+            "specid": 10013
+        },
+        {
+            "spec": "Color",
+            "datatyp": "Dropdown",
+            "mand": "Y",
+            "ListValues": "Green,Red,Yellow",
+            "specid": 10135
+        },
+        {
+            "spec": "Date",
+            "datatyp": "Date",
+            "mand": "Y",
+            "ListValues": null,
+            "specid": 10136
+        },
+        {
+            "spec": "Description",
+            "datatyp": "Memo",
+            "mand": "Y",
+            "ListValues": null,
+            "specid": 10142
+        },
+        {
+            "spec": "Amount",
+            "datatyp": "Decimal",
+            "mand": "N",
+            "ListValues": null,
+            "specid": 10148
+        }
+    ],
+    "ReturnType": "Newtonsoft.Json.Linq.JArray",
+    "IsSuccess": true,
+    "msg": "",
+    "Schema": "",
+    "UTCDate": "2020-12-08T07:01:26.839",
+    "token": ""
+}

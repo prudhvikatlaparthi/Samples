@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Citizen Name:"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/citizenName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="NA"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Mobile:"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/citizenMobile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="NA"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
+</layout>

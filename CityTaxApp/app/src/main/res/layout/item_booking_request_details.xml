@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/ReceiptTextHeader"
+                android:text="@string/booking_category"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtBookingCategory"
+                style="@style/ReceiptTextBody"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/ReceiptTextHeader"
+                android:text="@string/booking_asset_id"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtBookingAssetId"
+                style="@style/ReceiptTextBody"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/ReceiptTextHeader"
+                android:text="@string/receipt_booking_quantity"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtBookingQuantity"
+                style="@style/ReceiptTextBody"
+                android:textStyle="bold"
+                android:layout_marginStart="@dimen/five_dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lltContractTenure"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/ReceiptTextHeader"
+                android:text="@string/receipt_contract_tenure"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtContractTenure"
+                style="@style/ReceiptTextBody"
+                android:textStyle="bold"
+                android:layout_marginStart="@dimen/five_dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/ReceiptTextHeader"
+                android:text="@string/asset_booking_period"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtBookingPeriod"
+                style="@style/ReceiptTextBody"
+                android:textStyle="bold"
+                android:layout_marginStart="@dimen/five_dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/ReceiptTextHeader"
+                android:text="@string/asset_duration_rate"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtDurationRate"
+                style="@style/ReceiptTextBody"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/ReceiptTextHeader"
+                android:text="@string/asset_request_distance_rate"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtDistanceRate"
+                style="@style/ReceiptTextBody"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/ReceiptTextHeader"
+                android:text="@string/booking_distance"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtBookingDistance"
+                style="@style/ReceiptTextBody"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/ReceiptTextHeader"
+                android:text="@string/asset_request_booking_deposit"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtBookingDeposit"
+                style="@style/ReceiptTextBody"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/ReceiptTextHeader"
+                android:text="@string/asset_receipt_security_deposit"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtSecurityDeposit"
+                style="@style/ReceiptTextBody"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/ReceiptTextHeader"
+                android:paddingEnd="5dp"
+                android:text="@string/receipt_estimated_rent_amount"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtEstimatedRentAmount"
+                style="@style/ReceiptTextBody"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:background="@color/colorPrimary" />
+
+    </LinearLayout>
+
+</layout>

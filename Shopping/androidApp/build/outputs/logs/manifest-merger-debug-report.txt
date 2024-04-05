@@ -1,0 +1,702 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/AndroidManifest.xml:2:1-32:12
+INJECTED from /home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/AndroidManifest.xml:2:1-32:12
+INJECTED from /home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/AndroidManifest.xml:2:1-32:12
+INJECTED from /home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/AndroidManifest.xml:2:1-32:12
+MERGED from [androidx.databinding:viewbinding:4.0.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/9409995f0975e967f6530c5cddee40ef/viewbinding-4.0.1/AndroidManifest.xml:17:1-22:12
+MERGED from [:shared] /home/effiasoft/prudhvi/Samples/Shopping/shared/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.navigation:navigation-ui-ktx:2.3.2] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/37954e795da04dcf1ffcd8cdb1f22031/navigation-ui-ktx-2.3.2/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-ui:2.3.2] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/46a0206c3882cdae2103e3eb0fcdf360/navigation-ui-2.3.2/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.material:material:1.2.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/11f648ca7ec1b77ca818b707c1f91c8a/material-1.2.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/904c09f7edea2c3ba2508eb3393224b5/constraintlayout-2.0.4/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat:1.2.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/e9839ce44d4e96ad84c99cf33f893c2a/appcompat-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/0e998c231bd44a9e019e35ead7c0e58a/legacy-support-v4-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/64bbc0742c870debe60dd38461afa7fb/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/975bee86120b20b90036d4111a70a0ac/swiperefreshlayout-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-fragment-ktx:2.3.2] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/1e8f0322aeebcc0dd9e3d903a9d9e1c4/navigation-fragment-ktx-2.3.2/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment-ktx:1.3.0-rc01] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/70efc5541ea5b1da25e1183419a94ad0/fragment-ktx-1.3.0-rc01/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.3.2] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/565909c1751e67551aac0c9bab57bf79/navigation-runtime-ktx-2.3.2/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity-ktx:1.2.0-rc01] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/8eae8ecaa9e355eaa94a1a388c335935/activity-ktx-1.2.0-rc01/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.0-rc01] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/fe3e88491279029bddb1fa51092c7aea/lifecycle-viewmodel-ktx-2.3.0-rc01/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.3.0-rc01] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/170995542bcc8d76afcc15e532d5d4e2/lifecycle-runtime-ktx-2.3.0-rc01/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-common-ktx:2.3.2] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/cbd5b7178e00aa5e5719e40fcdd9546e/navigation-common-ktx-2.3.2/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core-ktx:1.3.2] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/f9a72e75adea369e160f966ca2f07491/core-ktx-1.3.2/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.3.0-rc01] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/42b1314fc3c3ac5d4a98203e56603242/lifecycle-livedata-core-ktx-2.3.0-rc01/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate-ktx:1.1.0-rc01] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/720f124ad5b6c8581e727a7f037af141/savedstate-ktx-1.1.0-rc01/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.firebase:firebase-crashlytics-ktx:17.3.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/a4f7158a653323dda3204fbf7355ed49/firebase-crashlytics-ktx-17.3.0/AndroidManifest.xml:15:1-33:12
+MERGED from [com.google.firebase:firebase-analytics-ktx:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/d915acae7fa4c662da6e6d573a243566/firebase-analytics-ktx-18.0.0/AndroidManifest.xml:2:1-17:12
+MERGED from [com.google.firebase:firebase-messaging-ktx:21.0.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/66c38385ebf00dd04785970d58543ee1/firebase-messaging-ktx-21.0.1/AndroidManifest.xml:17:1-35:12
+MERGED from [com.google.firebase:firebase-common-ktx:19.5.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/11d57c15c449f6872f66b43a989e4d04/firebase-common-ktx-19.5.0/AndroidManifest.xml:2:1-21:12
+MERGED from [androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha02] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/adf737bb2c3879e17116d4c1b0095a93/hilt-lifecycle-viewmodel-1.0.0-alpha02/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.hilt:hilt-common:1.0.0-alpha02] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/224d821a8bece1cfe670521fea7690e7/hilt-common-1.0.0-alpha02/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.dagger:hilt-android:2.28.3-alpha] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/bb774dcfeda85d965795a56319fd6380/hilt-android-2.28.3-alpha/AndroidManifest.xml:16:1-19:12
+MERGED from [com.github.bumptech.glide:glide:4.11.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/978b253eccabd79faa5277adc4941df0/glide-4.11.0/AndroidManifest.xml:2:1-12:12
+MERGED from [com.google.firebase:firebase-crashlytics:17.3.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/49c13f0fe2d6d840a4e67e6e6bd653d6/firebase-crashlytics-17.3.0/AndroidManifest.xml:2:1-24:12
+MERGED from [com.google.firebase:firebase-messaging:21.0.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/d3daedc1831509620787c550940748fe/firebase-messaging-21.0.1/AndroidManifest.xml:17:1-45:12
+MERGED from [com.google.firebase:firebase-datatransport:17.0.10] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/8fd1c59d2dff41cfc1268856db0005c3/firebase-datatransport-17.0.10/AndroidManifest.xml:15:1-34:12
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/1db226defb01a35f19a7a59a671dae81/transport-backend-cct-2.3.3/AndroidManifest.xml:15:1-38:12
+MERGED from [com.google.firebase:firebase-encoders-json:17.1.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/c13ca18c77e99ac82d8977942c290f17/firebase-encoders-json-17.1.0/AndroidManifest.xml:15:1-23:12
+MERGED from [com.google.firebase:firebase-analytics:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/307f7e5efbdf4954b9bff442aa826e89/firebase-analytics-18.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-iid:21.0.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/64234701c0602bbe17a7757549c8cb46/firebase-iid-21.0.1/AndroidManifest.xml:17:1-47:12
+MERGED from [com.google.android.gms:play-services-measurement-api:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/756c2c63626005586c18dff86cd9f553/play-services-measurement-api-18.0.0/AndroidManifest.xml:17:1-36:12
+MERGED from [com.google.firebase:firebase-installations:16.3.5] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/3d9da0ce89a697fe2d783c956b7d47db/firebase-installations-16.3.5/AndroidManifest.xml:2:1-24:12
+MERGED from [com.google.firebase:firebase-common:19.5.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/ead96cd4ff9a2e1eae2571ff9b9b46e8/firebase-common-19.5.0/AndroidManifest.xml:15:1-49:12
+MERGED from [androidx.cardview:cardview:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/d9946730ee2eb460f2acf9347431dc68/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/4fd2c1497ff8cd856ce7116b534d1820/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/d135f087baaadbb4b9c94493b60a408b/appcompat-resources-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/d3884fa7c3fa90962d46344886872fec/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/f4bb93078641d1a2f40ed6c937b30caa/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/03b7af4c5dd8a3a7f4ffe342fb3bded0/viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/f8591a51f53ebad5d52c1abec5a1dbd6/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/8b6e10aa35200c102371b5c8ac1d7822/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media:media:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/9c3612f6170b7de4df9a4cc9709089f6/media-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-measurement:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/c251bfccab6c3c0775c4293cbf9f6fe3/play-services-measurement-18.0.0/AndroidManifest.xml:17:1-46:12
+MERGED from [com.google.android.gms:play-services-measurement-sdk:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/e2d3017e7f8c90f03c92b74839106142/play-services-measurement-sdk-18.0.0/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-measurement-impl:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/6a6b7e88e180d210cd9978ddc9f934ac/play-services-measurement-impl-18.0.0/AndroidManifest.xml:17:1-31:12
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/785216c26eeb629e872406dcf7a4d377/play-services-stats-17.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/ea3ceec96c8aab590e3d3af84900ffcd/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-fragment:2.3.2] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/3eebdb7fafcfa2172cf245ba7291a124/navigation-fragment-2.3.2/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.firebase:firebase-installations-interop:16.0.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/cb5e9451deda73096f181c661525f244/firebase-installations-interop-16.0.1/AndroidManifest.xml:15:1-23:12
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/32247e867f26a5ba92f21f94e676accf/play-services-cloud-messaging-16.0.0/AndroidManifest.xml:2:1-13:12
+MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/b2c901f56093251a05847c67efaf1f6a/firebase-iid-interop-17.0.0/AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/75ed8c97ab92bc64aa9f59857f701432/play-services-base-17.0.0/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/6c7e3678076ecb87a01d518ec8d6a0bd/play-services-tasks-17.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/9c08dbc44b2ccb88313cc2a90cc4ee39/firebase-measurement-connector-18.0.0/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/7413611f1d22d53fc3b5efbf5a85f51c/play-services-ads-identifier-17.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/b524ee42d107d3a70a466f3208871777/play-services-measurement-sdk-api-18.0.0/AndroidManifest.xml:17:1-27:12
+MERGED from [com.google.android.gms:play-services-measurement-base:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/24e104491b4d8c1d495c2e7b57d9daff/play-services-measurement-base-18.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:17.2.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/36701ed855f6d490f632914697aaffdc/play-services-basement-17.2.1/AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.fragment:fragment:1.3.0-rc01] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/2f13258e35f37742b4d166193d4acbea/fragment-1.3.0-rc01/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/842ce2ebb740c84804242d5068bcf5f0/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.loader:loader:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/9613af35622a7ee779449a929ef8d731/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/7814ab2042962cf5f6284ac004046339/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/91bf00ad7bc8eb96d12e56815117c0c8/slidingpanelayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/1c617ab83e861d2fea96d59680fda7d9/asynclayoutinflater-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/3182ea956ef03839e28e85742a98b2e9/drawerlayout-1.1.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.1.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/53ab8afe756d2f24e375cf8842ff1099/customview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.transition:transition:1.3.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/972b8a23ea103e46df4c51293b834997/transition-1.3.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-runtime:2.3.2] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/a5fcd402bdd26ea26255450a6dcef89f/navigation-runtime-2.3.2/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.2.0-rc01] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/3d6dab5f33777d912c1930d2221e5a1b/activity-1.2.0-rc01/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-common:2.3.2] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/5aba8becf727f194d79cac45f3f3a785/navigation-common-2.3.2/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.3.2] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/13455b2438dbe13f72f0fd12f9af24ba/core-1.3.2/AndroidManifest.xml:17:1-26:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/8d8fef3d969615cf4154a5fa96044f25/gifdecoder-4.11.0/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/9af1877f9518adae9983ab73e8ecb605/exifinterface-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-components:16.1.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/ba49ff8b20af053718834408ec05d13b/firebase-components-16.1.0/AndroidManifest.xml:15:1-23:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/709973c081addcd19b3862da2c0c7975/versionedparcelable-1.1.0/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/fff324a85329a9e00230bd271dff7013/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/42a270e8c1f883a6ac828759ebddb4be/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/a5e1c5c5ae21e9edc23b957a8348a3ef/print-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.0-rc01] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/be744921fb626b0103ae5a379124d40f/lifecycle-viewmodel-savedstate-2.3.0-rc01/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.0-rc01] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/dfd3db4ac240a4d4b73c16428e1ced0c/lifecycle-viewmodel-2.3.0-rc01/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.1.0-rc01] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/55497bddb0d46b280088955b98f039fc/savedstate-1.1.0-rc01/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.5] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/698b85b8adfd64f1a09394c06e656d86/transport-runtime-2.2.5/AndroidManifest.xml:15:1-41:12
+MERGED from [com.google.android.datatransport:transport-api:2.2.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/6491e39bfbad5b0a724ec4b946798a99/transport-api-2.2.1/AndroidManifest.xml:15:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/44e7d40a328c703203e4425ed504fcc9/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.0-rc01] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/1af11d32de226fb3b15c9faaa985dbc4/lifecycle-livedata-core-2.3.0-rc01/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.0-rc01] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/678ebec5ddf0c79e844d71a4b8d5c2f8/lifecycle-runtime-2.3.0-rc01/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/8f361b47d6b515691e74581ca10ed3bf/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.tracing:tracing:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/de970ecb33560a22d745369d20e9a128/tracing-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/fca41d6499671ae78a29179cadbe99ff/annotation-experimental-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.dagger:dagger-lint-aar:2.28.3] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/175d68c5ddf17011f3fa570d2e37963d/dagger-lint-aar-2.28.3/AndroidManifest.xml:16:1-19:12
+INJECTED from /home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/AndroidManifest.xml:2:1-32:12
+INJECTED from /home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/AndroidManifest.xml:2:1-32:12
+INJECTED from /home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/AndroidManifest.xml:2:1-32:12
+	package
+		ADDED from /home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/AndroidManifest.xml:3:5-42
+		INJECTED from /home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/AndroidManifest.xml
+		INJECTED from /home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/AndroidManifest.xml
+		ADDED from /home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/AndroidManifest.xml:2:1-32:12
+		INJECTED from /home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/AndroidManifest.xml
+		ADDED from /home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/AndroidManifest.xml:2:1-32:12
+		INJECTED from /home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/AndroidManifest.xml:5:5-67
+MERGED from [com.google.firebase:firebase-crashlytics:17.3.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/49c13f0fe2d6d840a4e67e6e6bd653d6/firebase-crashlytics-17.3.0/AndroidManifest.xml:10:5-67
+MERGED from [com.google.firebase:firebase-crashlytics:17.3.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/49c13f0fe2d6d840a4e67e6e6bd653d6/firebase-crashlytics-17.3.0/AndroidManifest.xml:10:5-67
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/1db226defb01a35f19a7a59a671dae81/transport-backend-cct-2.3.3/AndroidManifest.xml:26:5-67
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/1db226defb01a35f19a7a59a671dae81/transport-backend-cct-2.3.3/AndroidManifest.xml:26:5-67
+MERGED from [com.google.firebase:firebase-iid:21.0.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/64234701c0602bbe17a7757549c8cb46/firebase-iid-21.0.1/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-iid:21.0.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/64234701c0602bbe17a7757549c8cb46/firebase-iid-21.0.1/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-api:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/756c2c63626005586c18dff86cd9f553/play-services-measurement-api-18.0.0/AndroidManifest.xml:22:5-67
+MERGED from [com.google.android.gms:play-services-measurement-api:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/756c2c63626005586c18dff86cd9f553/play-services-measurement-api-18.0.0/AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-installations:16.3.5] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/3d9da0ce89a697fe2d783c956b7d47db/firebase-installations-16.3.5/AndroidManifest.xml:11:5-67
+MERGED from [com.google.firebase:firebase-installations:16.3.5] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/3d9da0ce89a697fe2d783c956b7d47db/firebase-installations-16.3.5/AndroidManifest.xml:11:5-67
+MERGED from [com.google.android.gms:play-services-measurement:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/c251bfccab6c3c0775c4293cbf9f6fe3/play-services-measurement-18.0.0/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/c251bfccab6c3c0775c4293cbf9f6fe3/play-services-measurement-18.0.0/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-impl:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/6a6b7e88e180d210cd9978ddc9f934ac/play-services-measurement-impl-18.0.0/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-impl:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/6a6b7e88e180d210cd9978ddc9f934ac/play-services-measurement-impl-18.0.0/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/32247e867f26a5ba92f21f94e676accf/play-services-cloud-messaging-16.0.0/AndroidManifest.xml:8:5-67
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/32247e867f26a5ba92f21f94e676accf/play-services-cloud-messaging-16.0.0/AndroidManifest.xml:8:5-67
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/b524ee42d107d3a70a466f3208871777/play-services-measurement-sdk-api-18.0.0/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/b524ee42d107d3a70a466f3208871777/play-services-measurement-sdk-api-18.0.0/AndroidManifest.xml:23:5-67
+	android:name
+		ADDED from /home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/AndroidManifest.xml:5:22-64
+application
+ADDED from /home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/AndroidManifest.xml:6:5-31:19
+MERGED from [com.google.android.material:material:1.2.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/11f648ca7ec1b77ca818b707c1f91c8a/material-1.2.1/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.2.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/11f648ca7ec1b77ca818b707c1f91c8a/material-1.2.1/AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/904c09f7edea2c3ba2508eb3393224b5/constraintlayout-2.0.4/AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/904c09f7edea2c3ba2508eb3393224b5/constraintlayout-2.0.4/AndroidManifest.xml:9:5-20
+MERGED from [com.google.firebase:firebase-crashlytics-ktx:17.3.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/a4f7158a653323dda3204fbf7355ed49/firebase-crashlytics-ktx-17.3.0/AndroidManifest.xml:23:5-31:19
+MERGED from [com.google.firebase:firebase-crashlytics-ktx:17.3.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/a4f7158a653323dda3204fbf7355ed49/firebase-crashlytics-ktx-17.3.0/AndroidManifest.xml:23:5-31:19
+MERGED from [com.google.firebase:firebase-analytics-ktx:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/d915acae7fa4c662da6e6d573a243566/firebase-analytics-ktx-18.0.0/AndroidManifest.xml:7:5-15:19
+MERGED from [com.google.firebase:firebase-analytics-ktx:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/d915acae7fa4c662da6e6d573a243566/firebase-analytics-ktx-18.0.0/AndroidManifest.xml:7:5-15:19
+MERGED from [com.google.firebase:firebase-messaging-ktx:21.0.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/66c38385ebf00dd04785970d58543ee1/firebase-messaging-ktx-21.0.1/AndroidManifest.xml:25:5-33:19
+MERGED from [com.google.firebase:firebase-messaging-ktx:21.0.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/66c38385ebf00dd04785970d58543ee1/firebase-messaging-ktx-21.0.1/AndroidManifest.xml:25:5-33:19
+MERGED from [com.google.firebase:firebase-common-ktx:19.5.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/11d57c15c449f6872f66b43a989e4d04/firebase-common-ktx-19.5.0/AndroidManifest.xml:11:5-19:19
+MERGED from [com.google.firebase:firebase-common-ktx:19.5.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/11d57c15c449f6872f66b43a989e4d04/firebase-common-ktx-19.5.0/AndroidManifest.xml:11:5-19:19
+MERGED from [com.github.bumptech.glide:glide:4.11.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/978b253eccabd79faa5277adc4941df0/glide-4.11.0/AndroidManifest.xml:10:5-20
+MERGED from [com.github.bumptech.glide:glide:4.11.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/978b253eccabd79faa5277adc4941df0/glide-4.11.0/AndroidManifest.xml:10:5-20
+MERGED from [com.google.firebase:firebase-crashlytics:17.3.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/49c13f0fe2d6d840a4e67e6e6bd653d6/firebase-crashlytics-17.3.0/AndroidManifest.xml:14:5-22:19
+MERGED from [com.google.firebase:firebase-crashlytics:17.3.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/49c13f0fe2d6d840a4e67e6e6bd653d6/firebase-crashlytics-17.3.0/AndroidManifest.xml:14:5-22:19
+MERGED from [com.google.firebase:firebase-messaging:21.0.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/d3daedc1831509620787c550940748fe/firebase-messaging-21.0.1/AndroidManifest.xml:22:5-43:19
+MERGED from [com.google.firebase:firebase-messaging:21.0.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/d3daedc1831509620787c550940748fe/firebase-messaging-21.0.1/AndroidManifest.xml:22:5-43:19
+MERGED from [com.google.firebase:firebase-datatransport:17.0.10] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/8fd1c59d2dff41cfc1268856db0005c3/firebase-datatransport-17.0.10/AndroidManifest.xml:24:5-32:19
+MERGED from [com.google.firebase:firebase-datatransport:17.0.10] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/8fd1c59d2dff41cfc1268856db0005c3/firebase-datatransport-17.0.10/AndroidManifest.xml:24:5-32:19
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/1db226defb01a35f19a7a59a671dae81/transport-backend-cct-2.3.3/AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/1db226defb01a35f19a7a59a671dae81/transport-backend-cct-2.3.3/AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.firebase:firebase-analytics:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/307f7e5efbdf4954b9bff442aa826e89/firebase-analytics-18.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-analytics:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/307f7e5efbdf4954b9bff442aa826e89/firebase-analytics-18.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-iid:21.0.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/64234701c0602bbe17a7757549c8cb46/firebase-iid-21.0.1/AndroidManifest.xml:28:5-45:19
+MERGED from [com.google.firebase:firebase-iid:21.0.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/64234701c0602bbe17a7757549c8cb46/firebase-iid-21.0.1/AndroidManifest.xml:28:5-45:19
+MERGED from [com.google.android.gms:play-services-measurement-api:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/756c2c63626005586c18dff86cd9f553/play-services-measurement-api-18.0.0/AndroidManifest.xml:26:5-34:19
+MERGED from [com.google.android.gms:play-services-measurement-api:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/756c2c63626005586c18dff86cd9f553/play-services-measurement-api-18.0.0/AndroidManifest.xml:26:5-34:19
+MERGED from [com.google.firebase:firebase-installations:16.3.5] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/3d9da0ce89a697fe2d783c956b7d47db/firebase-installations-16.3.5/AndroidManifest.xml:14:5-22:19
+MERGED from [com.google.firebase:firebase-installations:16.3.5] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/3d9da0ce89a697fe2d783c956b7d47db/firebase-installations-16.3.5/AndroidManifest.xml:14:5-22:19
+MERGED from [com.google.firebase:firebase-common:19.5.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/ead96cd4ff9a2e1eae2571ff9b9b46e8/firebase-common-19.5.0/AndroidManifest.xml:25:5-47:19
+MERGED from [com.google.firebase:firebase-common:19.5.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/ead96cd4ff9a2e1eae2571ff9b9b46e8/firebase-common-19.5.0/AndroidManifest.xml:25:5-47:19
+MERGED from [com.google.android.gms:play-services-measurement:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/c251bfccab6c3c0775c4293cbf9f6fe3/play-services-measurement-18.0.0/AndroidManifest.xml:28:5-44:19
+MERGED from [com.google.android.gms:play-services-measurement:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/c251bfccab6c3c0775c4293cbf9f6fe3/play-services-measurement-18.0.0/AndroidManifest.xml:28:5-44:19
+MERGED from [com.google.android.gms:play-services-measurement-sdk:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/e2d3017e7f8c90f03c92b74839106142/play-services-measurement-sdk-18.0.0/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-measurement-sdk:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/e2d3017e7f8c90f03c92b74839106142/play-services-measurement-sdk-18.0.0/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-measurement-impl:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/6a6b7e88e180d210cd9978ddc9f934ac/play-services-measurement-impl-18.0.0/AndroidManifest.xml:28:5-29:19
+MERGED from [com.google.android.gms:play-services-measurement-impl:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/6a6b7e88e180d210cd9978ddc9f934ac/play-services-measurement-impl-18.0.0/AndroidManifest.xml:28:5-29:19
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/785216c26eeb629e872406dcf7a4d377/play-services-stats-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/785216c26eeb629e872406dcf7a4d377/play-services-stats-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/b2c901f56093251a05847c67efaf1f6a/firebase-iid-interop-17.0.0/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/b2c901f56093251a05847c67efaf1f6a/firebase-iid-interop-17.0.0/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/75ed8c97ab92bc64aa9f59857f701432/play-services-base-17.0.0/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/75ed8c97ab92bc64aa9f59857f701432/play-services-base-17.0.0/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/6c7e3678076ecb87a01d518ec8d6a0bd/play-services-tasks-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/6c7e3678076ecb87a01d518ec8d6a0bd/play-services-tasks-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/9c08dbc44b2ccb88313cc2a90cc4ee39/firebase-measurement-connector-18.0.0/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/9c08dbc44b2ccb88313cc2a90cc4ee39/firebase-measurement-connector-18.0.0/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/7413611f1d22d53fc3b5efbf5a85f51c/play-services-ads-identifier-17.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/7413611f1d22d53fc3b5efbf5a85f51c/play-services-ads-identifier-17.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-measurement-base:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/24e104491b4d8c1d495c2e7b57d9daff/play-services-measurement-base-18.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-measurement-base:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/24e104491b4d8c1d495c2e7b57d9daff/play-services-measurement-base-18.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:17.2.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/36701ed855f6d490f632914697aaffdc/play-services-basement-17.2.1/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:17.2.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/36701ed855f6d490f632914697aaffdc/play-services-basement-17.2.1/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.core:core:1.3.2] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/13455b2438dbe13f72f0fd12f9af24ba/core-1.3.2/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.3.2] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/13455b2438dbe13f72f0fd12f9af24ba/core-1.3.2/AndroidManifest.xml:24:5-89
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/8d8fef3d969615cf4154a5fa96044f25/gifdecoder-4.11.0/AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/8d8fef3d969615cf4154a5fa96044f25/gifdecoder-4.11.0/AndroidManifest.xml:9:5-20
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/709973c081addcd19b3862da2c0c7975/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/709973c081addcd19b3862da2c0c7975/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.5] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/698b85b8adfd64f1a09394c06e656d86/transport-runtime-2.2.5/AndroidManifest.xml:25:5-39:19
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.5] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/698b85b8adfd64f1a09394c06e656d86/transport-runtime-2.2.5/AndroidManifest.xml:25:5-39:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.3.2] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/13455b2438dbe13f72f0fd12f9af24ba/core-1.3.2/AndroidManifest.xml:24:18-86
+	android:supportsRtl
+		ADDED from /home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/AndroidManifest.xml:10:9-35
+	android:label
+		ADDED from /home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/AndroidManifest.xml:9:9-41
+	android:allowBackup
+		ADDED from /home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/AndroidManifest.xml:8:9-36
+	android:theme
+		ADDED from /home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/AndroidManifest.xml:11:9-40
+	android:name
+		ADDED from /home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/AndroidManifest.xml:7:9-38
+activity#com.pru.shopping.androidApp.ui.activities.MainActivity
+ADDED from /home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/AndroidManifest.xml:12:9-17:20
+	android:name
+		ADDED from /home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/AndroidManifest.xml:12:19-61
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/AndroidManifest.xml:13:13-16:29
+action#android.intent.action.MAIN
+ADDED from /home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/AndroidManifest.xml:14:17-69
+	android:name
+		ADDED from /home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/AndroidManifest.xml:14:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/AndroidManifest.xml:15:17-77
+	android:name
+		ADDED from /home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/AndroidManifest.xml:15:27-74
+meta-data#preloaded_fonts
+ADDED from /home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/AndroidManifest.xml:18:9-20:57
+	android:resource
+		ADDED from /home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/AndroidManifest.xml:20:13-54
+	android:name
+		ADDED from /home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/AndroidManifest.xml:19:13-43
+meta-data#com.google.firebase.messaging.default_notification_channel_id
+ADDED from /home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/AndroidManifest.xml:21:9-23:37
+	android:value
+		ADDED from /home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/AndroidManifest.xml:23:13-34
+	android:name
+		ADDED from /home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/AndroidManifest.xml:22:13-89
+service#com.pru.shopping.androidApp.service.MyFirebaseService
+ADDED from /home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/AndroidManifest.xml:24:9-30:19
+	android:exported
+		ADDED from /home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/AndroidManifest.xml:26:13-37
+	android:name
+		ADDED from /home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/AndroidManifest.xml:25:13-54
+intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
+ADDED from /home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/AndroidManifest.xml:27:13-29:29
+action#com.google.firebase.MESSAGING_EVENT
+ADDED from /home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/AndroidManifest.xml:28:17-78
+	android:name
+		ADDED from /home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/AndroidManifest.xml:28:25-75
+uses-sdk
+INJECTED from /home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/AndroidManifest.xml
+INJECTED from /home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/AndroidManifest.xml
+MERGED from [androidx.databinding:viewbinding:4.0.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/9409995f0975e967f6530c5cddee40ef/viewbinding-4.0.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.databinding:viewbinding:4.0.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/9409995f0975e967f6530c5cddee40ef/viewbinding-4.0.1/AndroidManifest.xml:20:5-44
+MERGED from [:shared] /home/effiasoft/prudhvi/Samples/Shopping/shared/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:shared] /home/effiasoft/prudhvi/Samples/Shopping/shared/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.navigation:navigation-ui-ktx:2.3.2] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/37954e795da04dcf1ffcd8cdb1f22031/navigation-ui-ktx-2.3.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-ui-ktx:2.3.2] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/37954e795da04dcf1ffcd8cdb1f22031/navigation-ui-ktx-2.3.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-ui:2.3.2] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/46a0206c3882cdae2103e3eb0fcdf360/navigation-ui-2.3.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-ui:2.3.2] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/46a0206c3882cdae2103e3eb0fcdf360/navigation-ui-2.3.2/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.material:material:1.2.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/11f648ca7ec1b77ca818b707c1f91c8a/material-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.2.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/11f648ca7ec1b77ca818b707c1f91c8a/material-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/904c09f7edea2c3ba2508eb3393224b5/constraintlayout-2.0.4/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/904c09f7edea2c3ba2508eb3393224b5/constraintlayout-2.0.4/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.appcompat:appcompat:1.2.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/e9839ce44d4e96ad84c99cf33f893c2a/appcompat-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.2.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/e9839ce44d4e96ad84c99cf33f893c2a/appcompat-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/0e998c231bd44a9e019e35ead7c0e58a/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/0e998c231bd44a9e019e35ead7c0e58a/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/64bbc0742c870debe60dd38461afa7fb/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/64bbc0742c870debe60dd38461afa7fb/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/975bee86120b20b90036d4111a70a0ac/swiperefreshlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/975bee86120b20b90036d4111a70a0ac/swiperefreshlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-fragment-ktx:2.3.2] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/1e8f0322aeebcc0dd9e3d903a9d9e1c4/navigation-fragment-ktx-2.3.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-fragment-ktx:2.3.2] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/1e8f0322aeebcc0dd9e3d903a9d9e1c4/navigation-fragment-ktx-2.3.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment-ktx:1.3.0-rc01] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/70efc5541ea5b1da25e1183419a94ad0/fragment-ktx-1.3.0-rc01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment-ktx:1.3.0-rc01] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/70efc5541ea5b1da25e1183419a94ad0/fragment-ktx-1.3.0-rc01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.3.2] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/565909c1751e67551aac0c9bab57bf79/navigation-runtime-ktx-2.3.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.3.2] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/565909c1751e67551aac0c9bab57bf79/navigation-runtime-ktx-2.3.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity-ktx:1.2.0-rc01] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/8eae8ecaa9e355eaa94a1a388c335935/activity-ktx-1.2.0-rc01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity-ktx:1.2.0-rc01] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/8eae8ecaa9e355eaa94a1a388c335935/activity-ktx-1.2.0-rc01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.0-rc01] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/fe3e88491279029bddb1fa51092c7aea/lifecycle-viewmodel-ktx-2.3.0-rc01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.0-rc01] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/fe3e88491279029bddb1fa51092c7aea/lifecycle-viewmodel-ktx-2.3.0-rc01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.3.0-rc01] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/170995542bcc8d76afcc15e532d5d4e2/lifecycle-runtime-ktx-2.3.0-rc01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.3.0-rc01] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/170995542bcc8d76afcc15e532d5d4e2/lifecycle-runtime-ktx-2.3.0-rc01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common-ktx:2.3.2] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/cbd5b7178e00aa5e5719e40fcdd9546e/navigation-common-ktx-2.3.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common-ktx:2.3.2] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/cbd5b7178e00aa5e5719e40fcdd9546e/navigation-common-ktx-2.3.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core-ktx:1.3.2] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/f9a72e75adea369e160f966ca2f07491/core-ktx-1.3.2/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.core:core-ktx:1.3.2] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/f9a72e75adea369e160f966ca2f07491/core-ktx-1.3.2/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.3.0-rc01] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/42b1314fc3c3ac5d4a98203e56603242/lifecycle-livedata-core-ktx-2.3.0-rc01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.3.0-rc01] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/42b1314fc3c3ac5d4a98203e56603242/lifecycle-livedata-core-ktx-2.3.0-rc01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate-ktx:1.1.0-rc01] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/720f124ad5b6c8581e727a7f037af141/savedstate-ktx-1.1.0-rc01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate-ktx:1.1.0-rc01] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/720f124ad5b6c8581e727a7f037af141/savedstate-ktx-1.1.0-rc01/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-crashlytics-ktx:17.3.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/a4f7158a653323dda3204fbf7355ed49/firebase-crashlytics-ktx-17.3.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-crashlytics-ktx:17.3.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/a4f7158a653323dda3204fbf7355ed49/firebase-crashlytics-ktx-17.3.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-analytics-ktx:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/d915acae7fa4c662da6e6d573a243566/firebase-analytics-ktx-18.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-analytics-ktx:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/d915acae7fa4c662da6e6d573a243566/firebase-analytics-ktx-18.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-messaging-ktx:21.0.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/66c38385ebf00dd04785970d58543ee1/firebase-messaging-ktx-21.0.1/AndroidManifest.xml:21:5-23:41
+MERGED from [com.google.firebase:firebase-messaging-ktx:21.0.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/66c38385ebf00dd04785970d58543ee1/firebase-messaging-ktx-21.0.1/AndroidManifest.xml:21:5-23:41
+MERGED from [com.google.firebase:firebase-common-ktx:19.5.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/11d57c15c449f6872f66b43a989e4d04/firebase-common-ktx-19.5.0/AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-common-ktx:19.5.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/11d57c15c449f6872f66b43a989e4d04/firebase-common-ktx-19.5.0/AndroidManifest.xml:6:5-8:41
+MERGED from [androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha02] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/adf737bb2c3879e17116d4c1b0095a93/hilt-lifecycle-viewmodel-1.0.0-alpha02/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha02] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/adf737bb2c3879e17116d4c1b0095a93/hilt-lifecycle-viewmodel-1.0.0-alpha02/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.hilt:hilt-common:1.0.0-alpha02] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/224d821a8bece1cfe670521fea7690e7/hilt-common-1.0.0-alpha02/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.hilt:hilt-common:1.0.0-alpha02] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/224d821a8bece1cfe670521fea7690e7/hilt-common-1.0.0-alpha02/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.dagger:hilt-android:2.28.3-alpha] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/bb774dcfeda85d965795a56319fd6380/hilt-android-2.28.3-alpha/AndroidManifest.xml:18:3-42
+MERGED from [com.google.dagger:hilt-android:2.28.3-alpha] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/bb774dcfeda85d965795a56319fd6380/hilt-android-2.28.3-alpha/AndroidManifest.xml:18:3-42
+MERGED from [com.github.bumptech.glide:glide:4.11.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/978b253eccabd79faa5277adc4941df0/glide-4.11.0/AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:glide:4.11.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/978b253eccabd79faa5277adc4941df0/glide-4.11.0/AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-crashlytics:17.3.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/49c13f0fe2d6d840a4e67e6e6bd653d6/firebase-crashlytics-17.3.0/AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-crashlytics:17.3.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/49c13f0fe2d6d840a4e67e6e6bd653d6/firebase-crashlytics-17.3.0/AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-messaging:21.0.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/d3daedc1831509620787c550940748fe/firebase-messaging-21.0.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-messaging:21.0.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/d3daedc1831509620787c550940748fe/firebase-messaging-21.0.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-datatransport:17.0.10] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/8fd1c59d2dff41cfc1268856db0005c3/firebase-datatransport-17.0.10/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-datatransport:17.0.10] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/8fd1c59d2dff41cfc1268856db0005c3/firebase-datatransport-17.0.10/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/1db226defb01a35f19a7a59a671dae81/transport-backend-cct-2.3.3/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/1db226defb01a35f19a7a59a671dae81/transport-backend-cct-2.3.3/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-encoders-json:17.1.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/c13ca18c77e99ac82d8977942c290f17/firebase-encoders-json-17.1.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-encoders-json:17.1.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/c13ca18c77e99ac82d8977942c290f17/firebase-encoders-json-17.1.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-analytics:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/307f7e5efbdf4954b9bff442aa826e89/firebase-analytics-18.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-analytics:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/307f7e5efbdf4954b9bff442aa826e89/firebase-analytics-18.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-iid:21.0.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/64234701c0602bbe17a7757549c8cb46/firebase-iid-21.0.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:21.0.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/64234701c0602bbe17a7757549c8cb46/firebase-iid-21.0.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-api:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/756c2c63626005586c18dff86cd9f553/play-services-measurement-api-18.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-api:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/756c2c63626005586c18dff86cd9f553/play-services-measurement-api-18.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-installations:16.3.5] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/3d9da0ce89a697fe2d783c956b7d47db/firebase-installations-16.3.5/AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-installations:16.3.5] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/3d9da0ce89a697fe2d783c956b7d47db/firebase-installations-16.3.5/AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-common:19.5.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/ead96cd4ff9a2e1eae2571ff9b9b46e8/firebase-common-19.5.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-common:19.5.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/ead96cd4ff9a2e1eae2571ff9b9b46e8/firebase-common-19.5.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cardview:cardview:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/d9946730ee2eb460f2acf9347431dc68/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/d9946730ee2eb460f2acf9347431dc68/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/4fd2c1497ff8cd856ce7116b534d1820/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/4fd2c1497ff8cd856ce7116b534d1820/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/d135f087baaadbb4b9c94493b60a408b/appcompat-resources-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/d135f087baaadbb4b9c94493b60a408b/appcompat-resources-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/d3884fa7c3fa90962d46344886872fec/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/d3884fa7c3fa90962d46344886872fec/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/f4bb93078641d1a2f40ed6c937b30caa/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/f4bb93078641d1a2f40ed6c937b30caa/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/03b7af4c5dd8a3a7f4ffe342fb3bded0/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/03b7af4c5dd8a3a7f4ffe342fb3bded0/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/f8591a51f53ebad5d52c1abec5a1dbd6/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/f8591a51f53ebad5d52c1abec5a1dbd6/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/8b6e10aa35200c102371b5c8ac1d7822/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/8b6e10aa35200c102371b5c8ac1d7822/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/9c3612f6170b7de4df9a4cc9709089f6/media-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/9c3612f6170b7de4df9a4cc9709089f6/media-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/c251bfccab6c3c0775c4293cbf9f6fe3/play-services-measurement-18.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/c251bfccab6c3c0775c4293cbf9f6fe3/play-services-measurement-18.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/e2d3017e7f8c90f03c92b74839106142/play-services-measurement-sdk-18.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/e2d3017e7f8c90f03c92b74839106142/play-services-measurement-sdk-18.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-impl:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/6a6b7e88e180d210cd9978ddc9f934ac/play-services-measurement-impl-18.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-impl:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/6a6b7e88e180d210cd9978ddc9f934ac/play-services-measurement-impl-18.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/785216c26eeb629e872406dcf7a4d377/play-services-stats-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/785216c26eeb629e872406dcf7a4d377/play-services-stats-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/ea3ceec96c8aab590e3d3af84900ffcd/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/ea3ceec96c8aab590e3d3af84900ffcd/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-fragment:2.3.2] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/3eebdb7fafcfa2172cf245ba7291a124/navigation-fragment-2.3.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-fragment:2.3.2] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/3eebdb7fafcfa2172cf245ba7291a124/navigation-fragment-2.3.2/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-installations-interop:16.0.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/cb5e9451deda73096f181c661525f244/firebase-installations-interop-16.0.1/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-installations-interop:16.0.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/cb5e9451deda73096f181c661525f244/firebase-installations-interop-16.0.1/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/32247e867f26a5ba92f21f94e676accf/play-services-cloud-messaging-16.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/32247e867f26a5ba92f21f94e676accf/play-services-cloud-messaging-16.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/b2c901f56093251a05847c67efaf1f6a/firebase-iid-interop-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/b2c901f56093251a05847c67efaf1f6a/firebase-iid-interop-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/75ed8c97ab92bc64aa9f59857f701432/play-services-base-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/75ed8c97ab92bc64aa9f59857f701432/play-services-base-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/6c7e3678076ecb87a01d518ec8d6a0bd/play-services-tasks-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/6c7e3678076ecb87a01d518ec8d6a0bd/play-services-tasks-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/9c08dbc44b2ccb88313cc2a90cc4ee39/firebase-measurement-connector-18.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/9c08dbc44b2ccb88313cc2a90cc4ee39/firebase-measurement-connector-18.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/7413611f1d22d53fc3b5efbf5a85f51c/play-services-ads-identifier-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/7413611f1d22d53fc3b5efbf5a85f51c/play-services-ads-identifier-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/b524ee42d107d3a70a466f3208871777/play-services-measurement-sdk-api-18.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/b524ee42d107d3a70a466f3208871777/play-services-measurement-sdk-api-18.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/24e104491b4d8c1d495c2e7b57d9daff/play-services-measurement-base-18.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/24e104491b4d8c1d495c2e7b57d9daff/play-services-measurement-base-18.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.2.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/36701ed855f6d490f632914697aaffdc/play-services-basement-17.2.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.2.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/36701ed855f6d490f632914697aaffdc/play-services-basement-17.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.3.0-rc01] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/2f13258e35f37742b4d166193d4acbea/fragment-1.3.0-rc01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.0-rc01] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/2f13258e35f37742b4d166193d4acbea/fragment-1.3.0-rc01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/842ce2ebb740c84804242d5068bcf5f0/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/842ce2ebb740c84804242d5068bcf5f0/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.loader:loader:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/9613af35622a7ee779449a929ef8d731/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/9613af35622a7ee779449a929ef8d731/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/7814ab2042962cf5f6284ac004046339/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/7814ab2042962cf5f6284ac004046339/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/91bf00ad7bc8eb96d12e56815117c0c8/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/91bf00ad7bc8eb96d12e56815117c0c8/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/1c617ab83e861d2fea96d59680fda7d9/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/1c617ab83e861d2fea96d59680fda7d9/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/3182ea956ef03839e28e85742a98b2e9/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/3182ea956ef03839e28e85742a98b2e9/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/53ab8afe756d2f24e375cf8842ff1099/customview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/53ab8afe756d2f24e375cf8842ff1099/customview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.3.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/972b8a23ea103e46df4c51293b834997/transition-1.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.3.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/972b8a23ea103e46df4c51293b834997/transition-1.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime:2.3.2] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/a5fcd402bdd26ea26255450a6dcef89f/navigation-runtime-2.3.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime:2.3.2] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/a5fcd402bdd26ea26255450a6dcef89f/navigation-runtime-2.3.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.2.0-rc01] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/3d6dab5f33777d912c1930d2221e5a1b/activity-1.2.0-rc01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.2.0-rc01] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/3d6dab5f33777d912c1930d2221e5a1b/activity-1.2.0-rc01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common:2.3.2] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/5aba8becf727f194d79cac45f3f3a785/navigation-common-2.3.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common:2.3.2] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/5aba8becf727f194d79cac45f3f3a785/navigation-common-2.3.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.3.2] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/13455b2438dbe13f72f0fd12f9af24ba/core-1.3.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.3.2] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/13455b2438dbe13f72f0fd12f9af24ba/core-1.3.2/AndroidManifest.xml:20:5-22:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/8d8fef3d969615cf4154a5fa96044f25/gifdecoder-4.11.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/8d8fef3d969615cf4154a5fa96044f25/gifdecoder-4.11.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/9af1877f9518adae9983ab73e8ecb605/exifinterface-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/9af1877f9518adae9983ab73e8ecb605/exifinterface-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-components:16.1.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/ba49ff8b20af053718834408ec05d13b/firebase-components-16.1.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-components:16.1.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/ba49ff8b20af053718834408ec05d13b/firebase-components-16.1.0/AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/709973c081addcd19b3862da2c0c7975/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/709973c081addcd19b3862da2c0c7975/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/fff324a85329a9e00230bd271dff7013/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/fff324a85329a9e00230bd271dff7013/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/42a270e8c1f883a6ac828759ebddb4be/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/42a270e8c1f883a6ac828759ebddb4be/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/a5e1c5c5ae21e9edc23b957a8348a3ef/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/a5e1c5c5ae21e9edc23b957a8348a3ef/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.0-rc01] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/be744921fb626b0103ae5a379124d40f/lifecycle-viewmodel-savedstate-2.3.0-rc01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.0-rc01] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/be744921fb626b0103ae5a379124d40f/lifecycle-viewmodel-savedstate-2.3.0-rc01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.0-rc01] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/dfd3db4ac240a4d4b73c16428e1ced0c/lifecycle-viewmodel-2.3.0-rc01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.0-rc01] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/dfd3db4ac240a4d4b73c16428e1ced0c/lifecycle-viewmodel-2.3.0-rc01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.1.0-rc01] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/55497bddb0d46b280088955b98f039fc/savedstate-1.1.0-rc01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.1.0-rc01] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/55497bddb0d46b280088955b98f039fc/savedstate-1.1.0-rc01/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.5] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/698b85b8adfd64f1a09394c06e656d86/transport-runtime-2.2.5/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.5] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/698b85b8adfd64f1a09394c06e656d86/transport-runtime-2.2.5/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-api:2.2.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/6491e39bfbad5b0a724ec4b946798a99/transport-api-2.2.1/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-api:2.2.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/6491e39bfbad5b0a724ec4b946798a99/transport-api-2.2.1/AndroidManifest.xml:18:5-20:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/44e7d40a328c703203e4425ed504fcc9/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/44e7d40a328c703203e4425ed504fcc9/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.0-rc01] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/1af11d32de226fb3b15c9faaa985dbc4/lifecycle-livedata-core-2.3.0-rc01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.0-rc01] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/1af11d32de226fb3b15c9faaa985dbc4/lifecycle-livedata-core-2.3.0-rc01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.0-rc01] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/678ebec5ddf0c79e844d71a4b8d5c2f8/lifecycle-runtime-2.3.0-rc01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.0-rc01] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/678ebec5ddf0c79e844d71a4b8d5c2f8/lifecycle-runtime-2.3.0-rc01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/8f361b47d6b515691e74581ca10ed3bf/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/8f361b47d6b515691e74581ca10ed3bf/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/de970ecb33560a22d745369d20e9a128/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/de970ecb33560a22d745369d20e9a128/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/fca41d6499671ae78a29179cadbe99ff/annotation-experimental-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/fca41d6499671ae78a29179cadbe99ff/annotation-experimental-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.dagger:dagger-lint-aar:2.28.3] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/175d68c5ddf17011f3fa570d2e37963d/dagger-lint-aar-2.28.3/AndroidManifest.xml:18:3-42
+MERGED from [com.google.dagger:dagger-lint-aar:2.28.3] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/175d68c5ddf17011f3fa570d2e37963d/dagger-lint-aar-2.28.3/AndroidManifest.xml:18:3-42
+INJECTED from /home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/AndroidManifest.xml
+INJECTED from /home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/AndroidManifest.xml
+		ADDED from /home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/AndroidManifest.xml
+		INJECTED from /home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/AndroidManifest.xml
+		ADDED from /home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/AndroidManifest.xml
+		INJECTED from /home/effiasoft/prudhvi/Samples/Shopping/androidApp/src/main/AndroidManifest.xml
+service#com.google.firebase.components.ComponentDiscoveryService
+ADDED from [com.google.firebase:firebase-crashlytics-ktx:17.3.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/a4f7158a653323dda3204fbf7355ed49/firebase-crashlytics-ktx-17.3.0/AndroidManifest.xml:24:9-30:19
+MERGED from [com.google.firebase:firebase-analytics-ktx:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/d915acae7fa4c662da6e6d573a243566/firebase-analytics-ktx-18.0.0/AndroidManifest.xml:8:9-14:19
+MERGED from [com.google.firebase:firebase-analytics-ktx:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/d915acae7fa4c662da6e6d573a243566/firebase-analytics-ktx-18.0.0/AndroidManifest.xml:8:9-14:19
+MERGED from [com.google.firebase:firebase-messaging-ktx:21.0.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/66c38385ebf00dd04785970d58543ee1/firebase-messaging-ktx-21.0.1/AndroidManifest.xml:26:9-32:19
+MERGED from [com.google.firebase:firebase-messaging-ktx:21.0.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/66c38385ebf00dd04785970d58543ee1/firebase-messaging-ktx-21.0.1/AndroidManifest.xml:26:9-32:19
+MERGED from [com.google.firebase:firebase-common-ktx:19.5.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/11d57c15c449f6872f66b43a989e4d04/firebase-common-ktx-19.5.0/AndroidManifest.xml:12:9-18:19
+MERGED from [com.google.firebase:firebase-common-ktx:19.5.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/11d57c15c449f6872f66b43a989e4d04/firebase-common-ktx-19.5.0/AndroidManifest.xml:12:9-18:19
+MERGED from [com.google.firebase:firebase-crashlytics:17.3.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/49c13f0fe2d6d840a4e67e6e6bd653d6/firebase-crashlytics-17.3.0/AndroidManifest.xml:15:9-21:19
+MERGED from [com.google.firebase:firebase-crashlytics:17.3.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/49c13f0fe2d6d840a4e67e6e6bd653d6/firebase-crashlytics-17.3.0/AndroidManifest.xml:15:9-21:19
+MERGED from [com.google.firebase:firebase-messaging:21.0.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/d3daedc1831509620787c550940748fe/firebase-messaging-21.0.1/AndroidManifest.xml:36:9-42:19
+MERGED from [com.google.firebase:firebase-messaging:21.0.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/d3daedc1831509620787c550940748fe/firebase-messaging-21.0.1/AndroidManifest.xml:36:9-42:19
+MERGED from [com.google.firebase:firebase-datatransport:17.0.10] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/8fd1c59d2dff41cfc1268856db0005c3/firebase-datatransport-17.0.10/AndroidManifest.xml:25:9-31:19
+MERGED from [com.google.firebase:firebase-datatransport:17.0.10] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/8fd1c59d2dff41cfc1268856db0005c3/firebase-datatransport-17.0.10/AndroidManifest.xml:25:9-31:19
+MERGED from [com.google.firebase:firebase-iid:21.0.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/64234701c0602bbe17a7757549c8cb46/firebase-iid-21.0.1/AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.firebase:firebase-iid:21.0.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/64234701c0602bbe17a7757549c8cb46/firebase-iid-21.0.1/AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.android.gms:play-services-measurement-api:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/756c2c63626005586c18dff86cd9f553/play-services-measurement-api-18.0.0/AndroidManifest.xml:27:9-33:19
+MERGED from [com.google.android.gms:play-services-measurement-api:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/756c2c63626005586c18dff86cd9f553/play-services-measurement-api-18.0.0/AndroidManifest.xml:27:9-33:19
+MERGED from [com.google.firebase:firebase-installations:16.3.5] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/3d9da0ce89a697fe2d783c956b7d47db/firebase-installations-16.3.5/AndroidManifest.xml:15:9-21:19
+MERGED from [com.google.firebase:firebase-installations:16.3.5] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/3d9da0ce89a697fe2d783c956b7d47db/firebase-installations-16.3.5/AndroidManifest.xml:15:9-21:19
+MERGED from [com.google.firebase:firebase-common:19.5.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/ead96cd4ff9a2e1eae2571ff9b9b46e8/firebase-common-19.5.0/AndroidManifest.xml:33:9-46:19
+MERGED from [com.google.firebase:firebase-common:19.5.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/ead96cd4ff9a2e1eae2571ff9b9b46e8/firebase-common-19.5.0/AndroidManifest.xml:33:9-46:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-crashlytics-ktx:17.3.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/a4f7158a653323dda3204fbf7355ed49/firebase-crashlytics-ktx-17.3.0/AndroidManifest.xml:26:13-37
+	tools:targetApi
+		ADDED from [com.google.firebase:firebase-common:19.5.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/ead96cd4ff9a2e1eae2571ff9b9b46e8/firebase-common-19.5.0/AndroidManifest.xml:37:13-32
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-common:19.5.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/ead96cd4ff9a2e1eae2571ff9b9b46e8/firebase-common-19.5.0/AndroidManifest.xml:35:13-43
+	android:name
+		ADDED from [com.google.firebase:firebase-crashlytics-ktx:17.3.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/a4f7158a653323dda3204fbf7355ed49/firebase-crashlytics-ktx-17.3.0/AndroidManifest.xml:25:13-84
+meta-data#com.google.firebase.components:com.google.firebase.crashlytics.ktx.FirebaseCrashlyticsKtxRegistrar
+ADDED from [com.google.firebase:firebase-crashlytics-ktx:17.3.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/a4f7158a653323dda3204fbf7355ed49/firebase-crashlytics-ktx-17.3.0/AndroidManifest.xml:27:13-29:85
+	android:value
+		ADDED from [com.google.firebase:firebase-crashlytics-ktx:17.3.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/a4f7158a653323dda3204fbf7355ed49/firebase-crashlytics-ktx-17.3.0/AndroidManifest.xml:29:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-crashlytics-ktx:17.3.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/a4f7158a653323dda3204fbf7355ed49/firebase-crashlytics-ktx-17.3.0/AndroidManifest.xml:28:17-130
+meta-data#com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsKtxRegistrar
+ADDED from [com.google.firebase:firebase-analytics-ktx:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/d915acae7fa4c662da6e6d573a243566/firebase-analytics-ktx-18.0.0/AndroidManifest.xml:11:13-13:85
+	android:value
+		ADDED from [com.google.firebase:firebase-analytics-ktx:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/d915acae7fa4c662da6e6d573a243566/firebase-analytics-ktx-18.0.0/AndroidManifest.xml:13:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics-ktx:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/d915acae7fa4c662da6e6d573a243566/firebase-analytics-ktx-18.0.0/AndroidManifest.xml:12:17-126
+meta-data#com.google.firebase.components:com.google.firebase.messaging.ktx.FirebaseMessagingKtxRegistrar
+ADDED from [com.google.firebase:firebase-messaging-ktx:21.0.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/66c38385ebf00dd04785970d58543ee1/firebase-messaging-ktx-21.0.1/AndroidManifest.xml:29:13-31:85
+	android:value
+		ADDED from [com.google.firebase:firebase-messaging-ktx:21.0.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/66c38385ebf00dd04785970d58543ee1/firebase-messaging-ktx-21.0.1/AndroidManifest.xml:31:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging-ktx:21.0.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/66c38385ebf00dd04785970d58543ee1/firebase-messaging-ktx-21.0.1/AndroidManifest.xml:30:17-126
+meta-data#com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar
+ADDED from [com.google.firebase:firebase-common-ktx:19.5.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/11d57c15c449f6872f66b43a989e4d04/firebase-common-ktx-19.5.0/AndroidManifest.xml:15:13-17:85
+	android:value
+		ADDED from [com.google.firebase:firebase-common-ktx:19.5.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/11d57c15c449f6872f66b43a989e4d04/firebase-common-ktx-19.5.0/AndroidManifest.xml:17:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-common-ktx:19.5.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/11d57c15c449f6872f66b43a989e4d04/firebase-common-ktx-19.5.0/AndroidManifest.xml:16:17-113
+meta-data#com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar
+ADDED from [com.google.firebase:firebase-crashlytics:17.3.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/49c13f0fe2d6d840a4e67e6e6bd653d6/firebase-crashlytics-17.3.0/AndroidManifest.xml:18:13-20:85
+	android:value
+		ADDED from [com.google.firebase:firebase-crashlytics:17.3.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/49c13f0fe2d6d840a4e67e6e6bd653d6/firebase-crashlytics-17.3.0/AndroidManifest.xml:20:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-crashlytics:17.3.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/49c13f0fe2d6d840a4e67e6e6bd653d6/firebase-crashlytics-17.3.0/AndroidManifest.xml:19:17-115
+service#com.google.firebase.messaging.FirebaseMessagingService
+ADDED from [com.google.firebase:firebase-messaging:21.0.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/d3daedc1831509620787c550940748fe/firebase-messaging-21.0.1/AndroidManifest.xml:28:9-35:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:21.0.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/d3daedc1831509620787c550940748fe/firebase-messaging-21.0.1/AndroidManifest.xml:31:13-37
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-messaging:21.0.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/d3daedc1831509620787c550940748fe/firebase-messaging-21.0.1/AndroidManifest.xml:30:13-43
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:21.0.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/d3daedc1831509620787c550940748fe/firebase-messaging-21.0.1/AndroidManifest.xml:29:13-82
+meta-data#com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar
+ADDED from [com.google.firebase:firebase-messaging:21.0.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/d3daedc1831509620787c550940748fe/firebase-messaging-21.0.1/AndroidManifest.xml:39:13-41:85
+	android:value
+		ADDED from [com.google.firebase:firebase-messaging:21.0.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/d3daedc1831509620787c550940748fe/firebase-messaging-21.0.1/AndroidManifest.xml:41:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:21.0.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/d3daedc1831509620787c550940748fe/firebase-messaging-21.0.1/AndroidManifest.xml:40:17-119
+meta-data#com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar
+ADDED from [com.google.firebase:firebase-datatransport:17.0.10] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/8fd1c59d2dff41cfc1268856db0005c3/firebase-datatransport-17.0.10/AndroidManifest.xml:28:13-30:85
+	android:value
+		ADDED from [com.google.firebase:firebase-datatransport:17.0.10] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/8fd1c59d2dff41cfc1268856db0005c3/firebase-datatransport-17.0.10/AndroidManifest.xml:30:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-datatransport:17.0.10] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/8fd1c59d2dff41cfc1268856db0005c3/firebase-datatransport-17.0.10/AndroidManifest.xml:29:17-115
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/1db226defb01a35f19a7a59a671dae81/transport-backend-cct-2.3.3/AndroidManifest.xml:25:5-79
+MERGED from [com.google.firebase:firebase-iid:21.0.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/64234701c0602bbe17a7757549c8cb46/firebase-iid-21.0.1/AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-iid:21.0.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/64234701c0602bbe17a7757549c8cb46/firebase-iid-21.0.1/AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.gms:play-services-measurement-api:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/756c2c63626005586c18dff86cd9f553/play-services-measurement-api-18.0.0/AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-measurement-api:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/756c2c63626005586c18dff86cd9f553/play-services-measurement-api-18.0.0/AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-installations:16.3.5] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/3d9da0ce89a697fe2d783c956b7d47db/firebase-installations-16.3.5/AndroidManifest.xml:10:5-79
+MERGED from [com.google.firebase:firebase-installations:16.3.5] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/3d9da0ce89a697fe2d783c956b7d47db/firebase-installations-16.3.5/AndroidManifest.xml:10:5-79
+MERGED from [com.google.android.gms:play-services-measurement:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/c251bfccab6c3c0775c4293cbf9f6fe3/play-services-measurement-18.0.0/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/c251bfccab6c3c0775c4293cbf9f6fe3/play-services-measurement-18.0.0/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/6a6b7e88e180d210cd9978ddc9f934ac/play-services-measurement-impl-18.0.0/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/6a6b7e88e180d210cd9978ddc9f934ac/play-services-measurement-impl-18.0.0/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/32247e867f26a5ba92f21f94e676accf/play-services-cloud-messaging-16.0.0/AndroidManifest.xml:7:5-79
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/32247e867f26a5ba92f21f94e676accf/play-services-cloud-messaging-16.0.0/AndroidManifest.xml:7:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/b524ee42d107d3a70a466f3208871777/play-services-measurement-sdk-api-18.0.0/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/b524ee42d107d3a70a466f3208871777/play-services-measurement-sdk-api-18.0.0/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.5] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/698b85b8adfd64f1a09394c06e656d86/transport-runtime-2.2.5/AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.5] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/698b85b8adfd64f1a09394c06e656d86/transport-runtime-2.2.5/AndroidManifest.xml:22:5-79
+	android:name
+		ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/1db226defb01a35f19a7a59a671dae81/transport-backend-cct-2.3.3/AndroidManifest.xml:25:22-76
+service#com.google.android.datatransport.runtime.backends.TransportBackendDiscovery
+ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/1db226defb01a35f19a7a59a671dae81/transport-backend-cct-2.3.3/AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.5] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/698b85b8adfd64f1a09394c06e656d86/transport-runtime-2.2.5/AndroidManifest.xml:36:9-38:40
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.5] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/698b85b8adfd64f1a09394c06e656d86/transport-runtime-2.2.5/AndroidManifest.xml:36:9-38:40
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/1db226defb01a35f19a7a59a671dae81/transport-backend-cct-2.3.3/AndroidManifest.xml:31:13-37
+	android:name
+		ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/1db226defb01a35f19a7a59a671dae81/transport-backend-cct-2.3.3/AndroidManifest.xml:30:13-103
+meta-data#backend:com.google.android.datatransport.cct.CctBackendFactory
+ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/1db226defb01a35f19a7a59a671dae81/transport-backend-cct-2.3.3/AndroidManifest.xml:32:13-34:39
+	android:value
+		ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/1db226defb01a35f19a7a59a671dae81/transport-backend-cct-2.3.3/AndroidManifest.xml:34:17-36
+	android:name
+		ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/1db226defb01a35f19a7a59a671dae81/transport-backend-cct-2.3.3/AndroidManifest.xml:33:17-94
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [com.google.firebase:firebase-iid:21.0.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/64234701c0602bbe17a7757549c8cb46/firebase-iid-21.0.1/AndroidManifest.xml:24:5-68
+MERGED from [com.google.android.gms:play-services-measurement-api:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/756c2c63626005586c18dff86cd9f553/play-services-measurement-api-18.0.0/AndroidManifest.xml:24:5-68
+MERGED from [com.google.android.gms:play-services-measurement-api:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/756c2c63626005586c18dff86cd9f553/play-services-measurement-api-18.0.0/AndroidManifest.xml:24:5-68
+MERGED from [com.google.android.gms:play-services-measurement:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/c251bfccab6c3c0775c4293cbf9f6fe3/play-services-measurement-18.0.0/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/c251bfccab6c3c0775c4293cbf9f6fe3/play-services-measurement-18.0.0/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-impl:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/6a6b7e88e180d210cd9978ddc9f934ac/play-services-measurement-impl-18.0.0/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-impl:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/6a6b7e88e180d210cd9978ddc9f934ac/play-services-measurement-impl-18.0.0/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/32247e867f26a5ba92f21f94e676accf/play-services-cloud-messaging-16.0.0/AndroidManifest.xml:9:5-68
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/32247e867f26a5ba92f21f94e676accf/play-services-cloud-messaging-16.0.0/AndroidManifest.xml:9:5-68
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/b524ee42d107d3a70a466f3208871777/play-services-measurement-sdk-api-18.0.0/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/b524ee42d107d3a70a466f3208871777/play-services-measurement-sdk-api-18.0.0/AndroidManifest.xml:25:5-68
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:21.0.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/64234701c0602bbe17a7757549c8cb46/firebase-iid-21.0.1/AndroidManifest.xml:24:22-65
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:21.0.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/64234701c0602bbe17a7757549c8cb46/firebase-iid-21.0.1/AndroidManifest.xml:26:5-82
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/32247e867f26a5ba92f21f94e676accf/play-services-cloud-messaging-16.0.0/AndroidManifest.xml:11:5-82
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/32247e867f26a5ba92f21f94e676accf/play-services-cloud-messaging-16.0.0/AndroidManifest.xml:11:5-82
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:21.0.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/64234701c0602bbe17a7757549c8cb46/firebase-iid-21.0.1/AndroidManifest.xml:26:22-79
+meta-data#com.google.firebase.components:com.google.firebase.iid.Registrar
+ADDED from [com.google.firebase:firebase-iid:21.0.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/64234701c0602bbe17a7757549c8cb46/firebase-iid-21.0.1/AndroidManifest.xml:32:13-34:85
+	android:value
+		ADDED from [com.google.firebase:firebase-iid:21.0.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/64234701c0602bbe17a7757549c8cb46/firebase-iid-21.0.1/AndroidManifest.xml:34:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:21.0.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/64234701c0602bbe17a7757549c8cb46/firebase-iid-21.0.1/AndroidManifest.xml:33:17-96
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-iid:21.0.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/64234701c0602bbe17a7757549c8cb46/firebase-iid-21.0.1/AndroidManifest.xml:37:9-44:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:21.0.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/64234701c0602bbe17a7757549c8cb46/firebase-iid-21.0.1/AndroidManifest.xml:39:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-iid:21.0.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/64234701c0602bbe17a7757549c8cb46/firebase-iid-21.0.1/AndroidManifest.xml:40:13-73
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:21.0.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/64234701c0602bbe17a7757549c8cb46/firebase-iid-21.0.1/AndroidManifest.xml:38:13-78
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:21.0.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/64234701c0602bbe17a7757549c8cb46/firebase-iid-21.0.1/AndroidManifest.xml:41:13-43:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:21.0.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/64234701c0602bbe17a7757549c8cb46/firebase-iid-21.0.1/AndroidManifest.xml:42:17-81
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:21.0.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/64234701c0602bbe17a7757549c8cb46/firebase-iid-21.0.1/AndroidManifest.xml:42:25-78
+meta-data#com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar
+ADDED from [com.google.android.gms:play-services-measurement-api:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/756c2c63626005586c18dff86cd9f553/play-services-measurement-api-18.0.0/AndroidManifest.xml:30:13-32:85
+	android:value
+		ADDED from [com.google.android.gms:play-services-measurement-api:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/756c2c63626005586c18dff86cd9f553/play-services-measurement-api-18.0.0/AndroidManifest.xml:32:17-82
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement-api:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/756c2c63626005586c18dff86cd9f553/play-services-measurement-api-18.0.0/AndroidManifest.xml:31:17-139
+meta-data#com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar
+ADDED from [com.google.firebase:firebase-installations:16.3.5] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/3d9da0ce89a697fe2d783c956b7d47db/firebase-installations-16.3.5/AndroidManifest.xml:18:13-20:85
+	android:value
+		ADDED from [com.google.firebase:firebase-installations:16.3.5] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/3d9da0ce89a697fe2d783c956b7d47db/firebase-installations-16.3.5/AndroidManifest.xml:20:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-installations:16.3.5] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/3d9da0ce89a697fe2d783c956b7d47db/firebase-installations-16.3.5/AndroidManifest.xml:19:17-127
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:19.5.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/ead96cd4ff9a2e1eae2571ff9b9b46e8/firebase-common-19.5.0/AndroidManifest.xml:26:9-31:39
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:19.5.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/ead96cd4ff9a2e1eae2571ff9b9b46e8/firebase-common-19.5.0/AndroidManifest.xml:28:13-72
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:19.5.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/ead96cd4ff9a2e1eae2571ff9b9b46e8/firebase-common-19.5.0/AndroidManifest.xml:30:13-37
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-common:19.5.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/ead96cd4ff9a2e1eae2571ff9b9b46e8/firebase-common-19.5.0/AndroidManifest.xml:29:13-43
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:19.5.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/ead96cd4ff9a2e1eae2571ff9b9b46e8/firebase-common-19.5.0/AndroidManifest.xml:31:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-common:19.5.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/ead96cd4ff9a2e1eae2571ff9b9b46e8/firebase-common-19.5.0/AndroidManifest.xml:27:13-77
+meta-data#com.google.firebase.components:com.google.firebase.dynamicloading.DynamicLoadingRegistrar
+ADDED from [com.google.firebase:firebase-common:19.5.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/ead96cd4ff9a2e1eae2571ff9b9b46e8/firebase-common-19.5.0/AndroidManifest.xml:43:13-45:85
+	android:value
+		ADDED from [com.google.firebase:firebase-common:19.5.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/ead96cd4ff9a2e1eae2571ff9b9b46e8/firebase-common-19.5.0/AndroidManifest.xml:45:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-common:19.5.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/ead96cd4ff9a2e1eae2571ff9b9b46e8/firebase-common-19.5.0/AndroidManifest.xml:44:17-121
+uses-permission#com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+ADDED from [com.google.android.gms:play-services-measurement:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/c251bfccab6c3c0775c4293cbf9f6fe3/play-services-measurement-18.0.0/AndroidManifest.xml:26:5-110
+MERGED from [com.google.android.gms:play-services-measurement-impl:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/6a6b7e88e180d210cd9978ddc9f934ac/play-services-measurement-impl-18.0.0/AndroidManifest.xml:26:5-110
+MERGED from [com.google.android.gms:play-services-measurement-impl:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/6a6b7e88e180d210cd9978ddc9f934ac/play-services-measurement-impl-18.0.0/AndroidManifest.xml:26:5-110
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/c251bfccab6c3c0775c4293cbf9f6fe3/play-services-measurement-18.0.0/AndroidManifest.xml:26:22-107
+receiver#com.google.android.gms.measurement.AppMeasurementReceiver
+ADDED from [com.google.android.gms:play-services-measurement:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/c251bfccab6c3c0775c4293cbf9f6fe3/play-services-measurement-18.0.0/AndroidManifest.xml:29:9-33:20
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/c251bfccab6c3c0775c4293cbf9f6fe3/play-services-measurement-18.0.0/AndroidManifest.xml:31:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/c251bfccab6c3c0775c4293cbf9f6fe3/play-services-measurement-18.0.0/AndroidManifest.xml:32:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/c251bfccab6c3c0775c4293cbf9f6fe3/play-services-measurement-18.0.0/AndroidManifest.xml:30:13-85
+service#com.google.android.gms.measurement.AppMeasurementService
+ADDED from [com.google.android.gms:play-services-measurement:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/c251bfccab6c3c0775c4293cbf9f6fe3/play-services-measurement-18.0.0/AndroidManifest.xml:35:9-38:40
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/c251bfccab6c3c0775c4293cbf9f6fe3/play-services-measurement-18.0.0/AndroidManifest.xml:37:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/c251bfccab6c3c0775c4293cbf9f6fe3/play-services-measurement-18.0.0/AndroidManifest.xml:38:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/c251bfccab6c3c0775c4293cbf9f6fe3/play-services-measurement-18.0.0/AndroidManifest.xml:36:13-84
+service#com.google.android.gms.measurement.AppMeasurementJobService
+ADDED from [com.google.android.gms:play-services-measurement:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/c251bfccab6c3c0775c4293cbf9f6fe3/play-services-measurement-18.0.0/AndroidManifest.xml:39:9-43:72
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/c251bfccab6c3c0775c4293cbf9f6fe3/play-services-measurement-18.0.0/AndroidManifest.xml:41:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/c251bfccab6c3c0775c4293cbf9f6fe3/play-services-measurement-18.0.0/AndroidManifest.xml:42:13-37
+	android:permission
+		ADDED from [com.google.android.gms:play-services-measurement:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/c251bfccab6c3c0775c4293cbf9f6fe3/play-services-measurement-18.0.0/AndroidManifest.xml:43:13-69
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:18.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/c251bfccab6c3c0775c4293cbf9f6fe3/play-services-measurement-18.0.0/AndroidManifest.xml:40:13-87
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:17.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/75ed8c97ab92bc64aa9f59857f701432/play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/75ed8c97ab92bc64aa9f59857f701432/play-services-base-17.0.0/AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/75ed8c97ab92bc64aa9f59857f701432/play-services-base-17.0.0/AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/75ed8c97ab92bc64aa9f59857f701432/play-services-base-17.0.0/AndroidManifest.xml:24:13-79
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:17.2.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/36701ed855f6d490f632914697aaffdc/play-services-basement-17.2.1/AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:17.2.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/36701ed855f6d490f632914697aaffdc/play-services-basement-17.2.1/AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:17.2.1] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/36701ed855f6d490f632914697aaffdc/play-services-basement-17.2.1/AndroidManifest.xml:24:13-58
+service#com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService
+ADDED from [com.google.android.datatransport:transport-runtime:2.2.5] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/698b85b8adfd64f1a09394c06e656d86/transport-runtime-2.2.5/AndroidManifest.xml:26:9-30:19
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.5] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/698b85b8adfd64f1a09394c06e656d86/transport-runtime-2.2.5/AndroidManifest.xml:28:13-37
+	android:permission
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.5] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/698b85b8adfd64f1a09394c06e656d86/transport-runtime-2.2.5/AndroidManifest.xml:29:13-69
+	android:name
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.5] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/698b85b8adfd64f1a09394c06e656d86/transport-runtime-2.2.5/AndroidManifest.xml:27:13-117
+receiver#com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver
+ADDED from [com.google.android.datatransport:transport-runtime:2.2.5] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/698b85b8adfd64f1a09394c06e656d86/transport-runtime-2.2.5/AndroidManifest.xml:32:9-34:40
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.5] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/698b85b8adfd64f1a09394c06e656d86/transport-runtime-2.2.5/AndroidManifest.xml:34:13-37
+	android:name
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.5] /home/effiasoft/.gradle/caches/transforms-2/files-2.1/698b85b8adfd64f1a09394c06e656d86/transport-runtime-2.2.5/AndroidManifest.xml:33:13-132

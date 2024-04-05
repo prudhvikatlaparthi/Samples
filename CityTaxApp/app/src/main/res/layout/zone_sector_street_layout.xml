@@ -1,0 +1,121 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextMandatoryInputLayout"
+            android:layout_marginTop="@dimen/vertical_spacing"
+            android:hint="@string/last_name">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtLastName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapWords"
+                android:maxLength="80"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <View
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:background="@color/colorGray" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp">
+
+            <TextView
+                style="@style/TextMandatoryTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="@string/zone"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spnZone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minHeight="48dp"
+                android:paddingStart="0dp"
+                android:paddingEnd="@dimen/eighteen_sp"
+                android:spinnerMode="dialog" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:background="@color/colorGray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp">
+
+            <TextView
+                style="@style/TextMandatoryTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="@string/sector"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spnSector"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minHeight="48dp"
+                android:paddingStart="0dp"
+                android:paddingEnd="@dimen/eighteen_sp"
+                android:spinnerMode="dialog" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:background="@color/colorGray" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/vertical_spacing"
+            android:hint="@string/street">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtStreet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapWords"
+                android:maxLength="80"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <include
+            android:id="@+id/documentWrapper"
+            layout="@layout/document_wrapper" />
+
+
+    </LinearLayout>
+</layout>

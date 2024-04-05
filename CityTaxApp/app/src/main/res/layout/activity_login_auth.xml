@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/loginBtn_id">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:context=".ui.LoginAuthActivity">
+
+                <RadioGroup
+                    android:id="@+id/radioGrp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/sixteen_dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/googleAuthCodeOpt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/eight_dp"
+                        android:text="@string/txt_google_auth_code" />
+
+                    <FrameLayout
+                        android:id="@+id/googleAuthLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/QRimageView_id"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/sixteen_dp"
+                                android:layout_marginLeft="@dimen/sixteen_dp"
+                                android:layout_marginEnd="@dimen/sixteen_dp"
+                                android:layout_marginRight="@dimen/sixteen_dp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/googleTextMsg"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/googleTextMsg"
+                                android:textColor="@color/black"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/QRimageView_id" />
+
+                            <TextView
+                                android:id="@+id/secretKeyTextView_id"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/eight_dp"
+                                android:text="@string/setup_key_text"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/sixteen_sp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/googleTextMsg" />
+
+                            <TextView
+                                android:id="@+id/secretKeyText_id"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/secretKeyTextView_id" />
+
+                            <ImageButton
+                                android:id="@+id/copyBtn_id"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/eight_dp"
+                                android:layout_marginLeft="@dimen/eight_dp"
+                                android:background="@android:color/transparent"
+                                android:src="@drawable/ic_copy"
+                                app:layout_constraintBottom_toBottomOf="@+id/secretKeyText_id"
+                                app:layout_constraintStart_toEndOf="@+id/secretKeyText_id"
+                                app:layout_constraintTop_toTopOf="@+id/secretKeyText_id" />
+
+                             <EditText
+                                android:id="@+id/codeText_id"
+                                android:layout_width="280dp"
+                                android:layout_height="50dp"
+                                android:layout_marginTop="@dimen/sixteen_dp"
+                                android:gravity="center"
+                                android:hint="@string/hint_text"
+                                android:inputType="number"
+                                android:maxLength="6"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/secretKeyText_id" />
+
+                            <ImageButton
+                                android:id="@+id/eyeId"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/transparent"
+                                android:src="@drawable/eye_show"
+                                app:layout_constraintEnd_toEndOf="@+id/codeText_id"
+                                app:layout_constraintBottom_toBottomOf="@+id/codeText_id"
+                                app:layout_constraintTop_toTopOf="@+id/codeText_id"
+                                android:tag="show"
+                                />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </FrameLayout>
+
+                    <include
+                        android:id="@+id/smsOTPLayoutIncludeGoogle"
+                        layout="@layout/otp_validation_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginStart="@dimen/twenty_five_dp"/>
+
+                    <RadioButton
+                        android:id="@+id/smsOTPOpt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/eight_dp"
+                        android:text="@string/txt_sms_otp" />
+
+                    <include
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/smsOTPLayoutInclude"
+                        layout="@layout/otp_validation_layout"
+                        android:layout_marginStart="@dimen/twenty_five_dp"
+                        android:visibility="gone"/>
+
+                </RadioGroup>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/loginBtn_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/submit"/>
+
+    </RelativeLayout>
+
+</layout>

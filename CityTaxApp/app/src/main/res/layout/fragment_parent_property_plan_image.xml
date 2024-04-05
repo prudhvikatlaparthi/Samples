@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:clickable="true"
+        android:focusable="true">
+
+        <ExpandableListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:indicatorRight="?android:attr/expandableListPreferredItemIndicatorRight" />
+
+        <TextView
+            android:id="@+id/errorView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/msg_no_data"
+            android:textStyle="bold"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</layout>

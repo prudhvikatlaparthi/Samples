@@ -1,0 +1,74 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_CashInHand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorLayoutBackground"
+            android:orientation="horizontal"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="@string/cash_in_hand"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvCashInHand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcvCashDepositRequest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_CashInHand"
+            android:layout_weight="1"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtNoDataFound"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_below="@id/ll_CashInHand"
+            android:text="@string/msg_no_data"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/twenty_sp"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/ProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:padding="8dp"
+            android:visibility="gone" />
+        <Button
+            android:id="@+id/btnNewRequest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="@string/new_request"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+</layout>

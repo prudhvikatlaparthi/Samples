@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Responsive App</string>
+    <string name="add">Add</string>
+    <string name="search">search</string>
+    <string name="sort">sort</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="invoice">Invoice</string>
+    <string name="orders">Orders</string>
+    <string name="purchase">Purchase</string>
+    <string name="customers">Customers</string>
+    <string name="_569">569</string>
+    <string name="purchases">Purchases</string>
+    <string name="_10">10</string>
+    <string name="products">Products</string>
+    <string name="_300">300</string>
+    <string name="expenses">Expenses</string>
+    <string name="edit">edit</string>
+</resources>

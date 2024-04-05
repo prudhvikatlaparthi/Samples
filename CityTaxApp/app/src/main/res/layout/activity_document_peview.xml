@@ -1,0 +1,33 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.github.chrisbanes.photoview.PhotoView
+            android:id="@+id/imgDocumentPreview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="16dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_place_holder" />
+
+
+        <TextView
+            android:id="@+id/txtDocumentNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/colorAccent" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcvDocumentPreviews"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorLayoutBackground" />
+
+    </LinearLayout>
+</layout>

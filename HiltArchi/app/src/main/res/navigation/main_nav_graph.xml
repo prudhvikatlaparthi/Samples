@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.pru.hiltarchi.ui.fragments.TodoFragment"
+        android:label="Todos"
+        tools:layout="@layout/fragment_todo" >
+        <action
+            android:id="@+id/action_homeFragment_to_todoDetailFragment"
+            app:destination="@id/todoDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/todoDetailFragment"
+        android:name="com.pru.hiltarchi.ui.fragments.TodoDetailFragment"
+        android:label="Todo Detail">
+        <argument
+            android:name="todoID"
+            android:defaultValue="-1"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.pru.hiltarchi.ui.fragments.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" />
+</navigation>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.joborderfilter.JobOrderFilterFragment">
+
+    <TextView
+        android:id="@+id/txFilterJobOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_15dp"
+        android:padding="@dimen/font_10sp"
+        android:text="@string/filter_heading"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_15sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txJobOrderNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_20dp"
+            android:layout_marginEnd="@dimen/dimen_20dp"
+            android:layout_marginBottom="@dimen/dimen_4dp"
+            android:padding="@dimen/dimen_10dp"
+            android:text="@string/job_order_string"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_15sp" />
+
+
+        <EditText
+            android:id="@+id/etJobOrderId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_20dp"
+            android:layout_marginEnd="@dimen/dimen_20dp"
+            android:layout_marginBottom="@dimen/dimen_20dp"
+            android:background="@drawable/edit_background_box"
+            android:hint="@string/enter_job_order_no"
+            android:padding="@dimen/font_10sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/llJobCategoty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txJobCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_20dp"
+            android:layout_marginEnd="@dimen/dimen_20dp"
+            android:padding="@dimen/font_10sp"
+            android:text="@string/select_job_category"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_15sp" />
+
+        <FrameLayout
+            android:id="@+id/flJobCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_20dp"
+            android:layout_marginTop="@dimen/dimen_4dp"
+            android:layout_marginEnd="@dimen/dimen_20dp"
+            android:background="@drawable/edit_background_box">
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spnJobCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:dropDownWidth="match_parent"
+                android:paddingVertical="@dimen/dimen_10dp" />
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+
+        android:id="@+id/llJObType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/txJobType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_20dp"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:layout_marginEnd="@dimen/dimen_20dp"
+            android:padding="@dimen/font_10sp"
+            android:text="@string/select_job_type"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_15sp" />
+
+        <FrameLayout
+            android:id="@+id/flJobType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_20dp"
+            android:layout_marginTop="@dimen/dimen_4dp"
+            android:layout_marginEnd="@dimen/dimen_20dp"
+            android:background="@drawable/edit_background_box">
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spnJobType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:dropDownWidth="match_parent"
+                android:paddingVertical="@dimen/dimen_10dp" />
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnFilter"
+        android:layout_width="@dimen/dimen_170dp"
+        android:layout_height="@dimen/dimen_60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dimen_45dp"
+        android:gravity="center"
+        android:text="@string/filter"
+        app:backgroundTint="#487DCC"
+
+
+        />
+
+</LinearLayout>

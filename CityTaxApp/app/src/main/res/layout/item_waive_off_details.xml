@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ten_dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/ReceiptTextHeader"
+            android:text="@string/txt_penalty_number"
+            android:textStyle="italic|bold"/>
+
+        <TextView
+            android:id="@+id/txtPenaltyNo"
+            style="@style/ReceiptTextBody"
+            android:textStyle="italic|bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ten_dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtPenaltyDateLabel"
+            style="@style/ReceiptTextHeader"
+            android:text="@string/txt_penalty_date"
+            android:textStyle="italic|bold"/>
+
+        <TextView
+            android:id="@+id/txtPenaltyDate"
+            style="@style/ReceiptTextBody"
+            android:textStyle="italic|bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ten_dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtPenaltyNameLabel"
+            style="@style/ReceiptTextHeader"
+            android:text="@string/txt_penalty_name"
+            android:textStyle="italic|bold"/>
+
+        <TextView
+            android:id="@+id/txtPenaltyName"
+            style="@style/ReceiptTextBody"
+            android:textStyle="italic|bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ten_dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/ReceiptTextHeader"
+            android:text="@string/tax_due"
+            android:textStyle="italic|bold"/>
+
+        <TextView
+            android:id="@+id/txtTaxDue"
+            style="@style/ReceiptTextBody"
+            android:textStyle="italic|bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ten_dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/ReceiptTextHeader"
+            android:text="@string/penalty_percentage"
+            android:textStyle="italic|bold"/>
+
+        <TextView
+            android:id="@+id/txtPenaltyPercentage"
+            style="@style/ReceiptTextBody"
+            android:textStyle="italic|bold"
+            android:layout_marginStart="@dimen/five_dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ten_dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtPenaltyAmountLabel"
+            style="@style/ReceiptTextHeader"
+            android:text="@string/receipt_penalty_amount"
+            android:textStyle="italic|bold"/>
+
+        <TextView
+            android:id="@+id/txtPenaltyAmount"
+            style="@style/ReceiptTextBody"
+            android:textStyle="italic|bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ten_dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/ReceiptTextHeader"
+            android:text="@string/txt_penalty_due"
+            android:textStyle="italic|bold"/>
+
+        <TextView
+            android:id="@+id/txtPenaltyDue"
+            style="@style/ReceiptTextBody"
+            android:textStyle="italic|bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ten_dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/ReceiptTextHeader"
+            android:text="@string/waived_off_amount"
+            android:textStyle="italic|bold"/>
+
+        <TextView
+            android:id="@+id/txtWaivedOffAmount"
+            style="@style/ReceiptTextBody"
+            android:textStyle="italic|bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ten_dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/ReceiptTextHeader"
+            android:text="@string/penaltydue_after_waive_off"
+            android:textStyle="italic|bold"/>
+
+        <TextView
+            android:id="@+id/txtPenaltyDueAfterWaiveOff"
+            style="@style/ReceiptTextBody"
+            android:textStyle="italic|bold" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ten_dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/ReceiptTextHeader"
+            android:text="@string/waived_off_by"
+            android:textStyle="italic|bold"/>
+
+        <TextView
+            android:id="@+id/txtWaivedOffBy"
+            style="@style/ReceiptTextBody"
+            android:textStyle="italic|bold" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/ten_dp"
+        android:background="@color/colorPrimary" />
+
+</LinearLayout>
+</layout>

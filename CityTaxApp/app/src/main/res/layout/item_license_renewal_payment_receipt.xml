@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/vertical_spacing"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/llReceiptBody"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/llDuplicatePrints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/ReceiptTextHeader"
+                    android:text="@string/duplicate_print"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/txtPrintCounts"
+                    style="@style/ReceiptTextBody"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/paypoint_license_payment_receipt"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgQRCode"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:src="@color/black" />
+            <include
+                android:id="@+id/qrCodeWrapper"
+                layout="@layout/layout_qr_code_label"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:gravity="center"
+                android:text="@string/txt_municipality_of_ougadougu"
+                android:textColor="@color/black"
+                android:textSize="@dimen/eighteen_sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/ReceiptTextHeader"
+                    android:text="@string/txt_date_of_print"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/txtDateOfPrint"
+                    style="@style/ReceiptTextBody"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/ReceiptTextHeader"
+                    android:text="@string/receipt_taxation_year"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/txtTaxationYear"
+                    style="@style/ReceiptTextBody"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/ReceiptTextHeader"
+                    android:text="@string/receipt_voucher_number"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/txtVoucherNo"
+                    style="@style/ReceiptTextBody"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/ReceiptTextHeader"
+                    android:text="@string/date_of_purchase"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/txtDateOfPurchase"
+                    style="@style/ReceiptTextBody"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/ReceiptTextHeader"
+                    android:text="@string/organisation_name"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/txtOrganisationName"
+                    style="@style/ReceiptTextBody"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/ReceiptTextHeader"
+                    android:text="@string/paypoint_code"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/txtPayPointCode"
+                    style="@style/ReceiptTextBody"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/ReceiptTextHeader"
+                    android:text="@string/administrative_office"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/txtAdminOffice"
+                    style="@style/ReceiptTextBody"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/ReceiptTextHeader"
+                    android:text="@string/txt_ardt"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/txtArdt"
+                    style="@style/ReceiptTextBody"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtSectorLabel"
+                    style="@style/ReceiptTextHeader"
+                    android:text="@string/sector"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/txtSector"
+                    style="@style/ReceiptTextBody"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/ReceiptTextHeader"
+                    android:text="@string/txt_section"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/txtSection"
+                    style="@style/ReceiptTextBody"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/ReceiptTextHeader"
+                    android:text="@string/txt_lot"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/txtLot"
+                    style="@style/ReceiptTextBody"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/ReceiptTextHeader"
+                    android:text="@string/txt_parcel"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/txtParcel"
+                    style="@style/ReceiptTextBody"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:gravity="center"
+                android:text="@string/license_plan_elements"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sixteen_sp"
+                android:textStyle="italic|bold" />
+
+            <LinearLayout
+                android:id="@+id/llLicensePlanElements"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"/>
+
+          <!--  <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtUserNameLabel"
+                    style="@style/ReceiptTextHeader"
+                    android:textStyle="italic"
+                    android:text="@string/lbl_username"
+                    android:textAllCaps="true" />
+
+                <TextView
+                    android:id="@+id/txtUserName"
+                    android:textStyle="italic"
+                    style="@style/ReceiptTextBody" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtLicenseCodeLabel"
+                    style="@style/ReceiptTextHeader"
+                    android:textStyle="italic"
+                    android:text="@string/label_license_code"
+                    android:textAllCaps="true" />
+
+                <TextView
+                    android:id="@+id/txtLicenseCode"
+                    android:textStyle="italic"
+                    style="@style/ReceiptTextBody" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/ReceiptTextHeader"
+                    android:textStyle="italic"
+                    android:text="@string/subscription_plan"
+                    android:textAllCaps="true" />
+
+                <TextView
+                    android:id="@+id/txtSubscriptionPlan"
+                    android:textStyle="italic"
+                    style="@style/ReceiptTextBody" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/ReceiptTextHeader"
+                    android:textStyle="italic"
+                    android:text="@string/license_renewal_start_date"
+                    android:textAllCaps="true" />
+
+                <TextView
+                    android:id="@+id/txtLicenseRenewalStartDate"
+                    android:textStyle="italic"
+                    style="@style/ReceiptTextBody" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/ReceiptTextHeader"
+                    android:textStyle="italic"
+                    android:text="@string/license_renewal_end_date"
+                    android:textAllCaps="true" />
+
+                <TextView
+                    android:id="@+id/txtLicenseRenewalEndDate"
+                    android:textStyle="italic"
+                    style="@style/ReceiptTextBody" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt_amount_label"
+                    style="@style/ReceiptTextHeader"
+                    android:text="@string/amount"
+                    android:textAllCaps="true"
+                    android:textStyle="italic"/>
+
+                <TextView
+                    android:id="@+id/txtAmount"
+                    style="@style/ReceiptTextBody"
+                    android:textStyle="italic"/>
+            </LinearLayout>-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:text="@string/payment"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/eighteen_sp"
+                android:gravity="center"
+                android:textStyle="italic|bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/ReceiptTextHeader"
+                    android:text="@string/receipt_payment_method"
+                    android:textStyle="italic|bold"/>
+
+                <TextView
+                    android:id="@+id/txtPaymentMethod"
+                    style="@style/ReceiptTextBody"
+                    android:textStyle="italic|bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/ReceiptTextHeader"
+                    android:text="@string/receipt_reference_transaction_number"
+                    android:textStyle="italic|bold"/>
+
+                <TextView
+                    android:id="@+id/txtReferanceTransactionNumber"
+                    style="@style/ReceiptTextBody"
+                    android:textStyle="italic|bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/ReceiptTextHeader"
+                    android:text="@string/amount_paid"
+                    android:textStyle="italic|bold" />
+
+                <TextView
+                    android:id="@+id/txtAmountPaid"
+                    style="@style/ReceiptTextBody"
+                    android:textStyle="italic|bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/ReceiptTextHeader"
+                    android:text="@string/title_receipt_footer"
+                    android:textAllCaps="true"
+                    android:textStyle="italic|bold"/>
+
+                <TextView
+                    android:id="@+id/txtAmountInWords"
+                    style="@style/ReceiptTextBody"
+                    android:textStyle="italic|bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtCollectedByLabel"
+                    style="@style/ReceiptTextHeader"
+                    android:text="@string/collected_by"
+                    android:textStyle="italic|bold"/>
+
+                <TextView
+                    android:id="@+id/txtCollectedBy"
+                    style="@style/ReceiptTextBody"
+                    android:textStyle="italic|bold"/>
+            </LinearLayout>
+
+          <!--  <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:text="@string/txt_note"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/txtTaxNoticeNote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/five_dp"
+                android:textColor="@color/black" />-->
+
+            <TextView
+                android:id="@+id/txtPoweredBy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:gravity="center"
+                android:textSize="@dimen/sixteen_sp"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnPrint"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/print" />
+
+    </LinearLayout>
+
+</LinearLayout>
+</layout>

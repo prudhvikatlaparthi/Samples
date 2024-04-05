@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@drawable/priority_wrapper"
+    android:weightSum="2"
+    android:orientation="horizontal">
+    <RelativeLayout
+        android:id="@+id/selector_wrapper_1"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="@drawable/toggle_selected_normal"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/poll_selector_open"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/priority_selected_text_color"
+            android:textAlignment="center"
+            android:text="Active"
+            android:fontFamily="@font/nunito_bold"
+            android:textSize="16sp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/selector_wrapper_2"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="@drawable/toggle_default_high"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/poll_selector_close"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/priority_default_text_color"
+            android:textAlignment="center"
+            android:text="InActive"
+            android:fontFamily="@font/nunito_bold"
+            android:textSize="16sp"/>
+    </RelativeLayout>
+
+</LinearLayout>

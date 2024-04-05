@@ -1,0 +1,64 @@
+package com.sgs.citytax.ui.adapter
+
+import android.content.Context
+import android.view.LayoutInflater
+import android.view.ViewGroup
+import androidx.core.content.ContextCompat
+import androidx.databinding.DataBindingUtil
+import androidx.recyclerview.widget.RecyclerView
+import com.sgs.citytax.R
+import com.sgs.citytax.api.response.IncidentDetailLocation
+import com.sgs.citytax.databinding.ItemMapComplaintIncidentBinding
+import com.sgs.citytax.util.formatDisplayDateTimeInMillisecond
+
+class IncidentMapAdapter(private val items: List<IncidentDetailLocation>, private val itemClicked: (IncidentDetailLocation) -> Unit) :
+        RecyclerView.Adapter<IncidentMapAdapter.ViewHolder>() {
+    private var context: Context? = null
+    private var rowIndex = -1
+
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
+        context = parent.context
+        return ViewHolder(DataBindingUtil.inflate(LayoutInflater.from(parent.context), R.layout.item_map_complaint_incident,
+                parent, false))
+    }
+
+    override fun getItemCount(): Int {
+        return items.size
+    }
+
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+        holder.bind(items[position], itemClicked, position)
+    }
+
+    inner class ViewHolder(val binding: ItemMapComplaintIncidentBinding) : RecyclerView.ViewHolder(binding.root) {
+        fun bind(item: IncidentDetailLocation, itemClicked: (IncidentDetailLocation) -> Unit, position: Int) {
+            item.incidentType?.let {
+                if (it.isNotEmpty()) {
+                    binding.txtIncidentType.text = item.incidentType
+                }
+            }
+
+            item.incidentDate?.let {
+                if (it.isNotEmpty()) {
+                    binding.txtDate.text = formatDisplayDateTimeInMillisecond(item.incidentDate.toString())
+                }
+            }
+
+            item.status?.let {
+                binding.txtStatus.text = item.status.toString()
+            }
+
+            if (rowIndex == position) {
+                context?.let { binding.root.setBackgroundColor(ContextCompat.getColor(it, R.color.colorGray)) }
+            } else {
+                context?.let { binding.root.setBackgroundColor(ContextCompat.getColor(it, R.color.colorWhite)) }
+            }
+
+            binding.root.setOnClickListener {
+                rowIndex = position
+                notifyDataSetChanged()
+                itemClicked(item)
+            }
+        }
+    }
+}

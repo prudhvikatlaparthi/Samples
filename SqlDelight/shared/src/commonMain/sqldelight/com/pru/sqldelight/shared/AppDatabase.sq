@@ -1,0 +1,18 @@
+CREATE TABLE TOKEN (
+    staticToken TEXT NOT NULL,
+    dynamicToken TEXT,
+    secretKey TEXT,
+    domainAccountID INTEGER,
+    userOrgBRID INTEGER
+);
+
+insertTOKEN:
+INSERT INTO TOKEN(staticToken, dynamicToken, secretKey, domainAccountID, userOrgBRID)
+VALUES(staticToken, ?, ?, ?, ?);
+
+deleteAllTOKENS:
+DELETE FROM TOKEN;
+
+
+selectTOKENS:
+SELECT * FROM TOKEN;

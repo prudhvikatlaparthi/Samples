@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".ui.login.LoginFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="@dimen/dimen_150dp"
+            android:layout_height="@dimen/dimen_150dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/dimen_8dp"
+            android:layout_marginTop="@dimen/dimen_60dp"
+            android:layout_marginEnd="@dimen/dimen_8dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/app_icon" />
+
+        <EditText
+            android:id="@+id/etUserId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_32dp"
+            android:layout_marginTop="@dimen/dimen_60dp"
+            android:layout_marginEnd="@dimen/dimen_32dp"
+            android:autofillHints="user name"
+            android:background="@drawable/edit_background_box"
+            android:hint="@string/enter_user_name"
+            android:inputType="text"
+            android:paddingVertical="@dimen/dimen_14dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey_color" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_32dp"
+            android:layout_marginTop="@dimen/dimen_32dp"
+            android:layout_marginEnd="@dimen/dimen_32dp"
+            android:autofillHints="password"
+            android:background="@drawable/edit_background_box"
+            android:hint="@string/enter_password"
+            android:inputType="textPassword"
+            android:paddingVertical="@dimen/dimen_14dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey_color" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="@dimen/dimen_120dp"
+            android:layout_height="@dimen/dimen_60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dimen_50dp"
+            android:text="@string/login"
+            app:backgroundTint="@color/color_accent" />
+    </LinearLayout>
+
+</ScrollView>

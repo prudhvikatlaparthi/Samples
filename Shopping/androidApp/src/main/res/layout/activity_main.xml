@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/app_bar"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="wrap_content"
+            app:elevation="5dp">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:elevation="5dp"
+            android:theme="@style/MyDarkToolbarStyle">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/mytoolbarTitle"
+                    style="@style/SemiBoldTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_name" />
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/nav_host_fragment"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bgColor"
+            android:layout_above="@+id/bottom_app_bar"
+            android:layout_below="@+id/app_bar"
+            app:defaultNavHost="true"
+            app:navGraph="@navigation/sidemenu_graph" />
+
+        <LinearLayout
+            android:id="@+id/bottom_app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/ll_amount_wrapper"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/iconTint"
+                android:orientation="horizontal"
+                android:paddingHorizontal="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_amount"
+                        style="@style/BoldTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Rs. 0.00"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/tv_amount_status"
+                        style="@style/SemiBoldTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="CREDIT AVAILABLE"
+                        android:textColor="#C6FF51"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingStart="2dp"
+                    android:paddingEnd="2dp"
+                    android:src="@drawable/ic_arrow" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_shopping_view"
+                style="@style/SemiBoldTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:drawablePadding="0dp"
+                android:gravity="center"
+                android:text="SHOPPING LIST"
+                android:textColor="@color/iconTint"
+                android:textSize="13sp"
+                app:drawableTopCompat="@drawable/ic_menu" />
+
+            <TextView
+                android:id="@+id/tv_inbox_view"
+                style="@style/SemiBoldTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:drawablePadding="0dp"
+                android:gravity="center"
+                android:text="INBOX"
+                android:textColor="@color/iconTint"
+                android:textSize="13sp"
+                app:drawableTopCompat="@drawable/ic_message" />
+
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:id="@+id/fab_cart_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/ic_green_circle"
+            android:visibility="gone"
+            app:backgroundTint="@color/greenColor">
+
+            <TextView
+                android:id="@+id/tv_cart_item_count"
+                style="@style/BoldTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="25dp"
+                android:text="0"
+                android:textColor="#F9A936"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_cart" />
+        </FrameLayout>
+
+
+    </RelativeLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true">
+        <Button
+            android:id="@+id/checkOpen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="open"/>
+    </com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>

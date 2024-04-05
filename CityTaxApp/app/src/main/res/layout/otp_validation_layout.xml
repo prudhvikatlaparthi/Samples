@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <FrameLayout
+        android:id="@+id/smsOTPLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/requestOtpBtn_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/sixteen_dp"
+            android:layout_marginLeft="@dimen/sixteen_dp"
+            android:layout_marginEnd="@dimen/sixteen_dp"
+            android:layout_marginRight="@dimen/sixteen_dp"
+            android:gravity="center"
+            android:text="@string/sms_request_otp_text"
+            android:visibility="gone" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/otpLayout_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/otpText_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/sixteen_dp"
+                android:layout_marginLeft="@dimen/sixteen_dp"
+                android:layout_marginEnd="@dimen/sixteen_dp"
+                android:layout_marginRight="@dimen/sixteen_dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sixteen_sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Example Text" />
+
+            <TextView
+                android:id="@+id/prefixTV_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/sixteen_dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/otpText_id"
+                app:layout_constraintBottom_toBottomOf="@+id/smsOTPField_id"
+                app:layout_constraintTop_toTopOf="@+id/smsOTPField_id"
+                tools:text="Prefix" />
+
+            <EditText
+                android:id="@+id/smsOTPField_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/eight_dp"
+                android:layout_marginTop="@dimen/sixteen_dp"
+                android:ems="10"
+                android:hint="@string/sms_otp_hint"
+                android:inputType="numberPassword"
+                android:maxLength="6"
+                app:layout_constraintStart_toEndOf="@+id/prefixTV_id"
+                app:layout_constraintTop_toBottomOf="@+id/otpText_id"
+                tools:text="" />
+
+            <ImageButton
+                android:id="@+id/eyeId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:src="@drawable/eye_show"
+                app:layout_constraintEnd_toEndOf="@+id/smsOTPField_id"
+                app:layout_constraintBottom_toBottomOf="@+id/smsOTPField_id"
+                app:layout_constraintTop_toTopOf="@+id/smsOTPField_id"
+                android:tag="show"
+                />
+
+
+
+            <TextView
+                android:id="@+id/resendText_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/eight_dp"
+                android:text="TextView"
+                android:textColor="@color/hyperlink_blue"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/smsOTPField_id" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+</layout>

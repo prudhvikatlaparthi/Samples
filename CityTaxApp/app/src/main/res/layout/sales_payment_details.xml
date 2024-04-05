@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:id="@+id/paymentRootWrapper"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/llPaymentRecptNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/ReceiptTextHeader"
+                android:text="@string/txt_payment_receipt_no"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtPaymentReceiptNo"
+                style="@style/ReceiptTextBody"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llPaymentAmountWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/ReceiptTextHeader"
+                android:text="@string/receipt_payment_amount"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtPaymentAmount"
+                style="@style/ReceiptTextBody"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llTotalSalesWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/ReceiptTextHeader"
+                android:text="@string/receipt_total_sales_amount"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtTotalSalesAmount"
+                style="@style/ReceiptTextBody"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llPenaltyPerWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/ReceiptTextHeader"
+                android:text="@string/penalty_percentage"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtPenaltyPercentage"
+                style="@style/ReceiptTextBody"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llPenaltyAmountWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/ReceiptTextHeader"
+                android:text="@string/receipt_penalty_amount"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtPenaltyAmount"
+                style="@style/ReceiptTextBody"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llProsecutionFeeWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/headerProsecutionFees"
+                style="@style/ReceiptTextHeader"
+                android:text="@string/txt_prosecution_fees"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtProsecutionFees"
+                style="@style/ReceiptTextBody"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llNetReceivableWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/headerNetReceivable"
+                style="@style/ReceiptTextHeader"
+                android:text="@string/net_receivable"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtNetReceivable"
+                style="@style/ReceiptTextBody"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>

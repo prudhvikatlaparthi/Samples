@@ -1,0 +1,26 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MapFragment">
+
+        <fragment
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:id="@+id/frg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageButton
+            android:id="@+id/btnFullScreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/ten_dp"
+            android:padding="5dp"
+            android:background="@drawable/reload_bg"
+            android:src="@drawable/ic_baseline_refresh"
+            android:visibility="gone"/>
+
+    </FrameLayout>
+
+</layout>

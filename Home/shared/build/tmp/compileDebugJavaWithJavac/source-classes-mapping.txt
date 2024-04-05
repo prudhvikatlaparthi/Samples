@@ -1,0 +1,2 @@
+com/pru/home/shared/BuildConfig.java
+ com.pru.home.shared.BuildConfig

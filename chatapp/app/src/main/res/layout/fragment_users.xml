@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.users.UsersFragment">
+
+    <ScrollView
+        android:id="@+id/sv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/searchWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_16dp"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:layout_marginEnd="@dimen/dimen_16dp"
+                android:background="@drawable/edit_background_box">
+
+                <EditText
+                    android:id="@+id/etSearchUser"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="@string/search_user"
+                    android:paddingHorizontal="@dimen/dimen_4dp"
+                    android:paddingVertical="@dimen/dimen_8dp" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgSearch"
+                    android:layout_width="@dimen/dimen_30dp"
+                    android:layout_height="@dimen/dimen_30dp"
+                    android:layout_gravity="center"
+                    android:background="?attr/selectableItemBackground"
+                    android:padding="@dimen/dimen_4dp"
+                    android:src="@drawable/ic_search" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:descendantFocusability="beforeDescendants"
+                android:layout_height="wrap_content">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rcvUserSelect"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    android:layout_margin="@dimen/dimen_16dp"
+                    android:nestedScrollingEnabled="false"
+                    tools:listitem="@layout/user_select_layout" />
+
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/etAddGroupName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimen_16dp"
+                    android:background="@drawable/edit_background_box"
+                    android:hint="@string/add_group_name"
+                    android:textColorHint="@color/grey_color"
+                    android:paddingVertical="@dimen/dimen_16dp">
+
+                </EditText>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnStartChat"
+                    android:layout_width="@dimen/dimen_170dp"
+                    android:layout_height="@dimen/dimen_60dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dimen_25dp"
+                    android:layout_marginBottom="@dimen/dimen_32dp"
+                    android:gravity="center"
+                    android:text="@string/start_chat"
+                    app:backgroundTint="#487DCC">
+
+                </com.google.android.material.button.MaterialButton>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </ScrollView>
+</androidx.appcompat.widget.LinearLayoutCompat>

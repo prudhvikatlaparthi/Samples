@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorLayoutBackground"
+        android:clickable="true"
+        android:focusable="true">
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@id/keyPad"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/crdPaymentInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    app:cardBackgroundColor="@color/colorWhite"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/clAmountLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp">
+
+                        <TextView
+                            android:id="@+id/txtDueLabel"
+                            style="@style/TextAppearance.AppCompat.Small"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/due"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/txtDue"
+                            style="@style/TextAppearance.AppCompat.Medium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/txtDueLabel"
+                            tools:text="400" />
+
+                        <TextView
+                            android:id="@+id/txtBalanceAmountLabel"
+                            style="@style/TextAppearance.AppCompat.Small"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="16dp"
+                            android:text="@string/balance_amount"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/txtDue" />
+
+                        <TextView
+                            android:id="@+id/txtBalanceAmount"
+                            style="@style/TextAppearance.AppCompat.Medium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/txtBalanceAmountLabel"
+                            tools:text="20000" />
+
+                        <TextView
+                            android:id="@+id/txtMinimumPaymentLabel"
+                            style="@style/TextAppearance.AppCompat.Small"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="16dp"
+                            android:text="@string/minimum_pay_amount"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/txtBalanceAmount" />
+
+                        <TextView
+                            android:id="@+id/txtMinimumAmount"
+                            style="@style/TextAppearance.AppCompat.Medium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/txtMinimumPaymentLabel"
+                            tools:text="20000" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/crdAmountInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    app:cardBackgroundColor="@color/colorWhite"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/crdPaymentInfo">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/txtInpLayAmount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:endIconMode="clear_text"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/etAmount"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/amount"
+                                android:inputType="textCapWords"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <LinearLayout
+                            android:id="@+id/llMobile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/txtInpLayAmount">
+
+                            <androidx.appcompat.widget.AppCompatSpinner
+                                android:id="@+id/spnTelephoneCode"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginStart="@dimen/five_dp"
+                                android:layout_marginTop="@dimen/five_dp"
+                                android:padding="0dp" />
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/txtInpLayMobileNumber"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:hint="@string/mobile"
+                                app:endIconMode="clear_text">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/etMobileNumber"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:digits="0123456789"
+                                    android:inputType="number"
+                                    android:maxLength="10"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </LinearLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/txtInpLayOTP"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:endIconMode="clear_text"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/llMobile">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/etOTP"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:digits="0123456789"
+                                android:hint="@string/otp"
+                                android:inputType="number"
+                                android:maxLength="6"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/chequeAmountInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:visibility="gone"
+                    app:cardBackgroundColor="@color/colorWhite"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/crdPaymentInfo">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/txtInpLytChequeNo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:endIconMode="clear_text"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtChequeNo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/cheque_number"
+                                android:maxLength="11"
+                                android:inputType="number"
+                                android:digits="0123456789"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/txtInpLytChequeDate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/vertical_spacing"
+                            android:hint="@string/cheque_date"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/txtInpLytChequeNo">
+
+                            <com.sgs.citytax.ui.custom.DatePickerEditText
+                                android:id="@+id/edtChequeDate"
+                                style="@style/TextInputEntryStyle"
+                                app:needIcons="show" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/llChequeBankName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="@dimen/ten_dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/txtInpLytChequeDate">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="@string/bank_name"
+                                android:layout_weight="1"
+                                android:layout_gravity="center_vertical"/>
+
+                            <androidx.appcompat.widget.AppCompatSpinner
+                                android:id="@+id/spnBankName"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/five_dp"
+                                android:layout_marginTop="@dimen/five_dp"
+                                android:layout_weight="1"
+                                android:padding="0dp"
+                                android:minHeight="48dp"/>
+
+                        </LinearLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/txtLytChequeAmount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:endIconMode="clear_text"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/llChequeBankName">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtChequeAmount"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/amount"
+                                android:inputType="text"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/llPenalty"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="8dp"
+                            app:cardUseCompatPadding="true"
+                            app:cardBackgroundColor="@color/colorLayoutBackground"
+                            android:orientation="vertical"
+                            android:visibility="gone"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/txtLytChequeAmount">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:text="@string/note_in_case_of_cheque_bounce"
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="13sp"
+                                    android:textStyle="bold" />
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:id="@+id/txtLytPenaltyPercentage"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    app:endIconMode="clear_text"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/llPenalty">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/edtPercentage"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:digits="0123456789"
+                                        android:hint="@string/penalty_percentage_"
+                                        android:inputType="numberDecimal"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:id="@+id/txtLytProsecutionFees"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    app:endIconMode="clear_text"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/txtLytPenaltyPercentage">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/edtProsecutionFees"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:digits="0123456789"
+                                        android:hint="@string/txt_prosecution_fees"
+                                        android:inputType="numberDecimal"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/llPenaltyAmount"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/ten_dp"
+                                    android:orientation="horizontal"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@id/txtLytProsecutionFees">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_weight="1"
+                                        android:text="@string/penalty_amount" />
+
+                                    <TextView
+                                        android:id="@+id/txtPenaltyAmount"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_weight="1" />
+
+
+                                </LinearLayout>
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+
+                        <RelativeLayout
+                            android:id="@+id/rlDocs"
+                            android:layout_width="92dp"
+                            android:layout_height="92dp"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="@dimen/ten_dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/llPenalty">
+
+
+                            <ImageView
+                                android:id="@+id/imgCheque"
+                                android:layout_width="92dp"
+                                android:layout_height="92dp"
+                                android:layout_alignParentTop="true"
+                                android:src="@drawable/ic_place_holder"/>
+
+                            <ImageButton
+                                android:visibility="gone"
+                                android:background="@android:color/transparent"
+                                android:src="@drawable/ic_close"
+                                android:id="@+id/btnDelete"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentEnd="true" />
+                        </RelativeLayout>
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@id/scrollView" />
+
+        <android.inputmethodservice.KeyboardView
+            android:id="@+id/keyPad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="@color/colorWhite"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hapticFeedbackEnabled="true"
+            android:keyBackground="@color/colorPrimary"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@id/btnApply"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btnApply"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btnApply"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/apply"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btnCancel" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

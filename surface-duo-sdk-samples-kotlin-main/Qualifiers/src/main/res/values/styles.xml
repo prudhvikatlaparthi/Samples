@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~
+  ~  Copyright (c) Microsoft Corporation. All rights reserved.
+  ~  Licensed under the MIT License.
+  ~
+  -->
+
+<resources>
+
+    <style name="Text" parent="@style/Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/text_size</item>
+    </style>
+
+    <style name="Text.Message" />
+
+    <style name="Text.ResourceFolder">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>

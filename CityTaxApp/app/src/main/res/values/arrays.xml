@@ -1,0 +1,43 @@
+<resources>
+
+    <!-- region Language Preference -->
+    <string-array name="lang_entries">
+        <item>English</item>
+        <item>Français</item>
+    </string-array>
+
+    <string-array name="lang_values">
+        <item>EN</item>
+        <item>FR</item>
+    </string-array>
+
+    <!-- endregion -->
+
+    <string-array name="salutation_items">
+        <item>-Select-</item>
+        <item>Caption.</item>
+        <item>Dr.</item>
+        <item>Miss.</item>
+        <item>Mr.</item>
+        <item>Mrs.</item>
+        <item>Ms.</item>
+    </string-array>
+
+
+
+    <string-array name="month_item">
+        <item>-Select-</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+</resources>

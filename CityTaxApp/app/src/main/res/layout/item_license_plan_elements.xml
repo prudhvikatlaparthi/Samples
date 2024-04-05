@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ten_dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/ReceiptTextHeader"
+            android:textStyle="italic|bold"
+            android:text="@string/receipt_user_name" />
+
+        <TextView
+            android:id="@+id/txtUserName"
+            android:textStyle="italic|bold"
+            style="@style/ReceiptTextBody" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ten_dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/ReceiptTextHeader"
+            android:textStyle="italic|bold"
+            android:text="@string/receipt_license_code" />
+
+        <TextView
+            android:id="@+id/txtLicenseCode"
+            android:textStyle="italic|bold"
+            style="@style/ReceiptTextBody" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ten_dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/ReceiptTextHeader"
+            android:textStyle="italic|bold"
+            android:text="@string/subscription_plan" />
+
+        <TextView
+            android:id="@+id/txtSubscriptionPlan"
+            android:textStyle="italic|bold"
+            style="@style/ReceiptTextBody" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ten_dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/ReceiptTextHeader"
+            android:textStyle="italic|bold"
+            android:text="@string/license_renewal_start_date" />
+
+        <TextView
+            android:id="@+id/txtLicenseRenewalStartDate"
+            android:textStyle="italic|bold"
+            style="@style/ReceiptTextBody" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ten_dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/ReceiptTextHeader"
+            android:textStyle="italic|bold"
+            android:text="@string/license_renewal_end_date" />
+
+        <TextView
+            android:id="@+id/txtLicenseRenewalEndDate"
+            android:textStyle="italic|bold"
+            style="@style/ReceiptTextBody" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ten_dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txt_amount_label"
+            style="@style/ReceiptTextHeader"
+            android:text="@string/amount"
+            android:textStyle="italic|bold"/>
+
+        <TextView
+            android:id="@+id/txtAmount"
+            style="@style/ReceiptTextBody"
+            android:textStyle="italic|bold"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/ten_dp"
+        android:background="@color/colorPrimary" />
+
+</LinearLayout>
+</layout>

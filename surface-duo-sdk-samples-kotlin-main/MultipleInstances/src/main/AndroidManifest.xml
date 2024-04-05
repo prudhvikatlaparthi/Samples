@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~
+  ~  Copyright (c) Microsoft Corporation. All rights reserved.
+  ~  Licensed under the MIT License.
+  ~
+  -->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.microsoft.device.display.samples.multipleinstances"
+    tools:ignore="GoogleAppIndexingWarning">
+
+    <application>
+        <activity
+            android:name=".MultipleInstancesSecondActivity"
+            android:label="@string/multiple_instances_app_name"
+            android:launchMode="singleInstance">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MultipleInstancesMainActivity"
+            android:label="@string/multiple_instances_app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

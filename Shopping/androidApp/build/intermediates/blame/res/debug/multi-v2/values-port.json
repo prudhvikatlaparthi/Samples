@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/effiasoft/prudhvi/Samples/Shopping/androidApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-port/values-port.xml",
+            "map": [
+                {
+                    "source": "/home/effiasoft/.gradle/caches/transforms-2/files-2.1/e9839ce44d4e96ad84c99cf33f893c2a/appcompat-1.2.0/res/values-port/values-port.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "55",
+                        "endOffsets": "106"
+                    }
+                }
+            ]
+        }
+    ]
+}

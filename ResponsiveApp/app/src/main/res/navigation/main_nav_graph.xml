@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/dummyFragment">
+    <fragment
+        android:id="@+id/listDetailFragment"
+        android:name="com.pru.responsiveapp.ui.alpha.ListDetailFragment"
+        android:label="fragment_list_detail"
+        tools:layout="@layout/fragment_list_detail" />
+    <fragment
+        android:id="@+id/dummyFragment"
+        android:name="com.pru.responsiveapp.ui.alpha.DummyFragment"
+        android:label="fragment_dummy"
+        tools:layout="@layout/fragment_dummy">
+        <action
+            android:id="@+id/action_dummyFragment_to_listDetailFragment"
+            app:destination="@id/listDetailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.pru.responsiveapp.ui.alpha.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" />
+    <action
+        android:id="@+id/action_global_searchFragment"
+        app:destination="@id/searchFragment"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
+</navigation>

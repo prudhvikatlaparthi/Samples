@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">NFC App</string>
+    <string name="card_sector">Sector (0&#8211;15)</string>
+    <string name="card_key_A">KeyA</string>
+    <string name="card_block_0">Block0</string>
+    <string name="card_block_1">Block1</string>
+    <string name="card_key_B">KeyB</string>
+    <string name="card_block_2">Block2</string>
+    <string name="card_read">Read</string>
+    <string name="card_write">Write</string>
+    <string name="card_key_hint">Please input correct key</string>
+    <string name="card_sector_hint">Please input correct sector(0&#8211;15)</string>
+    <string name="card_auth_fail">Auth fail</string>
+    <string name="fail">Fail</string>
+</resources>

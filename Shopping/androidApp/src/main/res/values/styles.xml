@@ -1,0 +1,51 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+    <style name="NormalTextStyle" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/txtColor</item>
+        <item name="android:fontFamily">@font/assistant</item>
+        <item name="android:letterSpacing">0.05</item>
+    </style>
+
+    <style name="BoldTextStyle" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/txtColor</item>
+        <item name="fontFamily">@font/assistant_bold</item>
+        <item name="android:letterSpacing">0.05</item>
+    </style>
+
+    <style name="SemiBoldTextStyle" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/txtColor</item>
+        <item name="fontFamily">@font/assistant_semibold</item>
+        <item name="android:letterSpacing">0.05</item>
+    </style>
+
+    <style name="NavigationTextStyle" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/txtColor</item>
+        <item name="fontFamily">@font/assistant_semibold</item>
+        <item name="android:letterSpacing">0.05</item>
+    </style>
+
+    <style name="SemiBoldTextButtonStyle" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="iconPadding">0dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="backgroundTint">@drawable/green_color_border</item>
+        <item name="android:textColor">@color/txtColor</item>
+        <item name="fontFamily">@font/assistant_semibold</item>
+    </style>
+
+    <style name="MyDarkToolbarStyle" parent="ThemeOverlay.MaterialComponents.Light">
+        <item name="android:colorBackground">@color/white</item>
+    </style>
+</resources>

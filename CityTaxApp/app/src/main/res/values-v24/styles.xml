@@ -1,0 +1,21 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="BaseAppTheme">
+        <item name="alertDialogTheme">@style/AlertDialogTheme</item>
+        <item name="android:buttonBarPositiveButtonStyle">
+            @style/Theme.MaterialComponents.Light.Dialog
+        </item>
+        <item name="android:buttonBarNegativeButtonStyle">
+            @style/Theme.AppCompat.Light.Dialog.Alert
+        </item>
+        <item name="android:buttonBarNeutralButtonStyle">@style/Theme.AppCompat.Light.Dialog.Alert
+        </item>
+    </style>
+
+    <!-- Applying color to dialog buttons-->
+    <style name="AlertDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+</resources>

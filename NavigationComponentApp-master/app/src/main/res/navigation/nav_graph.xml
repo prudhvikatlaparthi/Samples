@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nav_one_fragment">
+
+    <fragment
+        android:id="@+id/nav_one_fragment"
+        android:name="com.pru.navigationcomponentapp.TaskListFragment"
+        tools:layout="@layout/fragment_task_list" >
+        <action
+            android:id="@+id/action_firstFragment_to_secondFragment"
+            app:destination="@id/secondFragment" />
+        <argument
+            android:name="foundData"
+            app:argType="string"
+            android:defaultValue="Alpha" />
+        <action
+            android:id="@+id/action_nav_one_fragment_to_nav_logout"
+            app:destination="@id/nav_logout" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondFragment"
+        android:name="com.pru.navigationcomponentapp.AddEditTaskFragment"
+        tools:layout="@layout/fragment_add_edit" >
+        <argument
+            android:name="viewType"
+            app:argType="string" />
+        <argument
+            android:name="task"
+            app:argType="com.pru.navigationcomponentapp.Task"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <action
+            android:id="@+id/action_secondFragment_to_fixFragment"
+            app:destination="@id/fixFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_two_fragment"
+        android:name="com.pru.navigationcomponentapp.EventsFragment"
+        android:label="OneFragment" />
+    <fragment
+        android:id="@+id/twoFragment"
+        android:name="com.pru.navigationcomponentapp.TwoFragment"
+        android:label="TwoFragment" />
+    <fragment
+        android:id="@+id/nav_three_fragment"
+        android:name="com.pru.navigationcomponentapp.ThreeFragment"
+        android:label="ThreeFragment" >
+        <action
+            android:id="@+id/action_nav_three_fragment_to_fixFragment"
+            app:destination="@id/fixFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/nav_logout"
+        android:name="com.pru.navigationcomponentapp.LogoutDialogFragment"
+        android:label="fragment_item_list_dialog_list_dialog"
+        tools:layout="@layout/dialog_logout_fragment" />
+    <fragment
+        android:id="@+id/fixFragment"
+        android:name="com.pru.navigationcomponentapp.FixFragment"
+        android:label="FixFragment" />
+</navigation>

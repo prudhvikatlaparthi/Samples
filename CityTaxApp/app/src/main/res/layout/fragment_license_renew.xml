@@ -1,0 +1,147 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:focusable="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/vertical_spacing"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:text="@string/lbl_username"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/spnUserName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/min_spinner_height"
+                    android:layout_weight="0.6"
+                    android:padding="0dp" />
+
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/label_license_code">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtLicenseCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:inputType="textCapSentences"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:text="@string/license_model"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/spnLicenseModel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/min_spinner_height"
+                    android:layout_weight="0.6"
+                    android:padding="0dp" />
+
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/amount">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:inputType="textCapSentences"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/rounding">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtRounding"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/start_date">
+
+                <com.sgs.citytax.ui.custom.DatePickerEditText
+                    android:id="@+id/edtStartDate"
+                    style="@style/TextInputEntryStyle"
+                    android:drawablePadding="@dimen/vertical_spacing"
+                    android:enabled="false"
+                    app:needIcons="show" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/end_date">
+
+                <com.sgs.citytax.ui.custom.DatePickerEditText
+                    android:id="@+id/edtEndDate"
+                    style="@style/TextInputEntryStyle"
+                    android:drawablePadding="@dimen/vertical_spacing"
+                    android:enabled="false"
+                    app:needIcons="show" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/vertical_spacing"
+            android:layout_marginEnd="@dimen/vertical_spacing"
+            android:text="@string/save" />
+
+    </RelativeLayout>
+
+</layout>

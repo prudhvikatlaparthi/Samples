@@ -1,0 +1,80 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.2"
+
+    defaultConfig {
+        applicationId "com.pru.productflavours"
+        minSdkVersion 16
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+        rootProject.ext.config.each { p ->
+            buildConfigField 'String', p.key, p.value
+            resValue 'string', p.key, p.value
+        }
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        debug {
+            debuggable true
+            versionNameSuffix "-DEBUG"
+        }
+
+        release {
+            debuggable false
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            versionNameSuffix "-RELEASE"
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    flavorDimensions 'default'
+    productFlavors {
+
+        Free{
+            dimension = 'default'
+            applicationId "com.pru.productflavours.free"
+            versionCode 1
+            versionName "1.0 Free"
+            signingConfig signingConfigs.debug
+        }
+
+        Paid{
+            dimension = 'default'
+            applicationId "com.pru.productflavours.paid"
+            versionCode 1
+            versionName "1.0 Paid"
+            signingConfig signingConfigs.debug
+        }
+
+    }
+
+    buildFeatures {
+        viewBinding = true
+    }
+}
+
+dependencies {
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'androidx.core:core-ktx:1.3.2'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+}

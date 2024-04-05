@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mtLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.alpha.ListFragment">
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clipToPadding="true"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toTopOf="@+id/bottomView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:listitem="@layout/layout_list_item" />
+
+    <ProgressBar
+        android:id="@+id/pbView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.constraintlayout.motion.widget.MotionLayout
+        android:id="@+id/bottomView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/stroke_white_upper_curve"
+        android:paddingTop="@dimen/dimen_8dp"
+        app:layoutDescription="@xml/fragment_list_xml_bottomview_scene"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rcView">
+
+        <View
+            android:id="@+id/hView"
+            android:layout_width="0dp"
+            android:layout_height="6dp"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/guideline"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintWidth_percent="0.15" />
+
+        <TextView
+            android:id="@+id/tvInvoice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/dimen_10dp"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:text="@string/invoice"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_14sp"
+            app:drawableTopCompat="@drawable/ic_icons_invoice_dark"
+            app:layout_constraintBottom_toTopOf="@+id/btguideline"
+            app:layout_constraintEnd_toStartOf="@+id/tvOrders"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/guideline"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/tvOrders"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/dimen_10dp"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="@string/orders"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_14sp"
+            app:drawableTopCompat="@drawable/ic_icons_invoice_dark"
+            app:layout_constraintBottom_toTopOf="@+id/btguideline"
+            app:layout_constraintEnd_toStartOf="@+id/tvPurchase"
+            app:layout_constraintStart_toEndOf="@+id/tvInvoice"
+            app:layout_constraintTop_toBottomOf="@+id/guideline"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/tvPurchase"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/dimen_10dp"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="@string/purchase"
+            android:textSize="@dimen/font_14sp"
+            android:textColor="@color/white"
+            app:drawableTopCompat="@drawable/ic_icons_invoice_dark"
+            app:layout_constraintBottom_toTopOf="@+id/btguideline"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvOrders"
+            app:layout_constraintTop_toBottomOf="@+id/guideline"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/rmView"
+            android:layout_width="0dp"
+            android:layout_height="0.5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvOrders">
+
+            <View
+                android:id="@+id/hDivider"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="@color/white"
+                app:layout_constraintBottom_toTopOf="@+id/rlCustomers"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintWidth_percent="0.9" />
+
+            <RelativeLayout
+                android:id="@+id/rlCustomers"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="21dp"
+                android:layout_marginLeft="21dp"
+                android:layout_marginTop="15dp"
+                app:layout_constraintEnd_toStartOf="@+id/rlPurchases"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/hDivider">
+
+                <ImageView
+                    android:id="@+id/imgCust"
+                    android:layout_width="@dimen/dimen_48dp"
+                    android:layout_height="@dimen/dimen_48dp"
+                    android:layout_marginEnd="@dimen/dimen_8dp"
+                    android:layout_marginRight="@dimen/dimen_8dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_smile_face" />
+
+                <TextView
+                    android:id="@+id/tvCust"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_toEndOf="@+id/imgCust"
+                    android:layout_toRightOf="@+id/imgCust"
+                    android:fontFamily="@font/poppins"
+                    android:textSize="@dimen/font_14sp"
+                    android:text="@string/customers" />
+
+                <TextView
+                    android:id="@+id/tvCustCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvCust"
+                    android:layout_toEndOf="@+id/imgCust"
+                    android:layout_toRightOf="@+id/imgCust"
+                    android:fontFamily="@font/poppins"
+                    android:textColor="@color/white"
+                    android:text="@string/_569"
+                    android:textSize="@dimen/font_14sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlPurchases"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="21dp"
+                android:layout_marginRight="21dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/rlCustomers"
+                app:layout_constraintTop_toBottomOf="@+id/hDivider">
+
+                <ImageView
+                    android:id="@+id/imgPur"
+                    android:layout_width="@dimen/dimen_48dp"
+                    android:layout_height="@dimen/dimen_48dp"
+                    android:layout_marginEnd="@dimen/dimen_8dp"
+                    android:layout_marginRight="@dimen/dimen_8dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_smile_face" />
+
+                <TextView
+                    android:id="@+id/tvPur"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/imgPur"
+                    android:layout_toRightOf="@+id/imgPur"
+                    android:fontFamily="@font/poppins"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_14sp"
+                    android:text="@string/purchases" />
+
+                <TextView
+                    android:id="@+id/tvPurCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvPur"
+                    android:layout_toEndOf="@+id/imgPur"
+                    android:layout_toRightOf="@+id/imgPur"
+                    android:fontFamily="@font/poppins"
+                    android:text="@string/_10"
+                    android:textSize="@dimen/font_14sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlProducts"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_21dp"
+                android:layout_marginLeft="@dimen/dimen_21dp"
+                android:layout_marginTop="@dimen/dimen_15dp"
+                app:layout_constraintEnd_toStartOf="@+id/rlExpenses"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/rmguideline"
+                app:layout_constraintTop_toBottomOf="@+id/rlCustomers">
+
+                <ImageView
+                    android:id="@+id/imgProd"
+                    android:layout_width="@dimen/dimen_48dp"
+                    android:layout_height="@dimen/dimen_48dp"
+                    android:layout_marginEnd="@dimen/dimen_8dp"
+                    android:layout_marginRight="@dimen/dimen_8dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_smile_face" />
+
+                <TextView
+                    android:id="@+id/tvProd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/imgProd"
+                    android:layout_toRightOf="@+id/imgProd"
+                    android:fontFamily="@font/poppins"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_14sp"
+                    android:text="@string/products" />
+
+                <TextView
+                    android:id="@+id/tvProdCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvProd"
+                    android:layout_toEndOf="@+id/imgProd"
+                    android:layout_toRightOf="@+id/imgProd"
+                    android:fontFamily="@font/poppins"
+                    android:text="@string/_569"
+                    android:textSize="@dimen/font_14sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlExpenses"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="21dp"
+                android:layout_marginRight="21dp"
+                app:layout_constraintBottom_toTopOf="@+id/rmguideline"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/rlProducts"
+                app:layout_constraintTop_toBottomOf="@+id/rlPurchases">
+
+                <ImageView
+                    android:id="@+id/imgExpen"
+                    android:layout_width="@dimen/dimen_48dp"
+                    android:layout_height="@dimen/dimen_48dp"
+                    android:layout_marginEnd="@dimen/dimen_8dp"
+                    android:layout_marginRight="@dimen/dimen_8dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_smile_face" />
+
+                <TextView
+                    android:id="@+id/tvExpen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/imgExpen"
+                    android:layout_toRightOf="@+id/imgExpen"
+                    android:fontFamily="@font/poppins"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_14sp"
+                    android:text="@string/expenses" />
+
+                <TextView
+                    android:id="@+id/tvExpenCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvExpen"
+                    android:layout_toEndOf="@+id/imgExpen"
+                    android:layout_toRightOf="@+id/imgExpen"
+                    android:fontFamily="@font/poppins"
+                    android:text="@string/_300"
+                    android:textSize="@dimen/font_14sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/rmguideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_end="@dimen/dimen_20dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="@dimen/dimen_10dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/btguideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_end="@dimen/dimen_20dp" />
+
+    </androidx.constraintlayout.motion.widget.MotionLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

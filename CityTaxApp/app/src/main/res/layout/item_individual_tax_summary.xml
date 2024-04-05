@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:orientation="vertical"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="8dp">
+
+        <LinearLayout
+            android:id="@+id/llOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtKeyOne"
+                style="@style/TextHeader"
+                android:layout_weight="2" />
+
+            <TextView
+                android:id="@+id/txtValueOne"
+                style="@style/TextBody"
+                android:layout_weight="3" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtKeyTwo"
+                style="@style/TextHeader"
+                android:layout_weight="2" />
+
+            <TextView
+                android:id="@+id/txtValueTwo"
+                style="@style/TextBody"
+                android:layout_weight="3" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llThree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtKeyThree"
+                style="@style/TextHeader"
+                android:layout_weight="2" />
+
+            <TextView
+                android:id="@+id/txtValueThree"
+                style="@style/TextBody"
+                android:layout_weight="3" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llFour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtKeyFour"
+                style="@style/TextHeader"
+                android:layout_weight="2" />
+
+            <TextView
+                android:id="@+id/txtValueFour"
+                style="@style/TextBody"
+                android:layout_weight="3" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llFive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtKeyFive"
+                style="@style/TextHeader"
+                android:layout_weight="2" />
+
+            <TextView
+                android:id="@+id/txtValueFive"
+                style="@style/TextBody"
+                android:layout_weight="3" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llSix"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtKeySix"
+                style="@style/TextHeader"
+                android:layout_weight="2" />
+
+            <TextView
+                android:id="@+id/txtValueSix"
+                style="@style/TextBody"
+                android:layout_weight="3" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llSeven"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtKeySeven"
+                style="@style/TextHeader"
+                android:layout_weight="2" />
+
+            <TextView
+                android:id="@+id/txtValueSeven"
+                style="@style/TextBody"
+                android:layout_weight="3" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llEight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtKeyEight"
+                style="@style/TextHeader"
+                android:layout_weight="2" />
+
+            <TextView
+                android:id="@+id/txtValueEight"
+                style="@style/TextBody"
+                android:layout_weight="3" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llNine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtKeyNine"
+                style="@style/TextHeader"
+                android:layout_weight="2" />
+
+            <TextView
+                android:id="@+id/txtValueNine"
+                style="@style/TextBody"
+                android:layout_weight="3" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llTen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtKeyTen"
+                style="@style/TextHeader"
+                android:layout_weight="2" />
+
+            <TextView
+                android:id="@+id/txtValueTen"
+                style="@style/TextBody"
+                android:layout_weight="3" />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcvDocuments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+    </LinearLayout>
+
+</layout>

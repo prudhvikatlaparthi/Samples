@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorGrayLight"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_occupation_nature_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start|center_vertical"
+            android:paddingStart="8dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="0dp"
+            android:paddingBottom="0dp"
+            android:text="@string/nature_of_occupation"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_occupation_nature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="0dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_activity_description_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start|center_vertical"
+            android:paddingStart="8dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="0dp"
+            android:paddingBottom="0dp"
+            android:text="@string/activity_description"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_occupation_nature_label" />
+
+        <TextView
+            android:id="@+id/tv_activity_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="0dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_occupation_nature" />
+
+        <TextView
+            android:id="@+id/tv_length_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start|center_vertical"
+            android:paddingStart="8dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="0dp"
+            android:paddingBottom="0dp"
+            android:text="@string/length"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_activity_description_label" />
+
+        <TextView
+            android:id="@+id/tv_length"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="0dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@android:color/black"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_activity_description" />
+
+        <TextView
+            android:id="@+id/tv_heads_count_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start|center_vertical"
+            android:paddingStart="8dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="0dp"
+            android:paddingBottom="0dp"
+            android:text="@string/number_of_heads"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_length_label" />
+
+        <TextView
+            android:id="@+id/tv_heads_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="0dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@android:color/black"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_length" />
+
+        <TextView
+            android:id="@+id/tv_total_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start|center_vertical"
+            android:paddingStart="8dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="0dp"
+            android:paddingBottom="0dp"
+            android:text="@string/total"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_heads_count_label" />
+
+        <TextView
+            android:id="@+id/tv_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="0dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_heads_count" />
+
+        <TextView
+            android:id="@+id/tv_due_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start|center_vertical"
+            android:paddingStart="8dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="0dp"
+            android:paddingBottom="0dp"
+            android:text="@string/due"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_total_label" />
+
+        <TextView
+            android:id="@+id/tvDue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="0dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/colorRedDark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_total" />
+
+        <Button
+            android:id="@+id/btnCollect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/collect"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvDue" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

@@ -1,0 +1,315 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/vertical_spacing"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/llVoucherno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/TextMandatoryInputLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/agreement_no"
+                        android:paddingTop="@dimen/three_dp"
+                        android:paddingBottom="@dimen/three_dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edtVocherNumber"
+                            style="@style/TextInputEntryStyle"
+                            android:focusable="false"
+                            android:inputType="text" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/TextMandatoryInputLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/due_notice_reference_no"
+                        android:paddingTop="@dimen/three_dp"
+                        android:paddingBottom="@dimen/three_dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edtDueNoticeNumber"
+                            style="@style/TextInputEntryStyle"
+                            android:drawableEnd="@drawable/ic_arrow_down"
+                            android:focusable="false"
+                            android:inputType="text" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </LinearLayout>
+
+
+<!--                <View-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="1dp"-->
+<!--                    android:layout_marginStart="12dp"-->
+<!--                    android:layout_marginEnd="12dp"-->
+<!--                    android:background="@color/colorGrayLight" />-->
+
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/vertical_spacing"
+                    android:layout_marginRight="@dimen/vertical_spacing"
+                    style="@style/TextMandatoryInputLayout"
+                    android:hint="@string/agreement_date">
+
+                    <com.sgs.citytax.ui.custom.DatePickerEditText
+                        android:id="@+id/edtAgreementDate"
+                        style="@style/TextInputEntryStyle"
+                        app:needIcons="show"
+                        app:needTimePicker="show"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/TextMandatoryInputLayout"
+                    android:layout_marginLeft="@dimen/vertical_spacing"
+                    android:layout_marginRight="@dimen/vertical_spacing"
+                    android:hint="@string/valid_upto_date">
+
+                    <com.sgs.citytax.ui.custom.DatePickerEditText
+                        android:id="@+id/edtValidDate"
+                        style="@style/TextInputEntryStyle"
+                        app:needIcons="show" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/vertical_spacing"
+                    android:layout_marginRight="@dimen/vertical_spacing"
+                    android:hint="@string/aggreement_ref_no">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtReferenceNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLength="30"
+                        android:inputType="text"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/three_dp"
+                    android:paddingBottom="@dimen/three_dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/status"
+                        style="@style/TextHeader"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/edtStatusSpn"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="0dp"
+                        android:spinnerMode="dialog"
+                        />
+                    <TextView
+                        android:id="@+id/tvStatus"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorGray"
+                        style="@style/TextBody"
+                        android:drawableRight="@drawable/ic_arrow_down"
+                        android:drawableTint="@color/colorGray"
+                        android:visibility="gone"
+                        />
+
+
+                </LinearLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/vertical_spacing"
+                    android:layout_marginRight="@dimen/vertical_spacing"
+                    android:hint="@string/remarks">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtRemarks"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textCapSentences"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <LinearLayout
+                    android:id="@+id/llDocuments"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:orientation="horizontal"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/agreement_documents"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                    <TextView
+                        android:id="@+id/txtNumberOfDocuments"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:drawableEnd="@drawable/ic_arrow"
+                        android:gravity="center_vertical"
+                        android:textAllCaps="true"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:background="@color/colorGrayLight" />
+
+                <LinearLayout
+                    android:id="@+id/llSignature"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/vertical_spacing"
+                    android:orientation="vertical"
+                    android:padding="@dimen/vertical_spacing"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/vertical_spacing"
+                        android:text="@string/add_signature"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <com.github.gcacace.signaturepad.views.SignaturePad
+                        android:id="@+id/signatureView"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:padding="@dimen/vertical_spacing"
+                        app:clearOnDoubleClick="true"
+                        app:penColor="@android:color/black"
+                        android:background="@drawable/edit_bg"
+                        app:penMaxWidth="2dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llSignatureView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/vertical_spacing"
+                    android:orientation="vertical"
+                    android:padding="@dimen/vertical_spacing"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <ImageView
+                            android:id="@+id/imgSignature"
+                            android:layout_width="match_parent"
+                            android:layout_height="250dp"
+                            android:layout_margin="8dp"
+                            />
+
+                        <ImageButton
+                            android:id="@+id/btnClearImage"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignEnd="@id/imgSignature"
+                            android:layout_alignParentTop="true"
+                            android:background="@color/white"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/close"/>
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="@string/save" />
+
+    </RelativeLayout>
+
+</layout>

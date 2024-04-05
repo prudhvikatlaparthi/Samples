@@ -1,0 +1,207 @@
+<layout>
+
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/five_dp"
+        app:cardBackgroundColor="@color/colorLayoutBackground"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="2dp"
+        app:cardPreventCornerOverlap="false"
+        app:contentPadding="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/five_dp"
+            android:layout_marginEnd="@dimen/five_dp"
+            android:paddingTop="0dp"
+            android:paddingBottom="8dp">
+
+            <TextView
+                android:id="@+id/txtTaxName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="start|center_vertical"
+                android:paddingStart="8dp"
+                android:paddingTop="8dp"
+                android:paddingEnd="0dp"
+                android:paddingBottom="0dp"
+                android:text="@string/tax_name"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/colorAccent"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/five_dp"
+                android:background="@color/colorGrayLight"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtTaxName" />
+
+            <TextView
+                android:id="@+id/txtTaxProductCode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="0dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/colorGray"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@id/btnTaxNotice"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view" />
+
+            <Button
+                android:id="@+id/btnTaxNotice"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:text="@string/generate_notice"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/txtTaxProductCode"
+                app:layout_constraintTop_toBottomOf="@id/view" />
+
+            <TextView
+                android:id="@+id/tv_previous_due_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="0dp"
+                android:text="@string/label_previous_due"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                app:layout_constraintEnd_toStartOf="@id/txtPreviousDueValue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtTaxProductCode" />
+
+            <TextView
+                android:id="@+id/txtPreviousDueValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/tv_previous_due_text"
+                app:layout_constraintTop_toTopOf="@id/tv_previous_due_text" />
+
+            <TextView
+                android:id="@+id/txtPenaltyDueLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="0dp"
+                android:text="@string/penalty_due"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                app:layout_constraintEnd_toStartOf="@id/txtPenaltyDue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_previous_due_text" />
+
+            <TextView
+                android:id="@+id/txtPenaltyDue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/txtPenaltyDueLabel"
+                app:layout_constraintTop_toTopOf="@id/txtPenaltyDueLabel" />
+
+            <TextView
+                android:id="@+id/tv_current_charges_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/five_dp"
+                android:paddingStart="8dp"
+                android:paddingTop="4dp"
+                android:paddingEnd="0dp"
+                android:text="@string/label_current_charges"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                app:layout_constraintEnd_toStartOf="@id/txtCurrentChargesValue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtPenaltyDueLabel" />
+
+            <TextView
+                android:id="@+id/txtCurrentChargesValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:paddingStart="8dp"
+                android:paddingTop="4dp"
+                android:paddingEnd="0dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/tv_current_charges_text"
+                app:layout_constraintTop_toTopOf="@id/tv_current_charges_text" />
+
+            <TextView
+                android:id="@+id/tv_balance_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/five_dp"
+                android:paddingStart="8dp"
+                android:paddingTop="4dp"
+                android:paddingEnd="0dp"
+                android:text="@string/balance"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                app:layout_constraintEnd_toStartOf="@id/txtCurrentChargesValue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_current_charges_text" />
+
+            <TextView
+                android:id="@+id/txtBalanceValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:paddingStart="8dp"
+                android:paddingTop="4dp"
+                android:paddingEnd="0dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/tv_current_charges_text"
+                app:layout_constraintTop_toTopOf="@id/tv_balance_text" />
+
+            <Button
+                android:id="@+id/btnPaymentHistory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/five_dp"
+                android:text="@string/payment_history"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_balance_text" />
+
+            <Button
+                android:id="@+id/btnCollect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/collect"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/colorWhite"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/btnPaymentHistory" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/five_dp"
+                android:background="@color/colorGrayLight"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnPaymentHistory" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</layout>

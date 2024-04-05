@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/chequeRootWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/chequePaymentDetailsTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/twelve_dp"
+            android:gravity="center"
+            android:text="@string/cheque_payment_details"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sixteen_sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/llBankName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/ReceiptTextHeader"
+                android:text="@string/cheque_bank_name"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtChequeBankName"
+                style="@style/ReceiptTextBody"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llChequeNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtChequeNumberLabel"
+                style="@style/ReceiptTextHeader"
+                android:text="@string/cheque_number"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtChequeNumber"
+                style="@style/ReceiptTextBody"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llChequeDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/ReceiptTextHeader"
+                android:text="@string/receipt_cheque_date"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtChequeDate"
+                style="@style/ReceiptTextBody"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llChequeAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/headerChequeAmnt"
+                style="@style/ReceiptTextHeader"
+                android:text="@string/cheque_amount"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtChequeAmount"
+                style="@style/ReceiptTextBody"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llChequeStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/headerChequeStatus"
+                style="@style/ReceiptTextHeader"
+                android:text="@string/cheque_status"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtChequeStatus"
+                style="@style/ReceiptTextBody"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="180dp"
+    android:layout_height="wrap_content"
+    android:elevation="8dp"
+    android:paddingEnd="8dp">
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/itemImage"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/building"
+        app:layout_constraintBottom_toTopOf="@+id/itemTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:round="10dp" />
+
+    <TextView
+        android:id="@+id/itemTitle"
+        style="@style/TextAppearance.AppCompat.Small"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:text="@string/sea_beach"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/group"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemImage" />
+
+    <TextView
+        android:id="@+id/itemRating"
+        style="@style/TextAppearance.AppCompat.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="8dp"
+        android:gravity="center"
+        android:text="@string/_4_2"
+        android:textColor="@color/black"
+        app:drawableStartCompat="@drawable/ic_star" />
+
+    <TextView
+        android:id="@+id/itemPlace"
+        style="@style/TextAppearance.AppCompat.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="8dp"
+        android:gravity="center"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:text="@string/china_city"
+        android:textColor="@color/black"
+        app:drawableStartCompat="@drawable/ic_location_pin" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/group"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:constraint_referenced_ids="itemRating,itemPlace"
+        app:flow_horizontalAlign="start"
+        app:flow_horizontalBias="0"
+        app:flow_horizontalStyle="packed"
+        app:flow_wrapMode="chain"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemTitle" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="group,itemTitle" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/lFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextMandatoryInputLayout"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:hint="@string/first_name"
+            android:visibility="visible">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapWords"
+                android:maxLength="80"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+</layout>

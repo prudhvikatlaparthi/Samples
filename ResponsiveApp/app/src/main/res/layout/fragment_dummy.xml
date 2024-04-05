@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.alpha.DummyFragment">
+
+    <com.pru.responsiveapp.customviews.MyButton
+        android:id="@+id/tap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:textSize="@dimen/font_16sp"
+        app:eventName="Start"
+        app:layout_constraintBottom_toTopOf="@+id/tap1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread"
+        app:sendEvent="true" />
+
+    <com.pru.responsiveapp.customviews.MyButton
+        android:id="@+id/tap1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Middle"
+        android:textSize="@dimen/font_16sp"
+        app:eventName="Middle"
+        app:layout_constraintBottom_toTopOf="@+id/tap2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tap"
+        app:sendEvent="true" />
+
+    <com.pru.responsiveapp.customviews.MyButton
+        android:id="@+id/tap2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="last"
+        android:textSize="@dimen/font_16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tap1" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:hint="Enter Data"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tap2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

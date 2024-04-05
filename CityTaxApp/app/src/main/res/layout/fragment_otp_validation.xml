@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".ui.fragments.OTPValidationFragment">
+
+        <Button
+            android:id="@+id/requestOtpBtn_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/sixteen_dp"
+            android:layout_marginLeft="@dimen/sixteen_dp"
+            android:layout_marginEnd="@dimen/sixteen_dp"
+            android:layout_marginRight="@dimen/sixteen_dp"
+            android:gravity="center"
+            android:text="@string/request_otp_text"
+            android:visibility="gone" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/otpLayout_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/otpText_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/sixteen_dp"
+                android:layout_marginLeft="@dimen/sixteen_dp"
+                android:layout_marginEnd="@dimen/sixteen_dp"
+                android:layout_marginRight="@dimen/sixteen_dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sixteen_sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Example Text" />
+
+            <TextView
+                android:id="@+id/prefixTV_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/sixteen_dp"
+                android:layout_marginRight="@dimen/sixteen_dp"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="@+id/smsOTPField_id"
+                app:layout_constraintEnd_toStartOf="@+id/smsOTPField_id"
+                app:layout_constraintTop_toTopOf="@+id/smsOTPField_id"
+                tools:text="Prefix" />
+
+            <EditText
+                android:id="@+id/smsOTPField_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_48dp"
+                android:ems="10"
+                android:hint="@string/otp_hint"
+                android:inputType="number"
+                android:maxLength="6"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/otpText_id"
+                tools:text="457693" />
+
+            <TextView
+                android:id="@+id/resendText_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/eight_dp"
+                android:text="TextView"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/smsOTPField_id" />
+
+            <Button
+                android:id="@+id/smsOTP_loginBtn_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48dp"
+                android:text="@string/submit"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/resendText_id" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+</layout>

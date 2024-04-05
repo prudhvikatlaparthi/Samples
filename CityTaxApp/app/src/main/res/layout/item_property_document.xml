@@ -1,0 +1,96 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.sgs.citytax.ui.custom.swipeUtils.CustomSwipeView
+        android:id="@+id/swipeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        app:dragEdge="right"
+        app:swipeMode="same_level">
+
+        <LinearLayout
+            android:id="@+id/belowLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableTop="@drawable/ic_edit"
+                android:drawablePadding="@dimen/three_dp"
+                android:gravity="center"
+                android:longClickable="false"
+                android:minWidth="65dp"
+                android:padding="@dimen/vertical_spacing"
+                android:singleLine="true"
+                android:text="@string/edit"
+                android:textColor="@color/colorPrimaryDark"
+                android:textIsSelectable="false"
+                android:textSize="@dimen/sixteen_sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableTop="@drawable/ic_delete"
+                android:drawablePadding="@dimen/three_dp"
+                android:gravity="center"
+                android:longClickable="false"
+                android:minWidth="65dp"
+                android:padding="@dimen/vertical_spacing"
+                android:singleLine="true"
+                android:text="@string/delete"
+                android:textColor="@color/colorPrimaryDark"
+                android:textIsSelectable="false"
+                android:textSize="@dimen/sixteen_sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_property"
+                android:layout_width="@dimen/item_img_width_height"
+                android:layout_height="@dimen/item_img_width_height"
+                android:layout_margin="8dp"
+                android:contentDescription="@string/product" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="@dimen/vertical_spacing">
+
+                <TextView
+                    android:id="@+id/tvDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvDefault"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvDescription" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </com.sgs.citytax.ui.custom.swipeUtils.CustomSwipeView>
+
+</layout>

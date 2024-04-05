@@ -1,0 +1,91 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    namespace 'com.pru.signedapp'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.pru.signedapp"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    signingConfigs {
+        release {
+            storeFile(file(project.property('key.store.file')))
+            keyAlias(project.property('key.alias'))
+            storePassword(project.property('key.store.password'))
+            keyPassword(project.property('key.store.password'))
+
+            v1SigningEnabled true
+            v2SigningEnabled true
+        }
+    }
+
+    buildTypes {
+        debug {
+            debuggable true
+        }
+        qa {
+            debuggable true
+        }
+        uat {
+            debuggable true
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    packagingOptions {
+        resources.excludes.add("plugin.xml")
+        resources.excludes.add("about.ini")
+        resources.excludes.add("about.mappings")
+        resources.excludes.add("modeling32.png")
+        resources.excludes.add("about.properties")
+        resources.excludes.add("plugin.properties")
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.core:core-ktx:1.9.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.10.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+
+    // https://mvnrepository.com/artifact/javax.media/jai-core
+    implementation 'javax.media:jai-core:1.1.3'
+
+
+    // https://mvnrepository.com/artifact/org.geotools/gt-shapefile
+    implementation('org.geotools:gt-shapefile:28.2') {
+        exclude group: "javax.media", module: "jai_core"
+    }
+
+    implementation 'org.locationtech.jts:jts-core:1.19.0'
+
+    // https://mvnrepository.com/artifact/org.geotools/gt-opengis
+    implementation ('org.geotools:gt-opengis:28.2'){
+        exclude group: "javax.media", module: "jai_core"
+    }
+
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+}

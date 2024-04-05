@@ -1,0 +1,184 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        app:cardBackgroundColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtTaxType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:textColor="@color/colorAccent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorGrayLight"
+                android:padding="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtTaxType" />
+
+            <TextView
+                android:id="@+id/txtBusinessNameLabel"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:padding="8dp"
+                android:text="@string/business_name"
+                app:layout_constraintBottom_toBottomOf="@id/txtBusinessName"
+                app:layout_constraintEnd_toStartOf="@id/txtBusinessName"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view" />
+
+            <TextView
+                android:id="@+id/txtBusinessName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/txtBusinessNameLabel"
+                app:layout_constraintTop_toTopOf="@id/txtBusinessNameLabel" />
+
+            <TextView
+                android:id="@+id/txtSycoTaxIDLabel"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:padding="8dp"
+                android:text="@string/syco_tax_id"
+                app:layout_constraintBottom_toBottomOf="@id/txtSycoTaxID"
+                app:layout_constraintEnd_toStartOf="@id/txtSycoTaxID"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtBusinessNameLabel" />
+
+            <TextView
+                android:id="@+id/txtSycoTaxID"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/txtSycoTaxIDLabel"
+                app:layout_constraintTop_toTopOf="@id/txtSycoTaxIDLabel" />
+
+            <TextView
+                android:id="@+id/txtShowNameLabel"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:padding="@dimen/vertical_spacing"
+                android:text="@string/show_name"
+                app:layout_constraintBottom_toBottomOf="@+id/txtShowName"
+                app:layout_constraintEnd_toStartOf="@+id/txtShowName"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtSycoTaxIDLabel"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/txtShowName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/vertical_spacing"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/txtShowNameLabel"
+                app:layout_constraintTop_toTopOf="@+id/txtShowNameLabel"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/txtPhoneNumberLabel"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:padding="8dp"
+                android:text="@string/phone_number"
+                app:layout_constraintBottom_toBottomOf="@id/txtPhoneNumber"
+                app:layout_constraintEnd_toStartOf="@id/txtPhoneNumber"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtShowNameLabel" />
+
+            <TextView
+                android:id="@+id/txtPhoneNumber"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/txtPhoneNumberLabel"
+                app:layout_constraintTop_toTopOf="@id/txtPhoneNumberLabel" />
+
+            <TextView
+                android:id="@+id/txtEmailIDLabel"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:padding="8dp"
+                android:text="@string/email_id"
+                app:layout_constraintBottom_toBottomOf="@id/txtEmailID"
+                app:layout_constraintEnd_toStartOf="@id/txtEmailID"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtPhoneNumberLabel" />
+
+            <TextView
+                android:id="@+id/txtEmailID"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/txtEmailIDLabel"
+                app:layout_constraintTop_toTopOf="@id/txtEmailIDLabel" />
+
+            <TextView
+                android:id="@+id/txtTaxAmountLabel"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:padding="8dp"
+                android:text="@string/total_due_amount"
+                app:layout_constraintBottom_toBottomOf="@id/txtTaxAmount"
+                app:layout_constraintEnd_toStartOf="@id/txtTaxAmount"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtEmailIDLabel" />
+
+            <TextView
+                android:id="@+id/txtTaxAmount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/txtTaxAmountLabel"
+                app:layout_constraintTop_toTopOf="@id/txtTaxAmountLabel" />
+
+            <TextView
+                android:id="@+id/txtEstimatedTaxLabel"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:padding="8dp"
+                android:text="@string/estimated_tax_amount"
+                app:layout_constraintBottom_toBottomOf="@id/txtEstimatedTax"
+                app:layout_constraintEnd_toStartOf="@id/txtEstimatedTax"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtTaxAmountLabel" />
+
+            <TextView
+                android:id="@+id/txtEstimatedTax"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/txtEstimatedTaxLabel"
+                app:layout_constraintTop_toTopOf="@id/txtEstimatedTaxLabel" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</layout>

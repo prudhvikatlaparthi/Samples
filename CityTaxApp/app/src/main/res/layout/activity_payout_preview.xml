@@ -1,0 +1,171 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/five_dp"
+        android:layout_marginEnd="@dimen/five_dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/llReceiptBody"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="@string/agent_commission_preview"
+                android:textSize="24sp"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/ReceiptTextHeader"
+                    android:text="@string/voucher_no"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_voucherNo"
+                    style="@style/ReceiptTextBody"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/ReceiptTextHeader"
+                    android:text="@string/agent_name"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_agent_name"
+                    style="@style/ReceiptTextBody"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/ReceiptTextHeader"
+                    android:text="@string/commission_amount"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/txt_commission_amount"
+                    style="@style/ReceiptTextBody"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/ReceiptTextHeader"
+                    android:text="@string/approved_by"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/txt_approved_by"
+                    style="@style/ReceiptTextBody"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:textStyle="bold"
+                    style="@style/ReceiptTextHeader"
+                    android:text="@string/approved_for" />
+
+                <TextView
+                    android:id="@+id/txt_approved_to"
+                    style="@style/ReceiptTextBody"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/ten_dp">
+
+                <TextView
+                    style="@style/ReceiptTextHeader"
+                    android:text="@string/approved_date"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/txt_approved_date"
+                    android:textStyle="bold"
+                    style="@style/ReceiptTextBody"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:gravity="center|bottom"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_print"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/vertical_spacing"
+                android:layout_weight="1"
+                android:text="@string/print" />
+
+            <Button
+                android:id="@+id/btnClose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/vertical_spacing"
+                android:layout_weight="1"
+                android:text="@string/close" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

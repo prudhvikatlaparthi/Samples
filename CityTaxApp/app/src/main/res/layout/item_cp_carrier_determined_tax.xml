@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/ReceiptTextHeader"
+                android:text="@string/carrier_type"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txtCarrierType"
+                style="@style/ReceiptTextBody"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/ReceiptTextHeader"
+                android:text="@string/number_of_carrier"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txtNoOfCarrier"
+                style="@style/ReceiptTextBody"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/ReceiptTextHeader"
+                android:text="@string/fixed_amount_for_carrier_type"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txtFixedAmountForCarrierType"
+                style="@style/ReceiptTextBody"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/ReceiptTextHeader"
+                android:text="@string/total_fixed_amount_of_carrier"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txtTotalFixedAmountOfCarrier"
+                style="@style/ReceiptTextBody"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:background="@color/colorPrimary" />
+
+    </LinearLayout>
+
+</layout>

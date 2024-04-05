@@ -1,0 +1,107 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-android-extensions'
+    id 'kotlinx-serialization'
+    id 'kotlin-kapt'
+    id 'androidx.navigation.safeargs.kotlin'
+    id 'dagger.hilt.android.plugin'
+
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.2"
+
+    defaultConfig {
+        applicationId "com.pru.hiltarchi"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    packagingOptions {
+        pickFirst("META-INF/kotlinx-io.kotlin_module")
+        pickFirst("META-INF/atomicfu.kotlin_module")
+        pickFirst("META-INF/kotlinx-coroutines-io.kotlin_module")
+        pickFirst("META-INF/kotlinx-coroutines-core.kotlin_module")
+        pickFirst("META-INF/kotlinx-serialization-runtime.kotlin_module")
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures{
+        viewBinding = true
+    }
+
+}
+
+dependencies {
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.4.30"
+    implementation 'androidx.core:core-ktx:1.3.2'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.3.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+
+    // Navigation Component
+    implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
+    implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
+
+    // Retrofit
+    implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+    // GSON
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
+    // Okhttp
+    implementation "com.squareup.okhttp3:logging-interceptor:$okhttp_log_version"
+
+    //Hilt Dagger
+    implementation "com.google.dagger:hilt-android:$hilt_version"
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    kapt "com.google.dagger:hilt-android-compiler:$hilt_version"
+
+    //Hilt ViewModel
+    implementation "androidx.hilt:hilt-lifecycle-viewmodel:$hilt_viewmodel_version"
+    kapt "androidx.hilt:hilt-compiler:$hilt_viewmodel_version"
+
+    //Glide Image loading
+    implementation("com.github.bumptech.glide:glide:4.11.0")
+    annotationProcessor("com.github.bumptech.glide:compiler:4.11.0")
+
+    //activity KTX
+    implementation "androidx.activity:activity-ktx:$activity_ktx_version"
+    //fragment KTX
+    implementation "androidx.fragment:fragment-ktx:$fragment_ktx_version"
+
+    // Ktor
+    implementation "io.ktor:ktor-client-android:$ktor_version"
+    implementation "io.ktor:ktor-client-cio:$ktor_version"
+    implementation "io.ktor:ktor-client-serialization-jvm:$ktor_version"
+    implementation "io.ktor:ktor-client-logging:$ktor_version"
+
+
+    // MultiDex
+    implementation "androidx.multidex:multidex:$multidex_version"
+
+    implementation 'com.github.stfalcon:smsverifycatcher:0.3.2'
+
+
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+}

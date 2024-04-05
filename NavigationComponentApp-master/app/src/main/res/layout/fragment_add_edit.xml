@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mvvm.AddEditTaskFragment">
+
+    <EditText
+        android:id="@+id/et_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Fruit"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        android:textColorHint="@android:color/darker_gray"
+        android:textSize="20sp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_fix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="10dp"
+        android:src="@drawable/ic_add" />
+
+</FrameLayout>

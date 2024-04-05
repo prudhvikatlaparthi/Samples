@@ -1,0 +1,133 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:id="@+id/llContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextHeader"
+                android:text="@string/menu_business" />
+
+            <TextView
+                android:id="@+id/tvBusiness"
+                style="@style/TextBody" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextHeader"
+                android:text="@string/syco_tax_id" />
+
+            <TextView
+                android:id="@+id/tvSycoTaxID"
+                style="@style/TextBody" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextHeader"
+                android:text="@string/license_number" />
+
+            <TextView
+                android:id="@+id/tvLicenseNumber"
+                style="@style/TextBody" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextHeader"
+                android:text="@string/pending_current_invoice" />
+
+            <TextView
+                android:id="@+id/tvPendingCurrentInvoice"
+                style="@style/TextBody" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextHeader"
+                android:text="@string/valid_from" />
+
+            <TextView
+                android:id="@+id/tvValidFrom"
+                style="@style/TextBody" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextHeader"
+                android:text="@string/valid_upto" />
+
+            <TextView
+                android:id="@+id/tvValidUpTo"
+                style="@style/TextBody" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextHeader"
+                android:text="@string/current_due" />
+
+            <TextView
+                android:id="@+id/tvCurrentDue"
+                style="@style/TextBody" />
+        </LinearLayout>
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="5dp"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:visibility="visible">-->
+<!--            <Button-->
+<!--                android:id="@+id/btnCollect"-->
+<!--                style="@style/TextBody"-->
+<!--                android:text="@string/collect"-->
+<!--                android:textColor="@color/white"/>-->
+
+<!--        </LinearLayout>-->
+
+
+    </LinearLayout>
+
+</layout>

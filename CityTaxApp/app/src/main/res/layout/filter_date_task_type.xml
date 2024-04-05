@@ -1,0 +1,154 @@
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/date_dilog_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/vertical_spacing"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtInpLayFromDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/vertical_spacing"
+            android:layout_marginRight="@dimen/vertical_spacing"
+            android:hint="@string/from_date">
+
+            <com.sgs.citytax.ui.custom.DatePickerEditText
+                android:id="@+id/edit_text_from_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_calender"
+                android:drawablePadding="@dimen/vertical_spacing"
+                android:inputType="date"
+                app:needIcons="show" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtInpLayToDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/vertical_spacing"
+            android:layout_marginRight="@dimen/vertical_spacing"
+            android:hint="@string/to_date">
+
+            <com.sgs.citytax.ui.custom.DatePickerEditText
+                android:id="@+id/edit_text_to_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_calender"
+                android:drawablePadding="@dimen/vertical_spacing"
+                android:inputType="date"
+                app:needIcons="show" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight=".4"
+                android:text="@string/type"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+            <Spinner
+                android:id="@+id/spnType"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".6"
+                android:minHeight="48dp"
+                android:padding="@dimen/vertical_spacing"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:background="@color/colorGray" />
+
+        <LinearLayout
+            android:id="@+id/llSpnType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight=".4"
+                android:text="@string/label_task_type"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+            <Spinner
+                android:id="@+id/spnTaskType"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".6"
+                android:minHeight="48dp"
+                android:padding="@dimen/vertical_spacing"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:background="@color/colorGray" />
+
+        <LinearLayout
+            android:id="@+id/llSpnSubType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight=".4"
+                android:text="@string/label_task_subtype"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+            <Spinner
+                android:id="@+id/spnTaskSubType"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".6"
+                android:minHeight="48dp"
+                android:padding="@dimen/vertical_spacing"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:background="@color/colorGray" />
+
+    </LinearLayout>
+
+</layout>

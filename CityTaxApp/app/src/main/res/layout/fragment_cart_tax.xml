@@ -1,0 +1,781 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorLayoutBackground"
+        android:focusableInTouchMode="true">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardElevation="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/vertical_spacing"
+                        android:layout_marginTop="@dimen/vertical_spacing"
+                        android:layout_marginRight="@dimen/vertical_spacing"
+                        android:layout_marginBottom="@dimen/vertical_spacing"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            style="@style/TextMandatoryInputLayout"
+                            android:hint="@string/syco_tax_id">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtSycoTaxID"
+                                style="@style/TextInputEntryStyle"
+                                android:enabled="false" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/three_dp"
+                            android:layout_marginEnd="@dimen/three_dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/cart_type"
+                                style="@style/TextMandatoryTextView"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                            <androidx.appcompat.widget.AppCompatSpinner
+                                android:id="@+id/spnCartType"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:minHeight="@dimen/min_spinner_height"
+                                android:padding="@dimen/vertical_spacing"
+                                android:spinnerMode="dialog" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/colorGray" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/vertical_spacing"
+                            style="@style/TextMandatoryInputLayout"
+                            android:hint="@string/registration_date">
+
+                            <com.sgs.citytax.ui.custom.DatePickerEditText
+                                android:id="@+id/edtRegistrationDate"
+                                style="@style/TextInputEntryStyle"
+                                app:needIcons="show" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            style="@style/TextMandatoryInputLayout"
+                            android:hint="@string/cart_no">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtCartNo"
+                                style="@style/TextInputEntryStyle" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:enabled="false"
+                                android:hint="@string/estimated_amount">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/edtEstimatedAmount"
+                                    style="@style/TextInputEntryStyle" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical|end">
+
+                                <Button
+                                    android:id="@+id/btnGet"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@android:color/transparent"
+                                    android:text="@string/calculate"
+                                    android:textColor="@color/colorAccent" />
+
+                            </LinearLayout>
+
+                        </FrameLayout>
+
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                            android:id="@+id/cbActive"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/vertical_spacing"
+                            android:checked="true"
+                            android:text="@string/active"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    app:cardElevation="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/vertical_spacing"
+                            android:text="@string/owner"
+                            android:textColor="@color/colorAccent"
+                            android:textStyle="bold" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/vertical_spacing"
+                                android:layout_marginRight="@dimen/vertical_spacing"
+                                style="@style/TextMandatoryInputLayout"
+                                android:hint="@string/owner_name">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/edtCustomerName"
+                                    style="@style/TextInputEntryStyle"
+                                    android:focusable="false" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/vertical_spacing"
+                                android:layout_marginRight="@dimen/vertical_spacing"
+                                android:hint="@string/phone_number">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/edtPhoneNumber"
+                                    style="@style/TextInputEntryStyle"
+                                    android:focusable="false"
+                                    android:inputType="phone" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/vertical_spacing"
+                                android:layout_marginRight="@dimen/vertical_spacing"
+                                android:hint="@string/email_id">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/edtEmailId"
+                                    style="@style/TextInputEntryStyle"
+                                    android:focusable="false"
+                                    android:inputType="phone" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/vertical_spacing"
+                                android:layout_marginRight="@dimen/vertical_spacing"
+                                android:hint="@string/country">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/edtCountry"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:focusable="false"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/vertical_spacing"
+                                android:layout_marginRight="@dimen/vertical_spacing"
+                                android:hint="@string/state">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/edtState"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:focusable="false"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/vertical_spacing"
+                                android:layout_marginRight="@dimen/vertical_spacing"
+                                android:hint="@string/city">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/edtCity"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:focusable="false"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/vertical_spacing"
+                                android:layout_marginRight="@dimen/vertical_spacing"
+                                android:hint="@string/zone">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/edtZone"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:focusable="false"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/vertical_spacing"
+                                android:layout_marginRight="@dimen/vertical_spacing"
+                                android:hint="@string/sector">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/edtSector"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:focusable="false"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/vertical_spacing"
+                                android:layout_marginRight="@dimen/vertical_spacing"
+                                android:hint="@string/street">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/edtStreet"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="textCapWords"
+                                    android:focusable="false"
+                                    android:maxLength="80"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/vertical_spacing"
+                                android:layout_marginRight="@dimen/vertical_spacing"
+                                android:hint="@string/plot">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/edtPlot"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="textCapWords"
+                                    android:focusable="false"
+                                    android:maxLength="20"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/vertical_spacing"
+                                android:layout_marginRight="@dimen/vertical_spacing"
+                                android:hint="@string/block">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/edtBlock"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="textCapWords"
+                                    android:focusable="false"
+                                    android:maxLength="20"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/vertical_spacing"
+                                android:layout_marginRight="@dimen/vertical_spacing"
+                                android:hint="@string/door_no">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/edtDoorNo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="textCapWords"
+                                    android:focusable="false"
+                                    android:maxLength="20"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/vertical_spacing"
+                                android:layout_marginTop="@dimen/vertical_spacing"
+                                android:layout_marginRight="@dimen/vertical_spacing"
+                                android:hint="@string/zipcode">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/edtZipCode"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="textCapWords"
+                                    android:maxLength="14"
+                                    android:focusable="false"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/llCreateCustomer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/vertical_spacing"
+                            android:gravity="end"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/new_citizen"
+                                android:textStyle="italic" />
+
+                            <TextView
+                                android:id="@+id/tvCreateCustomer"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/create"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="16sp"
+                                android:textStyle="italic|bold" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="4dp"
+                    app:cardElevation="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/llDocuments"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:orientation="horizontal"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text="@string/documents"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                            <TextView
+                                android:id="@+id/txtNumberOfDocuments"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:drawableEnd="@drawable/ic_arrow"
+                                android:gravity="center_vertical"
+                                android:textAllCaps="true"
+                                android:text="0"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:background="@color/colorGrayLight" />
+
+                        <!--endregion-->
+
+                        <!--region Notes-->
+
+                        <LinearLayout
+                            android:id="@+id/llNotes"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:orientation="horizontal"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text="@string/notes"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                            <TextView
+                                android:id="@+id/txtNumberOfNotes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:drawableEnd="@drawable/ic_arrow"
+                                android:gravity="center_vertical"
+                                android:textAllCaps="true"
+                                android:text="0"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                        </LinearLayout>
+
+                        <!--endregion-->
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:background="@color/colorGrayLight" />
+
+                        <LinearLayout
+                            android:id="@+id/llInitialOutstanding"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/twelve_dp"
+                            android:layout_marginEnd="@dimen/twelve_dp"
+                            android:orientation="horizontal"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text="@string/title_initial_outstandings"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                            <TextView
+                                android:id="@+id/txtNumberOfInitialOutstanding"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:drawableEnd="@drawable/ic_arrow"
+                                android:gravity="center_vertical"
+                                android:textAllCaps="true"
+                                android:text="0"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="@dimen/vertical_spacing"
+                    android:elevation="4dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    app:cardBackgroundColor="@color/white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorWhite"
+                        android:orientation="vertical"
+                        android:paddingStart="@dimen/horizontal_spacing"
+                        android:paddingEnd="@dimen/horizontal_spacing"
+                        android:paddingBottom="@dimen/vertical_spacing">
+
+                        <TextView
+                            android:id="@+id/tvFixedExpenses"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/horizontal_spacing"
+                            android:layout_marginBottom="@dimen/five_dp"
+                            android:drawableEnd="@drawable/ic_arrow_down"
+                            android:text="@string/title_outstandings" />
+
+                        <LinearLayout
+                            android:id="@+id/llFixedExpenses"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingBottom="4dp"
+                            android:visibility="gone">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/colorGray" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:layout_marginBottom="8dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/TextHeader"
+                                    android:paddingStart="0dp"
+                                    android:paddingEnd="@dimen/horizontal_spacing"
+                                    android:text="@string/initial_outstanding_current_year_due" />
+
+                                <TextView
+                                    android:id="@+id/txtInitialOutstandingCurrentYearDue"
+                                    style="@style/TextBody"
+                                    android:layout_gravity="center_vertical"
+                                    android:paddingStart="@dimen/horizontal_spacing"
+                                    android:paddingEnd="0dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/TextHeader"
+                                    android:paddingStart="0dp"
+                                    android:paddingEnd="@dimen/horizontal_spacing"
+                                    android:text="@string/current_year_due" />
+
+                                <TextView
+                                    android:id="@+id/txtCurrentYearDue"
+                                    style="@style/TextBody"
+                                    android:paddingStart="@dimen/horizontal_spacing"
+                                    android:paddingEnd="0dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/TextHeader"
+                                    android:paddingStart="0dp"
+                                    android:paddingEnd="@dimen/horizontal_spacing"
+                                    android:text="@string/current_year_penalty_due" />
+
+                                <TextView
+                                    android:id="@+id/txtCurrentYearPenaltyDue"
+                                    style="@style/TextBody"
+                                    android:paddingStart="@dimen/horizontal_spacing"
+                                    android:paddingEnd="0dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/TextHeader"
+                                    android:paddingStart="0dp"
+                                    android:paddingEnd="@dimen/horizontal_spacing"
+                                    android:text="@string/previous_year_due" />
+
+                                <TextView
+                                    android:id="@+id/txtPreviousYearDue"
+                                    style="@style/TextBody"
+                                    android:paddingStart="@dimen/horizontal_spacing"
+                                    android:paddingEnd="0dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/TextHeader"
+                                    android:paddingStart="0dp"
+                                    android:paddingEnd="@dimen/horizontal_spacing"
+                                    android:text="@string/previous_year_penalty_due" />
+
+                                <TextView
+                                    android:id="@+id/txtPreviousYearPenaltyDue"
+                                    style="@style/TextBody"
+                                    android:paddingStart="@dimen/horizontal_spacing"
+                                    android:paddingEnd="0dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/TextHeader"
+                                    android:paddingStart="0dp"
+                                    android:paddingEnd="@dimen/horizontal_spacing"
+                                    android:text="@string/anterior_year_due" />
+
+                                <TextView
+                                    android:id="@+id/txtAnteriorYearDue"
+                                    style="@style/TextBody"
+                                    android:paddingStart="@dimen/horizontal_spacing"
+                                    android:paddingEnd="0dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/TextHeader"
+                                    android:paddingStart="0dp"
+                                    android:paddingEnd="@dimen/horizontal_spacing"
+                                    android:text="@string/anterior_year_penalty_due" />
+
+                                <TextView
+                                    android:id="@+id/txtAnteriorYearPenaltyDue"
+                                    style="@style/TextBody"
+                                    android:paddingStart="@dimen/horizontal_spacing"
+                                    android:paddingEnd="0dp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/save" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</layout>

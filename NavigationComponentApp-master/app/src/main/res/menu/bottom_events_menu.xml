@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bottom_item_this_week_events"
+        android:icon="@drawable/ic_event"
+        android:title="This week events" />
+    <item
+        android:id="@+id/bottom_item_next_week_events"
+        android:icon="@drawable/ic_event"
+        android:title="Next week events" />
+</menu>

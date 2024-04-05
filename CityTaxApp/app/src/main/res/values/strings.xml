@@ -1,0 +1,2188 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_launcher_name" translatable="false">SycoTax</string>
+    <string name="app_name" translatable="false">SycoTax</string>
+
+    <!--region Settings preference keys-->
+    <string name="pref_payment_cash" translatable="false">payment_cash</string>
+    <string name="pref_language" translatable="false">language</string>
+    <string name="pref_currency" translatable="false">currency</string>
+    <string name="pref_search_mode" translatable="false">search_mode</string>
+    <string name="pref_scan_mode" translatable="false">scan_mode</string>
+    <string name="pref_payment_orange_wallet" translatable="false">payment_orange_wallet</string>
+    <string name="pref_allow_print" translatable="false">allow_print</string>
+    <string name="pref_allow_qr_code" translatable="false">allow_qr_code</string>
+    <string name="pref_show_tax_notice" translatable="false">show_tax_notice</string>
+    <string name="pref_version_name" translatable="false">version_name</string>
+    <string name="pref_version_code" translatable="false">version_code</string>
+    <string name="pref_model" translatable="false">model</string>
+    <string name="pref_os_Version" translatable="false">os_version</string>
+    <string name="pref_payment" translatable="false">payment</string>
+    <string name="pref_general" translatable="false">general</string>
+    <string name="pref_application" translatable="false">application</string>
+    <string name="pref_system" translatable="false">system</string>
+    <string name="pref_tax_notice" translatable="false">tax_notice</string>
+    <string name="pref_history" translatable="false">from_history</string>
+    <!--endregion-->
+
+    <!--region Custom Keyboard-->
+    <string name="txt_0" translatable="false">0</string>
+    <string name="txt_1" translatable="false">1</string>
+    <string name="txt_2" translatable="false">2</string>
+    <string name="txt_3" translatable="false">3</string>
+    <string name="txt_4" translatable="false">4</string>
+    <string name="txt_5" translatable="false">5</string>
+    <string name="txt_6" translatable="false">6</string>
+    <string name="txt_7" translatable="false">7</string>
+    <string name="txt_8" translatable="false">8</string>
+    <string name="txt_9" translatable="false">9</string>
+    <string name="CLR" translatable="false">CLR</string>
+    <!--endregion-->
+    <!--endregion-->
+
+    <!-- region Activity Titles -->
+    <string name="title_tax_details">Tax Details</string>
+    <string name="title_taxes">Taxes</string>
+    <string name="title_credit_balance_statement">Agent Credit Balance Statement</string>
+    <string name="title_payment">Payment</string>
+    <string name="title_tax_receipt">Tax Receipt</string>
+    <string name="title_my_profile">My Profile</string>
+    <string name="title_agent">Agent</string>
+    <string name="title_invoice_no">Invoice No</string>
+    <string name="title_tax_notice_no">Tax Notice No</string>
+    <string name="title_rop">Right of places in Market</string>
+    <string name="title_collection_history">Collection History</string>
+    <string name="title_businesses">Businesses</string>
+    <string name="title_tax_payers_verification">Verify Tax Payers</string>
+    <string name="title_products">Municipal Taxes</string>
+    <string name="title_select_date">Select Date</string>
+    <string name="title_master">MASTER</string>
+    <string name="title_settings">Settings</string>
+    <string name="title_reports">REPORTS</string>
+    <string name="title_change_password">Change Password</string>
+    <string name="title_agent_collection_summary">Agent Cash collection Summary</string>
+    <string name="title_rental_details">Rental tax details</string>
+    <string name="title_phones">Phones</string>
+    <string name="title_emails">Emails</string>
+    <string name="title_address">Address</string>
+    <string name="title_business_owner">Business Owner</string>
+    <string name="title_business_owner_id">Business Owner ID</string>
+    <string name="title_register_business">Register Business</string>
+    <string name="title_business_owner_search">Business owner search</string>
+    <string name="title_update_business">Update Business</string>
+    <string name="title_register_owner">Register Owner</string>
+    <string name="title_tax_notice">Tax Notice</string>
+    <string name="title_my_agents">My Agents</string>
+    <string name="title_tasks">Tasks</string>
+    <string name="title_cart_tax">Cart Tax</string>
+    <string name="title_other_taxes">Other Taxes</string>
+    <string name="title_select_business">Select Business</string>
+    <string name="title_business_summary">Business Summary</string>
+    <string name="title_documents_preview">Documents Preview</string>
+    <string name="title_tasks_location">Tasks Locations</string>
+    <string name="title_incident_location">Incident Locations</string>
+    <string name="title_business_documents">Business Documents</string>
+    <string name="title_location_tracker">Agent Live Tracking</string>
+    <string name="title_business_location">Business</string>
+    <string name="title_complaints_location">Complaint Locations</string>
+    <string name="title_geo_spatial_data">GEO SPATIAL DATA</string>
+    <string name="title_licence_renewal">Licence Renewal</string>
+
+
+    <!-- endregion -->
+
+    <!-- region Preference Titles -->
+    <string name="general_header">General</string>
+    <string name="payment_header">Payment</string>
+    <string name="tax_notice_header">Tax notice</string>
+    <!-- endregion -->
+
+    <!-- region Root Preferences -->
+    <string name="language_title">Language</string>
+    <!-- endregion-->
+
+    <!-- region Messages -->
+    <string name="msg_authenticating">Authenticating…</string>
+    <string name="msg_enter_amount">Please enter amount</string>
+    <string name="msg_enter_otp">Please enter OTP</string>
+    <string name="msg_enter_valid_otp">Please enter 6 digit OTP</string>
+    <string name="msg_invalid_password">Invalid current password</string>
+    <string name="msg_logout">Do you want to logout?</string>
+    <string name="msg_multiple_payment_not_allowed">Multiple payments not allowed</string>
+    <string name="msg_no_data">No data available</string>
+    <string name="msg_no_internet">Please check internet connection.</string>
+    <string name="msg_password_empty">Please provide password</string>
+    <string name="msg_password_same">Current password and new password cannot be the same</string>
+    <string name="msg_payment_cannot_be_more">Payment cannot be allowed, you have entered more than due amount.</string>
+    <string name="msg_payment_failed">Payment failed</string>
+    <string name="msg_permission_qr_scanner">Give permission to access QR scanner</string>
+    <string name="msg_please_wait">Please wait…</string>
+    <string name="msg_processing_payment">Processing payment…</string>
+    <string name="msg_provide">Please provide</string>
+    <string name="msg_provide_valid">Please provide valid</string>
+    <string name="msg_record_save_success">Record saved successfully</string>
+    <string name="msg_register_device">Registering device…</string>
+    <string name="msg_tax_details">Loading Tax details…</string>
+    <string name="msg_try_again">Please try again</string>
+    <string name="msg_username_empty">Please provide username</string>
+    <string name="msg_amount_greater_than_zero">Amount should be greater than zero</string>
+    <string name="msg_incident_type">Please select incident type</string>
+    <string name="msg_business_already_registered">The business you are searching is already registered.</string>
+    <string name="msg_cannot_edit_record">You are not allowed to modify this record. Please contact your Supervisor/Inspector.</string>
+    <string name="msg_commission_generated_successfully">Commission Request has been generated successfully</string>
+    <string name="msg_enter_correct_mail_otp">Please Enter Correct E-Mail OTP</string>
+    <string name="msg_enter_correct_sms_otp">Please Enter Correct SMS OTP</string>
+    <string name="msg_enter_mail_otp">Please Enter E-Mail OTP</string>
+    <string name="msg_enter_remarks">Please Enter Remarks</string>
+    <string name="msg_enter_sms_otp">Please Enter SMS OTP</string>
+    <string name="msg_enter_sms_or_email_otp">Please Enter SMS or Email OTP</string>
+    <string name="msg_enter_valid_mobile">Please enter valid Mobile Number</string>
+    <string name="msg_from_date">Please select from date.</string>
+    <string name="msg_invalid_qr_code">Invalid QR code</string>
+    <string name="msg_location_fetching">Fetching current location, please wait…</string>
+    <string name="msg_password_not_match">Password and confirm password does not match</string>
+    <string name="msg_payment_success_tax_notice">Your payment has been received successfully and adjusted towards, Tax Notice <xliff:g id="msg_payment_success_tax_notice">%d</xliff:g></string>
+    <string name="msg_permission_storage_camera">Give permission to access Storage and Camera</string>
+    <string name="msg_request_cancelled">Your request has been cancelled</string>
+    <string name="msg_to_date">Please select to date.</string>
+    <string name="msg_invalid_response">Invalid response</string>
+    <!-- endregion -->
+
+    <!-- region Menu -->
+    <string name="menu_business">Business</string>
+    <string name="menu_owner">Owner</string>
+    <string name="menu_agent">Agent</string>
+    <string name="menu_incidents">Incidents</string>
+    <string name="menu_register">Register</string>
+    <string name="menu_update">Update</string>
+    <string name="menu_tax_notice">Tax Notice</string>
+    <string name="menu_tax_collection">Tax Collection</string>
+    <string name="menu_wallet_recharge">Add Money</string>
+    <string name="menu_wallet">Wallet</string>
+    <string name="menu_wallet_history">History</string>
+    <!-- endregion -->
+
+    <string name="activate">Activate</string>
+    <string name="active">Active</string>
+    <string name="activity_description">Activity Description</string>
+    <string name="activity_domain">Activity Domain</string>
+    <string name="accept">Accept</string>
+    <string name="account_name">Account Name</string>
+    <string name="add_incident">Add incidents</string>
+    <string name="added_successfully">Added Successfully</string>
+    <string name="administration_office">Administration Office</string>
+    <string name="admin_office">Administrative Office</string>
+    <string name="agent_code">Agent Code</string>
+    <string name="agent_name">Agent name</string>
+    <string name="agent_type">Agent Type</string>
+    <string name="agreement_date">Agreement Date</string>
+    <string name="agent_commission_report">Agent Commission Report</string>
+    <string name="agreement_no">Agreement No</string>
+    <string name="amount">Amount</string>
+    <string name="apply">Apply</string>
+    <string name="approve">Approve</string>
+    <string name="approved_by">Approved by</string>
+    <string name="approved_successfully">Approved Successfully</string>
+    <string name="area">Area</string>
+
+    <string name="balance">Balance</string>
+    <string name="balance_amount">Balance Amount</string>
+    <string name="block">Lot</string>
+    <string name="business_name">Business Name</string>
+    <string name="business_doc_number">Business Document Number</string>
+    <string name="business_email">Business Email</string>
+    <string name="business_ph_no">Business Phone No.</string>
+    <string name="business_registration_sucessful">Business Registration Successful</string>
+    <string name="business_transaction_history">Transaction History</string>
+    <string name="business_type">Business Type</string>
+
+    <string name="cancel">Cancel</string>
+    <string name="capture_photo">Capture Photo</string>
+    <string name="cash">Cash</string>
+    <string name="cash_collected">Cash Collected</string>
+    <string name="cash_deposited">Cash Deposited</string>
+    <string name="deposit_amount">Deposit Amount</string>
+    <string name="cash_in_hand">Cash in hand</string>
+    <string name="cash_limit">Cash Limit</string>
+    <string name="category">Category</string>
+    <string name="check_balance">Check Balance</string>
+    <string name="choose_date_range">Choose Date Range</string>
+    <string name="change_password">Change Password</string>
+    <string name="chassis_no">Chassis No</string>
+    <string name="city">City</string>
+    <string name="close">Close</string>
+    <string name="collect">Collect Payment</string>
+    <string name="collection_amount">Total Tax Collection Amount</string>
+    <string name="color">Color</string>
+    <string name="commission_amount">Commission Amount</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="corporate_turnover">Corporate Turnover</string>
+    <string name="country">Country</string>
+    <string name="co2_emission">C02 Emissions</string>
+    <string name="credit">CREDIT</string>
+    <string name="credit_balance">Credit Balance</string>
+    <string name="current_password">Current Password</string>
+    <string name="customer_name">Customer Name</string>
+
+    <string name="date">Date</string>
+    <string name="debit">DEBIT</string>
+    <string name="delete">Delete</string>
+    <string name="description">Description</string>
+    <string name="digits_doc_no" translatable="false">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 /_-</string>
+    <string name="document_proof_type">Document Proof Type</string>
+    <string name="document_type">Document Type</string>
+    <string name="documents">Documents</string>
+    <string name="door_no">Parcel</string>
+    <string name="due">Due</string>
+
+    <string name="edit">Edit</string>
+    <string name="edit_incident">Edit incidents</string>
+    <string name="edit_tasks">Edit Task</string>
+    <string name="email">Email</string>
+    <string name="email_type">Email Type</string>
+    <string name="end_date">End Date</string>
+    <string name="enter_description">Please enter description</string>
+    <string name="enter_here_to_search">Type here to search</string>
+    <string name="enter_subject">Please enter subject</string>
+    <string name="error_message">Please Enter text</string>
+    <string name="estimated_tax">Estimated tax</string>
+    <string name="business_summary_estimated_tax">Estimated tax</string>
+    <string name="estimated_tax_amount">Estimated Tax Amount</string>
+    <string name="existing_address">Existing Address</string>
+    <string name="existing_property_code">Existing Property Code</string>
+
+    <string name="failed_to_create">Failed to create</string>
+    <string name="file_dialog_title">Files</string>
+    <string name="file_open">Open:</string>
+    <string name="financial_end_date">Financial end date</string>
+    <string name="financial_start_date">Financial start date</string>
+    <string name="first_name">First Name</string>
+    <string name="folder">folder</string>
+    <string name="folder_select">Folder Select:</string>
+    <string name="from_date">From Date</string>
+    <string name="fuel_type">Fuel Type</string>
+    <string name="receipt_fuel_type">Fuel type: </string>
+
+    <string name="geo_location_area">Geo Location Area</string>
+
+    <string name="height">Height</string>
+    <string name="hint_search_sycotax_id">Enter ID SycoTax</string>
+    <string name="hint_customer_search">Enter ID Sycotax/Email/Phone</string>
+    <string name="hint_enter_email_otp">Enter Email OTP</string>
+    <string name="hint_enter_remarks">Enter Remarks here</string>
+    <string name="hint_enter_sms_otp">Enter SMS OTP</string>
+    <string name="horse_power">Horse Power</string>
+    <string name="receipt_horse_power">Horse power: </string>
+    <string name="id_number">Identification Number</string>
+    <string name="identification_no">Identification No</string>
+    <string name="ifu_no">Fiscal Identification No.</string>
+    <string name="image">Image</string>
+    <string name="inactive">Inactive</string>
+    <string name="inserting">Inserting</string>
+    <string name="invalid_email">Invalid email</string>
+    <string name="invalid_mail_otp">Invalid Mail OTP</string>
+    <string name="invalid_mobile_number">Invalid mobile number</string>
+    <string name="invalid_sms_otp">Invalid SMS OTP</string>
+    <string name="invoice_amount">Invoice Amount</string>
+    <string name="label_add_comments">Add Comments</string>
+    <string name="label_assigned_to">Assigned To</string>
+    <string name="label_clear_filter">Clear Filter</string>
+    <string name="label_collection">Collection</string>
+    <string name="label_comments">Comments</string>
+    <string name="label_current_charges">Current Charges</string>
+    <string name="label_description">Description</string>
+    <string name="label_filter_agent_coll_history">Filter agent collection history</string>
+    <string name="label_from_gallery">Choose from gallery</string>
+    <string name="label_gen_tax_notice">Generate Tax Notice</string>
+    <string name="label_incident_date">Incident Date</string>
+    <string name="txt_incident_date">Incident Date</string>
+    <string name="label_incident_no">Incident No</string>
+    <string name="label_incident_type">Incident Type</string>
+    <string name="txt_incident_type">Incident Type</string>
+    <string name="label_previous_due">Previous Due</string>
+    <string name="label_summary_details"><![CDATA[Summary Details]]></string>
+    <string name="lable_syco_tax_id">Syco Tax ID</string>
+    <string name="label_take_camera_pictire">Take camera picture</string>
+    <string name="label_task_date">Task Date</string>
+    <string name="label_task_no">Task No</string>
+    <string name="label_task_type">Task Type</string>
+    <string name="label_upload_image">Upload image</string>
+    <string name="last_name">Last Name</string>
+    <string name="lbl_default">Default</string>
+    <string name="lbl_latitude">Latitude</string>
+    <string name="lbl_longitude">Longitude</string>
+    <string name="lbl_password">Password</string>
+    <string name="lbl_username">Username</string>
+    <string name="length">Length (meter)</string>
+    <string name="length_">Length</string>
+    <string name="load_capacity">Load Capacity</string>
+    <string name="receipt_load_capacity">Load capacity: </string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="middle_name">Middle Name</string>
+    <string name="mobile">Mobile</string>
+    <string name="mobile_no">Mobile No</string>
+    <string name="module_under_development">Module under development.</string>
+    <string name="menu_incident_management">Incidents</string>
+    <string name="nature_of_occupation">Nature of Occupation</string>
+    <string name="navigation_drawer_close">close navigation drawer</string>
+    <string name="navigation_drawer_open">open navigation drawer</string>
+    <string name="new_folder">New Folder</string>
+    <string name="new_folder_name">New Folder Name</string>
+    <string name="new_password">New Password</string>
+    <string name="new_request">New Request</string>
+    <string name="no_of_months">No. of Months</string>
+    <string name="no_record">Record not found</string>
+    <string name="notes">Notes</string>
+    <string name="number">Number</string>
+    <string name="number_of_heads">Number of heads(cattle):</string>
+    <string name="occupancy">Occupancy</string>
+    <string name="otp">OTP</string>
+    <string name="otp_validation">OTP Validation</string>
+    <string name="owner">Owner</string>
+    <string name="owner_id">Owner ID</string>
+    <string name="owner_name">Owner Name</string>
+
+    <string name="parent_business">Parent Business</string>
+    <string name="parent_property">Parent Property</string>
+    <string name="paying">Paying</string>
+    <string name="payout">Payout</string>
+    <string name="payment_accepted_with_mode">Payment accepted by <xliff:g>%s</xliff:g></string>
+    <string name="payment_cannot_be_done">Payment cannot be done with 0 amount.</string>
+    <string name="payment_history">Payment History</string>
+    <string name="payment_method">Payment method</string>
+    <string name="payment_mode">Payment Mode</string>
+    <string name="petrol">Petrol</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="phone_type">Phone Type</string>
+    <string name="plot">Section</string>
+    <string name="power">Power</string>
+    <string name="receipt_power">Power: </string>
+    <string name="print">Print</string>
+    <string name="print_summary">Print Summary</string>
+    <string name="print_tax_notice">Print Tax Notice</string>
+    <string name="printer_not_connected">Printer is not connected</string>
+    <string name="proceed"> Proceed </string>
+    <string name="product">Product</string>
+    <string name="proceed_without">Proceed Without validation</string>
+    <string name="product_code">Product Code</string>
+    <string name="product_name">Product Name</string>
+    <string name="profession">Profession</string>
+    <string name="property_code">Property Code</string>
+    <string name="property_name">Property Name</string>
+    <string name="property_type">Property Type</string>
+    <string name="property_ownership">Property Ownership</string>
+    <string name="public_domain_occupancy">Public Domain Occupancy</string>
+    <string name="recharge">Recharge</string>
+    <string name="red">Red</string>
+    <string name="register_business_message">This is not mapped to any business yet. Do you want to register a business with</string>
+    <string name="registration_date">Registration Date</string>
+    <string name="registration_no">Registration No.</string>
+    <string name="reject">Reject</string>
+    <string name="rejected">Rejected</string>
+    <string name="remarks">Remarks</string>
+    <string name="rent_amount">Rent Amount</string>
+    <string name="rent_type">Rent Type</string>
+    <string name="reporting_manager">Reporting Manager</string>
+    <string name="request_date">Request Date</string>
+    <string name="request_for_payout">Request for payout</string>
+    <string name="resend_otp">Resend OTP</string>
+    <string name="right_of_places">Right of Places</string>
+    <string name="salutation">Salutation</string>
+    <string name="save">Save</string>
+    <string name="scan_cancelled">Scan cancelled</string>
+    <string name="scan_qr_code">Scan QR Code</string>
+    <string name="search">Search</string>
+    <string name="seat_no">Seat Number</string>
+    <string name="sector">Sector</string>
+    <string name="select_a_file_to_upload">Please select a file to upload.</string>
+    <string name="select_picture">Select Picture</string>
+    <string name="select">-Select-</string>
+    <string name="share">SHARE</string>
+    <string name="start_date">Start Date</string>
+    <string name="state">State</string>
+    <string name="status">Status</string>
+    <string name="sub_total">Sub total</string>
+    <string name="subject">Subject</string>
+    <string name="street">Street</string>
+    <string name="syco_tax_id">ID SycoTax</string>
+    <string name="take_image">Take a Image</string>
+    <string name="target_amount">Target amount</string>
+    <string name="target_details">Target Details</string>
+    <string name="tax_business_name">Business Name</string>
+    <string name="tax_name">Tax Name</string>
+    <string name="tax_notice_history">Tax Notice History</string>
+    <string name="tax_notice_no">Tax Notice No</string>
+    <string name="tax_payer">Tax Payer</string>
+    <string name="tax_period">Tax Period</string>
+    <string name="tax_receipt_amount">Tax Receipt amount</string>
+    <string name="tax_receipt_date">Tax Receipt date</string>
+    <string name="tax_receipt_no">Tax Receipt no</string>
+    <string name="taxable_matter">Taxable Matter</string>
+    <string name="taxable_rate">Taxable Rate</string>
+    <string name="to_date">To Date</string>
+    <string name="total">Total</string>
+    <string name="total_current_dues">Total Current Dues</string>
+    <string name="total_due">Total Due</string>
+    <string name="total_tax">Total Tax</string>
+    <string name="transmission">Transmission</string>
+    <string name="type">Type</string>
+    <string name="txt_or">OR</string>
+    <string name="unit">Unit</string>
+    <string name="validation_choose_administration_office">Please choose administration office</string>
+    <string name="validation_choose_city">Please choose a city</string>
+    <string name="validation_choose_sector">Please choose sector</string>
+    <string name="validation_choose_zone">Please choose zone</string>
+    <string name="value">Value</string>
+    <string name="receipt_value">Value: </string>
+    <string name="vehicle_details_added_successfully">Vehicle Details Added Successfully</string>
+
+    <string name="vehicle_registration_no">Vehicle Registration No</string>
+    <string name="receipt_vehicle_registration_no">Vehicle registration number: </string>
+    <string name="vehicle_ownership">Vehicle Ownership</string>
+    <string name="tax_master_vehicle_ownership">Vehicle Ownership</string>
+    <string name="vehicle_type">Vehicle Type</string>
+    <string name="voucher_no">Voucher No.</string>
+    <string name="wallet">Orange Money</string>
+    <string name="wallet_has_been_recharged_successfully_with_amount">Wallet has been recharged successfully with amount</string>
+    <string name="we_need_location_permission_to_add_map">Grant permission to display map</string>
+    <string name="website">Website</string>
+    <string name="width">Width</string>
+    <string name="zipcode">Zip Code</string>
+    <string name="zone">Zone</string>
+
+    <string name="approved_for">Approved For</string>
+    <string name="agent_commission_preview">Agent Commission Preview</string>
+    <string name="approved_date">Approved Date</string>
+    <string name="cash_deposit_request">Cash Deposit Request</string>
+    <string name="msg_cash_deposit_request">Cash deposit request is generated Successfully</string>
+    <string name="msg_cannot_edit_active_business">Sorry! You cannot update active business</string>
+    <string name="billing_period">Billing Period</string>
+    <string name="currency">Currency</string>
+    <string name="taxable_element">Taxable Elements</string>
+    <string name="taxation_year">Taxation Year</string>
+    <string name="total_amount">Total amount</string>
+    <string name="amount_in_words">Amount in words</string>
+    <string name="amount_collected">Amount collected</string>
+    <string name="total_due_amount">Total due amount</string>
+    <string name="generated_by">Generate By</string>
+    <string name="document_name">Document Name</string>
+    <string name="msg_nuber_exists">Phone number already used.</string>
+    <string name="msg_print_not_support">Device does not support print</string>
+    <string name="commission_balance">Commission Balance</string>
+    <string name="next">Next</string>
+    <string name="skip_and_save">Skip &amp; Save</string>
+    <string name="billing_cycle">Billing Cycle</string>
+    <string name="generate_tax_notice">Generate Tax Notice</string>
+    <string name="generate_all_tax_notices">Generate All Tax Notices</string>
+    <string name="msg_from_date_is_greater_than_to_date">Please make sure that From Date is same or before To Date</string>
+    <string name="target_start_time">Target Start Time</string>
+    <string name="target_end_time">Target End Time</string>
+    <string name="assign_time">Assign Time</string>
+    <string name="closed_time">Closed Time</string>
+    <string name="parent_service_request_no">Parent Service Request No</string>
+    <string name="close_task">Task closed Successfully</string>
+    <string name="label_complaint_no">Complaint No</string>
+    <string name="tax_type">Tax Type</string>
+    <string name="turn_over">Turn Over</string>
+    <string name="occupancy_type">Occupancy Type</string>
+    <string name="tax_start_date">Tax Start Date</string>
+    <string name="tax_financial_year">Tax Financial Year</string>
+    <string name="pending_tax_amount">Pending Tax Amount</string>
+    <string name="registration_date_should_not_be_future_date">Registration date should not be future date</string>
+    <string name="msg_start_date_is_greater_than_end_date">Please make sure that StartDate is same or before EndDate</string>
+    <string name="developed_by">&lt;p&gt; Developed by&lt;a href="https://effiasoft.com/"&gt; Effiasoft &lt;/av&lt;/p&gt;</string>
+    <string name="status_new">New</string>
+    <string name="receipt_preview">Receipt Preview</string>
+    <string name="english" translatable="false">English</string>
+    <string name="french" translatable="false">Français</string>
+    <string name="incident">Incident</string>
+    <string name="product_already_added">Product already added</string>
+    <string name="activity_class">Activity Class</string>
+    <string name="set_your_location">Set your Location</string>
+    <string name="available_balance">Available Balance</string>
+    <string name="recharge_amount">Recharge Amount</string>
+    <string name="email_id">Email ID</string>
+    <string name="generate_notice">Generate Notice</string>
+    <string name="application">Application</string>
+    <string name="system">System</string>
+    <string name="scan">Scan</string>
+    <string name="orange_wallet">Orange Wallet</string>
+    <string name="print_qr_code">Print QR Code</string>
+    <string name="show_tax_notice_on_screen">Show tax notice on screen</string>
+    <string name="preferences">Preferences</string>
+    <string name="logs">Logs</string>
+    <string name="device_info">Device Info</string>
+    <string name="after_payment_tax_notice_will_be_shown_on_screen">After payment tax notice will be shown on screen</string>
+    <string name="tax_notice_will_not_be_shown">Tax notice will not be shown</string>
+    <string name="qr_code_will_be_printed_in_tax_notice">QR code will be printed in tax notice</string>
+    <string name="qr_code_will_not_be_printed_in_tax_notice">QR code will not be printed in tax notice</string>
+    <string name="print_after_every_successful_payment">Prints after every successful payment</string>
+    <string name="print_will_not_come_after_payment">Print will not come after payment</string>
+    <string name="barcode_qr_code_scan_allowed">Barcode or QR code scan allowed</string>
+    <string name="barcode_or_qr_code_scan_not_allowed">Barcode or QR code scan not allowed</string>
+    <string name="search_allowed">Search allowed</string>
+    <string name="search_not_allowed">Search not allowed</string>
+    <string name="model_os_ram_version">Model, OS version, RAM, Version name, Version code</string>
+    <string name="header_allow_print">Allow Print</string>
+    <string name="header_version_name">Version Name</string>
+    <string name="header_version_code">Version Code</string>
+    <string name="header_model">Model</string>
+    <string name="header_os_Version">OS Version</string>
+    <string name="header_search">Search</string>
+    <string name="ok">OK</string>
+
+    <string name="created_by">Created By</string>
+    <string name="complaint">Complaint</string>
+    <string name="title_sales_tax">Sales Tax</string>
+    <string name="agent_commission_request">Agent Commission Request</string>
+    <string name="label_subscription_start_date">Start Date</string>
+    <string name="label_subscription_expiry_date">Expiry Date</string>
+    <string name="municipal_wallet_balance">Municipal Wallet Balance</string>
+
+    <string name="commission_earned">Commission Earned</string>
+    <string name="commission_disbursed">Commissions Disbursed</string>
+
+    <string name="total_commission_earned">Total Commission Earned</string>
+    <string name="total_commission_disbursed">Total Commissions Disbursed</string>
+    <string name="total_commission_balance">Total Commission Balance</string>
+
+    <string name="title">title</string>
+    <string name="issue_description">Issue Description</string>
+    <string name="reported_by">Reported By</string>
+    <string name="complaint_date">Complaint Date</string>
+    <string name="msg_partial_payment_not_allowed">Partial payment cannot be allowed</string>
+    <string name="msg_provide_customer_info">Please provide customer information</string>
+    <string name="msg_add_product">Please add product</string>
+    <string name="add_product">Add Product</string>
+    <string name="scan_product">Scan Product</string>
+    <string name="customer">Customer</string>
+    <string name="new_customer">New Customer!</string>
+    <string name="create">Create</string>
+    <string name="supervisor">Supervisor</string>
+    <string name="collected_by">Collected by</string>
+    <string name="payment_successful">Payment successful</string>
+    <string name="label_license_code">License Code</string>
+    <string name="title_license_details">License Details</string>
+    <string name="label_remaining_days">Remaining days</string>
+    <string name="place_holder_valid_for_months">Valid for months : %1$d</string>
+    <string name="label_tax_invoice_date">Tax Invoice Date</string>
+    <string name="turn_over_amount">TurnOver Amount</string>
+    <string name="business_start_date">Business start date</string>
+    <string name="cash_deposited_date">Cash Deposit Date</string>
+    <string name="trade_no">Trade Registration Number</string>
+
+    <string name="title_rop_tax_notice">TAX NOTICE - RIGHT OF PLACE OF MARKETS</string>
+    <string name="title_rop_tax_receipt">RECEIPT - RIGHT OF PLACE OF MARKETS</string>
+    <string name="title_pdo_tax_notice">TAX NOTICE - PUBLIC DOMAIN OF OCCUPANCY</string>
+    <string name="title_pdo_tax_reciept">RECEIPT - PUBLIC DOMAIN OF OCCUPANCY</string>
+    <string name="title_cme_tax_notice">TAX NOTICE - CONTRIBUTION OF MICRO ENTERPRISES</string>
+    <string name="title_cp_tax_notice">TAX NOTICE - TO THE PATENT CONTRIBUTION</string>
+    <string name="txt_municipality_of_ougadougu">Municipality of Ouagadougou</string>
+    <string name="txt_date_of_print">Date of print:</string>
+    <string name="txt_date_of_taxation">Date of taxation:</string>
+    <string name="txt_date_of_service_taxation">Date of taxation:</string>
+    <string name="txt_salestax_date_of_taxation">Date of taxation:</string>
+    <string name="colon" translatable="false">:</string>
+    <string name="txt_notice_no">Notice number:</string>
+    <string name="txt_nature_occupancy">Nature of occupancy:</string>
+    <string name="txt_ardt">Ardt.:</string>
+    <string name="txt_section">Section:</string>
+    <string name="txt_adv_street">Street:</string>
+    <string name="txt_lot">Lot:</string>
+    <string name="txt_parcel">Parcel:</string>
+    <string name="title_nature">Nature : Taxable</string>
+    <string name="txt_social_reason">Social reason:</string>
+    <string name="title_tax_payer_identification">I - Identification of taxpayer</string>
+    <string name="title_identity_document_number">Identity Document Number:</string>
+    <string name="title_telephone_no">Telephone No:</string>
+    <string name="title_cadastral_referances">II - Cadastral References</string>
+    <string name="title_taxation_details">III - Details of taxation</string>
+    <string name="title_permanent_activities"><u>1)Permanent Activities</u></string>
+    <string name="title_class">Class:</string>
+    <string name="title_penalties">Penalties:</string>
+    <string name="title_total_pay">Total to pay:</string>
+    <string name="title_carriers"><u>2)Carriers</u></string>
+    <string name="title_ambulance_activities"><u>3)Ambulance Activities</u></string>
+    <string name="txt_type_of_transport">Type of transport:</string>
+    <string name="title_rar_of_previous_year">RAR of the previous year:</string>
+    <string name="title_adapted">Has Adopted this notice to the sum:</string>
+    <string name="title_activity_code">Actvity Code:</string>
+    <string name="title_no_of_trade">No. OF THE TRADE REGISTER:</string>
+    <string name="txt_ifu_number">IFU number:</string>
+    <string name="title_determination_of_patent">II - Determination of patent</string>
+    <string name="txt_scope">Scope:</string>
+    <string name="txt_rental_value">Rental Value:</string>
+    <string name="txt_fixed_duty">Fixed Duty:</string>
+    <string name="txt_proportional_duty">Proportional duty:</string>
+    <string name="txt_transport">Transport</string>
+    <string name="txt_determined_tax">Determined Tax:</string>
+    <string name="txt_variable_tax">Variable Tax:</string>
+    <string name="txt_no_of_places">Number of places:</string>
+    <string name="txt_payload">Payload:</string>
+    <string name="txt_amount_of_patent">Amount of patent:</string>
+    <string name="txt_determination_road_tax">III - DETERMINATION OF THE ROAD TAX</string>
+    <string name="fixed_amount">Fixed Amount:</string>
+    <string name="txt_tax_on_weapons">IV - Tax on weapons</string>
+    <string name="txt_quittance_no">Quittance number:</string>
+    <string name="txt_payment_date">Payment date:</string>
+    <string name="txt_total_deposits">Total deposits:</string>
+    <string name="txt_current_tax_amount">Current Tax Amount:</string>
+    <string name="txt_tax_imposed">Total amount of tax imposed:</string>
+    <string name="txt_current_balance">Current Balance:</string>
+    <string name="title_rar_anterior_year">RAR anterior year:</string>
+    <string name="title_rar_previous_year">RAR previous year:</string>
+    <string name="txt_amount_of_penalties">Amount of penalties:</string>
+    <string name="txt_remaining_pay">Remaining to pay:</string>
+    <string name="txt_service_remaining_pay">Remaining to pay:</string>
+    <string name="title_receipt_footer">END THIS QUITTANCE TO THE SUM OF:</string>
+    <string name="title_notice_footer">STOP THIS NOTICE TO THE SUM OF:</string>
+    <string name="txt_from">From</string>
+    <string name="txt_linear_length">Linear meter(LM):</string>
+    <string name="txt_rate">Rate:</string>
+    <string name="txt_amount_of_current_year">Amount of tax for current year:</string>
+    <string name="txt_amount_of_tax_for_this_invoice">Amount of tax for this notice:</string>
+    <string name="title_rop_tax_notice_note">This notice does not give the taxpayer any right of way in the market </string>
+    <string name="txt_note">Note:</string>
+    <string name="txt_dimensions">Dimensions of the occupied place:</string>
+    <string name="txt_generated_by">Generated by:</string>
+    <string name="title_verification">VERIFICATION</string>
+    <string name="verify">Verify</string>
+    <string name="business_already_verified">Business is already verified</string>
+    <string name="txt_required">Required on:</string>
+    <string name="txt_activity_code">Activity code:</string>
+    <string name="txt_activity">Activity:</string>
+    <string name="txt_trade_register_no">Trade Register No:</string>
+    <string name="txt_phone">Phone:</string>
+    <string name="board">Board:</string>
+    <string name="a_fixed_duty">A. Fixed duty</string>
+    <string name="sales">Sales:</string>
+    <string name="b1_carrier_determined_tax">B1. Carrier determined tax</string>
+    <string name="b2_carrier_variable_tax">B2. Carrier variable tax</string>
+    <string name="total_variable_amount_for_carriers">Total variable amount of tax for carrier:</string>
+    <string name="total_fixed_duty_and_variable_tax_of_carriers">Total fixed duty and variable tax of carriers:</string>
+    <string name="c_proportional_law">C. Proportional law</string>
+    <string name="base">Base:</string>
+    <string name="patent_to_pay">Patent to pay:</string>
+    <string name="carrier_type">Carrier type:</string>
+    <string name="number_of_carrier">Number of carrier:</string>
+    <string name="fixed_amount_for_carrier_type">Fixed amount for carrier type:</string>
+    <string name="total_fixed_amount_of_carrier">Total fixed amount of tax for carrier:</string>
+    <string name="total_ton_capacity">Total ton capacity:</string>
+    <string name="tarif_per_ton">Tarif per ton:</string>
+    <string name="total_seats">Total seat:</string>
+    <string name="tarif_per_seat">Tarif per seat:</string>
+    <string name="sales_invoice_receipt">RECEIPT - SALES INVOICE</string>
+    <string name="company_name">Company name:</string>
+    <string name="contact">Contact:</string>
+    <string name="part_number">Part number:</string>
+    <string name="district">District:</string>
+    <string name="unit_price">Unit price:</string>
+    <string name="quantity">Quantity</string>
+    <string name="total_price">Total price:</string>
+    <string name="tax_notice_road_tax">Tax Notice-Road tax</string>
+    <string name="paypoint_license_payment_receipt">PAYPOINT LICENSE PAYMENT RECEIPT</string>
+    <string name="date_of_purchase">Date of purchase:</string>
+    <string name="organisation_name">Organisation name:</string>
+    <string name="paypoint_code">Paypoint code:</string>
+    <string name="administrative_office">Administrative office:</string>
+    <string name="license_plan_elements">License plan elements</string>
+    <string name="subscription_plan">Subscription plan:</string>
+    <string name="license_renewal_start_date">Renewal start date:</string>
+    <string name="license_renewal_end_date">Renewal end date:</string>
+    <string name="payroll_amount">Payroll amount</string>
+    <string name="amount_paid">Amount paid:</string>
+    <string name="duplicate_print">Duplicate</string>
+    <string name="payment_receipt_contribution_of_mirco_entreprise">RECEIPT – CONTRIBUTION OF MIRCO ENTREPRISE</string>
+    <string name="payment_receipt_patente">RECEIPT – PATENTE</string>
+    <string name="payment">Payment</string>
+    <string name="amount_of_this_payment">Amount of this payment:</string>
+    <string name="hyphen" translatable="false">-</string>
+    <string name="license_model">License Model</string>
+    <string name="verified_sucessfully">Verified Successfully</string>
+    <string name="rejected_sucessfully">Rejected Successfully</string>
+    <string name="agent_already_verified">Agent is already verified</string>
+    <string name="msg_commission_generated_successfully_associate_associate_agent">Commission request raised successfully for Association and Association Agent</string>
+    <string name="renew">Renew</string>
+    <string name="agent_wallet_recharge_receipt">AGENT WALLET RECHARGE RECEIPT</string>
+    <string name="date_of_wallet_recharge">Date of wallet recharge:</string>
+    <string name="penalty_waive_off_receipt">RECEIPT-PENALTY WAIVE OFF</string>
+    <string name="txt_date_of_penalty">Penalty date:</string>
+    <string name="nature_penalty_waive_off">NATURE: PENALTY WAIVE OFF</string>
+    <string name="amount_of_tax_notice">Amount of tax notice:</string>
+    <string name="amount_of_tax_due">Amount of tax due:</string>
+    <string name="penalty_for_3_months">Penalty for 3 months:</string>
+    <string name="penalty_for_12_months">Penalty for 12 months:</string>
+    <string name="penalty_for_24_months">Penalty for 24 months:</string>
+    <string name="total_amount_of_penalties">TOTAL AMOUNT OF PENALTIES:</string>
+    <string name="penalty_waive_off_fixed_amount">Penalty waive off (Fixed amount ):</string>
+    <string name="penalty_percentage">Penalty percentage:</string>
+    <string name="penalty_percentage_">Penalty percentage</string>
+    <string name="total_amount_of_penalty_waived_off">Total Amount of penalty waived off :</string>
+    <string name="stop_this_penalty_notice_to_the_sum_of">Stop this penalty notice to the sum of :</string>
+    <string name="penalty">Penalty</string>
+    <string name="penalty_id">Penalty ID</string>
+    <string name="penalty_date">Penalty Date</string>
+    <string name="penalty_amount">Penalty Amount</string>
+    <string name="due_amount">Due Amount</string>
+    <string name="tax_invoice_id">TaxInvoiceID</string>
+    <string name="tax_waive_off">Waive Off</string>
+    <string name="total_amount_due">Total Amount Due</string>
+    <string name="all_waive_off">Waive off all</string>
+    <string name="waive_off">Waive Off</string>
+    <string name="percentage">Percentage</string>
+    <string name="Remarks">Remarks</string>
+    <string name="penalty_waive_off">Penalty Waive Off</string>
+    <string name="msg_percentage_empty">Please enter Percentage</string>
+    <string name="msg_waive_off_type">Please Select Waive off type</string>
+    <string name="msg_take_picture_to_upload">Please Take Picture to upload</string>
+    <string name="remaining_pay_in_letters">Remaining Pay(In letters)</string>
+    <string name="business_owner_name">Business Owner Name</string>
+    <string name="receipt_road_tax">RECEIPT-ROAD TAX</string>
+    <string name="place_holder_max_amount">Maximum waive off amount is : <xliff:g id="place_holder_tax_notice_header">%1$s</xliff:g></string>
+    <string name="msg_max_percentage">Percentage more than 100% not allowed</string>
+    <string name="due_total_amount">Due Total amount</string>
+    <string name="tax_notice_number">Tax notice number</string>
+    <string name="tax_notice_date">Tax notice date:</string>
+    <string name="tax_amount">Tax amount:</string>
+    <string name="tax_notice_due_amount">Tax notice due amount:</string>
+    <string name="waive_off_number">Waive off number:</string>
+    <string name="waive_off_date">Waive off date:</string>
+    <string name="waive_off_amount">Waive off amount:</string>
+    <string name="waive_off_details">Waive off Details</string>
+
+    <string name="penalty_period">Penalty Period:</string>
+    <string name="tax_due">Tax due:</string>
+    <string name="penalty_due">Penalty Due</string>
+    <string name="waived_off_amount">Waived off amount:</string>
+    <string name="penaltydue_after_waive_off">Penalty due after waive off:</string>
+    <string name="waive_off_remarks">Waive off remarks:</string>
+    <string name="waived_off_by">Waived off by:</string>
+    <string name="validity_period">Validity Period:</string>
+    <string name="msg_zero_amount">0 Amount is not allowed</string>
+    <string name="msg_zero_percentage">0% percentage not allowed</string>
+    <string name="txt_tax_payer_name">Tax payer identification name</string>
+    <string name="asset_txt_tax_payer_name">Tax payer identification name</string>
+    <string name="place_holder_tax_receipt_header">RECEIPT - <xliff:g id="place_holder_tax_notice_header">%1$s</xliff:g></string>
+    <string name="place_holder_tax_notice_header">Tax Notice - <xliff:g id="place_holder_tax_notice_header">%1$s</xliff:g></string>
+    <string name="title_stock_in_report">Stock In Report</string>
+    <string name="from_account_name">From Account Name</string>
+    <string name="allocation_date">Allocation Date</string>
+    <string name="title_inventory_status">Inventory Status</string>
+    <string name="total_stock">Total Stock</string>
+    <string name="total_sold_items">Total Sold Items</string>
+    <string name="stock_in_hand">Stock In Hand</string>
+    <string name="advertisement_type">Advertisement Type</string>
+    <string name="advertisement_id">Advertisement Id</string>
+    <string name="title_advertisements">Advertisements</string>
+    <string name="outstanding_waive_off">Outstanding Waive Off</string>
+    <string name="net_receivable">Net Receivable</string>
+    <string name="received_amount">Received Amount</string>
+    <string name="fiscal_year">Fiscal Year</string>
+    <string name="outstanding_penalty_due_waive_off">Outstanding Penalty Due Waive Off</string>
+    <string name="waive_off_successful">Waived Off Successfully</string>
+    <string name="title_outstandings">Outstandings</string>
+    <string name="title_initial_outstandings">Initial Outstandings</string>
+    <string name="outstandings_type">Outstandings Type</string>
+    <string name="tax_year">Year</string>
+    <string name="tax">Tax</string>
+    <string name="current_due">Current Due</string>
+    <string name="delete_message">You can not delete this data </string>
+    <string name="msg_quantity_limit">Quantity cannot be greater than</string>
+    <string name="title_advertisement_tax_notice">TAX NOTICE - ADVERTISEMENT</string>
+    <string name="nature_of_advertisement">Nature of advertisement:</string>
+    <string name="no_of_advertisement_panels">Number of advertisement panels:</string>
+    <string name="clear">Clear</string>
+    <string name="title_advertisement_tax_reciept">RECEIPT - ADVERTISEMENT TAX</string>
+    <string name="initial_out_standing_penalty_waive_off_receipt">RECEIPT-INITIAL OUTSTANDING PENALTY WAIVE OFF</string>
+    <string name="nature_outstanding_waive_off">NATURE: INITIAL OUTSTANDING WAIVE OFF</string>
+    <string name="initial_outstanding_type">Initial outstanding type:</string>
+    <string name="initial_outstanding_number">Initial outstanding number:</string>
+    <string name="initial_outstanding_year">Initial outstanding year:</string>
+    <string name="initial_outstanding_amount">Initial outstanding amount:</string>
+    <string name="initial_outstanding_due_amount">Initial outstanding due amount:</string>
+    <string name="initial_outstanding_waive_off_number">Initial outstanding waive off number:</string>
+    <string name="initial_outstanding_waive_off_date">Initial outstanding waive off date:</string>
+    <string name="initial_outstanding_waive_off_amount">Initial outstanding waive off amount:</string>
+
+
+    <string name="title_asset_onboarding">Asset OnBoarding</string>
+    <string name="asset_category">Asset Category</string>
+    <string name="title_insurance">Insurance</string>
+    <string name="title_vehicle">Vehicle Maintenance</string>
+    <string name="title_fitness">Fitness</string>
+    <string name="title_pollution">Pollution Validity Start and End date</string>
+    <string name="title_rental_utilization">Rental Utilization</string>
+    <string name="lifetime_end_date">LifeTime End Date</string>
+    <string name="lifetime_start_date">LifeTime Start Date</string>
+    <string name="booking_advance">Booking Advance</string>
+    <string name="asset_no">Asset No</string>
+    <string name="pricing_rule">Pricing Rules</string>
+    <string name="payment_cycle">Payment Cycles</string>
+    <string name="insurance_date">Insurance Date</string>
+    <string name="insurer">Insurer</string>
+    <string name="expiry_date">Expiry Date</string>
+    <string name="cost">Cost</string>
+    <string name="insurance_reference_no">Insurance Reference No</string>
+    <string name="document_id">Document ID</string>
+    <string name="insurance_no">Insurance No</string>
+    <string name="insurance_type">Insurance Type</string>
+    <string name="insurance">Insurance</string>
+    <string name="insurance_details">Insurance Details</string>
+    <string name="fitness_type">Fitness Type</string>
+    <string name="fitness_no">Fitness No</string>
+    <string name="fitness_date">Fitness Date</string>
+    <string name="vendor">Vendor</string>
+    <string name="distance_travelled">Distance Travelled</string>
+    <string name="fitness_details">Fitness Details</string>
+    <string name="fitness">Fitness</string>
+    <string name="fitness_reference_no">Fitness Reference No</string>
+    <string name="maintanence_reference_no">Maintenance Reference No</string>
+    <string name="maintanence_type">Maintenance Type</string>
+    <string name="maintenance_date">Maintenance Date</string>
+    <string name="maintenance">Maintenance</string>
+    <string name="maintenance_details">Maintenance Details</string>
+    <string name="outstanding_type">Outstanding Type</string>
+    <string name="tax_sub_type">Tax Sub Type</string>
+    <string name="asset_booking">Asset Booking</string>
+    <string name="asset">Asset</string>
+    <string name="add_asset">Add Asset</string>
+    <string name="estimated_rent_amount">Estimated Rent Amount</string>
+    <string name="initial_outstanding_waive_off_remarks">Initial outstanding waive off remarks:</string>
+    <string name="total_penalty_due">Total Penalty Due</string>
+    <string name="asset_id">Asset ID : </string>
+    <string name="booking_quantity">Booking Quantity</string>
+    <string name="booking_end_date">Booking End Date</string>
+    <string name="booking_start_date">Booking Start Date</string>
+    <string name="distance">Distance</string>
+    <string name="tenure_period">Tenure Period</string>
+    <string name="asset_booking_line">Asset Booking Line</string>
+    <string name="occupancy_name">Occupancy Name</string>
+    <string name="requested_date">Requested Date</string>
+    <string name="lable_waived_off_amount">Waived Off Amount</string>
+    <string name="msg_check">Please check</string>
+    <string name="insurance_premium_amount">Insurance Premium Amount</string>
+    <string name="insurance_policy_no">Insurance Policy No</string>
+    <string name="maintenance_cost">Maintenance Cost</string>
+    <string name="fitness_cost">Fitness Certificate Cost</string>
+    <string name="fitness_insured_by">Fitness Insured By</string>
+    <string name="update_asset_booking">Update Asset Booking</string>
+
+    <string name="estimated_amount">Estimated Amount</string>
+    <string name="hint_booking_request_search">Enter Booking Request ID</string>
+    <string name="booking_request_id">Booking Request ID</string>
+    <string name="booking_request_date">Request Date</string>
+    <string name="booking_positioning_date">Positioning Date</string>
+    <string name="booking_estimated_amount">Estimated Amount</string>
+    <string name="booking_security_deposit">Security Deposit</string>
+    <string name="title_select_booking">Select Booking</string>
+    <string name="asset_assignment">Asset Assignment</string>
+    <string name="check_list">Check List</string>
+    <string name="title_signature">Signature</string>
+    <string name="odometer_start">Odometer Start</string>
+
+    <string name="add_signature">Add Signature</string>
+    <string name="title_update_asset">Update Asset</string>
+    <string name="new_address">New Address</string>
+
+    <string name="asset_booking_success">Asset booking successfully</string>
+    <string name="message_can_not_update_asset_booking">This asset booking can not be updated</string>
+    <string name="msg_odometer_empty">Please provide odometer start value</string>
+    <string name="return_asset">Return Asset</string>
+    <string name="odometer_end">Odometer end</string>
+    <string name="assign_asset">Assign asset</string>
+    <string name="update_asset">Update Asset</string>
+    <string name="add_new_address">Add New Address</string>
+    <string name="add_existing_address">Add Existing Address</string>
+    <string name="hint_asset_id">Enter Asset ID</string>
+    <string name="hint_enter_asset_no">Enter Asset name/ ID SycoTax</string>
+    <string name="assign_quantity">Assign Quantity</string>
+    <string name="are_you_sure_you_have_entered_all_valid_information">Are you sure you have entered all valid information?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="are_you_sure_you_want_to_continue">Are you sure you want to continue?</string>
+    <string name="customer_id">Customer ID</string>
+    <string name="title_business_record">Business Record</string>
+    <string name="minimum_pay_amount">Minimum pay amount</string>
+    <string name="msg_minimum_pay_amount">Amount entered should be greater than or equal to the minimum pay amount</string>
+    <string name="msg_enter_current_password">Please enter current password</string>
+    <string name="calculate">Calculate</string>
+    <string name="msg_insufficient_stok">Insufficient stock</string>
+    <string name="open">Open</string>
+    <string name="msg_record_update_success">Record updated successfully</string>
+    <string name="admin">Admin</string>
+    <string name="cashier">Cashier</string>
+    <string name="lable_tax_amount">Tax amount</string>
+    <string name="lable_voucher_no">Voucher No</string>
+    <string name="lable_tax_rule_book_code">Tax Rule Book Code</string>
+    <string name="invoice_due">Invoice Due</string>
+    <string name="requested_by">Requested by</string>
+    <string name="paid">Paid</string>
+    <string name="un_paid">Unpaid</string>
+    <string name="citizen">Citizen</string>
+    <string name="citizen_id">Citizen ID</string>
+    <string name="citizen_name">Citizen Name</string>
+    <string name="new_citizen">New Citizen!</string>
+    <string name="initial_outstanding_current_year_due">Initial Outstanding Current Year Due</string>
+    <string name="business_summary_initial_outstanding_current_year_due">Initial Outstanding Current Year Due</string>
+    <string name="initial_outstanding_current_due_amount">Initial outstanding current due amount:</string>
+    <string name="current_year_due">Current Year Due</string>
+    <string name="business_summary_current_year_due">Current Year Due</string>
+    <string name="current_year_penalty_due">Current Year Penalty Due</string>
+    <string name="business_summary_current_year_penalty_due">Current Year Penalty Due</string>
+    <string name="anterior_year_due">Anterior Year Due</string>
+    <string name="business_summary_anterior_year_due">Anterior Year Due</string>
+    <string name="anterior_year_penalty_due">Anterior Year Penalty Due</string>
+    <string name="business_summary_anterior_year_penalty_due">Anterior Year Penalty Due</string>
+    <string name="previous_year_due">Previous Year Due</string>
+    <string name="business_summary_previous_year_due">Previous Year Due</string>
+    <string name="previous_year_penalty_due">Previous Year Penalty Due</string>
+    <string name="business_summary_previous_year_penalty_due">Previous Year Penalty Due</string>
+    <string name="fixed_expenses">Fixed Expenses</string>
+    <string name="all_zone">All zones</string>
+    <string name="no_zone">No zone</string>
+    <string name="all_sector">All sectors</string>
+    <string name="no_sector">No sector</string>
+    <string name="month_onboard">Month OnBoard</string>
+    <string name="year_onboard">Year OnBoard</string>
+    <string name="rounding">Rounding</string>
+    <string name="days">Day(s)</string>
+    <string name="priority">Priority</string>
+    <string name="updated_successfully">Updated Successfully</string>
+    <string name="vehicle_details_updated_successfully">Vehicle Details Updated Successfully</string>
+    <string name="label_incident_sub_type">Incident Subtype</string>
+    <string name="txt_incident_sub_type">Incident Subtype</string>
+    <string name="asset_booking_update">Asset details updated successfully</string>
+    <string name="label_task_subtype">Task Subtype</string>
+    <string name="complaint_type">Complaint Type</string>
+    <string name="complaint_sub_type">Complaint Subtype</string>
+    <string name="task_category">Task Category</string>
+    <string name="do_you_want_to_exit">Do you want to exit?</string>
+    <string name="complaint_category">Complaint Category</string>
+    <string name="incident_category">Incident Category</string>
+    <string name="payable">Payable:</string>
+    <string name="received">Received:</string>
+    <string name="label_title">Title</string>
+    <string name="email_is_not_verified">Email is not verified</string>
+    <string name="email_is_verified">Email is verified</string>
+    <string name="mobile_is_not_verified">Mobile is not verified</string>
+    <string name="mobile_is_verified">Mobile is verified</string>
+    <string name="verified">Verified</string>
+    <string name="msg_product_not_assigned_to_sell">No Products are assigned to sell</string>
+
+    <string name="cart_no">Cart No.</string>
+    <string name="msg_provide_citizen_info">Please provide citizen information</string>
+    <string name="title_return_asset">Return Asset</string>
+
+    <string name="booking_number">Booking No:</string>
+    <string name="booking_asset">Booking Asset:</string>
+    <string name="booking_asset_id">Booking asset ID:</string>
+    <string name="booking_date">Date of booking:</string>
+    <string name="booking_period">Booking period:</string>
+    <string name="asset_booking_period">Booking period:</string>
+
+    <string name="amount_of_deposit_for_this_booking">Amount of deposit for this booking:</string>
+    <string name="total_deposit_balance_for_this_booking">Total deposit for this booking:</string>
+    <string name="stop_this_booking_notice_to_the_sum_of">STOP THIS QUITTANCE TO THE SUM OF:</string>
+    <string name="stop_this_service_notice_to_the_sum_of">STOP THIS QUITTANCE TO THE SUM OF:</string>
+    <string name="booking_by">Booking By:</string>
+    <string name="asset_booking_request_receipt">RECEIPT-ASSET BOOKING REQUEST</string>
+    <string name="contact_phone">Contact phone:</string>
+    <string name="contact_email">Contact email:</string>
+    <string name="booking_category">Booking category:</string>
+    <string name="booking_distance">Booking distance:</string>
+    <string name="booking_deposit">Booking deposit:</string>
+    <string name="asset_request_booking_deposit">Booking deposit:</string>
+    <string name="estimated_booking_amount">Estimated Booking Amount:</string>
+    <string name="estimated_booking_request_to_the_sum_of">ESTIMATED BOOKING REQUEST TO THE SUM OF:</string>
+    <string name="booking_request_by">Booking request by:</string>
+    <string name="collect_deposit">Collect Deposit</string>
+    <string name="booking_payment_receipt_no">Booking payment receipt number:</string>
+    <string name="serial_no">Serial No</string>
+    <string name="gaming_machine_type">Gaming Machine Type</string>
+    <string name="title_gaming_machine">Gaming Machine</string>
+    <string name="title_weapon_tax">Weapon Tax</string>
+    <string name="weapon_type">Weapon Type</string>
+    <string name="serial_number">Serial Number</string>
+    <string name="make">Make</string>
+    <string name="model">Model</string>
+    <string name="purpose_of_possession">Purpose of Possession</string>
+    <string name="invalid_syco_tax_id">ID Sycotax is Invalid/ID Sycotax is assigned to an InActive Asset</string>
+    <string name="title_corporate_tax_notice">Corporate Tax Notice</string>
+    <string name="title_individual_tax_notice">Individual Tax Notice</string>
+    <string name="title_corporate_tax_collection">Corporate Tax Collection</string>
+    <string name="title_individual_tax_collection">Individual Tax Collection</string>
+    <string name="mobi_cash" translatable="false">Moov Money</string>
+
+    <!--New Receipt changes-->
+    <string name="receipt_security_deposit">Security deposit:</string>
+    <string name="asset_receipt_security_deposit">Security deposit:</string>
+
+    <string name="total_security_deposit">Total security deposit:</string>
+    <string name="receipt_start_date">Start date:</string>
+    <string name="receipt_taxation_year">Taxation year:</string>
+    <string name="receipt_taxation_year_new">Taxation year:</string>
+    <string name="asset_receipt_taxation_year">Taxation year:</string>
+    <string name="receipt_salestax_taxation_year">Taxation year:</string>
+    <string name="receipt_business_name">Business name:</string>
+    <string name="receipt_business_owner">Business owner:</string>
+    <string name="total_amount_of_tax_imposed">Total amount of tax imposed:</string>
+    <string name="nb">Note:</string>
+    <string name="receipt_billing_cycle">Billing cycle:</string>
+    <string name="receipt_payment_method">Payment method:</string>
+    <string name="penalty_amounts">Penalty amounts:</string>
+    <string name="anterior_unrecovered">Anterior unrecovered:</string>
+    <string name="previous_unrecovered">Previous unrecovered:</string>
+    <string name="amount_to_be_paid">Amount to be paid:</string>
+    <string name="remain_to_pay">Remain to pay:</string>
+    <string name="receipt_penalty_amount">Penalty amount:</string>
+    <string name="receipt_business_type">Business type:</string>
+    <string name="receipt_activity_class">Activity class:</string>
+    <string name="tax_amount_on_turn_over">Tax amount on turnover:</string>
+    <string name="receipt_vehicle_type">Vehicle type:</string>
+    <string name="receipt_tax_type">Tax type:</string>
+    <string name="receipt_trade_register_number">Trade register number:</string>
+    <string name="fiscal_identification_number">Fiscal identification number:</string>
+    <string name="receipt_phone_number">Phone number:</string>
+    <string name="cme_type">CME type:</string>
+    <string name="receipt_vehicle_number">Vehicle number:</string>
+    <string name="vehicle_tax_amount">Vehicle tax amount:</string>
+    <string name="receipt_turn_over">Turnover:</string>
+    <string name="tax_amount_on_proportional_law">Tax amount on Proportional law:</string>
+    <string name="receipt_citizen_name">Citizen name:</string>
+    <string name="receipt_payment_mode">Payment mode:</string>
+    <string name="receipt_product_code">Product code:</string>
+    <string name="receipt_product_name">Product name:</string>
+    <string name="receipt_reference_transaction_number">Reference transaction number:</string>
+    <string name="cheque_bank_name">Cheque bank name:</string>
+    <string name="cheque_date">Cheque date</string>
+    <string name="receipt_cheque_date">Cheque date:</string>
+    <string name="total_amount_of_tax_collected">Total amount of tax collected:</string>
+    <string name="receipt_booking_request_date">Booking request date:</string>
+    <string name="receipt_created_by">Created by:</string>
+    <string name="receipt_booking_quantity">Booking quantity:</string>
+    <string name="receipt_estimated_rent_amount">Estimated rent amount:</string>
+    <string name="receipt_voucher_number">Voucher number:</string>
+    <string name="receipt_recharge_amount">Recharge amount:</string>
+    <string name="receipt_user_name">User name:</string>
+    <string name="receipt_license_code">License code:</string>
+    <string name="txt_penalty_name">Penalty name:</string>
+    <string name="txt_penalty_number">Penalty number:</string>
+    <string name="txt_penalty_date">Penalty date:</string>
+    <string name="txt_penalty_due">Penalty due:</string>
+    <string name="txt_stop_this_quittance_to_the_sum_of">STOP THIS QUITTANCE TO THE SUM OF:</string>
+    <string name="txt_receipt_sector">Sector:</string>
+
+    <string name="receipt_length_">Length:</string>
+    <string name="receipt_width">Width:</string>
+    <string name="receipt_area">Area:</string>
+    <string name="receipt_tariff">Tariff:</string>
+    <string name="txt_receipt_cheque_note">This is a provisional receipt and is subject to payment clearance.</string>
+    <string name="msg_provide_valid_telephone">Please provide Phone Number</string>
+
+    <!--New Taxes String-->
+    <string name="title_weapon_tax_notice">TAX NOTICE - WEAPON</string>
+    <string name="Label_weapon_owner">Weapon owner:</string>
+    <string name="Label_exemption_criteria">Exemption criteria:</string>
+    <string name="Lable_weapon_type">Weapon type:</string>
+    <string name="Label_weapon_sycotax_id">Weapon ID SYCOTAX :</string>
+    <string name="Label_weapon_serial_number">Weapon serial number:</string>
+    <string name="Label_address">ADDRESS</string>
+    <string name="Label_taxable_element">Taxable Element</string>
+    <string name="Label_nature_taxable">NATURE : TAXABLE</string>
+    <string name="Label_tarriff">Tarriff</string>
+    <string name="ardt">Ardt:</string>
+    <string name="cart_tax_notice_title">TAX NOTICE - CART</string>
+    <string name="notice_number">Notice number</string>
+    <string name="title_cart_owner">Cart owner</string>
+
+    <string name="cart_syco_tax_id">Cart ID SYCOTAX</string>
+    <string name="cart_tax_notice_number">NOTICE NO</string>
+    <string name="rar_of_previous_year">RAR Previous Year</string>
+    <string name="rar_of_anterior_year">RAR Anterior Year</string>
+    <string name="title_profession">PROFESSION</string>
+    <string name="txt_taxable_element">Taxable Element</string>
+    <string name="txt_nature_taxable">Nature : Taxable</string>
+    <string name="tariff">Tariff</string>
+
+    <string name="gaming_tax_notice_title">TAX NOTICE - GAMING MACHINE</string>
+    <string name="title_gaming_owner">Gaming machine owner:</string>
+    <string name="gaming_syco_tax_id">Gaming machine ID SYCOTAX:</string>
+    <string name="gaming_machine_serial_number">Gaming machine serial number:</string>
+
+    <string name="txt_gaming_machine_no">Gaming machine number:</string>
+    <string name="txt_gaming_machine_type">Gaming machine type:</string>
+    <string name="txt_gaming_machine_sycotax_id">Gaming machine ID SYCOTAX:</string>
+    <string name="txt_gaming_machine_owner">Gaming machine owner:</string>
+
+
+    <string name="payment_receipt_cart_tax">Receipt - Cart Tax</string>
+    <string name="txt_cart_no">Cart number:</string>
+    <string name="cart_type">Cart Type</string>
+    <string name="txt_cart_type">Cart type:</string>
+    <string name="txt_cart_syco_tax">CART ID SYCOTAX</string>
+    <string name="reference_transaction_number">Reference Transaction Number</string>
+    <string name="amount_of_penalties">Amount of Penalties</string>
+
+    <string name="payment_receipt_gaming_tax">RECEIPT – GAMING MACHINE TAX</string>
+    <string name="amount_tax_imposed">Amount Of Tax Imposed</string>
+
+    <string name="txt_collected_by">Collected By</string>
+    <string name="payment_receipt_weapon_tax">RECEIPT – WEAPON TAX</string>
+    <string name="txt_weapon_name">WEAPON NAME</string>
+    <string name="txt_weapon_type">Weapon type:</string>
+    <string name="txt_weapon_sycotax_id">Weapon ID SYCOTAX:</string>
+    <string name="txt_weapon_serial_number">Weapon serial number:</string>
+    <string name="txt_weapon_owner">Weapon owner:</string>
+
+    <string name="booking_request_number">Booking request number:</string>
+    <string name="asset_booking_req_number">Booking request number:</string>
+    <string name="duration_rate">Duration tariff:</string>
+    <string name="asset_duration_rate">Duration tariff:</string>
+    <string name="distance_rate">Distance tariff:</string>
+    <string name="asset_request_distance_rate">Distance tariff:</string>
+    <string name="total_estimated_rent_amount">Total estimated booking amount:</string>
+    <string name="total_booking_deposit">Total booking deposit:</string>
+
+    <string name="txt_weapon_exemption_reason">Weapon Exemption Reason</string>
+    <string name="tax_amount_for_current_year">Tax amount for current year:</string>
+
+
+    <string name="title_cart_tax_summary">Cart Tax Summary</string>
+    <string name="title_weapon_tax_summary">Weapon Tax Summary</string>
+    <string name="title_gaming_machine_tax_summary">Gaming Machine Tax Summary</string>
+
+    <string name="msg_odometer_end_empty">Please provide odometer end value</string>
+    <string name="msg_odometer_end_not_matching">End Odometer meter reading cannot be less than start odometer reading</string>
+    <string name="title_corporate_tax_notice_history">Corporate Tax Notice History</string>
+    <string name="title_individual_tax_notice_history">Individual Tax Notice History</string>
+    <string name="cheque_number">Cheque number</string>
+    <string name="bank_name">Bank name</string>
+    <string name="cheque">Cheque</string>
+
+
+    <string name="pickup_address">Pickup Address</string>
+    <string name="destination_address">Destination Address</string>
+
+
+    <string name="selected_category_assets_are_already_assigned_for_others_for_selected_booking_period">Selected Category assets are already assigned for others for selected booking period</string>
+
+    <string name="txt_amount_of_this_payment">Amount of this payment:</string>
+
+    <string name="pickup">pickup</string>
+    <string name="destination">destination</string>
+    <string name="hint_asset_sycotaxid">Enter Asset ID SycoTax</string>
+    <string name="hint_asset_sycotaxid_assetname">Enter Asset name/ID SycoTax</string>
+    <string name="title_select_asset">Select Asset</string>
+    <string name="msg_asset_already_registered">The Asset you are searching is already registered.</string>
+    <string name="asset_name">Asset Name</string>
+
+    <string name="select_asset">Select Asset</string>
+    <string name="asset_rent_type">Asset Rent Type</string>
+
+    <string name="title_corporate_business_transcation_history">Corporate Business Transaction History</string>
+    <string name="title_individual_business_transcation_history">Individual Business Transaction History</string>
+    <string name="subject_to_cheque_clearance">Subject to cheque clearance:</string>
+    <string name="month_picker">Month Year Picker</string>
+    <string name="validation_select_end_date">Please select Business End Date</string>
+    <string name="validation_start_date">Please select Business Start Date</string>
+
+    <string name="title_corporate_business_outstanding_waive_off">Corporate Business Outstanding Waive Off</string>
+    <string name="title_individual_business_outstanding_waive_off">Individual Business Outstanding Waive Off</string>
+    <string name="title_corporate_business_penalty_waive_off">Corporate Business Penalty Waive Off</string>
+    <string name="title_individual_business_penalty_waive_off">Individual Business Penalty Waive Off</string>
+
+    <string name="precheck_list_data">PreCheck List Data</string>
+    <string name="post_checklist_data">Post Checklist data</string>
+    <string name="msg_invalid_asset_id">Invalid Asset Id</string>
+    <string name="title_individual_tax_summary">Individual Tax Summary</string>
+    <string name="receipt_id_sycotax">ID SYCOTAX:</string>
+
+    <string name="Label_exemption">Exemption:</string>
+    <string name="receipt_waive_off_by">Waive off by:</string>
+    <string name="title_penalty_notice_footer">STOP THIS QUITTANCE TO THE SUM OF:</string>
+    <string name="cheque_payment_inprogress">Cheque payment is in progress. you can not proceed.</string>
+    <string name="title_ticket_issue">Contravention</string>
+    <string name="title_impondment">Impound</string>
+    <string name="title_partial_waive_off">Partial Waive Off</string>
+    <string name="title_full_waive_off">Full Waive Off</string>
+    <string name="assign_date">Assign date</string>
+    <string name="msg_sycotax_id_already_registered">The ID SycoTax you are searching is already registered.</string>
+    <string name="receipt_asset_assignment">RECEIPT - ASSET ASSIGNMENT</string>
+    <string name="receipt_impound_return">RECEIPT – IMPOUND RETURN</string>
+
+
+    <string name="asset_assignment_number">Asset rent number:</string>
+    <string name="asset_assignment_date_time">Asset assignment date time:</string>
+    <string name="asset_booking_request_number">Asset booking request number:</string>
+    <string name="receipt_asset_name">Asset name:</string>
+    <string name="odometer_start_date_time">Odometer start date time:</string>
+    <string name="odometer_start_reading">Odometer start reading:</string>
+    <string name="asset_assigned_to">Asset assigned to:</string>
+    <string name="assigned_by">Assigned by:</string>
+    <string name="receipt_asset_return">RECEIPT - ASSET RETURN</string>
+    <string name="asset_return_date_time">Asset return date time:</string>
+    <string name="odometer_end_date_time">Odometer end date time:</string>
+    <string name="odometer_end_reading">Odometer end reading:</string>
+    <string name="asset_return_to">Asset return to:</string>
+    <string name="asset_fine_details">Asset Fine details</string>
+    <string name="receipt_fine_amount">Fine amount:</string>
+    <string name="asset_receipt_fine_amount">Fine amount:</string>
+    <string name="returned_by">Received by:</string>
+    <string name="date_of_return">Date of return</string>
+    <string name="txt_cart_number">Cart Number</string>
+
+
+    <string name="add_insurance_details">Asset Insurance Details</string>
+    <string name="add_fitness_details">Asset Fitness Details</string>
+    <string name="add_maintenance_details">Asset Maintenance Details</string>
+    <string name="label_license_number">Driving License Number</string>
+    <string name="title_asset_insurance">Asset Insurance</string>
+    <string name="title_asset_maintenance">Asset Maintenance</string>
+    <string name="title_asset_fitness">Asset Fitness</string>
+    <string name="vendor_name">Vendor Name</string>
+
+    <string name="violation_type">Contravention type</string>
+    <string name="driver">Driver</string>
+    <string name="driving_license_number">Driving license number</string>
+    <string name="violator">Contrevenant</string>
+    <string name="msg_vehicle_picture">Please provide the vehicle picture</string>
+    <string name="new_vehicle">New Vehicle!</string>
+    <string name="new_driver">New Driver!</string>
+    <string name="new_owner">New Owner!</string>
+    <string name="new_violator">New Contrevenant!</string>
+    <string name="driver_name">Driver name</string>
+    <string name="violator_name">Contrevenant name</string>
+    <string name="ticket_date">Ticket date</string>
+    <string name="violation_class">Contravention class</string>
+    <string name="violation_details">Contravention details</string>
+    <string name="impoundment_date">Impound Date</string>
+    <string name="impoundment_type">Impound Type</string>
+    <string name="impoundment_sub_type">Impound SubType</string>
+    <string name="impoundment_reason">Impound Reason</string>
+    <string name="impoundment_remarks">Impound Remarks</string>
+    <string name="impoundment_charge">Impound Charge</string>
+    <string name="police_station">Police Station</string>
+    <string name="goods_owner">Goods Owner</string>
+    <string name="see_ticket_history">See Ticket History</string>
+    <string name="title_return_impondment">Impound Return</string>
+    <string name="title_vehicle_ownership">Vehicle Ownership</string>
+    <string name="title_register_vehicle">Register Vehicle</string>
+    <string name="ticket_id">Ticket id</string>
+    <string name="violation_date">Contravention date</string>
+    <string name="vehicle_owner">Vehicle owner</string>
+    <string name="receipt_vehicle_owner">Vehicle owner: </string>
+    <string name="ticket_history">See Ticket History</string>
+    <string name="title_vehicle_ownership_details">Vehicle Ownership Details</string>
+
+    <string name="impoundment">Impoundment</string>
+    <string name="transaction_number">Transaction Number</string>
+    <string name="transaction_date">Transaction Date</string>
+    <string name="select_search_type">Select Search Type</string>
+    <string name="traffic_ticket">TRAFFIC TICKET</string>
+    <string name="date_of_violation">Date of Contravention:</string>
+    <string name="traffic_ticket_number">Traffic ticket number:</string>
+    <string name="receipt_lat">Lat:</string>
+    <string name="receipt_long">Long:</string>
+    <string name="ticket_amount">Ticket amount:</string>
+    <string name="total_amount_of_ticket_imposed">Total amount of ticket imposed:</string>
+    <string name="stop_this_ticket_to_the_sum_of">STOP THIS TICKET TO THE SUM OF:</string>
+    <string name="badge_number">Badge number:</string>
+    <string name="vehicle_impound">RECEIPT - VEHICLE IMPOUND</string>
+    <string name="impound_number">Impound number:</string>
+    <string name="impound_date">Impound date:</string>
+    <string name="impound_from">Impound From:</string>
+    <string name="impound_police_station">Impound police station:</string>
+    <string name="receipt_impoundment_type">Impoundment type:</string>
+    <string name="receipt_impound_sub_type">Impound sub type:</string>
+    <string name="impound_by">Impound by:</string>
+    <string name="impound_charge">Impound charge:</string>
+
+    <string name="hint_search_sycotax_id_vehicle_registration">Enter SycoTax ID/Vehicle No/Registration No</string>
+    <string name="hint_search_sycotax_id_vehicle_parking">Enter SycoTax ID/Vehicle No</string>
+    <string name="ticket_payment">Track On Payment</string>
+    <string name="violation_no">Contravention No</string>
+    <string name="pay_full">Pay Full</string>
+    <string name="pay">Pay</string>
+    <string name="total_min_pay_amount">Total Min Pay Amount</string>
+
+    <string name="return_date">Return date</string>
+    <string name="impound_return_number">Impoundment Invoice No</string>
+    <string name="customer_signature">Customer Signature</string>
+    <string name="owner_signature">Owner Signature</string>
+    <string name="handover_image">Handover Image</string>
+    <string name="impoundment_return_date_time">Impound return date time:</string>
+    <string name="impound_returned_by">Impound returned by:</string>
+    <string name="impound_return">IMPOUND RETURN</string>
+
+    <string name="penalty_details">Penalty details</string>
+    <string name="receipt_traffic_ticket">RECEIPT - TRAFFIC TICKET</string>
+    <string name="impound_details">Impound details</string>
+    <string name="payment_details">Payment details</string>
+    <string name="ticket_number">Ticket number:</string>
+    <string name="settled_amount">Settled amount:</string>
+    <string name="total_fine_amount">Total fine amount:</string>
+    <string name="applied_on">Applied on:</string>
+    <string name="select_violator">Select Contrevenant</string>
+    <string name="hint_notice_reference_no">Enter Notice Reference No</string>
+    <string name="notice_reference_no">Notice Reference No</string>
+    <string name="track_on_transaction_history">Track On Transaction History</string>
+    <string name="label_ticket_history">Ticket History</string>
+    <string name="parking_place">Parking Place</string>
+
+    <string name="msg_vehicle_not_registered">Vehicle is not yet registered</string>
+    <string name="msg_select_vehicle">Select vehicle</string>
+    <string name="parking_ticket">PARKING TICKET</string>
+    <string name="date_of_parking_ticket">Date of parking ticket:</string>
+    <string name="parking_end_time">Parking end time:</string>
+    <string name="parking_start_time">Parking start time:</string>
+    <string name="parking_ticket_number">Parking ticket number:</string>
+    <string name="parking_details">Parking details</string>
+    <string name="receipt_parking_place">Parking place:</string>
+    <string name="receipt_parking_type">Parking type:</string>
+    <string name="parking_rate">Parking rate:</string>
+    <string name="receipt_parking_amount">Parking amount:</string>
+    <string name="total_amount_for_parking_imposed">Total amount for parking imposed:</string>
+    <string name="total_amount_for_ticket_imposed">Total amount for ticket imposed:</string>
+
+    <string name="please_select_parking_place">Please select parking place</string>
+    <string name="parking_ticket_payment">Parking Ticket Payment</string>
+    <string name="parent_parking_type">Parent Parking Type</string>
+    <string name="parking_place_id">Parking place id</string>
+    <string name="parking_ticket_date">Parking Ticket Date</string>
+    <string name="parking_start_date">Parking Start Date</string>
+    <string name="parking_end_date">Parking End Date</string>
+    <string name="rate_cycle">Rate Cycle</string>
+    <string name="no_records_found">No records found</string>
+    <string name="parking_ticket_id">Parking Ticket ID</string>
+    <string name="parking_ticket_history">Parking Ticket History</string>
+    <string name="parking_transaction_history">Parking Transaction History</string>
+    <string name="receipt_parking_ticket">RECEIPT - PARKING TICKET</string>
+    <string name="last_parking_ticket">Last Parking Ticket</string>
+    <string name="over_stay_charge">Over stay charge</string>
+    <string name="hint_search_sycotax_id_vehicle_ownership">Enter ID SycoTax</string>
+    <string name="invalid_syco_tax">ID Sycotax is Invalid</string>
+    <string name="search_details">Search Details</string>
+    <string name="vehicle_summary">Vehicle Summary</string>
+    <string name="vehicle_sycotax_id">ID Sycotax Vehicle</string>
+    <string name="vehicle_registration_date">Vehicle Registration Date</string>
+    <string name="receipt_vehicle_registration_date">Vehicle registration date: </string>
+    <string name="seat_capacity">Seat Capacity</string>
+    <string name="receipt_seat_capacity">Seat capacity: </string>
+    <string name="vehicle_owner_address">Vehicle Owner Address</string>
+
+    <string name="law_enforcement_taxes">Law Enforcement Taxes</string>
+    <string name="title_law_enforcement_taxes">Law Enforcement Taxes</string>
+    <string name="title_parking_taxes">Parking Taxes</string>
+    <string name="impound_class">Impound class</string>
+    <string name="manufacturer">Manufacturer</string>
+    <string name="variant">Variant</string>
+    <string name="manufacturing_year">Manufacturing Year</string>
+    <string name="engine_no">Engine No</string>
+    <string name="impoundment_list">Pending Impoundments</string>
+    <string name="pending_amount">Pending amount</string>
+    <string name="violation_sub_type">Contravention sub type</string>
+    <string name="title_pending_violations">Pending Contraventions</string>
+
+    <string name="impond_details">Impound Details</string>
+    <string name="impond_no">Impound No</string>
+    <string name="impond_type">Impound type</string>
+    <string name="impond_sub_type">Impound subtype</string>
+    <string name="impond_date">Impound date</string>
+    <string name="impond_reference_no">Impound reference No</string>
+    <string name="violation_reference_no">Contravention reference No</string>
+    <string name="pending_violoation_impound">Contraventions and Impounds</string>
+
+    <string name="duration_price">Duration Price</string>
+    <string name="distance_price">Distance Price</string>
+    <string name="msg_no_overcharge_data">Vehicle is parked at other parking place.</string>
+    <string name="lbl_non_default">Non-Default</string>
+    <string name="title_ticket_issue_issue">Contravention Edit</string>
+    <string name="please_add_vehicle_ownership">Please add vehicle ownership</string>
+    <string name="msg_provide_violations">Please provide contraventions</string>
+    <string name="select_tax_type">Please select Tax Type</string>
+    <string name="hint_violation_ticket_id">Enter Contravention TicketID</string>
+    <string name="hint_invalid_violation_ticket_id">Invalid Contravention TicketID</string>
+    <string name="transaction_amount">Transaction Amount</string>
+    <string name="title_land_txt">Land</string>
+    <string name="title_property_txt">Property</string>
+    <string name="msg_asset_onboard_success">Asset onboarded successfully</string>
+    <string name="msg_asset_update_success">Asset updated successfully</string>
+    <string name="provide_asset_details">Please Provide asset details</string>
+    <string name="asset_added_success">Asset is added successfully</string>
+
+    <string name="violator_type">Contrevenant type</string>
+    <string name="msg_violation_type_selected">Contravention type is already selected</string>
+
+    <string name="land_name">Land Name</string>
+    <string name="land_code">Land Code</string>
+    <string name="land_type">Land Type</string>
+    <string name="parent_land">Parent Land</string>
+    <string name="land_use_type">Land Use Type</string>
+
+
+    <string name="land_property">Land Property</string>
+    <string name="land">Land</string>
+    <string name="survey_number">Survey Number</string>
+    <string name="constructed_date">Constructed Date</string>
+
+    <string name="electricity_consumption">Electricity Consumption</string>
+    <string name="phase_of_electricity">Phase Of Electricity</string>
+    <string name="water_consumption">Water Consumption</string>
+    <string name="comfort_level">Comfort Level</string>
+    <string name="no_of_floors">No Of Floors</string>
+    <string name="built_up_area_per_floor">Built Up Area Per Floor</string>
+    <string name="total_built_up_area">Total Built Up Area</string>
+    <string name="open_space">Open Space</string>
+    <string name="no_of_houses_per_floor">No Of Houses Per Floor</string>
+    <string name="no_of_establishments_per_floor">No Of Establishments Per Floor</string>
+    <string name="no_of_parking_places">No Of Parking Places</string>
+
+    <string name="vehicle_number">Vehicle Number</string>
+
+    <!--vehicle IN-->
+    <string name="title_select_sycotax_id">Select ID SycoTax</string>
+    <string name="title_select_vehicle_in">Parking Entry</string>
+    <string name="title_select_vehicle_Out">Parking Exit</string>
+    <string name="title_select_vehicle_Collect">Fee Collection</string>
+    <string name="parking_type">Parking Type</string>
+    <string name="parking_vehicle_not_register">Vehicle is not register. \nDo you want to Register?</string>
+    <string name="parking_vehicle_scan_list">Want to scan the SycoTax ID?</string>
+    <string name="title_select_vehicle">Select Vehicle</string>
+    <!--Vehicle In End-->
+
+    <!--Start Property Tax String-->
+    <string name="property_images">Property Images</string>
+    <string name="add_geo">Add Geo</string>
+    <string name="measurement_units">Measurement Units</string>
+    <string name="property_plan_images">Property Plan Images</string>
+
+    <string name="add_property_owner">Add Property Owner</string>
+    <string name="property_owner">Property Owner</string>
+    <string name="new_property_owner">New Property Owner</string>
+    <string name="nominee">Nominee</string>
+    <string name="select_nominee">Select Nominee</string>
+    <string name="new_nominee">New Nominee</string>
+    <string name="relation">Relation</string>
+    <string name="title_taxnotice_property_tax">TAX NOTICE - PROPERTY TAX</string>
+    <string name="receipt_property_name">Property name : </string>
+    <string name="receipt_property_name_cap">Property Name : </string>
+    <string name="receipt_property_owner">Property owner : </string>
+    <string name="receipt_exemption">Exemption :</string>
+    <string name="receipt_exemption_criteria">Exemption criteria :</string>
+    <string name="receipt_comfort_level">Comfort level :</string>
+    <string name="receipt_property_id_sycotax">Property ID SYCOTAX :</string>
+    <string name="receipt_address">Address :</string>
+    <string name="receipt_state">State :</string>
+    <string name="receipt_city">City :</string>
+    <string name="receipt_property_type">Property type :</string>
+    <string name="receipt_property_value">Property Value :</string>
+    <string name="receipt_property_rent_amount">Property rent amount :</string>
+
+    <string name="receipt_water_connection">Water connection :</string>
+    <string name="receipt_electricity_phase">Electricity phase :</string>
+    <string name="receipt_electricity_connection">Electricity connection :</string>
+    <string name="property_registration_number">Property registration number</string>
+    <string name="receipt_property_registration_number">Property registration number:</string>
+    <string name="property_construction_date">Property construction date</string>
+    <string name="receipt_property_construction_date">Property construction date:</string>
+    <string name="property_survey_number">Property survey number</string>
+    <string name="receipt_property_survey_number">Property survey number:</string>
+    <string name="property_owner_id">Property owner ID</string>
+    <string name="owner_phone_number">Owner phone number:</string>
+    <string name="owner_email">Owner email:</string>
+    <string name="property_registration_date">Property registration date</string>
+    <string name="receipt_property_registration_date">Property registration date:</string>
+    <string name="property_summary">Property summary</string>
+
+    <string name="receipt_built_up_area">Total built up area:</string>
+    <string name="receipt_open_space">Open space:</string>
+    <string name="receipt_electricity_consumption">Electricity consumption:</string>
+    <string name="property_details">Property Details</string>
+    <string name="receipt_area_type">Area type:</string>
+    <string name="receipt_land_use_type">Land use type:</string>
+
+    <string name="receipt_tax_start_date">Tax start date:</string>
+    <string name="receipt_estimated_tax_amount">Estimated tax amount:</string>
+    <string name="receipt_pending_tax_amount">Pending tax amount:</string>
+    <string name="receipt_product">Product:</string>
+    <string name="receipt_invoice_amount">Invoice amount:</string>
+    <string name="receipt_invoice_due">Invoice due:</string>
+    <string name="receipt_tax_sub_type">Tax sub type:</string>
+    <string name="year">Year:</string>
+    <string name="place_holder_residential_property_tax_notice">TAX NOTICE – RESIDENTIAL PROPERTY TAX</string>
+    <string name="place_holder_commercial_property_tax_notice">TAX NOTICE – COMMERCIAL PROPERTY TAX</string>
+    <string name="place_holder_land_property_tax_notice">TAX NOTICE – LAND PROPERTY TAX</string>
+    <string name="title_property_tax_notice">Property Tax Notice</string>
+    <string name="property_owner_name">Property Owner Name</string>
+    <string name="property_tax_details">Property Tax Details</string>
+    <string name="land_tax_details">Land Tax Details</string>
+    <string name="title_property_tax_notice_history">Property Tax Notice History</string>
+
+    <string name="title_property_verification">Property/Land Verification</string>
+    <string name="msg_proceed_with">Do you want to proceed with?</string>
+    <string name="document_verification">Document Verification</string>
+    <string name="physical_verification">Physical Verification</string>
+    <string name="ownership_documents">Ownership Documents</string>
+    <string name="title_property_tax_collection">Property Tax Collection</string>
+    <string name="msg_proceed_phy_verification">Do you want to proceed with physical verification?</string>
+    <string name="msg_proceed_doc_verification">Do you want to proceed with document verification?</string>
+
+
+    <string name="title_property_penalty_waive_off">Property Penalty Waive Off</string>
+    <string name="title_receipt_property_tax">RECEIPT - PROPERTY TAX NOTICE</string>
+    <string name="txt_payment_receipt_no">Payment receipt number :</string>
+    <string name="txt_taxation_year">Taxation year :</string>
+    <string name="receipt_owner">Owner name :</string>
+    <string name="receipt_owner_phone">Owner phone :</string>
+
+    <string name="title_property_transcation_history">Property Transaction History</string>
+    <string name="msg_already_aproved">Already approved</string>
+    <string name="payment_receipt_property_tax">RECEIPT - PROPERTY TAX</string>
+    <string name="txt_owner_phone">Owner phone :</string>
+
+    <string name="property_id_sycotax">Property ID Sycotax</string>
+    <string name="title_property_location">Property Locations</string>
+    <string name="over_due_amount">Over Due Amount</string>
+    <string name="tax_due_">Tax due</string>
+    <string name="on_boarding_date">On Boarding Date</string>
+    <string name="tax_generated_count">Tax Generated Count</string>
+    <string name="title_property_summary">Property Summary</string>
+    <string name="title_property_record">Property Record</string>
+    <string name="land_ownership">Land Ownership</string>
+    <string name="land_registration_number">Land Registration No.</string>
+    <string name="land_registration_date">Land Registration Date</string>
+    <string name="land_survey_number">Land Survey Number</string>
+    <!--End Property Tax-->
+    <string name="title_shows">Shows</string>
+    <string name="show_name">Operator Name</string>
+    <string name="operator_type">Operator type</string>
+    <string name="operator_type_history">Operator Type</string>
+    <string name="hotel_name">Hotel Name</string>
+    <string name="star">Star</string>
+    <string name="title_hotels">Hotels</string>
+    <string name="receipt_land_area">Land Area : </string>
+    <string name="receipt_land_width">Land Width : </string>
+    <string name="receipt_land_length">Land Length : </string>
+    <string name="receipt_land_type">Land Type : </string>
+    <string name="title_property_outstanding_waive_off">Property Outstanding Waive Off</string>
+    <string name="title_land_outstanding_waive_off">Land Outstanding Waive Off</string>
+    <string name="title_land_penalty_waive_off">Land Penalty Waive Off</string>
+    <string name="title_land_tax_notice_history">Land Tax Notice History</string>
+    <string name="title_land_transcation_history">Land Transaction History</string>
+
+    <string name="revenue">Revenue</string>
+    <string name="rate">Rate</string>
+    <string name="txt_profession">Profession:</string>
+    <string name="msg_revenue">Please provide revenue value</string>
+    <string name="tax_notice_hotel_taxes">TAX NOTICE- HOTEL TAXES</string>
+    <string name="star_rating">Star rating:</string>
+
+    <string name="tax_notice_show_taxes">TAX NOTICE- SHOW TAXES</string>
+    <string name="receipt_operator_type">Operator type:</string>
+    <string name="declaration_of_last_billing_turnover">Declaration of last billing cycle turnover:</string>
+    <string name="receipt_show_taxes">RECEIPT-SHOW TAXES</string>
+    <string name="receipt_hotel_taxes">RECEIPT -  HOTEL TAXES</string>
+
+    <string name="title_land_tax_collection">Land Tax Collection</string>
+    <string name="title_land_tax_notice">Land Tax Notice</string>
+    <string name="land_owner_name">Land Owner Name</string>
+    <string name="payment_receipt_land_tax">RECEIPT - LAND PROPERTY TAX</string>
+    <string name="room_nights">Room Nights</string>
+    <string name="title_property_tax_summary">Property Tax Summary</string>
+    <string name="receipt_land_area_type">Area type :</string>
+    <string name="estimated_land_area">Estimated Land Area</string>
+
+    <string name="land_summary">Land Property Summary</string>
+    <string name="y">Y</string>
+    <string name="n">N</string>
+    <string name="title_land_tax_summary">Land Tax Summary</string>
+    <string name="txt_commercial">Commercial Property</string>
+    <string name="txt_residential">Residential Property</string>
+    <string name="txt_land">Land Property</string>
+    <string name="land_owner">Land Owner</string>
+    <string name="land_parent">Land Parent</string>
+    <string name="receipt_estimated_monthly_rent_amount">Estimated monthly rent amount :</string>
+    <string name="receipt_estimated_yearly_amount">Estimated yearly rent amount :</string>
+    <string name="title_land_record">Land Record</string>
+
+    <string name="registration_type">Registration Type</string>
+    <string name="no_of_floor">No. of Floors</string>
+    <string name="property_syco_tax_id"> Property ID SycoTax</string>
+    <string name="land_syco_tax_id"> Land ID SycoTax</string>
+
+    <string name="license_category">License Category</string>
+    <string name="license_no">License No.</string>
+    <string name="issuance_date">Issuance Date</string>
+    <string name="valid_from">Valid From</string>
+    <string name="valid_upto">Valid Up to</string>
+    <string name="authorised_beverages">Authorised Beverages</string>
+    <string name="cancellation_date">Cancellation Date</string>
+    <string name="cancellation_remarks">Cancellation Remarks</string>
+    <string name="licenses">Licenses</string>
+    <string name="receipt_property_verification_approval">RECEIPT – PROPERTY VERIFICATION APPROVAL</string>
+    <string name="planning_permission_request_id">Planning permission request ID:</string>
+    <string name="property_permission_verification_type">Property permission verification type:</string>
+    <string name="property_verification_request_date">Property verification request date:</string>
+    <string name="property_verification_request_id">Property verification request ID:</string>
+    <string name="property_verification_requestid">Property verification request ID</string>
+    <string name="property_verification_details">Property verification details</string>
+    <string name="property_verification_approval_date">Property verification approval date:</string>
+    <string name="approval_period">Approval period:</string>
+    <string name="property_permission_validity_period">Property permission validity period:</string>
+    <string name="receipt_approved_by">Approved by:</string>
+    <string name="msg_already_rejected">Already rejected</string>
+
+    <string name="title_licenses">Licenses</string>
+    <string name="renewal_history">Renewal History</string>
+    <string name="renew_pending">Renew Pending</string>
+    <string name="license_id">License ID</string>
+    <string name="license_renewal_history">License Renewal History</string>
+
+    <string name="license_renewal">License Renewal</string>
+    <string name="license_number">License Number</string>
+    <string name="pending_current_invoice">Pending Current Invoice</string>
+    <string name="hint_license_number">Enter LicenseNo/SycoTaxID</string>
+    <string name="title_pending_licenses">Pending Licenses</string>
+    <string name="geo_fence">Geo Fence</string>
+    <string name="payment_receipt_license">PAYMENT RECEIPT – LICENSE</string>
+    <string name="txt_license_category">License Category :</string>
+    <string name="txt_license_category_type">License Category Type :</string>
+    <string name="tax_notice_license_taxes">TAX NOTICE – CONTRIBUTION OF LICENSE</string>
+    <string name="tax_receipt_license_taxes">RECEIPT – CONTRIBUTION OF LICENSE</string>
+
+
+    <string name="service_date">Tentative Requested Date</string>
+    <string name="service_no">Service No</string>
+    <string name="service_type">Service Type</string>
+    <string name="service_sub_type">Service SubType</string>
+    <string name="title_service_tax">Service Tax</string>
+
+    <string name="no_of_shows">No Of Shows</string>
+    <string name="tariff_per_show">Tariff per show</string>
+
+    <string name="txt_service_request_date">Service request date:</string>
+    <string name="txt_service_request_number">Service request number:</string>
+    <string name="tax_notice_muncipal_service_taxes">RECEIPT –  MUNICIPAL SERVICE BOOKING</string>
+    <string name="tax_payer_identification_name">Tax payer identification name / Company name:</string>
+    <string name="receipt_email">Email:</string>
+    <string name="txt_service_category">Service Category :</string>
+    <string name="txt_service_category_type">Service Category Type:</string>
+    <string name="txt_service_quantity">Service quantity:</string>
+    <string name="txt_service_period">Service Period:</string>
+    <string name="txt_service_amount">Service amount:</string>
+    <string name="txt_service_amount_new">Service amount:</string>
+    <string name="txt_additional_charges">Additional charges:</string>
+    <string name="txt_service_charges">Service charges:</string>
+    <string name="txt_total_service_charges">Total service charges:</string>
+    <string name="txt_total_service_booking_deposit">Total service booking deposit:</string>
+    <string name="txt_total_service_booking">Total service booking deposit:</string>
+    <string name="property_history">Property History</string>
+    <string name="label_property_verification_request_id">Property Verification Request ID</string>
+    <string name="ic_keyboard_arrow_right" translatable="false">&#xe0c7;</string>
+    <string name="ic_add" translatable="false">&#xe006;</string>
+    <string name="ic_email" translatable="false">&#xe087;</string>
+    <string name="ic_close" translatable="false">&#xe048;</string>
+    <string name="ic_folder" translatable="false">&#xe09d;</string>
+    <string name="ic_keyboard_arrow_down" translatable="false">&#xe0c5;</string>
+    <string name="ic_drive_file" translatable="false">&#xe077;</string>
+    <string name="ic_photo" translatable="false">&#xe111;</string>
+    <string name="land_tree_view">Land Hierarchy</string>
+    <string name="operator_name">Operator name:</string>
+    <string name="service_request_date">Service Request Date</string>
+    <string name="advance_amount">Advance Amount</string>
+    <string name="receipt_number_of_shows">Number of shows:</string>
+    <string name="receipt_hotel_name">Hotel name:</string>
+    <string name="receipt_number_of_rooms">No of rooms:</string>
+    <string name="title_commercial_summary">Commercial Property Summary</string>
+    <string name="title_residential_summary">Residential Property Summary</string>
+    <string name="receipt_property_owner_id">Property owner ID :</string>
+    <string name="tax_due_amount">Tax due amount :</string>
+    <string name="receipt_water_consumption">Water Consumption :</string>
+
+    <string name="title_pending_services">Pending Services Invoice</string>
+    <string name="label_service_request_no">Service Request No.</string>
+    <string name="service_invoice_details">Service Invoice Details</string>
+    <string name="extra_charges">Extra Charges</string>
+    <string name="property_land_type">Property/Land Type</string>
+    <string name="parking_number">Parking number</string>
+    <string name="parking_date">Parking date</string>
+    <string name="service_request_master">Service Request Master</string>
+    <string name="confirm_req_with_amount">Do you want to confirm the request by paying advance of </string>
+    <string name="confirm_req">Do you want to confirm the request?</string>
+    <string name="monthly_rent_amount">Estimated Monthly Rent Amount</string>
+    <string name="yearly_rent_amount">Estimated Yearly Rent Amount</string>
+    <string name="municipal_service_booking_advance">RECEIPT - MUNICIPAL SERVICE BOOKING ADVANCE</string>
+    <string name="service_req_date">Service request date:</string>
+    <string name="service_request_number">Service request number:</string>
+    <string name="nature_taxable">NATURE: TAXABLE</string>
+    <string name="receipt_municipal_service_booking_request">RECEIPT - MUNICIPAL SERVICE BOOKING REQUEST</string>
+    <string name="service_req_quantity">Service request area:</string>
+    <string name="service_tariff">Service tariff:</string>
+    <string name="service_advance">Service Advance:</string>
+    <string name="estimated_service_amount">Estimated service amount:</string>
+    <string name="total_estimated_service_amount">Total estimated service amount</string>
+    <string name="service">Service</string>
+    <string name="service_req_saved_successfully">Service request saved successfully</string>
+    <string name="label_service_no">Service No</string>
+    <string name="vehicle_impounded">Vehicle is Impounded</string>
+    <string name="valid_till_date">Valid Till</string>
+    <string name="security_reasons">For security reasons you need to change the password</string>
+
+    <string name="receipt_land_registration_date">Land registration date: </string>
+    <string name="receipt_land_survey_number">Land survey number: </string>
+    <string name="receipt_land_name">Land name: </string>
+    <string name="receipt_land_name_cap">Land Name: </string>
+    <string name="receipt_land_owner">Land owner: </string>
+    <string name="receipt_land_owner_id">Land owner ID: </string>
+    <string name="land_permission_verification_type">Land permission verification type:</string>
+    <string name="land_verification_request_id">Land verification request ID:</string>
+    <string name="land_verification_details">Land verification details</string>
+    <string name="land_verification_approval_date">Land verification approval date:</string>
+    <string name="land_permission_validity_period">Land permission validity period:</string>
+    <string name="land_verification_request_date">Land verification request date:</string>
+    <string name="receipt_land_id_sycotax">Land ID Sycotax :</string>
+    <string name="receipt_land_verification_approval">RECEIPT – LAND VERIFICATION APPROVAL</string>
+    <string name="same_as_business_address">Same As Business Address</string>
+    <string name="advance_amount_greater_than_estimated_amount">Please check Advance Amount is greater than Estimated Amount so unable to save</string>
+    <string name="dob">Date Of Birth</string>
+    <string name="vehicle_out_successfully">Vehicle Exited Successfully</string>
+    <string name="vehicle_out_exit">Exit Vehicle</string>
+    <string name="amount_of_tax_pending_current_year">Amount of tax pending for current year:</string>
+    <string name="cancelled">Cancelled</string>
+
+
+    <string name="cubic_capacity">Cubic Capacity</string>
+    <string name="txt_service_area">Service area:</string>
+    <string name="last_click">Last Clicked:</string>
+    <string name="to_account_name">To Account Name</string>
+    <string name="expandAll">Expand All</string>
+    <string name="collapseAll">Collapse All</string>
+    <string name="record">Record</string>
+    <string name="submit">Submit</string>
+    <string name="meter_square" translatable="false">m²</string>
+    <string name="citizen_id_number">ID card number:</string>
+    <string name="citizen_id_number_label">ID card number</string>
+    <string name="citizen_syco_tax_id">Citizen ID SYCOTAX:</string>
+    <string name="citizen_syco_tax_id_label">Citizen ID Sycotax</string>
+
+    <string name="card">Card</string>
+    <string name="card_no">Card No</string>
+    <string name="issued_date">Issued Date</string>
+    <string name="delivery_date">Delivery Date</string>
+    <string name="msg_citizen_sycotax_not_mapped">Selected citizen / owner is not assigned with any ID SYCOTAX, Do you want to assign it?</string>
+
+    <string name="verification_request_from_date">Verification Request From Date</string>
+    <string name="verification_request_to_date">Verification Request To Date</string>
+    <string name="check_delivery_date">Please check the delivery date, it should be greater than issue date</string>
+    <string name="map_area">Map Area</string>
+    <string name="map_area_greater_than_area">Map area is greater than area. Do you want to proceed?</string>
+    <string name="property_split">Child Split Field</string>
+    <string name="land_split">Land Split</string>
+    <string name="verified_by">Verified By</string>
+    <string name="onboard_by">OnBoard By</string>
+
+    <string name="legend">Legend</string>
+    <string name="property">Property</string>
+    <string name="split_value">Child Split Field</string>
+    <string name="pass">Pass</string>
+    <string name="pay_and_exit">Pay &amp; Exit</string>
+    <string name="floors_no">Floor Number</string>
+    <string name="receipt_floors_no">Floor No :</string>
+    <string name="isApartment">Is Apartment</string>
+    <string name="asset_sycotax_id">Asset ID SYCOTAX:</string>
+
+    <string name="tariff_for_turn_over">Tariff for turnover:</string>
+    <string name="tariff_for_no_of_shows">Tariff for number of shows:</string>
+    <string name="no_of_shows_in_billing_cycle">Number of shows in last billing cycle:</string>
+    <string name="declaration_of_room_nights">Declaration of last billing cycle room nights:</string>
+    <string name="receipt_land_registration_number">Land registration number: </string>
+    <string name="receipt_land_owner_id_sycotax">Land owner ID SYCOTAX: </string>
+
+    <string name="receipt_no_of_floors">Number of floors:</string>
+    <string name="receipt_property_owner_id_sycotax">Property owner ID SYCOTAX :</string>
+    <string name="parent_land_plan_images">Parent Land Plan Documents</string>
+    <string name="parent_property_plan_images">Parent Property Plan Document</string>
+    <string name="parent_property_images">Parent Property Document</string>
+
+    <string name="parent_land_images">Parent Land Document</string>
+    <string name="property_id">Property ID</string>
+    <string name="document_number">Document Number</string>
+    <string name="document_ref_id">Document Reference ID</string>
+    <string name="receipt_vehicle_sycotax_id">Vehicle ID SYCOTAX:</string>
+    <string name="property_tree_view">Property Hierarchy</string>
+    <string name="property_documents">Property Documents</string>
+    <string name="property_plan_documents">Property Plan Document</string>
+    <string name="parent_property_plan_documents"> Parent Property Plan Document</string>
+    <string name="parent_property_documents"> Parent Property Document</string>
+    <string name="parent_documents"> Parent Document</string>
+    <string name="zero_meter_square" translatable="false">0 m²</string>
+
+    <string name="pending_to_be_paid">Pending to be paid:</string>
+
+    <string name="parent_land_documents">Parent Documents</string>
+    <string name="parent_documents_land"> Parent Documents</string>
+    <string name="parent_documents_property"> Parent Documents</string>
+    <string name="land_images">Land Documents</string>
+    <string name="land_plan_images">Land Plan Documents</string>
+
+    <string name="payment_settlement_details">Payment settlement details: </string>
+    <string name="heading_payment_settlement_details">Payment settlement details</string>
+    <string name="title_upload_ref_image">Upload Reference Image</string>
+    <string name="last_billing_cycle_actual_amount">Last Billing Cycle Turnover Amount</string>
+    <string name="propotional_duty">Propotional Duty</string>
+    <string name="rental_start_date">Rental Start Date</string>
+
+
+    <string name="unit_code">Unit Code</string>
+    <string name="min_area_condition">Calculated area is out of range</string>
+    <string name="max_area_condition">Calculated area is out of range</string>
+    <string name="c_proportional_tax">C. Proportional tax</string>
+    <string name="rental_amount_per_year">Rental Amount per year :</string>
+    <string name="tax_amount_demand">Tax amount demand :</string>
+    <string name="tax_amount_refund">Tax amount refund :</string>
+    <string name="dimensions_of_the_advertisement_panel">Dimensions of the advertisement panel :</string>
+    <string name="total_area">Total area :</string>
+    <string name="owner_exist">Owner already exists</string>
+
+    <string name="estimated_turn_over_amount">Estimated TurnOver Amount</string>
+    <string name="actual_turn_over">Actual TurnOver Amount</string>
+    <string name="msg_enter_rent_amount">Please enter the Estimate Amount and Rent Amount</string>
+    <string name="estimated_booking_request">Estimated booking request:</string>
+    <string name="asset_booking_advance_receipt">RECEIPT-ASSET BOOKING ADVANCE AND SECURITY DEPOSIT</string>
+    <string name="msg_product_isinvalid">Scanned product code is invalid or not available for sale</string>
+    <string name="msg_enter_estimated_amount">Please enter the Estimate Amount</string>
+    <string name="subscription_invoice_receipt">RECEIPT – SUBSCRIPTION INVOICE</string>
+
+    <string name="msg_impoundment_type_selected">Impoundment type is already selected</string>
+    <string name="msg_provide_impoundments">Please provide impoundment type</string>
+    <string name="charge">Charge</string>
+    <string name="enter_quantity">Enter Quantity</string>
+    <string name="error_enter_quantity">Please Enter Quantity</string>
+    <string name="calculate_charge_amount">Please Calculate Charge Amount</string>
+    <string name="error_max_quantity">Exceeded Max Quantity</string>
+    <string name="impound_quantity">Impound Quantity</string>
+    <string name="return_quantity">Return Quantity</string>
+    <string name="return_amount_paid">Return Amount Paid</string>
+    <string name="violation_charge">Contravention Charge</string>
+    <string name="impond_from">Impound From</string>
+    <string name="animal_owner">Animal Owner</string>
+
+    <string name="receipt_animal_owner">Animal Owner :</string>
+    <string name="impound_animal_qty">Impound Animal Quantity :</string>
+    <string name="total_charge">Total Contravention \nand Impound Charges :</string>
+    <string name="receipt_animal_impound">RECEIPT – ANIMAL IMPOUND</string>
+    <string name="receipt_violation_charge">Contravention Charge:</string>
+    <string name="receipt_impound_reason">Impound reason :</string>
+    <string name="receipt_impond_return_qty">Impound animal return quantity :</string>
+    <string name="msg_qty_greater_than_zero">Quantity should be greater than zero</string>
+    <string name="violation_charge_small">Contravention charge</string>
+    <string name="receipt_impound_type">Impound type:</string>
+
+    <string name="receipt_total_charges">Total charges :</string>
+    <string name="goods_evaluation">Goods Valuation</string>
+
+
+    <string name="property_value">Property Value</string>
+    <string name="property_build_type">Property Build Type</string>
+    <string name="build_type_estimates_tax">Build Type Estimate Amount</string>
+    <string name="product_type">Product Type</string>
+    <string name="place_holder_land_contribution_tax_notice">TAX NOTICE – LAND CONTRIBUTION TAX</string>
+    <string name="receipt_property_build_type">Property Build Type :</string>
+    <string name="receipt_land_contribution_property_value">Property Value :</string>
+    <string name="receipt_land_contribution_tax_tariff">Land Contribution Tax Tariff:</string>
+    <string name="receipt_land_property_type">Land Property type :</string>
+    <string name="land_property_id_sycotax">Land Property ID Sycotax :</string>
+    <string name="receipt_land_property_name">Land Property name : </string>
+    <string name="receipt_land_property_owner">Land Property owner : </string>
+    <string name="receipt_land_property_owner_id_sycotax">Land Property owner ID SYCOTAX</string>
+    <string name="msg_return_qty_greater_than_zero">Return quantity should be greater than zero</string>
+    <string name="not_proper_combination">Please select proper combination</string>
+    <string name="msg_min_data">Please enter minimum 3 character to search.</string>
+    <string name="impound_animal_tariff">Impound Tarif: </string>
+    <string name="periodic_item_validation">You can\'t add another item as periodic item already added</string>
+    <string name="receipt_contract_tenure">Contract Tenure:</string>
+
+
+    <string name="no_of_rooms">No. Of Overnight stays</string>
+    <string name="fine_amount">Impound Fine</string><!---->
+    <string name="txt_fine_amount">Fine Amount</string>
+    <string name="new_asset_booking">New Rental</string><!---->
+    <string name="vehicle_no">Vehicle Registration No.</string><!---->
+    <string name="rent_per_rate_cycle">Rent Value Per <xliff:g>%s</xliff:g></string> <!---->
+    <string name="msg_strong_password">Password must contain at least one upper case letter , one lower case letter , one number , one special character @._$#^` and must be between 8 and 24 characters</string>
+    <string name="password_success">Password has changed successfully</string>
+    <string name="password_update">Password has updated successfully</string>
+    <!--For BO-->
+    <!--  <string name="asset_type">Asset type</string> &lt;!&ndash;Type Of Asset&ndash;&gt;-->
+
+
+    <!--region Numbers String-->
+    <string name="txt_one">One</string>
+    <string name="txt_two">Two</string>
+    <string name="txt_three">Three</string>
+    <string name="txt_four">Four</string>
+    <string name="txt_five">Five</string>
+    <string name="txt_six">Six</string>
+    <string name="txt_seven">Seven</string>
+    <string name="txt_eight">Eight</string>
+    <string name="txt_nine">Nine</string>
+    <string name="txt_ten">Ten</string>
+    <string name="txt_eleven">Eleven</string>
+    <string name="txt_twelve">Twelve</string>
+    <string name="txt_thirteen">Thirteen</string>
+    <string name="txt_fourteen">Fourteen</string>
+    <string name="txt_fifteen">Fifteen</string>
+    <string name="txt_sixteen">Sixteen</string>
+    <string name="txt_seventeen">Seventeen</string>
+    <string name="txt_eighteen">Eighteen</string>
+    <string name="txt_nineteen">Nineteen</string>
+    <string name="txt_twenty">Twenty</string>
+    <string name="txt_thirty">Thirty</string>
+    <string name="txt_forty">Forty</string>
+    <string name="txt_fifty">Fifty</string>
+    <string name="txt_sixty">Sixty</string>
+    <string name="txt_seventy">Seventy</string>
+    <string name="txt_eighty">Eighty</string>
+    <string name="txt_ninenty">Ninety</string>
+    <string name="txt_hundred">Hundred</string>
+    <string name="txt_thousand">Thousand</string>
+    <string name="txt_million">Million</string>
+    <string name="txt_billion">Billion</string>
+
+    <string name="txt_minus">minus</string>
+    <string name="txt_and">and</string>
+
+
+    <!--endregion-->
+    <string name="digitFilter" translatable="false">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890/</string>
+    <string name="passwordFilter" translatable="false">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890@._$#^`</string>
+    <string name="invalid_login">Invalid login. Cashier will not allow to login Agent App</string>
+
+    <string name="receipt_business_owner_name">Business owner name :</string>
+    <string name="receipt_business_owner_phone">Business owner phone number :</string>
+    <string name="merchant_name">Merchant name :</string>
+    <string name="merchant_phone">Merchant phone number :</string>
+    <string name="txt_total_amount_of_rar">Total amount of RAR :</string>
+
+    <string name="rop_receipt_total_outstandings">Total outstandings :</string>
+    <string name="rop_receipt_txt_date_of_print">Date of print:</string>
+    <string name="rop_receipt_start_date">Start date:</string>
+    <string name="rop_txt_notice_no">Notice number:</string>
+    <string name="rop_txt_notice_no_daily">Notice number:</string>
+    <string name="rop_taxation_year">Taxation Year:</string>
+    <string name="rop_txt_nature_occupancy">Nature of occupancy:</string>
+    <string name="rop_txt_date_of_taxation">Date of taxation:</string>
+    <string name="rop_txt_taxable_element">Taxable Element</string>
+    <string name="rop_title_nature">Nature : Taxable</string>
+    <string name="rop_receipt_billing_cycle">Billing cycle:</string>
+    <string name="rop_receipt_payment_method">Payment method:</string>
+    <string name="rop_txt_amount_of_current_year">Amount of tax for current year:</string>
+    <string name="rop_title_rar_anterior_year">RAR anterior year:</string>
+    <string name="rop_title_rar_previous_year">RAR previous year:</string>
+    <string name="rop_txt_amount_of_penalties">Amount of penalties:</string>
+    <string name="rop_title_notice_footer">STOP THIS NOTICE TO THE SUM OF:</string>
+    <string name="rop_txt_quittance_no">Quittance number:</string>
+    <string name="rop_txt_payment_date">Payment date:</string>
+    <string name="rop_receipt_reference_transaction_number">Reference transaction number :</string>
+    <string name="rop_amount_paid">Amount paid:</string>
+    <string name="rop_txt_remaining_pay">Remaining to pay:</string>
+    <string name="rop_receipt_business_name">Business name:</string>
+
+    <string name="rop_business_owner_name">Business owner name :</string>
+    <string name="rop_title_receipt_footer">STOP THIS RECEIPT TO THE SUM OF :</string>
+    <string name="rop_collected_by">Collected by </string>
+    <string name="rop_merchant_name">Merchant name :</string>
+    <string name="rop_number_of_heads">Number of unit:</string>
+    <string name="title_market">Market Name</string>
+    <string name="receipt_market_name">Market Name :</string>
+    <string name="rights_of_places_in_markets">Right of places in Markets</string>
+
+    <string name="error_enter_comments">Please Enter Comments</string>
+    <string name="title_handover_due_notices">Pending Handover Due Notices</string>
+    <string name="title_due_notice_date">Due Notice Date</string>
+    <string name="title_due_notice_type">Due Notice Type</string>
+    <string name="title_handover_date">Handover Date</string>
+    <string name="title_list_of_due_notice">List of due Notice</string>
+    <string name="title_agreement_list">Agreement List</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="dueNoticeNoText">Due Notice No</string>
+    <string name="dateText">Date</string>
+    <string name="agreementText">Agreement</string>
+    <string name="valid_upto_date">Valid Upto</string>
+    <string name="due_notice_reference_no">Due Notice Reference No</string>
+    <string name="dueNoticeStatusText">Status</string>
+    <string name="voucherText">Voucher</string>
+    <string name="exit_message">Do you want to save image?</string>
+    <string name="exit_message_s">Do you want to save images?</string>
+    <string name="handover_documents">Handover Documents</string>
+    <string name="agreement_documents">Agreement Documents</string>
+    <string name="txt_process">Process</string>
+    <string name="capture_image">Capture Image</string>
+    <string name="txt_message_capture_image">Please capture image</string>
+    <string name="view_signature">View Signature</string>
+    <string name="view_images">View Images</string>
+    <string name="handover_due_notice_images">Handover Due Notice Images</string>
+    <string name="title_signature_preview">Signature Preview</string>
+    <string name="aggreement_ref_no">Agreement Reference No.</string>
+    <string name="reporting_date">Reporting Date Time</string>
+    <string name="date_time_error">Please select proper date/time</string>
+    <string name="due_notice_handed_over">Due notice handed over</string>
+    <string name="citizen_id_cards">CITIZEN ID CARDS</string>
+
+    <string name="alert_dialog_title">Alert</string>
+    <string name="alert_dialog_msg_if_no">In Order to login you must download Google Auth App.</string>
+    <string name="hint_text">Enter Verification Code</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="userName_hint">Enter UserName</string>
+    <string name="password_hint">Enter Password</string>
+    <string name="alert_dialog_msg_if_yes">You need to either Scan the QR code or enter secret Key in your Google Authenticator to obtain Verification Code</string>
+    <string name="otp_hint">Enter OTP</string>
+    <string name="secret_key_text">Secret Key</string>
+    <string name="request_otp_text">Request OTP</string>
+    <string name="resend_text"><u>Resend</u> <g>%s</g></string>
+    <string name="incorrect_verification_code_text">Incorrect Verification Code</string>
+
+    <string name="incorrect_otp_text">Incorrect OTP</string>
+    <string name="authenticator_text">Authenticator</string>
+    <string name="otp_title_text">OTP</string>
+    <string name="googleTextMsg">Use Google Authenticator App to scan</string>
+    <string name="sms_otp_hint">Enter SMS OTP</string>
+    <string name="setup_key_text">Setup Key</string>
+    <string name="sms_request_otp_text">Request SMS OTP</string>
+    <string name="failed_message">Failed to store Key</string>
+    <string name="txt_google_auth_code">Google Authenticator Code</string>
+    <string name="txt_sms_otp">SMS OTP</string>
+    <string name="item">Item</string>
+    <string name="itemCode">Item Code</string>
+    <string name="recipient_name">Recipient Name</string>
+    <string name="phone">Phone</string>
+    <string name="name">Name</string>
+    <string name="zip">Zip</string>
+    <string name="products">Products</string>
+    <string name="msg_provide_valid_name">Please provide Name</string>
+    <string name="no_prod_added">No products are added</string>
+    <string name="qyt_greater_value_warning">Quantity cannot be greater than Stock In Hand</string>
+    <string name="enter_verification_code_text">Please Enter Verification Code.</string>
+    <string name="enter_otp_text">Please Enter OTP</string>
+    <string name="title_sales_history">Sales History</string>
+    <string name="str_sales_date">Sales Date</string>
+    <string name="str_sales_receipt_no">Sales Receipt No</string>
+    <string name="str_sales_item">Sales Item</string>
+    <string name="str_sales_item_code">Sales Item Code</string>
+    <string name="str_quantity">Quantity</string>
+    <string name="str_sales_amount">Sales Amount</string>
+    <string name="str_citizen_name">Citizen Name</string>
+    <string name="str_citizen_id_sycotax">Citizen SycotaxID</string>
+    <string name="menu_sales_history">Sales History</string>
+    <string name="str_price">Price</string>
+
+    <string name="sms_resend_text">OTP Expires in <g>%s</g></string>
+    <string name="otp_text">OTP is sent to your xxxxxx <g>%s</g> </string>
+    <string name="sms_resend_text_finish">Resend SMS OTP</string>
+    <string name="txt_subscription_end_date">Subscription End Date</string>
+    <string name="txt_final_price">Final Price</string>
+    <string name="adjustment_date">@string/date</string>
+    <string name="adjustment_type">Stock Type</string>
+    <string name="tax_code">Tax Code</string>
+    <string name="stock_in_out">Stock In/Out</string>
+    <string name="adjustments">Stock Management</string>
+    <string name="line_details">Line Details</string>
+    <string name="please_select_item_code">Please select Item Code</string>
+    <string name="please_sel_adj_type">Please select Stock Type</string>
+    <string name="please_enter_qty">Please enter Quantity</string>
+    <string name="show_more"><u>Show More</u></string>
+    <string name="show_less"><u>Show Less</u></string>
+    <string name="title_stock_status">Stock Status</string>
+    <string name="print_preview">Print Preview</string>
+    <string name="qty_less_than_equal_zero">Quantity must be greater than zero</string>
+    <string name="share_logs">Share Logs</string>
+    <string name="log_sent_successfully">Log sent successfully.</string>
+    <string name="no_log_found">No Log found.</string>
+    <string name="assign_to_3rd_party">Assign to Third Party</string>
+    <string name="commission_percentage">Commission Percentage</string>
+    <string name="txt_yard">Yard</string>
+    <string name="impoundment_address">Impoundment Address</string>
+    <string name="txt_crane_types">Towing Crane Types</string>
+    <string name="towing_trip_count">Towing Trip Count</string>
+    <string name="towing_charge">Towing Charge</string>
+    <string name="contravention_address">Contravention Address</string>
+    <string name="hotel_de_finance">Department</string>
+    <string name="stock_transfer">Stock Transfer</string>
+    <string name="system_stock">System Stock</string>
+    <string name="msg_greater_than_stock">Quantity should be less than or equal to system stock</string>
+    <string name="msg_fromacc_toacc_not_same">From Account and To Account must not be same</string>
+    <string name="title_security_service">Security Service</string>
+    <string name="security_history">Security History</string>
+    <string name="no_of_days">No. of Days</string>
+    <string name="no_of_persons">No. of Persons</string>
+    <string name="man_days">Man Days</string>
+    <string name="towing_crane_type">Towing Crane Type</string>
+    <string name="title_businesses_activation">Businesses Activation</string>
+
+    <string name="traffic_ticket_number_new">@string/traffic_ticket_number</string>
+    <string name="title_address_new">@string/title_address</string>
+    <string name="ticket_amount_new">@string/ticket_amount</string>
+    <string name="total_amount_of_ticket_imposed_new">@string/total_amount_of_ticket_imposed</string>
+    <string name="badge_number_new">@string/badge_number</string>
+    <string name="booking_request_to_the_sum_of">BOOKING REQUEST TO THE SUM OF:</string>
+
+    <string name="security_sales_invoice_receipt">RECEIPT - SECURITY SALES INVOICE</string>
+    <string name="type_of_cover">Type of Cover</string>
+    <string name="type_of_cover_code">Type of Cover Code</string>
+    <string name="security_service_date">Security Service Date</string>
+    <string name="security_service_receipt_no">Security Service Receipt No</string>
+    <string name="security_service_amount">Security Service Amount</string>
+    <string name="enter_prod_name">Enter Product Name</string>
+    <string name="impound_number_imp">@string/impound_number</string>
+    <string name="receipt_vehicle_number_imp">@string/receipt_vehicle_number</string>
+    <string name="driver_imp">@string/driver</string>
+    <string name="impound_from_imp">@string/impound_from</string>
+    <string name="impound_police_station_imp">@string/impound_police_station</string>
+    <string name="impound_charge_imp">@string/impound_charge</string>
+    <string name="impoundment_reason_imp">@string/impoundment_reason</string>
+    <string name="total_charge_imp">@string/total_charge</string>
+    <string name="receipt_impound_reason_new">@string/receipt_impound_reason</string>
+    <string name="please_update_email">Please update Email</string>
+    <string name="please_update_phone">Please update Phone</string>
+    <string name="please_update_email_phone">Please update Email and Phone</string>
+    <string name="txt_prosecution_fees">Prosecution Fees</string>
+    <string name="pls_msg_enter_prosecution_Fees">Please enter Prosecution Fees</string>
+
+    <string name="sales_order_date">Sales Order Date</string>
+    <string name="sales_order_no">Sales Order No</string>
+    <string name="cheque_amount">Cheque Amount</string>
+    <string name="cheque_status">Cheque Status</string>
+    <string name="prosecution_fees_due">Prosecution Fees Due</string>
+    <string name="sales_due">Sales Due</string>
+    <string name="current_due_should_be_greater_than_zero">Current Due should be greater than Zero</string>
+    <string name="title_cheque_repayments">Bounced Cheque Payments</string>
+    <string name="net_receivable_should_be_greater_than_zero">Net Receivable should be greater than Zero</string>
+    <string name="note_in_case_of_cheque_bounce">Note: In case of Cheque Bounce</string>
+    <string name="percent_value_cannt_greater_100">Percentage value cannot be greater than 100</string>
+    <string name="view_docs">View Documents</string>
+    <string name="stock_management_images">Stock Management Images</string>
+    <string name="stock_transfer_images">Stock Transfer Images</string>
+    <string name="total_collection_amount">Total collection amount</string>
+    <string name="business_verfication">Business Verification</string>
+    <string name="security_service_history">Security Service History</string>
+    <string name="receipt_total_sales_amount">Total Sales Amount:</string>
+    <string name="receipt_payment_amount">Payment Amount:</string>
+    <string name="payment_title">PAYMENT</string>
+    <string name="cheque_payment_details">CHEQUE PAYMENT DETAILS</string>
+    <string name="animal_owner_number">Animal Owner Number</string>
+    <string name="owner_number">Owner Number</string>
+    <string name="driver_number">Driver Number</string>
+    <string name="goods_owner_number">Goods Owner Number</string>
+    <string name="contravenant_number">Contravenant Number</string>
+    <string name="cheque_no">Cheque No.</string>
+    <string name="animal">Animal</string>
+    <string name="pls_cal_charge_b4_saving">Please Calculate charges before saving</string>
+    <string name="pls_cal_estimation_b4_saving">Please calculate Estimated Amount before saving</string>
+    <string name="title_sales_report">Category Wise Sales Report</string>
+    <string name="qty">Qty</string>
+    <string name="total_in_f_cfa">Total (in F CFA)</string>
+    <string name="row_labels">Row Labels</string>
+    <string name="item_name">Item Name</string>
+
+</resources>
+

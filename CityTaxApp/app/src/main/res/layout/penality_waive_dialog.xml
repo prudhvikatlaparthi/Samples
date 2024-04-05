@@ -1,0 +1,194 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/llWaiveDialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/vertical_spacing">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorLayoutBackground"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/vertical_spacing">
+
+                    <TextView
+                        android:id="@+id/txtpenalityAmount"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/penalty_amount"
+                        android:textColor="@color/colorBlack"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvPenalty"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llParentView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/vertical_spacing"
+                        android:layout_marginBottom="@dimen/vertical_spacing"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rbPartial"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:checked="true"
+                            android:text="@string/title_partial_waive_off" />
+
+                        <RadioButton
+                            android:id="@+id/rbFull"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/title_full_waive_off" />
+                    </RadioGroup>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/percentage" />
+
+                        <EditText
+                            android:id="@+id/edtPercentage"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:inputType="numberDecimal"
+                            android:maxLength="5" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/amount" />
+
+                        <EditText
+                            android:id="@+id/edtAmount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:inputType="number" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/edtRemarks"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/vertical_spacing"
+                    android:layout_marginBottom="@dimen/vertical_spacing"
+                    android:gravity="start|top"
+                    android:hint="@string/remarks"
+                    android:inputType="textMultiLine"
+                    android:maxHeight="148dp"
+                    android:maxLength="250"
+                    android:minHeight="98dp"
+                    android:scrollbars="vertical" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btnPhoto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/capture_photo" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/vertical_spacing">
+
+                        <ImageView
+                            android:id="@+id/ivImg"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_gravity="center"
+                            android:adjustViewBounds="true"
+                            android:visibility="visible" />
+
+                        <ImageButton
+                            android:id="@+id/btnClearImage"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignEnd="@id/ivImg"
+                            android:layout_alignParentTop="true"
+                            android:background="@color/white"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/close"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnClose"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/close" />
+
+                    <Button
+                        android:id="@+id/btnAllWaiveOff"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/waive_off" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+</layout>

@@ -1,0 +1,565 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="7dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/TextHeader"
+                                android:text="@string/impoundment" />
+
+                            <TextView
+                                android:id="@+id/tvImpoundment"
+                                style="@style/TextBody" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/llVoucherno"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/TextHeader"
+                                android:text="@string/vehicle_registration_no" />
+
+                            <TextView
+                                android:id="@+id/tvVehicleNumber"
+                                style="@style/TextBody" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/llOwnerHead"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/TextHeader"
+                                android:text="@string/owner" />
+
+                            <TextView
+                                android:id="@+id/tvOwner"
+                                style="@style/TextBody" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/llPhoneNumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/TextHeader"
+                                android:text="@string/phone_number" />
+
+                            <TextView
+                                android:id="@+id/tvPhoneNumber"
+                                style="@style/TextBody" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/TextHeader"
+                                android:text="@string/total_amount_due" />
+
+                            <TextView
+                                android:id="@+id/tvTotalDue"
+                                style="@style/TextBody" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/TextHeader"
+                                android:text="@string/impoundment_date" />
+
+                            <TextView
+                                android:id="@+id/tvImpounmentDate"
+                                style="@style/TextBody" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/TextHeader"
+                                android:text="@string/impoundment_type" />
+
+                            <TextView
+                                android:id="@+id/tvImpounmentType"
+                                style="@style/TextBody" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/TextHeader"
+                                android:text="@string/impoundment_sub_type" />
+
+                            <TextView
+                                android:id="@+id/tvImpounmentSubType"
+                                style="@style/TextBody" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/TextHeader"
+                                android:text="@string/impoundment_reason_imp" />
+
+                            <TextView
+                                android:id="@+id/tvImpounmentReason"
+                                style="@style/TextBody" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/TextHeader"
+                                android:text="@string/impoundment_remarks" />
+
+                            <TextView
+                                android:id="@+id/tvImpounmentRemarks"
+                                style="@style/TextBody" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/TextHeader"
+                                android:text="@string/police_station" />
+
+                            <TextView
+                                android:id="@+id/tvPoliceStation"
+                                style="@style/TextBody" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/TextHeader"
+                                android:text="@string/impound_return_number" />
+
+                            <TextView
+                                android:id="@+id/tvInvoiceNo"
+                                style="@style/TextBody" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/TextHeader"
+                                android:text="@string/return_date" />
+
+                            <TextView
+                                android:id="@+id/tvReturnDate"
+                                style="@style/TextBody" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/llImpoundQty"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility="gone">
+
+                            <TextView
+                                style="@style/TextHeader"
+                                android:text="@string/impound_quantity" />
+
+                            <TextView
+                                android:id="@+id/tvImpoundqty"
+                                style="@style/TextBody" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/llReturnQty"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility="gone">
+
+                            <TextView
+                                style="@style/TextHeader"
+                                android:text="@string/return_quantity" />
+
+                            <TextView
+                                android:id="@+id/tvReturnQty"
+                                style="@style/TextBody" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/llReturnAmountPaid"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility="gone">
+
+                            <TextView
+                                style="@style/TextHeader"
+                                android:text="@string/return_amount_paid" />
+
+                            <TextView
+                                android:id="@+id/tvReturnAmountPaid"
+                                style="@style/TextBody" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+<!--                <com.google.android.material.textfield.TextInputLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="@dimen/vertical_spacing"-->
+<!--                    android:layout_marginTop="@dimen/vertical_spacing"-->
+<!--                    android:layout_marginRight="@dimen/vertical_spacing"-->
+<!--                    android:hint="@string/quantity">-->
+
+<!--                    <com.google.android.material.textfield.TextInputEditText-->
+<!--                        android:id="@+id/edtQty"-->
+<!--                        style="@style/TextInputEntryStyle"-->
+<!--                        android:inputType="text" />-->
+
+<!--                </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--                <FrameLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:gravity="center_vertical"-->
+<!--                    android:layout_marginLeft="@dimen/vertical_spacing"-->
+<!--                    android:layout_marginTop="@dimen/vertical_spacing"-->
+<!--                    android:layout_marginRight="@dimen/vertical_spacing"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <com.google.android.material.textfield.TextInputLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:enabled="false"-->
+<!--                        android:hint="@string/charge">-->
+
+<!--                        <com.google.android.material.textfield.TextInputEditText-->
+<!--                            android:id="@+id/edtCharge"-->
+<!--                            style="@style/TextInputEntryStyle" />-->
+
+<!--                    </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:gravity="center_vertical|end">-->
+
+<!--                        <Button-->
+<!--                            android:id="@+id/btnGet"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:background="@android:color/transparent"-->
+<!--                            android:text="@string/calculate"-->
+<!--                            android:textColor="@color/colorAccent" />-->
+
+<!--                    </LinearLayout>-->
+
+<!--                </FrameLayout>-->
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/vertical_spacing"
+                    android:layout_marginTop="@dimen/vertical_spacing"
+                    android:layout_marginRight="@dimen/vertical_spacing"
+                    android:hint="@string/Remarks">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtDescription"
+                        style="@style/TextInputEntryStyle"
+                        android:inputType="text" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/vertical_spacing"
+                    android:text="@string/handover_image"
+                    android:textAllCaps="true"
+                    style="@style/TextMandatoryTextView"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/edit_bg">
+
+                    <Button
+                        android:id="@+id/btnChoose"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/capture_photo"
+                        android:layout_weight="1"/>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/imgDocument"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_gravity="center"
+                            android:adjustViewBounds="true"
+                            android:layout_margin="7dp"/>
+
+                        <ImageButton
+                            android:id="@+id/btnClearImage"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignEnd="@id/imgDocument"
+                            android:layout_alignParentTop="true"
+                            android:background="@color/white"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/close"
+                            android:visibility="gone" />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:background="@color/colorGrayLight" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/white"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@drawable/edit_bg"
+                        android:padding="@dimen/vertical_spacing">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/vertical_spacing"
+                            android:text="@string/owner_signature"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                        <com.github.gcacace.signaturepad.views.SignaturePad
+                            android:id="@+id/ownerSignatureView"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:background="@drawable/edit_bg"
+                            android:padding="@dimen/vertical_spacing"
+                            app:clearOnDoubleClick="true"
+                            app:penColor="@android:color/black"
+                            app:penMaxWidth="2dp"
+                            android:layout_margin="20dp"
+                            />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:background="@color/colorGrayLight" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@drawable/edit_bg"
+                        android:padding="@dimen/vertical_spacing">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/vertical_spacing"
+                            android:text="@string/customer_signature"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                        <com.github.gcacace.signaturepad.views.SignaturePad
+                            android:id="@+id/customerSignatureView"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:background="@drawable/edit_bg"
+                            android:padding="@dimen/vertical_spacing"
+                            app:clearOnDoubleClick="true"
+                            app:penColor="@android:color/black"
+                            app:penMaxWidth="2dp"
+                            android:layout_margin="20dp"/>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:background="@color/colorGrayLight" />
+                <LinearLayout
+                    android:id="@+id/llDocuments"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:orientation="horizontal"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/documents"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                    <TextView
+                        android:id="@+id/txtNumberOfDocuments"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:drawableEnd="@drawable/ic_arrow"
+                        android:gravity="center_vertical"
+                        android:text="0"
+                        android:textAllCaps="true"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:background="@color/colorGrayLight" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/cancel" />
+
+            <Button
+                android:id="@+id/btnProceed"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/proceed" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

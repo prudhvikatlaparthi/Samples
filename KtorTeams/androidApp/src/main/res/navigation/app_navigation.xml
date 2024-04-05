@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_navigation"
+    app:startDestination="@id/postListFragment">
+
+    <fragment
+        android:id="@+id/postListFragment"
+        android:name="com.pru.navigationcomponentdemo.ui.PostListFragment"
+        android:label="PostListFragment" >
+        <action
+            android:id="@+id/action_postListFragment_to_postDetailFragment"
+            app:destination="@id/postDetailFragment"
+            app:launchSingleTop="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/postDetailFragment"
+        android:name="com.pru.navigationcomponentdemo.ui.PostDetailFragment"
+        android:label="PostDetailFragment" >
+        <argument
+            android:name="userID"
+            app:argType="integer"
+            android:defaultValue="-1" />
+        <action
+            android:id="@+id/action_postDetailFragment_to_postListFragment"
+            app:destination="@id/postListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.pru.ktorteams.android.ui.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" >
+        <argument
+            android:name="fromScreen"
+            app:argType="com.pru.ktorteams.android.utils.AppUtils$FromScreen" />
+    </fragment>
+    <action android:id="@+id/action_global_settingsFragment" app:destination="@id/settingsFragment" />
+    <dialog
+        android:id="@+id/myDialogFragment"
+        android:name="com.pru.ktorteams.android.ui.MyDialogFragment"
+        android:label="fragment_my_dialog"
+        tools:layout="@layout/fragment_my_dialog" /><action android:id="@+id/action_global_myDialogFragment" app:destination="@id/myDialogFragment"/>
+</navigation>

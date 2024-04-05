@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#999999</color>
+    <color name="colorPrimaryDark">#444444</color>
+    <color name="colorAccent">#FF6600</color>
+    <color name="colorliteAccent">#83FF6600</color>
+
+    <color name="colorWhite">@android:color/white</color>
+    <color name="colorBlack">@android:color/black</color>
+
+    <color name="colorGray">#AAAAAA</color>
+    <color name="colorLightGray">#E6E2E2</color>
+    <color name="colorDarkGray">#474747</color>
+    <color name="colorGrayDark">@android:color/darker_gray</color>
+    <color name="colorGrayLight">#878484</color>
+
+
+    <color name="colorRedDark">@android:color/holo_red_dark</color>
+    <color name="colorRed">#FF0202</color>
+
+    <color name="colorGreenLight">#077507</color>
+    <color name="mandatoryFields">#F44336</color>
+    <color name="colorLayoutBackground">#EEEEEE</color>
+
+    <color name="colorEffiaSoftDark">#4BADEB</color>
+    <color name="colorLightBlack">#444444</color>
+
+    <color name="range_sel_bg">#EE6F2E</color>
+    <color name="colorDayAvailable">#2E754E</color>
+    <color name="colorToday">#474747</color>
+    <color name="colorPastDay">#BEBEBE</color>
+    <color name="colorMapIcon">#F2FAF9F7</color>
+
+    <color name="card_background">#ffffff</color>
+    <color name="white">#ffffff</color>
+    <color name="card_shadow">#10000000</color>
+    <color name="lite_blue_trans">#4D359FF2</color>
+    <color name="lite_blue">#ff359ff2</color>
+    <color name="window_background">#00000000</color>
+    <color name="black_de">#DE000000</color>
+    <color name="color_primary">#FF6600</color>
+    <color name="transparent">#00000000</color>
+    <color name="black_transparent">#000000</color>
+
+    <color name="parent_prop_col">#FFA500</color><!--0xffffa500-->
+    <color name="land_prop_col">#999999</color><!--0x99999999-->
+    <color name="property_col">#FF6600</color><!--0xffff6600-->
+    <color name="hint_color">#D03939</color>
+    <color name="hyperlink_blue">#0645AD</color>
+    <color name="level">#DAE1F3</color>
+    <color name="level1">#D9D6D6</color>
+    <color name="level2">#E8E2E2</color>
+    <color name="level3">#F2EFEF</color>
+</resources>

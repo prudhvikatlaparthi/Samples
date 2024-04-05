@@ -1,0 +1,177 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="BaseAppTheme" />
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="BaseAppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar.Bridge">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!-- Customize your theme here. -->
+        <item name="bottomSheetDialogTheme">@style/ThemeOverlay.YourApp.BottomSheetDialog</item>
+        <item name="buttonStyle">@style/MyButton</item>
+        <!--text style for buttons-->
+        <item name="textAppearanceButton">@style/TextAppearance.AppCompat.Widget.Button.Colored
+        </item>
+    </style>
+
+    <style name="BaseTheme.NoTitle" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!-- Customize your theme here. -->
+        <item name="bottomSheetDialogTheme">@style/ThemeOverlay.YourApp.BottomSheetDialog</item>
+        <item name="buttonStyle">@style/MyButton</item>
+        <!--text style for buttons-->
+        <item name="textAppearanceButton">@style/TextAppearance.AppCompat.Widget.Button.Colored
+        </item>
+    </style>
+
+    <style name="TextInputEntryStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:inputType">text</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Small</item>
+    </style>
+
+    <style name="ThemeOverlay.YourApp.BottomSheetDialog" parent="ThemeOverlay.MaterialComponents.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">
+            @style/Animation.MaterialComponents.BottomSheetDialog
+        </item>
+        <item name="bottomSheetStyle">@style/Widget.MaterialComponents.BottomSheet.Modal</item>
+    </style>
+
+    <!-- Applying color to normal buttons-->
+    <style name="MyButton" parent="Widget.MaterialComponents.Button.UnelevatedButton">
+        <item name="backgroundTint">@color/colorAccent</item>
+    </style>
+
+    <style name="TextHeader" parent="Widget.AppCompat.TextView">
+        <item name="android:paddingTop">2dp</item>
+        <item name="paddingEnd">7sp</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <style name="TextReportHeader" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextReportValue" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <style name="TextBody" parent="Widget.AppCompat.TextView">
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/colorLightBlack</item>
+    </style>
+
+    <style name="ReceiptTextHeader" parent="Widget.AppCompat.TextView">
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorDarkGray</item>
+    </style>
+
+    <style name="ReceiptTextBody" parent="Widget.AppCompat.TextView">
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <style name="ButtonSecondary" parent="@style/Widget.AppCompat.Button">
+        <item name="android:background">@drawable/button_curved</item>
+        <item name="backgroundTint">@color/colorWhite</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingRight">32dp</item>
+        <item name="android:paddingLeft">32dp</item>
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingBottom">6dp</item>
+    </style>
+
+
+    <style name="ButtonPrimary" parent="@style/Widget.AppCompat.Button">
+        <item name="android:background">@drawable/button_curved</item>
+        <item name="backgroundTint">@color/colorAccent</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingRight">32dp</item>
+        <item name="android:paddingLeft">32dp</item>
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingBottom">6dp</item>
+    </style>
+
+    <style name="AlertDialogTheme" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:windowBackground">@color/colorWhite</item>
+    </style>
+
+    <style name="TreeNodeStyleCustom">
+        <item name="android:paddingLeft">20dp</item>
+        <!--<item name="android:showDividers">middle</item>-->
+        <!--<item name="android:divider">@android:drawable/divider_horizontal_bright</item>-->
+    </style>
+
+    <style name="TreeNodeStyleDivided">
+        <item name="android:showDividers">middle</item>
+        <item name="android:divider">@android:drawable/divider_horizontal_bright</item>
+    </style>
+
+    <style name="TextMandatoryInputLayout" parent="Widget.Design.TextInputLayout">
+        <item name="android:textColorHint">#D03939</item>
+    </style>
+
+    <style name="TextMandatoryTextView" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">#D03939</item>
+    </style>
+
+    <style name="TextHeaderTextViewManditory" parent="Widget.AppCompat.TextView">
+        <item name="android:paddingTop">2dp</item>
+        <item name="paddingEnd">7sp</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#D03939</item>
+    </style>
+    <style name="myDialog" parent="Theme.AppCompat.Dialog.Alert">
+
+    </style>
+    <style name="TreeNodeStyle">
+        <item name="android:paddingLeft">20dp</item>
+    </style>
+    <style name="disableButton" parent="android:Widget.Button">
+        <item name="backgroundTint">@color/colorGray</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+</resources>

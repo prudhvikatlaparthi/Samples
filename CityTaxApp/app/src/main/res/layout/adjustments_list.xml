@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ll_root_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="8dp">
+
+
+        <LinearLayout
+            android:id="@+id/llReturn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextHeader"
+                    android:text="@string/adjustment_date" />
+
+                <TextView
+                    android:id="@+id/tvAdjustmentDate"
+                    style="@style/TextBody" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextHeader"
+                    android:text="@string/adjustment_type" />
+
+                <TextView
+                    android:id="@+id/tvAdjustmentType"
+                    style="@style/TextBody" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextHeader"
+                    android:text="@string/admin_office" />
+
+                <TextView
+                    android:id="@+id/tvAdministrativeOffc"
+                    style="@style/TextBody" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextHeader"
+                    android:text="@string/tax_code" />
+
+                <TextView
+                    android:id="@+id/tvTaxCode"
+                    style="@style/TextBody" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextHeader"
+                    android:text="@string/tax_name" />
+
+                <TextView
+                    android:id="@+id/tvTaxName"
+                    style="@style/TextBody" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextHeader"
+                    android:text="@string/itemCode" />
+
+                <TextView
+                    android:id="@+id/tvItemCode"
+                    style="@style/TextBody" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextHeader"
+                    android:text="@string/item" />
+
+                <TextView
+                    android:id="@+id/tvItem"
+                    style="@style/TextBody" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextHeader"
+                    android:text="@string/unit" />
+
+                <TextView
+                    android:id="@+id/tvUnit"
+                    style="@style/TextBody" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextHeader"
+                    android:text="@string/stock_in_out" />
+
+                <TextView
+                    android:id="@+id/tvStockInOut"
+                    style="@style/TextBody" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextHeader"
+                    android:text="@string/quantity" />
+
+                <TextView
+                    android:id="@+id/tvquantity"
+                    style="@style/TextBody" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextHeader"
+                    android:text="@string/remarks" />
+
+                <TextView
+                    android:id="@+id/tvRemarks"
+                    style="@style/TextBody" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

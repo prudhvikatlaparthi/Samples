@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@color/white">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:fillViewport="true"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/crdPostCheckListdata"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/vertical_spacing"
+                    android:padding="@dimen/vertical_spacing"
+                    app:cardBackgroundColor="@color/white"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/vertical_spacing">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/vertical_spacing"
+                            android:text="@string/precheck_list_data"
+                            android:textAllCaps="true"
+                            android:textStyle="bold"
+                            android:textColor="@color/black" />
+
+                        <LinearLayout
+                            android:id="@+id/llDynamicPreCheckListData"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardSignature"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/white"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/vertical_spacing">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/vertical_spacing"
+                            android:text="@string/title_signature"
+                            android:textStyle="bold"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black" />
+
+                        <ImageView
+                            android:id="@+id/imgSignature"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/ic_place_holder"
+                            android:layout_gravity="center"/>
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/save"/>
+
+    </LinearLayout>
+</layout>

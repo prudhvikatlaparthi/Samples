@@ -1,0 +1,92 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/llContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:orientation="vertical"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextHeader"
+                android:text="@string/syco_tax_id" />
+
+            <TextView
+                android:id="@+id/tvSycoTaxID"
+                style="@style/TextBody" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextHeader"
+                android:text="@string/email" />
+
+            <TextView
+                android:id="@+id/tvEmail"
+                style="@style/TextBody" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextHeader"
+                android:text="@string/phone_number" />
+
+            <TextView
+                android:id="@+id/tvPhoneNumber"
+                style="@style/TextBody" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextHeader"
+                android:text="@string/business_name" />
+
+            <TextView
+                android:id="@+id/tvBusinessName"
+                style="@style/TextBody" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextHeader"
+                android:text="@string/status" />
+
+            <TextView
+                android:id="@+id/tvStatus"
+                style="@style/TextBody" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</layout>

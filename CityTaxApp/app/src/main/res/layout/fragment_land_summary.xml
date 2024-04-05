@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:clickable="true"
+        android:focusable="true">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:fillViewport="true"
+            app:layout_constraintBottom_toTopOf="@id/llProceed"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+                <LinearLayout
+                    android:id="@+id/llHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
+                    android:orientation="vertical"
+                    android:padding="@dimen/horizontal_spacing"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <LinearLayout
+                        android:id="@+id/llSycoTaxID"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <TextView
+                            style="@style/TextHeader"
+                            android:layout_weight="2"
+                            android:paddingEnd="5dp"
+                            android:text="@string/syco_tax_id" />
+
+                        <TextView
+                            android:id="@+id/txtSycoTaxID"
+                            style="@style/TextBody"
+                            android:layout_weight="3" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llRegistrationNumbr"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <TextView
+                            style="@style/TextHeader"
+                            android:layout_weight="2"
+                            android:paddingEnd="5dp"
+                            android:text="@string/land_registration_number" />
+
+                        <TextView
+                            android:id="@+id/txtRegistrationNumber"
+                            style="@style/TextBody"
+                            android:layout_weight="3" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llRegistrationDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <TextView
+                            style="@style/TextHeader"
+                            android:layout_weight="2"
+                            android:paddingEnd="5dp"
+                            android:text="@string/land_registration_date" />
+
+                        <TextView
+                            android:id="@+id/txtRegistrationDate"
+                            style="@style/TextBody"
+                            android:layout_weight="3" />
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:id="@+id/llPropertySurveyNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <TextView
+                            style="@style/TextHeader"
+                            android:layout_weight="2"
+                            android:paddingEnd="5dp"
+                            android:text="@string/land_survey_number" />
+
+                        <TextView
+                            android:id="@+id/txtPropertySurveyNumber"
+                            style="@style/TextBody"
+                            android:layout_weight="3" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llPropertyName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <TextView
+                            style="@style/TextHeader"
+                            android:layout_weight="2"
+                            android:paddingEnd="5dp"
+                            android:text="@string/land_name" />
+
+                        <TextView
+                            android:id="@+id/txtPropertyName"
+                            style="@style/TextBody"
+                            android:layout_weight="3" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llPropertyType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <TextView
+                            style="@style/TextHeader"
+                            android:layout_weight="2"
+                            android:paddingEnd="5dp"
+                            android:text="@string/land_type" />
+
+                        <TextView
+                            android:id="@+id/txtPropertyType"
+                            style="@style/TextBody"
+                            android:layout_weight="3" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/llOnBoardBy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <TextView
+                            style="@style/TextHeader"
+                            android:layout_weight="2"
+                            android:paddingEnd="5dp"
+                            android:text="@string/onboard_by" />
+
+                        <TextView
+                            android:id="@+id/txtOnBoardBy"
+                            style="@style/TextBody"
+                            android:layout_weight="3" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/llVerifiedBy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <TextView
+                            style="@style/TextHeader"
+                            android:layout_weight="2"
+                            android:paddingEnd="5dp"
+                            android:text="@string/verified_by" />
+
+                        <TextView
+                            android:id="@+id/txtVerifiedBy"
+                            style="@style/TextBody"
+                            android:layout_weight="3" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/llSnippet"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/llHeader">
+
+                    <fragment
+                        android:id="@+id/frg"
+                        android:name="com.google.android.gms.maps.SupportMapFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <RelativeLayout
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorGrayLight"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/legend"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textSize="@dimen/fifteen_sp"
+                            android:textColor="@color/white"
+                            android:text="@string/legend"
+                            android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Title" />
+
+                        <View
+                            android:id="@+id/leg_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@+id/legend"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:background="@color/colorGray" />
+
+                        <LinearLayout
+                            android:layout_below="@+id/leg_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_below="@+id/leg_view"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <View
+                                    android:layout_marginLeft="@dimen/mtrl_btn_icon_padding"
+                                    android:layout_gravity="center"
+                                    android:background="@color/parent_prop_col"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp" />
+
+                                <TextView
+                                    android:id="@+id/parent_col"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:padding="4dp"
+                                    android:textSize="@dimen/mtrl_btn_icon_btn_padding_left"
+                                    android:textColor="@color/white"
+                                    android:text="@string/parent_land"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+                            </LinearLayout>
+
+                      <!--      <LinearLayout
+                                android:layout_below="@+id/leg_view"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <View
+                                    android:layout_marginLeft="@dimen/mtrl_btn_icon_padding"
+                                    android:layout_gravity="center"
+                                    android:background="@color/land_prop_col"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp" />
+
+                                <TextView
+                                    android:id="@+id/land_col"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:padding="4dp"
+                                    android:textSize="@dimen/mtrl_btn_icon_btn_padding_left"
+                                    android:textColor="@color/white"
+                                    android:text="@string/land_property"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+                            </LinearLayout>-->
+
+                            <LinearLayout
+                                android:layout_below="@+id/leg_view"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <View
+                                    android:layout_marginLeft="@dimen/mtrl_btn_icon_padding"
+                                    android:layout_gravity="center"
+                                    android:background="@color/property_col"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp" />
+
+                                <TextView
+                                    android:id="@+id/property_col"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:padding="4dp"
+                                    android:textSize="@dimen/mtrl_btn_icon_btn_padding_left"
+                                    android:textColor="@color/white"
+                                    android:text="@string/land"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+                            </LinearLayout>
+
+
+
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+                <ExpandableListView
+                    android:id="@+id/listView"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:indicatorRight="?android:attr/expandableListPreferredItemIndicatorRight"
+                    android:nestedScrollingEnabled="true"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/llSnippet" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/llProceed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <Button
+                android:id="@+id/btnEdit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/edit"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btnProceed"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/proceed" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

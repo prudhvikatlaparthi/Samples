@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_root_view"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="16dp"
+    android:paddingTop="8dp"
+    android:paddingEnd="16dp"
+    android:paddingBottom="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/TextHeader"
+            android:text="@string/asset_name" />
+
+        <TextView
+            android:id="@+id/tvAssetName"
+            style="@style/TextBody" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/TextHeader"
+            android:text="@string/syco_tax_id" />
+
+        <TextView
+            android:id="@+id/tvAssetSycoTaxId"
+            style="@style/TextBody" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/TextHeader"
+            android:text="@string/asset_category" />
+
+        <TextView
+            android:id="@+id/tvAssetCategory"
+            style="@style/TextBody" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/TextHeader"
+            android:text="@string/assign_date" />
+
+        <TextView
+            android:id="@+id/tvAssignDate"
+            style="@style/TextBody" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/TextHeader"
+            android:text="@string/date_of_return" />
+
+        <TextView
+            android:id="@+id/tvReturnDate"
+            style="@style/TextBody" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+</layout>
