@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "573183919743",
+    "project_id": "test-sign-in-424707",
+    "storage_bucket": "test-sign-in-424707.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:573183919743:android:201c3270925f35ce76614a",
+        "android_client_info": {
+          "package_name": "com.pru.signin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "573183919743-lkkvmc6qeflgpc9paq3ks32hk355ndav.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pru.signin",
+            "certificate_hash": "32f0c05b5b3f13843e6902ba0f16c6d29107be56"
+          }
+        },
+        {
+          "client_id": "573183919743-naur58nssks08ufra2qkbvhmdh2qaehl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwY_OjxaIt8Z40Me_16EfUlbYIHmydjZE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "573183919743-gdkup08hmjat3h0uhb4hhe4hqqj08ok9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
